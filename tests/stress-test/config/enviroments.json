@@ -1,0 +1,17 @@
+{
+  "local": {
+    "casesServiceUrl": "http://localhost:3001",
+    "urServiceUrl": "http://localhost:3002",
+    "description": "Local development environment"
+  },
+  "docker": {
+    "casesServiceUrl": "http://localhost:8080", 
+    "urServiceUrl": "http://localhost:8081",
+    "description": "Docker compose environment"
+  },
+  "staging": {
+    "casesServiceUrl": "https://staging-cases.smambu.com",
+    "urServiceUrl": "https://staging-ur.smambu.com", 
+    "description": "Staging environment"
+  }
+}

@@ -1,0 +1,66 @@
+services:
+  mongo:
+    networks:
+      - cloudbuild
+
+  redis:
+    networks:
+      - cloudbuild
+
+  init:
+    networks:
+      - cloudbuild
+
+  autoheal:
+    networks:
+      - cloudbuild
+  ascos-anagraphics:
+    networks:
+      - cloudbuild
+  ascos-auth:
+    networks:
+      - cloudbuild
+  ascos-billing:
+    networks:
+      - cloudbuild
+  ascos-bucket:
+    networks:
+      - cloudbuild
+  ascos-contracts:
+    networks:
+      - cloudbuild
+  ascos-logs:
+    networks:
+      - cloudbuild
+  ascos-notifications:
+    networks:
+      - cloudbuild
+  ascos-ormanagement:
+    networks:
+      - cloudbuild
+  ascos-patient-anagraphics:
+    networks:
+      - cloudbuild
+  ascos-roles:
+    networks:
+      - cloudbuild
+  ascos-scheduling-cases:
+    networks:
+      - cloudbuild
+  ascos-system-configuration:
+    networks:
+      - cloudbuild
+  ascos-tenants:
+    networks:
+      - cloudbuild
+  ascos-users:
+    networks:
+      - cloudbuild
+  frontend:
+    networks:
+      - cloudbuild
+
+
+networks:
+  cloudbuild:
+    external: true

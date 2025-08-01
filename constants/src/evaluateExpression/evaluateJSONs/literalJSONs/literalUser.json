@@ -1,0 +1,99 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalUser",
+      "value": {
+        "address": {
+          "city": "AAAAAA",
+          "country": "BBBBBB",
+          "houseNumber": "FFFFFF",
+          "postalCode": "CCCCCC",
+          "state": "DDDDDD",
+          "street": "EEEEEE"
+        },
+        "birthDate": {
+          "day": 1,
+          "month": 1,
+          "year": 2000
+        },
+        "debtorNumber": "123456",
+        "email": "test@test.com",
+        "firstName": "Test",
+        "lastName": "Test",
+        "phoneNumber": "1234567890",
+        "title": "Sig."
+      }
+    },
+    "expected": {
+      "address": {
+        "city": "AAAAAA",
+        "country": "BBBBBB",
+        "houseNumber": "FFFFFF",
+        "postalCode": "CCCCCC",
+        "state": "DDDDDD",
+        "street": "EEEEEE"
+      },
+      "birthDate": "1999-12-31T23:00:00.000Z",
+      "debtorNumber": "123456",
+      "email": "test@test.com",
+      "firstName": "Test",
+      "lastName": "Test",
+      "phoneNumber": "1234567890",
+      "title": "Sig."
+    }
+  },
+  {
+    "data": {
+      "expressionKind": "literalUser",
+      "value": {
+        "address": {
+          "city": "AAAAAA",
+          "country": "BBBBBB",
+          "houseNumber": "FFFFFF",
+          "postalCode": "CCCCCC",
+          "state": "DDDDDD",
+          "street": "EEEEEE"
+        },
+        "birthDate": {
+          "day": 1,
+          "month": 1,
+          "year": 2000
+        },
+        "debtorNumber": "123456",
+        "email": "test@test.com",
+        "firstName": "Test",
+        "lastName": "Test",
+        "phoneNumber": "1234567890",
+        "title": null
+      }
+    },
+    "error": "Invalid title"
+  },
+  {
+    "data": {
+      "expressionKind": "literalUser",
+      "value": {
+        "address": {
+          "city": "AAAAAA",
+          "country": "BBBBBB",
+          "houseNumber": "FFFFFF",
+          "postalCode": "CCCCCC",
+          "state": "DDDDDD",
+          "street": "EEEEEE"
+        },
+        "birthDate": {
+          "day": 1,
+          "month": 1,
+          "year": 2000
+        },
+        "debtorNumber": "123456",
+        "email": "testtest.com",
+        "firstName": "Test",
+        "lastName": "Test",
+        "phoneNumber": "1234567890",
+        "title": "Sig."
+      }
+    },
+    "error": "Invalid email"
+  }
+]

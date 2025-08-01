@@ -1,0 +1,89 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalEnum",
+      "value": [
+        {
+          "description": "AAAAAA",
+          "key": "BBBBBB"
+        },
+        {
+          "description": "CCCCCC",
+          "key": "DDDDDD"
+        }
+      ]
+    },
+    "expected": {
+      "BBBBBB": "AAAAAA",
+      "DDDDDD": "CCCCCC"
+    }
+  },
+  {
+    "data": {
+      "expressionKind": "literalEnum",
+      "value": [
+        {
+          "description": "AAAAAA",
+          "key": "BBBBBB"
+        },
+        {
+          "description": "AAAAAA",
+          "key": "DDDDDD"
+        }
+      ]
+    },
+    "expected": null,
+    "error": "Duplicate description"
+  },
+  {
+    "data": {
+      "expressionKind": "literalEnum",
+      "value": [
+        {
+          "description": "AAAAAA",
+          "key": "BBBBBB"
+        },
+        {
+          "description": "CCCCCC",
+          "key": "BBBBBB"
+        }
+      ]
+    },
+    "expected": null,
+    "error": "Duplicate key"
+  },
+  {
+    "data": {
+      "expressionKind": "literalEnum",
+      "value": [
+        {
+          "description": 444444,
+          "key": "BBBBBB"
+        },
+        {
+          "description": "CCCCCC",
+          "key": "DDDDDD"
+        }
+      ]
+    },
+    "expected": null,
+    "error": "Not string description"
+  },
+  {
+    "data": {
+      "expressionKind": "literalEnum",
+      "value": [
+        {
+          "description": "AAAAAA",
+          "key": 444444
+        },
+        {
+          "description": "CCCCCC",
+          "key": "DDDDDD"
+        }
+      ]
+    },
+    "expected": null,
+    "error": "Not string key"
+  }
+]

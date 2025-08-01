@@ -1,0 +1,30 @@
+[
+  {
+    "timestamp": 1753965294571,
+    "type": "test_started",
+    "message": "Started bulk-case-creation stress test",
+    "config": {}
+  },
+  {
+    "timestamp": 1753965299810,
+    "type": "validation_started",
+    "message": "Comprehensive validation started"
+  },
+  {
+    "timestamp": 1753965400152,
+    "type": "validation_completed",
+    "message": "Comprehensive validation completed",
+    "results": {
+      "proxiesCreated": "0/100",
+      "fragmentsValid": "0/0",
+      "dependenciesComplete": "0/0",
+      "performanceTargetsMet": "1/3"
+    }
+  },
+  {
+    "timestamp": 1753965400188,
+    "type": "test_completed",
+    "message": "Stress test completed successfully",
+    "duration": 105617
+  }
+]

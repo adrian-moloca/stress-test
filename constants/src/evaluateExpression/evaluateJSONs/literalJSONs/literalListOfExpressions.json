@@ -1,0 +1,65 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalListOfExpressions",
+      "value": [
+        {
+          "expressionKind": "literalString",
+          "value": "Hello"
+        },
+        {
+          "expressionKind": "literalString",
+          "value": "World"
+        }
+      ]
+    },
+    "expected": [
+      "Hello",
+      "World"
+    ]
+  }, {
+    "data": {
+      "expressionKind": "literalListOfExpressions",
+      "value": [
+        {
+          "expressionKind": "literalNumber",
+          "value": 4
+        },
+        {
+          "expressionKind": "literalString",
+          "value": "World"
+        },
+        {
+          "expressionKind": "literalBoolean",
+          "value": true
+        }
+      ]
+    },
+    "expected": [
+      4,
+      "World",
+      true
+    ]
+  }, {
+    "data": {
+      "expressionKind": "literalListOfExpressions",
+      "value": [
+        2
+      ]
+    },
+    "expected": null,
+    "error": true
+  }, {
+    "data": {
+      "expressionKind": "literalListOfExpressions",
+      "value": [
+        {
+          "expressionKind": "literalaNumber",
+          "value": 4
+        }
+      ]
+    },
+    "expected": null,
+    "error": true
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "caseNumber": "STRESS_000001",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Brook",
+      "surname": "Pollich",
+      "patientId": "P023189",
+      "birthDate": "1965-09-25T23:38:21.964Z"
+    },
+    "bookingSection": {
+      "date": "2025-10-19T02:53:28.100Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 169
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "FHHP0TS8",
+          "name": "Surgical Suture",
+          "quantity": 7,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "ZAXGN8KV",
+          "name": "Surgical Drape",
+          "quantity": 7,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "3DNUW4UO",
+          "name": "Propofol",
+          "dosage": "11mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 311,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "48mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T20:16:24.310Z"
+    }
+  }
+]

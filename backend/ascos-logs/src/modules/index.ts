@@ -1,0 +1,93 @@
+import { backendConfiguration } from '@smambu/lib.constantsjs'
+import { MongooseModule } from '@nestjs/mongoose'
+import { ConfigModule, ConfigService } from '@nestjs/config'
+import schemas from '../schemas'
+import { JwtModule } from '@nestjs/jwt'
+import { ClientsModule, Transport } from '@nestjs/microservices'
+import { ScheduleModule } from '@nestjs/schedule'
+import { AlsModule, ClientProxyWithTenantId, RedisModule } from '@smambu/lib.commons-be'
+const ENV = process.env.NODE_ENV
+
+export default [
+  ScheduleModule.forRoot(),
+  ConfigModule.forRoot({
+    envFilePath: !ENV ? '../../.env' : `../../.env.${ENV}`,
+    isGlobal: true,
+    load: [backendConfiguration],
+  }),
+  ClientsModule.registerAsync([
+    {
+      name: 'AUTH_CLIENT',
+      imports: [ConfigModule],
+      useFactory: (configService: ConfigService) => ({
+        transport: Transport.TCP,
+        options: {
+          host: configService.get('AUTH_SERVICE_HOST'),
+          port: configService.get('AUTH_SERVICE_PORT'),
+          name: 'AUTH_CLIENT',
+        },
+        customClass: ClientProxyWithTenantId,
+      }),
+      inject: [ConfigService],
+    },
+  ]),
+  ClientsModule.registerAsync([
+    {
+      name: 'USERS_CLIENT',
+      imports: [ConfigModule],
+      useFactory: (configService: ConfigService) => ({
+        transport: Transport.TCP,
+        options: {
+          host: configService.get('USER_SERVICE_HOST'),
+          port: configService.get('USER_SERVICE_PORT'),
+          name: 'USERS_CLIENT',
+        },
+        customClass: ClientProxyWithTenantId,
+      }),
+      inject: [ConfigService],
+    },
+  ]),
+  ClientsModule.registerAsync([
+    {
+      name: 'ROLE_CLIENT',
+      imports: [ConfigModule],
+      useFactory: (configService: ConfigService) => ({
+        transport: Transport.TCP,
+        options: {
+          host: configService.get('ROLE_SERVICE_HOST'),
+          port: configService.get('ROLE_SERVICE_PORT'),
+          name: 'ROLE_CLIENT',
+        },
+        customClass: ClientProxyWithTenantId,
+      }),
+      inject: [ConfigService],
+    },
+  ]),
+  ClientsModule.registerAsync([
+    {
+      name: 'CONTRACTS_CLIENT',
+      imports: [ConfigModule],
+      useFactory: (configService: ConfigService) => ({
+        transport: Transport.TCP,
+        options: {
+          host: configService.get('CONTRACT_SERVICE_HOST'),
+          port: configService.get('CONTRACT_SERVICE_PORT'),
+          name: 'CONTRACTS_CLIENT',
+        },
+        customClass: ClientProxyWithTenantId,
+      }),
+      inject: [ConfigService],
+    },
+  ]),
+  MongooseModule.forRootAsync({
+    imports: [ConfigModule],
+    useFactory: async (configService: ConfigService) => ({
+      uri: configService.get<string>('mongodb_uri_logs'),
+    }),
+    inject: [ConfigService],
+  }),
+  MongooseModule.forFeature(schemas),
+  JwtModule.register({ secret: 'jwt_secret_key' }),
+  RedisModule,
+  AlsModule,
+]

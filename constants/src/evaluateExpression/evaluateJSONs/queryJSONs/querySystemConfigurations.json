@@ -1,0 +1,27 @@
+[
+  {
+    "data": {
+      "collection": "pricePointConfigs",
+      "expected": null,
+      "expressionKind": "query",
+      "impure": true,
+      "yields": {}
+    },
+    "expected": null,
+    "impure": true
+  },
+  {
+    "data": {
+      "collection": "generalData",
+      "expressionKind": "query",
+      "yields": {
+        "companyStreet": {
+          "expressionKind": "literalBoolean",
+          "value": true
+        }
+      }
+    },
+    "expected": null,
+    "impure": true
+  }
+]

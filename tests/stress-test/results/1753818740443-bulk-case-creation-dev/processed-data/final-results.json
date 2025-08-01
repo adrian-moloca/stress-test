@@ -1,0 +1,63 @@
+{
+  "testId": "1753818740443-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753818740452,
+  "endTime": 1753818740725,
+  "totalCasesAttempted": 10,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "k6Results": {},
+  "systemMetrics": {},
+  "scenarioType": "bulk-case-creation",
+  "casesGenerated": 10,
+  "creationResults": {
+    "successfulCases": 0,
+    "failedCases": 10,
+    "errors": [
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - "
+    ],
+    "creationTimings": [
+      {
+        "batchIndex": 0,
+        "batchSize": 10,
+        "duration": 90,
+        "casesPerSecond": 111.1111111111111
+      }
+    ],
+    "memoryUsage": [
+      {
+        "batchIndex": 0,
+        "heapUsed": 42980672,
+        "heapTotal": 80162816,
+        "memoryIncrease": 5358064
+      }
+    ],
+    "casesCreated": [],
+    "summary": {
+      "totalTime": 190,
+      "averageTimePerCase": 19,
+      "successRate": 0,
+      "throughput": 0
+    }
+  },
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753818740443-bulk-case-creation-dev/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753818740443-bulk-case-creation-dev/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753818740443-bulk-case-creation-dev/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753818740443-bulk-case-creation-dev/reports/system-limits.html"
+  },
+  "totalDuration": 273
+}

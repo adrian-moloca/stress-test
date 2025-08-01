@@ -1,0 +1,45 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalTwoDecimalsNumber",
+      "value": 1.23
+    },
+    "expected": 1.23
+  },
+  {
+    "data": {
+      "expressionKind": "literalTwoDecimalsNumber",
+      "value": 100.23
+    },
+    "expected": 100.23
+  },
+  {
+    "data": {
+      "expressionKind": "literalTwoDecimalsNumber",
+      "value": 0.23
+    },
+    "error": "Invalid number",
+    "expected": 0.23
+  },
+  {
+    "data": {
+      "expressionKind": "literalTwoDecimalsNumber",
+      "value": -1.23
+    },
+    "error": "Invalid number"
+  },
+  {
+    "data": {
+      "expressionKind": "literalTwoDecimalsNumber",
+      "value": "1.23"
+    },
+    "error": "Invalid number"
+  },
+  {
+    "data": {
+      "expressionKind": "literalTwoDecimalsNumber",
+      "value": 1.234
+    },
+    "error": "Invalid number"
+  }
+]

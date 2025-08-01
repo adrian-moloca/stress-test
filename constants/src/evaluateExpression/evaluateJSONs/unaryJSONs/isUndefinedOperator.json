@@ -1,0 +1,63 @@
+[
+  {
+    "data": {
+        "expressionKind": "isUndefinedOperator",
+        "args": {
+            "expressionKind": "symbolOperator",
+            "name": "test"
+        }
+    },
+    "scope": {
+    },
+    "expected": true,
+    "impure": true
+  }, {
+    "data": {
+        "expressionKind": "isUndefinedOperator",
+        "args": {
+            "expressionKind": "symbolOperator",
+            "name": "test"
+        }
+    },
+    "scope": {
+      "test2": null
+    },
+    "expected": false,
+    "impure": true
+  }, {
+    "data": {
+        "expressionKind": "isUndefinedOperator",
+        "args": {
+            "expressionKind": "literalNone"
+        }
+    },
+    "expected": true,
+    "impure": true
+  }, {
+    "data": {
+        "expressionKind": "isUndefinedOperator",
+        "args": {
+            "expressionKind": "symbolOperator",
+            "name": "test"
+        }
+    },
+    "scope": {
+        "test": null
+    },
+    "expected": false,
+    "impure": true
+  }, {
+    "data": {
+        "expressionKind": "isUndefinedOperator",
+        "args": {
+            "expressionKind": "symbolOperator",
+            "name": "test"
+        }
+    },
+    "scope": {
+        "test": "test"
+    },
+    "expected": false,
+    "impure": true
+  }
+]

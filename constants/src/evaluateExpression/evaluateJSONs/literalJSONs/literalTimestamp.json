@@ -1,0 +1,72 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalTimestamp",
+      "value": {
+        "hours": 1,
+        "minutes": 1,
+        "seconds": 1,
+        "timezone": "+0530"
+      }
+    },
+    "expected": {
+      "hours": 1,
+      "minutes": 1,
+      "seconds": 1,
+      "timezone": "+0530"
+    }
+  },
+  {
+    "data": {
+      "expressionKind": "literalTimestamp",
+      "value": {
+        "hours": 10,
+        "minutes": 34,
+        "seconds": 49,
+        "timezone": "+0200"
+      }
+    },
+    "expected": {
+      "hours": 10,
+      "minutes": 34,
+      "seconds": 49,
+      "timezone": "+0200"
+    }
+  },
+  {
+    "error": "Invalid timezone",
+    "data": {
+      "expressionKind": "literalTimestamp",
+      "value": {
+        "hours": 10,
+        "minutes": 34,
+        "seconds": 49,
+        "timezone": 200
+      }
+    }
+  },
+  {
+    "error": "Invalid hours",
+    "data": {
+      "expressionKind": "literalTimestamp",
+      "value": {
+        "hours": 25,
+        "minutes": 34,
+        "seconds": 49,
+        "timezone": "+0200"
+      }
+    }
+  },
+  {
+    "error": "Invalid minutes",
+    "data": {
+      "expressionKind": "literalTimestamp",
+      "value": {
+        "hours": 23,
+        "minutes": "34",
+        "seconds": 49,
+        "timezone": "+0200"
+      }
+    }
+  }
+]

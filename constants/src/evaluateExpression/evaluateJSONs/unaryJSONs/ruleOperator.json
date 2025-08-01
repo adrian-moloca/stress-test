@@ -1,0 +1,29 @@
+[
+    {
+        "data": {
+            "expressionKind": "ruleOperator",
+            "condition": {
+              "expressionKind": "literalBoolean",
+              "value": true
+            },
+            "then": {
+              "expressionKind": "literalString",
+              "value": "passed"
+            }
+          },
+          "expected": "passed"
+    }, 
+    {
+        "data": {
+            "expressionKind": "ruleOperator",
+            "condition": {
+              "expressionKind": "literalBoolean",
+              "value": false
+            },
+            "then": {
+              "expressionKind": "literalString",
+              "value": "passed"
+            }
+          }
+    }
+]

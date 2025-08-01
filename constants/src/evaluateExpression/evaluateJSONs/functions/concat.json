@@ -1,0 +1,35 @@
+[
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "concat",
+      "parameters": {
+        "stringsToConcat": {
+          "expressionKind": "literalList",
+          "value": [
+            "test",
+            "concat"
+          ]
+        }
+      }
+    },
+    "expected": "testconcat"
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "concat",
+      "parameters": {
+        "stringsToConcat": {
+          "expressionKind": "literalList",
+          "value": [
+            2,
+            3
+          ]
+        }
+      }
+    },
+    "error": true,
+    "expected": null
+  }
+]

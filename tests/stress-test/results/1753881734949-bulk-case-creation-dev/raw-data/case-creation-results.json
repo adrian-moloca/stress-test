@@ -1,0 +1,82 @@
+[
+  {
+    "index": 1,
+    "caseNumber": "STRESS_000001",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T13:22:16.130Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id CONTRACT_007 not found\"}}",
+    "timestamp": "2025-07-30T13:22:16.141Z",
+    "responseTime": 889
+  },
+  {
+    "index": 2,
+    "caseNumber": "STRESS_000002",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T13:22:16.049Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id CONTRACT_000 not found\"}}",
+    "timestamp": "2025-07-30T13:22:16.063Z",
+    "responseTime": 805
+  },
+  {
+    "index": 3,
+    "caseNumber": "STRESS_000003",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T13:22:16.244Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id CONTRACT_009 not found\"}}",
+    "timestamp": "2025-07-30T13:22:16.246Z",
+    "responseTime": 991
+  },
+  {
+    "index": 4,
+    "caseNumber": "STRESS_000004",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T13:22:16.267Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id CONTRACT_007 not found\"}}",
+    "timestamp": "2025-07-30T13:22:16.270Z",
+    "responseTime": 1014
+  },
+  {
+    "index": 5,
+    "caseNumber": "STRESS_000005",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T13:22:16.276Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id CONTRACT_007 not found\"}}",
+    "timestamp": "2025-07-30T13:22:16.277Z",
+    "responseTime": 1020
+  },
+  {
+    "index": 6,
+    "caseNumber": "STRESS_000006",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T13:22:18.235Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id CONTRACT_002 not found\"}}",
+    "timestamp": "2025-07-30T13:22:18.263Z",
+    "responseTime": 967
+  },
+  {
+    "index": 7,
+    "caseNumber": "STRESS_000007",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T13:22:18.358Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id CONTRACT_000 not found\"}}",
+    "timestamp": "2025-07-30T13:22:18.360Z",
+    "responseTime": 1078
+  },
+  {
+    "index": 8,
+    "caseNumber": "STRESS_000008",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T13:22:18.374Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id CONTRACT_007 not found\"}}",
+    "timestamp": "2025-07-30T13:22:18.376Z",
+    "responseTime": 1093
+  },
+  {
+    "index": 9,
+    "caseNumber": "STRESS_000009",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T13:22:18.420Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id CONTRACT_004 not found\"}}",
+    "timestamp": "2025-07-30T13:22:18.422Z",
+    "responseTime": 1134
+  },
+  {
+    "index": 10,
+    "caseNumber": "STRESS_000010",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T13:22:18.384Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id CONTRACT_008 not found\"}}",
+    "timestamp": "2025-07-30T13:22:18.389Z",
+    "responseTime": 1098
+  }
+]

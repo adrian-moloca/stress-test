@@ -1,0 +1,85 @@
+[
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "unique",
+      "parameters": {
+        "arrayToUnique": {
+          "expressionKind": "literalList",
+          "value": [
+            "test",
+            "concat",
+            "test"
+          ]
+        }
+      }
+    },
+    "expected": [
+      "test",
+      "concat"
+    ]
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "unique",
+      "parameters": {
+        "arrayToUnique": {
+          "expressionKind": "literalList",
+          "value": [
+            {
+              "id": "test"
+            },
+            {
+              "id": "test"
+            }
+          ]
+        }
+      }
+    },
+    "expected": [
+      {
+        "id": "test"
+      },
+      {
+        "id": "test"
+      }
+    ]
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "unique",
+      "parameters": {
+        "arrayToUnique": {
+          "expressionKind": "literalList",
+          "value": [
+            {
+              "id": "test"
+            },
+            {
+              "id": "test"
+            }
+          ]
+        },
+        "getKey": {
+          "expressionKind": "lambdaOperator",
+          "args": ["current"],
+          "body": {
+            "expressionKind": "dotOperator",
+            "source": {
+              "expressionKind": "symbolOperator",
+              "name": "current"
+            },
+            "paths": ["id"]
+          }
+        }
+      }
+    },
+    "expected": [
+      {
+        "id": "test"
+      }
+    ]
+  }
+]

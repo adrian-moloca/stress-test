@@ -1,0 +1,67 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalBoolean",
+      "value": true
+    },
+    "expected": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalBoolean",
+      "value": false
+    },
+    "expected": false
+  },
+  {
+    "data": {
+      "expressionKind": "literalBoolean",
+      "value": "true"
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalBoolean",
+      "value": "1"
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalBoolean",
+      "value": null
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalBoolean",
+      "value": ""
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "selfOperator",
+      "paths": [ "value" ],
+      "typeHint": { "kind": "boolean" }
+    },
+    "expected": true,
+    "scope": { "self": { "value": true } }
+  },
+  {
+    "data": {
+      "expressionKind": "selfOperator",
+      "paths": [ "value" ],
+      "typeHint": { "kind": "boolean" }
+    },
+    "scope": { "self": { "value": "string" } },
+    "expected": null,
+    "error": true
+  }
+]

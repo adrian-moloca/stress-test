@@ -1,0 +1,202 @@
+[
+  {
+    "contractId": "CONTRACT_000",
+    "name": "Daniel Inc",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 60,
+      "discountEarly": 0.04
+    }
+  },
+  {
+    "contractId": "CONTRACT_001",
+    "name": "Yost - Dickens",
+    "type": "INSURANCE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0.01
+    }
+  },
+  {
+    "contractId": "CONTRACT_002",
+    "name": "Hilpert LLC",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0.02
+    }
+  },
+  {
+    "contractId": "CONTRACT_003",
+    "name": "Barton, Davis and Metz",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 21,
+      "discountEarly": 0.03
+    }
+  },
+  {
+    "contractId": "CONTRACT_004",
+    "name": "Marvin, Smith and Breitenberg",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 14,
+      "discountEarly": 0.05
+    }
+  },
+  {
+    "contractId": "CONTRACT_005",
+    "name": "Jones and Sons",
+    "type": "INSURANCE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0.02
+    }
+  },
+  {
+    "contractId": "CONTRACT_006",
+    "name": "Rowe, Turcotte and Kerluke",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 21,
+      "discountEarly": 0.05
+    }
+  },
+  {
+    "contractId": "CONTRACT_007",
+    "name": "Deckow, Sanford and Ferry",
+    "type": "INSURANCE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 21,
+      "discountEarly": 0.01
+    }
+  },
+  {
+    "contractId": "CONTRACT_008",
+    "name": "Schmeler, Littel and Predovic",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 14,
+      "discountEarly": 0
+    }
+  },
+  {
+    "contractId": "CONTRACT_009",
+    "name": "Weimann, Luettgen and Hegmann",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 60,
+      "discountEarly": 0
+    }
+  }
+]

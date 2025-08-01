@@ -1,0 +1,92 @@
+[
+  {
+    "id": "MED_0000",
+    "code": "MEDEV4OB3",
+    "name": "Propofol",
+    "category": "MUSCLE_RELAXANT",
+    "dosageUnit": "mcg",
+    "costPerUnit": 1.89,
+    "riskCategory": "LOW"
+  },
+  {
+    "id": "MED_0001",
+    "code": "MEDPMVU23",
+    "name": "Midazolam",
+    "category": "ANTIEMETIC",
+    "dosageUnit": "units",
+    "costPerUnit": 30.14,
+    "riskCategory": "LOW"
+  },
+  {
+    "id": "MED_0002",
+    "code": "MEDGPWAVH",
+    "name": "Fentanyl",
+    "category": "MUSCLE_RELAXANT",
+    "dosageUnit": "mcg",
+    "costPerUnit": 15.31,
+    "riskCategory": "HIGH"
+  },
+  {
+    "id": "MED_0003",
+    "code": "MEDYIFQKX",
+    "name": "Rocuronium",
+    "category": "MUSCLE_RELAXANT",
+    "dosageUnit": "units",
+    "costPerUnit": 36.81,
+    "riskCategory": "HIGH"
+  },
+  {
+    "id": "MED_0004",
+    "code": "MEDND9IVF",
+    "name": "Cefazolin",
+    "category": "ANALGESIC",
+    "dosageUnit": "mcg",
+    "costPerUnit": 11.27,
+    "riskCategory": "HIGH"
+  },
+  {
+    "id": "MED_0005",
+    "code": "MED4XGKS7",
+    "name": "Paracetamol",
+    "category": "MUSCLE_RELAXANT",
+    "dosageUnit": "ml",
+    "costPerUnit": 4.46,
+    "riskCategory": "MEDIUM"
+  },
+  {
+    "id": "MED_0006",
+    "code": "MED9KCUIO",
+    "name": "Ibuprofen",
+    "category": "MUSCLE_RELAXANT",
+    "dosageUnit": "ml",
+    "costPerUnit": 48.35,
+    "riskCategory": "HIGH"
+  },
+  {
+    "id": "MED_0007",
+    "code": "MEDD8BGIS",
+    "name": "Morphine",
+    "category": "MUSCLE_RELAXANT",
+    "dosageUnit": "ml",
+    "costPerUnit": 38.67,
+    "riskCategory": "LOW"
+  },
+  {
+    "id": "MED_0008",
+    "code": "MEDUCZ7VZ",
+    "name": "Lidocaine",
+    "category": "MUSCLE_RELAXANT",
+    "dosageUnit": "mcg",
+    "costPerUnit": 3.17,
+    "riskCategory": "HIGH"
+  },
+  {
+    "id": "MED_0009",
+    "code": "MEDGLGA9T",
+    "name": "Epinephrine",
+    "category": "ANALGESIC",
+    "dosageUnit": "mg",
+    "costPerUnit": 27.05,
+    "riskCategory": "MEDIUM"
+  }
+]

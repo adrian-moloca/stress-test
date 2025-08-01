@@ -1,0 +1,117 @@
+[
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "map",
+      "parameters": {
+        "callback": {
+          "args": [
+            "current"
+          ],
+          "body": {
+            "expressionKind": "sumOperator",
+            "left": {
+              "expressionKind": "symbolOperator",
+              "name": "current"
+            },
+            "right": {
+              "expressionKind": "literalNumber",
+              "value": 10
+            }
+          },
+          "expressionKind": "lambdaOperator"
+        },
+        "sourceArray": {
+          "expressionKind": "literalList",
+          "value": [
+            15
+          ]
+        }
+      }
+    },
+    "expected": [
+      25
+    ]
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "map",
+      "parameters": {
+        "callback": {
+          "value": {
+            "expressionKind": "sumOperator",
+            "left": {
+              "expressionKind": "symbolOperator",
+              "value": "current"
+            },
+            "right": {
+              "expressionKind": "literalNumber",
+              "value": 10
+            }
+          }
+        },
+        "sourceArray": {
+          "value": {
+            "expressionKind": "literalList",
+            "value": [
+              15
+            ]
+          }
+        }
+      }
+    },
+    "error": "symbolNameNotString",
+    "expected": null
+  },
+  {
+    "data": {
+      "expressionKind": "dotOperator",
+      "paths": [
+        "caseNumber"
+      ],
+      "source": {
+        "expressionKind": "symbolOperator",
+        "name": "case"
+      }
+    },
+    "scope": {
+      "case": {
+        "caseNumber": "caseNumber001"
+      }
+    },
+    "expected": "caseNumber001"
+  },
+  {
+    "data": {
+      "expressionKind": "dotOperator",
+      "paths": [
+        "caseNumber"
+      ],
+      "source": {
+        "expressionKind": "symbolOperator",
+        "name": "case"
+      }
+    },
+    "scope": {
+      "case": {
+        "value": { "caseNumber": "caseNumber001" },
+        "deps": [{ "path": "cases.case01" }],
+        "emits": []
+      }
+    },
+    "expected": "caseNumber001",
+    "emits": [
+      {
+        "path": "cases.case01.caseNumber"
+      }
+    ]
+  },
+  {
+    "data": {
+      "expressionKind": "symbolOperator",
+      "name": "caseNumber001"
+    },
+    "error": "undefinedScopeData"
+  }
+]

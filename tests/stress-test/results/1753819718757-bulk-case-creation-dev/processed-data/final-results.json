@@ -1,0 +1,63 @@
+{
+  "testId": "1753819718757-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753819718766,
+  "endTime": 1753819720176,
+  "totalCasesAttempted": 10,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "k6Results": {},
+  "systemMetrics": {},
+  "scenarioType": "bulk-case-creation",
+  "casesGenerated": 10,
+  "creationResults": {
+    "successfulCases": 0,
+    "failedCases": 10,
+    "errors": [
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T20:08:39.749Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id default-contract-id not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T20:08:39.919Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id default-contract-id not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T20:08:39.889Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id default-contract-id not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T20:08:40.027Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id default-contract-id not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T20:08:39.861Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id default-contract-id not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T20:08:39.965Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id default-contract-id not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T20:08:39.901Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id default-contract-id not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T20:08:39.973Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id default-contract-id not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T20:08:39.933Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id default-contract-id not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T20:08:39.940Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id default-contract-id not found\"}}"
+    ],
+    "creationTimings": [
+      {
+        "batchIndex": 0,
+        "batchSize": 10,
+        "duration": 1126,
+        "casesPerSecond": 8.880994671403197
+      }
+    ],
+    "memoryUsage": [
+      {
+        "batchIndex": 0,
+        "heapUsed": 48054584,
+        "heapTotal": 82259968,
+        "memoryIncrease": 2304952
+      }
+    ],
+    "casesCreated": [],
+    "summary": {
+      "totalTime": 1226,
+      "averageTimePerCase": 122.6,
+      "successRate": 0,
+      "throughput": 0
+    }
+  },
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753819718757-bulk-case-creation-dev/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753819718757-bulk-case-creation-dev/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753819718757-bulk-case-creation-dev/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753819718757-bulk-case-creation-dev/reports/system-limits.html"
+  },
+  "totalDuration": 1410
+}

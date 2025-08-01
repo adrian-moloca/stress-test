@@ -1,0 +1,276 @@
+{
+  "testId": "bulk-case-creation-local-2025-07-31T12-01-53-864Z-v1.0",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753963313874,
+  "endTime": 1753963326283,
+  "totalCasesAttempted": 10,
+  "casesCreated": 10,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {
+    "duration": 2029,
+    "metricsCollected": 0,
+    "peakMemoryUsage": "0MB",
+    "avgMemoryUsage": "0MB",
+    "currentMemory": "58MB",
+    "overallHealth": "STABLE",
+    "crashDetected": false,
+    "timeline": []
+  },
+  "performanceMetrics": {
+    "totalCases": 10,
+    "successfulCases": 10,
+    "failedCases": 0,
+    "successRate": 100,
+    "totalDuration": 1873,
+    "responseTimes": {
+      "min": 639,
+      "max": 862,
+      "avg": 739.8,
+      "p95": 862,
+      "p99": 862
+    },
+    "throughput": {
+      "casesPerSecond": 5.339028296849973,
+      "peakConcurrency": 10
+    },
+    "errors": [],
+    "realReferenceData": {
+      "contractIds": 8,
+      "doctorIds": 4,
+      "opStandardIds": 10
+    }
+  },
+  "validationResults": {
+    "timestamp": 1753963326103,
+    "summary": {
+      "proxiesCreated": "0/10",
+      "fragmentsValid": "0/0",
+      "dependenciesComplete": "0/0",
+      "performanceTargetsMet": "1/3"
+    },
+    "details": {
+      "proxy": {
+        "checked": 10,
+        "found": 0,
+        "missing": [
+          {
+            "caseNumber": "STRESS_000001",
+            "reason": "Not found after 1 attempts",
+            "checkedAt": 1753963317022
+          },
+          {
+            "caseNumber": "STRESS_000002",
+            "reason": "Not found after 1 attempts",
+            "checkedAt": 1753963318028
+          },
+          {
+            "caseNumber": "STRESS_000003",
+            "reason": "Not found after 1 attempts",
+            "checkedAt": 1753963319032
+          },
+          {
+            "caseNumber": "STRESS_000004",
+            "reason": "Not found after 1 attempts",
+            "checkedAt": 1753963320048
+          },
+          {
+            "caseNumber": "STRESS_000005",
+            "reason": "Not found after 1 attempts",
+            "checkedAt": 1753963321066
+          },
+          {
+            "caseNumber": "STRESS_000006",
+            "reason": "Not found after 1 attempts",
+            "checkedAt": 1753963322070
+          },
+          {
+            "caseNumber": "STRESS_000007",
+            "reason": "Not found after 1 attempts",
+            "checkedAt": 1753963323075
+          },
+          {
+            "caseNumber": "STRESS_000008",
+            "reason": "Not found after 1 attempts",
+            "checkedAt": 1753963324081
+          },
+          {
+            "caseNumber": "STRESS_000009",
+            "reason": "Not found after 1 attempts",
+            "checkedAt": 1753963325088
+          },
+          {
+            "caseNumber": "STRESS_000010",
+            "reason": "Not found after 1 attempts",
+            "checkedAt": 1753963326092
+          }
+        ],
+        "details": []
+      },
+      "fragment": {
+        "checked": 0,
+        "valid": 0,
+        "invalid": [],
+        "details": []
+      },
+      "dependency": {
+        "checked": 0,
+        "complete": 0,
+        "incomplete": [],
+        "details": []
+      },
+      "performance": {
+        "responseTime": {
+          "average": 0,
+          "p95": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "successRate": {
+          "rate": 1,
+          "successRate": 0
+        },
+        "throughput": {
+          "requestsPerSecond": 0,
+          "totalRequests": 0
+        },
+        "thresholds": {},
+        "validation": {
+          "responseTimeValid": true,
+          "successRateValid": false,
+          "throughputValid": false,
+          "thresholdsMetrics": []
+        },
+        "validatedAt": 1753963326102
+      }
+    },
+    "criteriaComparison": {
+      "proxyCreationRate": {
+        "actual": "0/10",
+        "target": 0.99,
+        "passed": false
+      },
+      "fragmentCreationRate": {
+        "actual": "0/0",
+        "target": 0.98,
+        "passed": false
+      },
+      "dependencyCompletionRate": {
+        "actual": "0/0",
+        "target": 0.97,
+        "passed": false
+      }
+    }
+  },
+  "scenarioSpecificResults": {},
+  "scenarioType": "enhanced-bulk-case-creation",
+  "casesGenerated": 10,
+  "creationResults": [
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000001",
+      "success": true,
+      "responseTime": 639,
+      "caseId": "688b5b32c5215a27d82ef0c8"
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000002",
+      "success": true,
+      "responseTime": 718,
+      "caseId": "688b5b32c5215a27d82ef0d6"
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000003",
+      "success": true,
+      "responseTime": 862,
+      "caseId": "688b5b32c5215a27d82ef137"
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000004",
+      "success": true,
+      "responseTime": 702,
+      "caseId": "688b5b32c5215a27d82ef0d9"
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000005",
+      "success": true,
+      "responseTime": 717,
+      "caseId": "688b5b32c5215a27d82ef0e2"
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000006",
+      "success": true,
+      "responseTime": 750,
+      "caseId": "688b5b32c5215a27d82ef113"
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000007",
+      "success": true,
+      "responseTime": 802,
+      "caseId": "688b5b32c5215a27d82ef12a"
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000008",
+      "success": true,
+      "responseTime": 755,
+      "caseId": "688b5b32c5215a27d82ef112"
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000009",
+      "success": true,
+      "responseTime": 719,
+      "caseId": "688b5b32c5215a27d82ef0f8"
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000010",
+      "success": true,
+      "responseTime": 734,
+      "caseId": "688b5b32c5215a27d82ef0f9"
+    }
+  ],
+  "baselineComparison": {
+    "caseCreation": {
+      "responseTime": {
+        "p95": {
+          "actual": 862,
+          "target": 200,
+          "passed": false
+        },
+        "avg": {
+          "actual": 739.8,
+          "target": 120,
+          "passed": false
+        }
+      },
+      "throughput": {
+        "actual": 5.339028296849973,
+        "target": 16.67,
+        "passed": false
+      },
+      "errorRate": {
+        "actual": 0,
+        "target": 0.01,
+        "passed": true
+      }
+    },
+    "overallPassed": false
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T12-01-53-864Z-v1.0/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T12-01-53-864Z-v1.0/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T12-01-53-864Z-v1.0/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T12-01-53-864Z-v1.0/reports/system-limits.html",
+    "baselineComparisonReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T12-01-53-864Z-v1.0/reports/baseline-comparison.html",
+    "parallelExecutionReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T12-01-53-864Z-v1.0/reports/parallel-execution.html"
+  },
+  "totalDuration": 12409
+}

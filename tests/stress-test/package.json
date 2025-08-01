@@ -1,0 +1,48 @@
+{
+  "name": "enhanced-cases-stress-test-framework",
+  "version": "2.0.0",
+  "description": "Enhanced comprehensive stress testing framework with full integration",
+  "main": "scripts/run-stress-test.js",
+  "scripts": {
+    "test:bulk": "node scripts/run-stress-test.js --scenario bulk-case-creation --volume 10000 --enable-k6",
+    "test:bulk:high-concurrency": "node scripts/run-stress-test.js --scenario bulk-case-creation --volume 10000 --max-parallel 50 --high-concurrency",
+    "test:json": "node scripts/run-stress-test.js --scenario json-load-test --json-file ./test-data/cases.json",
+    "test:limits": "node scripts/run-stress-test.js --scenario system-limits --force --monitor",
+    "test:updates": "node scripts/run-stress-test.js --scenario cross-section-updates --deep-validation",
+    "test:comprehensive": "node scripts/run-stress-test.js --scenario comprehensive --volume 5000 --enable-k6",
+    "test:autoupdate": "node scripts/run-stress-test.js --scenario autoupdate-stress --monitor",
+    "test:cascade": "node scripts/run-stress-test.js --scenario dependency-cascade --deep-validation",
+    "test:local": "node scripts/run-stress-test.js --env local --scenario bulk-case-creation --volume 100",
+    "test:docker": "node scripts/run-stress-test.js --env docker --scenario bulk-case-creation --volume 1000",
+    "test:staging": "node scripts/run-stress-test.js --env staging --scenario bulk-case-creation --volume 100 --monitor",
+    "test:dry-run": "node scripts/run-stress-test.js --scenario bulk-case-creation --volume 1000 --dry-run",
+    "monitor": "node scripts/monitoring/real-time-dashboard.js",
+    "report:view": "open results/latest/reports/executive-summary.html",
+    "continuous": "node scripts/continuous-runner.js",
+    "clean": "rm -rf results/*",
+    "setup": "npm install && npm run setup:k6",
+    "setup:k6": "brew install k6 || apt-get install k6 || choco install k6"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.0.0",
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.11.0",
+    "chalk": "4.1.2",
+    "commander": "^11.0.0",
+    "date-fns": "^2.30.0",
+    "date-fns-tz": "^2.0.0",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.5",
+    "mkdirp": "^3.0.1",
+    "uuid": "^9.0.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0",
+    "k6": "0.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

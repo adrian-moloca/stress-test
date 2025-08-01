@@ -1,0 +1,159 @@
+{
+  "testId": "bulk-case-creation-local-2025-07-31T22-30-55-977Z-v1.0",
+  "scenario": "bulk-case-creation",
+  "startTime": 1754001056000,
+  "endTime": 1754001086503,
+  "totalCasesAttempted": 10,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {
+    "duration": 267,
+    "metricsCollected": 0,
+    "peakMemoryUsage": "0MB",
+    "avgMemoryUsage": "0MB",
+    "currentMemory": "57MB",
+    "overallHealth": "STABLE",
+    "crashDetected": false,
+    "timeline": []
+  },
+  "performanceMetrics": {
+    "totalCases": 10,
+    "successfulCases": 0,
+    "failedCases": 10,
+    "successRate": 0,
+    "totalDuration": 149,
+    "responseTimes": {
+      "min": null,
+      "max": null,
+      "avg": null,
+      "p95": 0,
+      "p99": 0
+    },
+    "throughput": {
+      "casesPerSecond": 0,
+      "peakConcurrency": 50
+    },
+    "errors": [],
+    "realReferenceData": {
+      "contractIds": 3,
+      "doctorIds": 3,
+      "opStandardIds": 4
+    }
+  },
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "scenarioSpecificResults": {},
+  "scenarioType": "enhanced-bulk-case-creation",
+  "casesGenerated": 10,
+  "creationResults": [
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000001",
+      "success": false,
+      "error": "request to http://localhost:8060/api/schedulingcases/cases failed, reason: socket hang up",
+      "responseTime": 19
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000002",
+      "success": false,
+      "error": "request to http://localhost:8060/api/schedulingcases/cases failed, reason: socket hang up",
+      "responseTime": 21
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000003",
+      "success": false,
+      "error": "request to http://localhost:8060/api/schedulingcases/cases failed, reason: socket hang up",
+      "responseTime": 30
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000004",
+      "success": false,
+      "error": "request to http://localhost:8060/api/schedulingcases/cases failed, reason: socket hang up",
+      "responseTime": 23
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000005",
+      "success": false,
+      "error": "request to http://localhost:8060/api/schedulingcases/cases failed, reason: socket hang up",
+      "responseTime": 23
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000006",
+      "success": false,
+      "error": "request to http://localhost:8060/api/schedulingcases/cases failed, reason: socket hang up",
+      "responseTime": 23
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000007",
+      "success": false,
+      "error": "request to http://localhost:8060/api/schedulingcases/cases failed, reason: socket hang up",
+      "responseTime": 28
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000008",
+      "success": false,
+      "error": "request to http://localhost:8060/api/schedulingcases/cases failed, reason: socket hang up",
+      "responseTime": 28
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000009",
+      "success": false,
+      "error": "request to http://localhost:8060/api/schedulingcases/cases failed, reason: socket hang up",
+      "responseTime": 28
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000010",
+      "success": false,
+      "error": "request to http://localhost:8060/api/schedulingcases/cases failed, reason: socket hang up",
+      "responseTime": 26
+    }
+  ],
+  "baselineComparison": {
+    "caseCreation": {
+      "responseTime": {
+        "p95": {
+          "actual": 0,
+          "target": 200,
+          "passed": true
+        },
+        "avg": {
+          "actual": 0,
+          "target": 120,
+          "passed": true
+        }
+      },
+      "throughput": {
+        "actual": 0,
+        "target": 16.67,
+        "passed": false
+      },
+      "errorRate": {
+        "actual": 1,
+        "target": 0.01,
+        "passed": false
+      }
+    },
+    "overallPassed": false
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T22-30-55-977Z-v1.0/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T22-30-55-977Z-v1.0/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T22-30-55-977Z-v1.0/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T22-30-55-977Z-v1.0/reports/system-limits.html",
+    "baselineComparisonReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T22-30-55-977Z-v1.0/reports/baseline-comparison.html",
+    "parallelExecutionReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T22-30-55-977Z-v1.0/reports/parallel-execution.html",
+    "ultimateValidationReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T22-30-55-977Z-v1.0/reports/ultimate-validation.html"
+  },
+  "totalDuration": 30503
+}

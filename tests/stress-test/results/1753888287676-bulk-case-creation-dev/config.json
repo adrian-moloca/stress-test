@@ -1,0 +1,18 @@
+{
+  "testId": "1753888287676-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "environment": {
+    "casesServiceUrl": "http://localhost:8060/api/schedulingcases",
+    "urServiceUrl": "http://localhost:3002",
+    "description": "Local development environment"
+  },
+  "options": {
+    "scenario": "bulk-case-creation",
+    "volume": "5",
+    "env": "local",
+    "validate": true,
+    "useAuth": true,
+    "testVersion": "dev"
+  },
+  "timestamp": "2025-07-30T15:11:27.679Z"
+}

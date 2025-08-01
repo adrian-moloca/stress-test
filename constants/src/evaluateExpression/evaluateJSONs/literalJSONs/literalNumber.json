@@ -1,0 +1,64 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalNumber",
+      "value": 1
+    },
+    "expected": 1
+  },
+  {
+    "data": {
+      "expressionKind": "literalNumber",
+      "value": 105321
+    },
+    "expected": 105321
+  },
+  {
+    "data": {
+      "expressionKind": "literalNumber",
+      "value": -321313
+    },
+    "expected": -321313
+  },
+  {
+    "data": {
+      "expressionKind": "literalNumber",
+      "value": 0
+    },
+    "expected": 0
+  },
+  {
+    "data": {
+      "expressionKind": "literalNumber",
+      "value": 1.234
+    },
+    "expected": 1.234
+  },
+  {
+    "data": {
+      "expressionKind": "literalNumber",
+      "value": "-32132"
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "selfOperator",
+      "paths": [ "value" ],
+      "typeHint": { "kind": "number" }
+    },
+    "expected": 1,
+    "scope": { "self": { "value": 1 } }
+  },
+  {
+    "data": {
+      "expressionKind": "selfOperator",
+      "paths": [ "value" ],
+      "typeHint": { "kind": "number" }
+    },
+    "scope": { "self": { "value": "string" } },
+    "expected": null,
+    "error": true
+  }
+]

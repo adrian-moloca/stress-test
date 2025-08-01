@@ -1,0 +1,31 @@
+[
+  {
+    "data": {
+      "collection": "patients",
+      "expressionKind": "query",
+      "where": {
+        "args": [
+          {
+            "arg": {
+              "expressionKind": "literalString",
+              "value": "1"
+            },
+            "expressionKind": "queryWhere",
+            "operator": "equalsOperator",
+            "path": "patientNumber"
+          }
+        ],
+        "expressionKind": "queryTie",
+        "tieOperator": "AND"
+      },
+      "yields": {
+        "birthDate": {
+          "expressionKind": "literalBoolean",
+          "value": true
+        }
+      }
+    },
+    "expected": null,
+    "impure": true
+  }
+]

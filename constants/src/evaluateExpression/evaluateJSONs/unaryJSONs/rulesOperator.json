@@ -1,0 +1,97 @@
+[
+  {
+    "data": {
+      "expressionKind": "rulesOperator",
+      "rules": [
+        {
+          "expressionKind": "ruleOperator",
+          "condition": {
+            "expressionKind": "literalBoolean",
+            "value": true
+          },
+          "then": {
+            "expressionKind": "literalString",
+            "value": "firstRule"
+          }
+        }, 
+        {
+          "expressionKind": "ruleOperator",
+          "condition": {
+            "expressionKind": "literalBoolean",
+            "value": true
+          },
+          "then": {
+            "expressionKind": "literalString",
+            "value": "secondRule"
+          }
+        }
+      ]
+    },
+    "expected": "firstRule"
+  },
+  {
+    "data": {
+      "expressionKind": "rulesOperator",
+      "rules": [
+        {
+          "expressionKind": "ruleOperator",
+          "condition": {
+            "expressionKind": "literalBoolean",
+            "value": false
+          },
+          "then": {
+            "expressionKind": "literalString",
+            "value": "firstRule"
+          }
+        }, 
+        {
+          "expressionKind": "ruleOperator",
+          "condition": {
+            "expressionKind": "literalBoolean",
+            "value": true
+          },
+          "then": {
+            "expressionKind": "literalString",
+            "value": "secondRule"
+          }
+        }
+      ]
+    },
+    "expected": "secondRule"
+  },
+
+  {
+    "data": {
+      "expressionKind": "rulesOperator",
+      "rules": [
+        {
+          "expressionKind": "ruleOperator",
+          "condition": {
+            "expressionKind": "literalBoolean",
+            "value": false
+          },
+          "then": {
+            "expressionKind": "literalString",
+            "value": "firstRule"
+          }
+        }, 
+        {
+          "expressionKind": "ruleOperator",
+          "condition": {
+            "expressionKind": "literalBoolean",
+            "value": false
+          },
+          "then": {
+            "expressionKind": "literalString",
+            "value": "secondRule"
+          }
+        }
+      ],
+      "else": {
+        "expressionKind": "literalString",
+        "value": "else"
+      }
+    },
+    "expected": "else"
+  }
+]

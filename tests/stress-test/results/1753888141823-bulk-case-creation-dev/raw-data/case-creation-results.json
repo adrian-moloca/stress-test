@@ -1,0 +1,42 @@
+[
+  {
+    "index": 1,
+    "caseNumber": "STRESS_000001",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T15:09:02.741Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"usersToNotify.map is not a function\"}}",
+    "timestamp": "2025-07-30T15:09:02.743Z",
+    "responseTime": 394
+  },
+  {
+    "index": 2,
+    "caseNumber": "STRESS_000002",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T15:09:02.712Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"usersToNotify.map is not a function\"}}",
+    "timestamp": "2025-07-30T15:09:02.714Z",
+    "responseTime": 362
+  },
+  {
+    "index": 3,
+    "caseNumber": "STRESS_000003",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T15:09:02.872Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"usersToNotify.map is not a function\"}}",
+    "timestamp": "2025-07-30T15:09:02.873Z",
+    "responseTime": 521
+  },
+  {
+    "index": 4,
+    "caseNumber": "STRESS_000004",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T15:09:02.889Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"usersToNotify.map is not a function\"}}",
+    "timestamp": "2025-07-30T15:09:02.890Z",
+    "responseTime": 536
+  },
+  {
+    "index": 5,
+    "caseNumber": "STRESS_000005",
+    "success": false,
+    "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T15:09:02.860Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"usersToNotify.map is not a function\"}}",
+    "timestamp": "2025-07-30T15:09:02.862Z",
+    "responseTime": 506
+  }
+]

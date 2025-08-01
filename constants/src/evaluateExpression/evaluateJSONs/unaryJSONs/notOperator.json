@@ -1,0 +1,42 @@
+[
+  {
+    "data": {
+      "expressionKind": "notOperator",
+      "args": {
+        "expressionKind": "literalBoolean",
+        "value": true
+      }
+    },
+    "expected": false
+  },
+  {
+    "data": {
+      "expressionKind": "notOperator",
+      "args": {
+        "expressionKind": "literalBoolean",
+        "value": false
+      }
+    },
+    "expected": true
+  },
+  {
+    "data": {
+      "expressionKind": "notOperator",
+      "args": {
+        "expressionKind": "literalNumber",
+        "value": 0
+      }
+    },
+    "error": "Invalid boolean"
+  },
+  {
+    "data": {
+      "expressionKind": "notOperator",
+      "args": {
+        "expressionKind": "literalString",
+        "value": "0"
+      }
+    },
+    "error": "Invalid boolean"
+  }
+]

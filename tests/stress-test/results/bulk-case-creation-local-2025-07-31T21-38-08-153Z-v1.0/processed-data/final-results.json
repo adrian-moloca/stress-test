@@ -1,0 +1,159 @@
+{
+  "testId": "bulk-case-creation-local-2025-07-31T21-38-08-153Z-v1.0",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753997888163,
+  "endTime": 1753997920510,
+  "totalCasesAttempted": 10,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {
+    "duration": 2249,
+    "metricsCollected": 0,
+    "peakMemoryUsage": "0MB",
+    "avgMemoryUsage": "0MB",
+    "currentMemory": "57MB",
+    "overallHealth": "STABLE",
+    "crashDetected": false,
+    "timeline": []
+  },
+  "performanceMetrics": {
+    "totalCases": 10,
+    "successfulCases": 0,
+    "failedCases": 10,
+    "successRate": 0,
+    "totalDuration": 1600,
+    "responseTimes": {
+      "min": null,
+      "max": null,
+      "avg": null,
+      "p95": 0,
+      "p99": 0
+    },
+    "throughput": {
+      "casesPerSecond": 0,
+      "peakConcurrency": 50
+    },
+    "errors": [],
+    "realReferenceData": {
+      "contractIds": 8,
+      "doctorIds": 4,
+      "opStandardIds": 10
+    }
+  },
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "scenarioSpecificResults": {},
+  "scenarioType": "enhanced-bulk-case-creation",
+  "casesGenerated": 10,
+  "creationResults": [
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000001",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T21:38:09.950Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"getaddrinfo ENOTFOUND ascos-ormanagement\"}}",
+      "responseTime": 1141
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000002",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T21:38:09.977Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"getaddrinfo ENOTFOUND ascos-ormanagement\"}}",
+      "responseTime": 1165
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000003",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T21:38:09.974Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"getaddrinfo ENOTFOUND ascos-ormanagement\"}}",
+      "responseTime": 1161
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000004",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T21:38:10.308Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"getaddrinfo ENOTFOUND ascos-ormanagement\"}}",
+      "responseTime": 1493
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000005",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T21:38:09.987Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"getaddrinfo ENOTFOUND ascos-ormanagement\"}}",
+      "responseTime": 1172
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000006",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T21:38:10.203Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"getaddrinfo ENOTFOUND ascos-ormanagement\"}}",
+      "responseTime": 1387
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000007",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T21:38:09.994Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"getaddrinfo ENOTFOUND ascos-ormanagement\"}}",
+      "responseTime": 1178
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000008",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T21:38:09.976Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"getaddrinfo ENOTFOUND ascos-ormanagement\"}}",
+      "responseTime": 1159
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000009",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T21:38:09.963Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"getaddrinfo ENOTFOUND ascos-ormanagement\"}}",
+      "responseTime": 1148
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000010",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T21:38:10.035Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"getaddrinfo ENOTFOUND ascos-ormanagement\"}}",
+      "responseTime": 1215
+    }
+  ],
+  "baselineComparison": {
+    "caseCreation": {
+      "responseTime": {
+        "p95": {
+          "actual": 0,
+          "target": 200,
+          "passed": true
+        },
+        "avg": {
+          "actual": 0,
+          "target": 120,
+          "passed": true
+        }
+      },
+      "throughput": {
+        "actual": 0,
+        "target": 16.67,
+        "passed": false
+      },
+      "errorRate": {
+        "actual": 1,
+        "target": 0.01,
+        "passed": false
+      }
+    },
+    "overallPassed": false
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T21-38-08-153Z-v1.0/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T21-38-08-153Z-v1.0/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T21-38-08-153Z-v1.0/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T21-38-08-153Z-v1.0/reports/system-limits.html",
+    "baselineComparisonReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T21-38-08-153Z-v1.0/reports/baseline-comparison.html",
+    "parallelExecutionReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T21-38-08-153Z-v1.0/reports/parallel-execution.html",
+    "ultimateValidationReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T21-38-08-153Z-v1.0/reports/ultimate-validation.html"
+  },
+  "totalDuration": 32347
+}

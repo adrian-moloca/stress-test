@@ -1,0 +1,24 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalLocalizedText",
+      "value": {
+        "en": "Hello",
+        "de": "Hallo"
+      }
+    },
+    "expected": "Hello",
+    "selectedLocale": "en"
+  },
+  {
+    "data": {
+      "expressionKind": "literalLocalizedText",
+      "value": {
+        "en": "Hello",
+        "de": "Hallo"
+      }
+    },
+    "expected": "Hallo",
+    "selectedLocale": "de"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "index": 1,
+    "caseNumber": "STRESS_000001",
+    "success": false,
+    "error": "fetch failed",
+    "timestamp": "2025-07-30T12:45:36.401Z",
+    "responseTime": 27
+  },
+  {
+    "index": 2,
+    "caseNumber": "STRESS_000002",
+    "success": false,
+    "error": "fetch failed",
+    "timestamp": "2025-07-30T12:45:36.403Z",
+    "responseTime": 19
+  },
+  {
+    "index": 3,
+    "caseNumber": "STRESS_000003",
+    "success": false,
+    "error": "fetch failed",
+    "timestamp": "2025-07-30T12:45:36.404Z",
+    "responseTime": 17
+  },
+  {
+    "index": 4,
+    "caseNumber": "STRESS_000004",
+    "success": false,
+    "error": "fetch failed",
+    "timestamp": "2025-07-30T12:45:36.405Z",
+    "responseTime": 17
+  },
+  {
+    "index": 5,
+    "caseNumber": "STRESS_000005",
+    "success": false,
+    "error": "fetch failed",
+    "timestamp": "2025-07-30T12:45:36.407Z",
+    "responseTime": 15
+  },
+  {
+    "index": 6,
+    "caseNumber": "STRESS_000006",
+    "success": false,
+    "error": "fetch failed",
+    "timestamp": "2025-07-30T12:45:37.438Z",
+    "responseTime": 31
+  },
+  {
+    "index": 7,
+    "caseNumber": "STRESS_000007",
+    "success": false,
+    "error": "fetch failed",
+    "timestamp": "2025-07-30T12:45:37.440Z",
+    "responseTime": 28
+  },
+  {
+    "index": 8,
+    "caseNumber": "STRESS_000008",
+    "success": false,
+    "error": "fetch failed",
+    "timestamp": "2025-07-30T12:45:37.443Z",
+    "responseTime": 27
+  },
+  {
+    "index": 9,
+    "caseNumber": "STRESS_000009",
+    "success": false,
+    "error": "fetch failed",
+    "timestamp": "2025-07-30T12:45:37.444Z",
+    "responseTime": 22
+  },
+  {
+    "index": 10,
+    "caseNumber": "STRESS_000010",
+    "success": false,
+    "error": "fetch failed",
+    "timestamp": "2025-07-30T12:45:37.446Z",
+    "responseTime": 19
+  }
+]

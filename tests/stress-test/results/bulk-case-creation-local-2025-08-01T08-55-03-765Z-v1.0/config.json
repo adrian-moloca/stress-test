@@ -1,0 +1,79 @@
+{
+  "testId": "bulk-case-creation-local-2025-08-01T08-55-03-765Z-v1.0",
+  "scenario": "bulk-case-creation",
+  "environment": {
+    "casesServiceUrl": "http://localhost:8060/api/schedulingcases",
+    "urServiceUrl": "http://localhost:8160",
+    "authServiceUrl": "http://localhost:8010/api/auth",
+    "description": "Local development environment"
+  },
+  "options": {
+    "scenario": "bulk-case-creation",
+    "volume": "100",
+    "env": "local",
+    "validate": true,
+    "testVersion": "1.0",
+    "maxParallel": 50,
+    "batchDelay": 100,
+    "retries": 2,
+    "highConcurrency": true,
+    "validationLevel": "basic",
+    "waitUr": 30
+  },
+  "baselineMetrics": {
+    "performance_targets": {
+      "case_creation": {
+        "total_time_10k": "10m",
+        "p95_response_time": 200,
+        "p90_response_time": 150,
+        "average_response_time": 120,
+        "error_rate_max": 0.01,
+        "throughput_min": 16.67
+      },
+      "autoupdate": {
+        "max_latency": 2000,
+        "cascade_depth_min": 3,
+        "completion_rate": 0.99
+      },
+      "system_stability": {
+        "memory_limit": "4GB",
+        "cpu_limit": 85,
+        "queue_backlog_max": 1000,
+        "max_gc_pause_ms": 100
+      }
+    },
+    "validation_criteria": {
+      "proxy_creation_rate": 0.99,
+      "fragment_creation_rate": 0.98,
+      "dependency_completion_rate": 0.97,
+      "data_consistency_rate": 0.99,
+      "patient_profile_validity": 0.98,
+      "section_dependency_coverage": 0.95
+    },
+    "thresholds": {
+      "http_req_duration": [
+        "p(95)<200",
+        "p(90)<150",
+        "avg<120"
+      ],
+      "http_req_failed": [
+        "rate<0.01"
+      ],
+      "case_creation_success": [
+        "rate>0.99"
+      ],
+      "autoupdate_latency": [
+        "max<2000"
+      ]
+    },
+    "runtime_flags": {
+      "enforceStrictMode": true,
+      "requireFragmentDependencies": true,
+      "skipCasesWithMissingContract": false,
+      "validateTimestampsFormat": true,
+      "saveIntermediateJson": true
+    }
+  },
+  "scenarioConfig": {},
+  "timestamp": "2025-08-01T08:55:03.769Z"
+}

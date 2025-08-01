@@ -1,0 +1,34 @@
+{
+  "name": "@smambu/lib.commons-be",
+  "version": "2.0.3",
+  "description": "Ascos common library for backend",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "compile:watch": "tsc -w",
+    "compile:force": "tsc --build --force",
+    "test": "echo \"T.B.D.\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@smambu/lib.constantsjs": "^2.0.3",
+    "@nestjs/cli": "10.4.7",
+    "@nestjs/common": "^10.3.1",
+    "@nestjs/config": "^3.1.1",
+    "@nestjs/core": "^10.3.2",
+    "@nestjs/microservices": "^10.3.1",
+    "@nestjs/mongoose": "^10.0.2",
+    "@sendgrid/mail": "^8.1.4",
+    "@sentry/node": "^8.7.0",
+    "@sentry/profiling-node": "^8.7.0",
+    "ioredis": "^5.3.2",
+    "mongoose": "^8.2.1",
+    "rxjs": "^7.6.0",
+    "@nestjs/schedule": "^4.0.0",
+    "bullmq": "^5.25.4"
+  }
+}

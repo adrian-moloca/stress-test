@@ -1,0 +1,95 @@
+{
+  "bulk_case_creation": {
+    "description": "Create 10k cases with UR proxy creation and fragments",
+    "volume": 10000,
+    "batchSize": 100,
+    "timeLimit": "10m",
+    "thresholds": {
+      "http_req_duration": "p(95)<200",
+      "http_req_failed": "rate<0.01",
+      "case_creation_rate": "rate>16.67"
+    },
+    "k6_stages": [
+      { "duration": "2m", "target": 50 },
+      { "duration": "3m", "target": 200 },
+      { "duration": "4m", "target": 500 },
+      { "duration": "1m", "target": 0 }
+    ],
+    "validation": {
+      "proxy_creation_timeout": 30000,
+      "fragment_validation": true,
+      "dependency_chain_validation": true,
+      "autoupdate_testing": true
+    },
+    "realistic_case_data": {
+      "patient_pool_size": 2000,
+      "doctor_pool_size": 50,
+      "contract_pool_size": 10,
+      "opstandard_pool_size": 100
+    }
+  },
+  "dependency_cascade": {
+    "description": "Test dependency cascading with material/medication updates",
+    "baseCases": 1000,
+    "updatesPerCase": 10,
+    "updateTypes": [
+      "material_quantity_change",
+      "medication_dosage_update", 
+      "patient_data_change",
+      "status_transition",
+      "cost_recalculation"
+    ],
+    "cascadeDepthTarget": 5,
+    "autoUpdateMaxLatency": 2000
+  },
+  "autoupdate_stress": {
+    "description": "Continuous autoupdate testing with real-time monitoring",
+    "duration": "15m",
+    "simultaneousCases": 500,
+    "updateFrequency": "1s",
+    "dependencyTypes": [
+      "simple_field_update",
+      "complex_calculation",
+      "cross_fragment_dependency",
+      "conditional_expression"
+    ]
+  },
+  "system_limits": {
+    "description": "Progressive load increase until system failure",
+    "escalationSteps": [
+      { "name": "500_cases", "count": 500, "batchSize": 50 },
+      { "name": "1000_cases", "count": 1000, "batchSize": 100 },
+      { "name": "2500_cases", "count": 2500, "batchSize": 150 },
+      { "name": "5000_cases", "count": 5000, "batchSize": 200 },
+      { "name": "7500_cases", "count": 7500, "batchSize": 250 },
+      { "name": "10000_cases", "count": 10000, "batchSize": 300 },
+      { "name": "15000_cases", "count": 15000, "batchSize": 400 },
+      { "name": "20000_cases", "count": 20000, "batchSize": 500 }
+    ],
+    "healthCheckInterval": 5000,
+    "recoveryTestCases": 10
+  },
+  "cross_section_updates": {
+    "description": "Test field updates across multiple case sections",
+    "testCases": 100,
+    "updateScenarios": [
+      {
+        "name": "patient_and_materials",
+        "fields": [
+          { "path": "bookingPatient.name", "newValue": "Multi Update Patient" },
+          { "path": "preOpSection.materials[0].quantity", "newValue": 15 }
+        ]
+      },
+      {
+        "name": "cross_section_update", 
+        "fields": [
+          { "path": "status", "newValue": "PATIENT_ARRIVED" },
+          { "path": "anesthesiaSection.medications[0].dosage", "newValue": "75mg" },
+          { "path": "surgerySection.estimatedBloodLoss", "newValue": 200 }
+        ]
+      }
+    ],
+    "concurrentUpdateTests": 10,
+    "maxCascadeWaitTime": 10000
+  }
+}

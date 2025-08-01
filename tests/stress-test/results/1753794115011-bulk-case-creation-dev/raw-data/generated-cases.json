@@ -1,0 +1,5898 @@
+[
+  {
+    "caseNumber": "STRESS_000001",
+    "status": "PENDING",
+    "bookingPatient": {
+      "patientId": "PAT_001356",
+      "name": "Piper",
+      "surname": "Dietrich",
+      "birthDate": "1974-07-30T00:51:38.023Z",
+      "insuranceType": "PRIVATE",
+      "riskFactors": [
+        "OBESITY",
+        "HEART_DISEASE",
+        "HYPERTENSION"
+      ],
+      "emergencyContact": {
+        "name": "Caroline Funk",
+        "phone": "724-837-7436 x1313"
+      }
+    },
+    "patientRef": "PAT_001356",
+    "bookingSection": {
+      "date": "2025-08-07T01:45:43.773Z",
+      "doctorId": "DOC_0034",
+      "contractId": "CONTRACT_007",
+      "opStandardId": "OPS_0078",
+      "duration": 167,
+      "estimatedDuration": 194,
+      "priority": "URGENT",
+      "operatingRoom": "OR3"
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_0006",
+          "code": "MATOZ6GOE",
+          "name": "Bandage",
+          "quantity": 5,
+          "unitCost": 57.4,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0005",
+          "code": "MATVNGU2B",
+          "name": "Surgical Mask",
+          "quantity": 1,
+          "unitCost": 284.79,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0005",
+          "code": "MATVNGU2B",
+          "name": "Surgical Mask",
+          "quantity": 9,
+          "unitCost": 284.79,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0002",
+          "code": "MAT93VPIV",
+          "name": "Surgical Gloves",
+          "quantity": 4,
+          "unitCost": 453.91,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0008",
+          "code": "MAT18VLUL",
+          "name": "Irrigation Solution",
+          "quantity": 3,
+          "unitCost": 474.22,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0003",
+          "code": "MATQSIGWN",
+          "name": "Syringe",
+          "quantity": 6,
+          "unitCost": 240.76,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_0006",
+          "code": "MEDUOAOII",
+          "name": "Ibuprofen",
+          "dosage": "14.4units",
+          "quantity": 5,
+          "unitCost": 29.99,
+          "totalCost": null,
+          "riskCategory": "LOW",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0004",
+          "code": "MEDKO5VO6",
+          "name": "Cefazolin",
+          "dosage": "64ml",
+          "quantity": 4,
+          "unitCost": 41.49,
+          "totalCost": null,
+          "riskCategory": "MEDIUM",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0006",
+          "code": "MEDUOAOII",
+          "name": "Ibuprofen",
+          "dosage": "27units",
+          "quantity": 1,
+          "unitCost": 29.99,
+          "totalCost": null,
+          "riskCategory": "LOW",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        }
+      ],
+      "assessment": {
+        "riskScore": 3,
+        "allergies": [],
+        "vitalSigns": {
+          "bloodPressure": "122/71",
+          "heartRate": 90,
+          "temperature": 37.1,
+          "oxygenSaturation": 97
+        }
+      },
+      "specialInstructions": "Suus acidus defendo non voluptatum vobis venia viriliter. Supellex aequus decumbo anser vigor.",
+      "preparationTime": 19
+    },
+    "surgerySection": {
+      "surgeryType": "Laparoskopie",
+      "approach": "Minimally_Invasive",
+      "estimatedBloodLoss": 997,
+      "complexity": "LOW",
+      "equipmentRequired": [
+        "C_Arm",
+        "Suction",
+        "Irrigation",
+        "Electrocautery"
+      ],
+      "estimatedCost": 8357.25,
+      "riskFactors": [
+        "Anesthesia_Complications",
+        "Infection"
+      ]
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "anesthesiologistPresence": "AUTO",
+      "medications": [
+        {
+          "medicationId": "MED_0005",
+          "name": "Paracetamol",
+          "dosage": "35.8mg",
+          "route": "Inhalation",
+          "timing": "Emergence",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0000",
+          "name": "Propofol",
+          "dosage": "14.3ml",
+          "route": "Epidural",
+          "timing": "Emergence",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0009",
+          "name": "Epinephrine",
+          "dosage": "4.2ml",
+          "route": "Epidural",
+          "timing": "Emergence",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        }
+      ],
+      "monitoring": {
+        "ecg": true,
+        "bloodPressure": true,
+        "oxygenSaturation": true,
+        "capnography": false,
+        "temperatureMonitoring": false
+      },
+      "estimatedAnesthesiaTime": 97,
+      "riskAssessment": {
+        "asa_class": "I",
+        "mallampati": "III",
+        "difficultAirway": false
+      }
+    },
+    "intraOpSection": {
+      "phases": {
+        "preparation": {
+          "materials": [
+            {
+              "materialId": "MAT_0002",
+              "code": "MAT93VPIV",
+              "name": "Surgical Gloves",
+              "quantity": 6,
+              "unitCost": 453.91,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0002",
+              "code": "MAT93VPIV",
+              "name": "Surgical Gloves",
+              "quantity": 10,
+              "unitCost": 453.91,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 25
+        },
+        "procedure": {
+          "materials": [
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 8,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 5,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0000",
+              "code": "MATRNE5MD",
+              "name": "Surgical Suture",
+              "quantity": 4,
+              "unitCost": 426.01,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0003",
+              "code": "MATQSIGWN",
+              "name": "Syringe",
+              "quantity": 8,
+              "unitCost": 240.76,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0000",
+              "code": "MATRNE5MD",
+              "name": "Surgical Suture",
+              "quantity": 2,
+              "unitCost": 426.01,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0002",
+              "code": "MAT93VPIV",
+              "name": "Surgical Gloves",
+              "quantity": 9,
+              "unitCost": 453.91,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 1,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0002",
+              "code": "MAT93VPIV",
+              "name": "Surgical Gloves",
+              "quantity": 5,
+              "unitCost": 453.91,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "medications": [
+            {
+              "medicationId": "MED_0003",
+              "code": "MEDUFCNZB",
+              "name": "Rocuronium",
+              "dosage": "25.8mcg",
+              "quantity": 3,
+              "unitCost": 41.84,
+              "totalCost": null,
+              "riskCategory": "MEDIUM",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            },
+            {
+              "medicationId": "MED_0002",
+              "code": "MEDPK2UK8",
+              "name": "Fentanyl",
+              "dosage": "90.3ml",
+              "quantity": 1,
+              "unitCost": 42.19,
+              "totalCost": null,
+              "riskCategory": "LOW",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            }
+          ],
+          "duration": 124
+        },
+        "closure": {
+          "materials": [
+            {
+              "materialId": "MAT_0000",
+              "code": "MATRNE5MD",
+              "name": "Surgical Suture",
+              "quantity": 9,
+              "unitCost": 426.01,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 12
+        }
+      },
+      "complications": [],
+      "intraOpNotes": "Apparatus xiphias ambulo advoco summopere cariosus conventus calco. Voluptates sum rem sursum centum aegrotatio. Cimentarius bardus venio vomer beneficium decet solium culpa adfero."
+    },
+    "postOpSection": {
+      "medications": [
+        {
+          "medicationId": "MED_0000",
+          "name": "Propofol",
+          "dosage": "36.4ml",
+          "frequency": "TID",
+          "duration": "14 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0002",
+          "name": "Fentanyl",
+          "dosage": "83.6ml",
+          "frequency": "BID",
+          "duration": "7 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0001",
+          "name": "Midazolam",
+          "dosage": "6.5units",
+          "frequency": "BID",
+          "duration": "1 day",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        }
+      ],
+      "materials": [
+        {
+          "materialId": "MAT_0005",
+          "code": "MATVNGU2B",
+          "name": "Surgical Mask",
+          "quantity": 5,
+          "unitCost": 284.79,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0005",
+          "code": "MATVNGU2B",
+          "name": "Surgical Mask",
+          "quantity": 1,
+          "unitCost": 284.79,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0008",
+          "code": "MAT18VLUL",
+          "name": "Irrigation Solution",
+          "quantity": 7,
+          "unitCost": 474.22,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "recoveryMetrics": {
+        "painScore": 6,
+        "nauseaScore": 2,
+        "mobilityScore": 2,
+        "dischargeReadiness": true
+      },
+      "dischargeInstructions": {
+        "medications": "Turba aurum sumo. Defetiscor utrimque delectatio animadverto. Tot tametsi compono.",
+        "followUp": "2025-09-10T10:04:44.246Z",
+        "restrictions": "Temperantia varietas auctor vir peccatus amplitudo cumque. Sit esse natus advenio vita pauper cupiditas vergo vesper."
+      }
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T13:01:55.137Z",
+      "updatedAt": "2025-07-29T13:01:55.137Z",
+      "bookingTimestamp": "2025-08-07T01:45:43.773Z"
+    },
+    "_testMetadata": {
+      "caseIndex": 1,
+      "generatedAt": 1753794115137,
+      "expectedFragments": {
+        "materialCosts": true,
+        "medicationCosts": true,
+        "procedureCosts": true,
+        "anesthesiaCosts": true,
+        "totalCosts": true
+      },
+      "dependencyChains": [
+        "patientWeight -> medicationDosages -> totalMedicationCost",
+        "surgeryComplexity -> materialRequirements -> totalMaterialCost",
+        "anesthesiaTime -> anesthesiaCost -> totalAnesthesiaCost",
+        "allCosts -> totalCaseCost -> billingAmount",
+        "riskFactors -> insuranceCoverage -> patientResponsibility"
+      ]
+    }
+  },
+  {
+    "caseNumber": "STRESS_000002",
+    "status": "PENDING",
+    "bookingPatient": {
+      "patientId": "PAT_001214",
+      "name": "Danny",
+      "surname": "Huels",
+      "birthDate": "1957-05-22T20:47:31.672Z",
+      "insuranceType": "PUBLIC",
+      "riskFactors": [
+        "DIABETES",
+        "ALLERGIES"
+      ],
+      "emergencyContact": {
+        "name": "Wanda Lesch-Williamson",
+        "phone": "1-357-388-8472 x09803"
+      }
+    },
+    "patientRef": "PAT_001214",
+    "bookingSection": {
+      "date": "2025-09-07T01:33:52.222Z",
+      "doctorId": "DOC_0049",
+      "contractId": "CONTRACT_003",
+      "opStandardId": "OPS_0089",
+      "duration": 133,
+      "estimatedDuration": 170,
+      "priority": "ROUTINE",
+      "operatingRoom": "OR2"
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_0002",
+          "code": "MAT93VPIV",
+          "name": "Surgical Gloves",
+          "quantity": 7,
+          "unitCost": 453.91,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0004",
+          "code": "MATDFKKPB",
+          "name": "Catheter",
+          "quantity": 2,
+          "unitCost": 353.93,
+          "totalCost": null,
+          "category": "SURGICAL_INSTRUMENT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0006",
+          "code": "MATOZ6GOE",
+          "name": "Bandage",
+          "quantity": 4,
+          "unitCost": 57.4,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0004",
+          "code": "MATDFKKPB",
+          "name": "Catheter",
+          "quantity": 2,
+          "unitCost": 353.93,
+          "totalCost": null,
+          "category": "SURGICAL_INSTRUMENT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0000",
+          "code": "MATRNE5MD",
+          "name": "Surgical Suture",
+          "quantity": 5,
+          "unitCost": 426.01,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0007",
+          "code": "MATFIZJUT",
+          "name": "Surgical Blade",
+          "quantity": 9,
+          "unitCost": 104.39,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0007",
+          "code": "MATFIZJUT",
+          "name": "Surgical Blade",
+          "quantity": 1,
+          "unitCost": 104.39,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0003",
+          "code": "MATQSIGWN",
+          "name": "Syringe",
+          "quantity": 4,
+          "unitCost": 240.76,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_0001",
+          "code": "MEDWSARKI",
+          "name": "Midazolam",
+          "dosage": "85.2units",
+          "quantity": 3,
+          "unitCost": 16.09,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0003",
+          "code": "MEDUFCNZB",
+          "name": "Rocuronium",
+          "dosage": "12.3mcg",
+          "quantity": 3,
+          "unitCost": 41.84,
+          "totalCost": null,
+          "riskCategory": "MEDIUM",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0005",
+          "code": "MEDAPD31H",
+          "name": "Paracetamol",
+          "dosage": "70.4mg",
+          "quantity": 2,
+          "unitCost": 18.78,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0000",
+          "code": "MEDX0FH4H",
+          "name": "Propofol",
+          "dosage": "41.3ml",
+          "quantity": 3,
+          "unitCost": 25.53,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0004",
+          "code": "MEDKO5VO6",
+          "name": "Cefazolin",
+          "dosage": "77.6ml",
+          "quantity": 5,
+          "unitCost": 41.49,
+          "totalCost": null,
+          "riskCategory": "MEDIUM",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        }
+      ],
+      "assessment": {
+        "riskScore": 2,
+        "allergies": [
+          "Penicillin"
+        ],
+        "vitalSigns": {
+          "bloodPressure": "139/100",
+          "heartRate": 72,
+          "temperature": 37.3,
+          "oxygenSaturation": 96
+        }
+      },
+      "specialInstructions": "Thesaurus totam acerbitas dedico vallum statim cupiditate adicio tersus. Uberrime casso substantia.",
+      "preparationTime": 45
+    },
+    "surgerySection": {
+      "surgeryType": "Laparoskopie",
+      "approach": "Minimally_Invasive",
+      "estimatedBloodLoss": 436,
+      "complexity": "CRITICAL",
+      "equipmentRequired": [
+        "Irrigation",
+        "Suction",
+        "C_Arm",
+        "Electrocautery",
+        "Laparoscope"
+      ],
+      "estimatedCost": 22992.36,
+      "riskFactors": [
+        "Infection"
+      ]
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "anesthesiologistPresence": "WITHOUT_ANESTHESIOLOGIST",
+      "medications": [
+        {
+          "medicationId": "MED_0002",
+          "name": "Fentanyl",
+          "dosage": "34.5ml",
+          "route": "Inhalation",
+          "timing": "Maintenance",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0004",
+          "name": "Cefazolin",
+          "dosage": "11.9ml",
+          "route": "Inhalation",
+          "timing": "Emergence",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        }
+      ],
+      "monitoring": {
+        "ecg": true,
+        "bloodPressure": true,
+        "oxygenSaturation": true,
+        "capnography": false,
+        "temperatureMonitoring": false
+      },
+      "estimatedAnesthesiaTime": 105,
+      "riskAssessment": {
+        "asa_class": "II",
+        "mallampati": "III",
+        "difficultAirway": false
+      }
+    },
+    "intraOpSection": {
+      "phases": {
+        "preparation": {
+          "materials": [
+            {
+              "materialId": "MAT_0006",
+              "code": "MATOZ6GOE",
+              "name": "Bandage",
+              "quantity": 3,
+              "unitCost": 57.4,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0002",
+              "code": "MAT93VPIV",
+              "name": "Surgical Gloves",
+              "quantity": 7,
+              "unitCost": 453.91,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0004",
+              "code": "MATDFKKPB",
+              "name": "Catheter",
+              "quantity": 5,
+              "unitCost": 353.93,
+              "totalCost": null,
+              "category": "SURGICAL_INSTRUMENT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 28
+        },
+        "procedure": {
+          "materials": [
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 8,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0008",
+              "code": "MAT18VLUL",
+              "name": "Irrigation Solution",
+              "quantity": 6,
+              "unitCost": 474.22,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0001",
+              "code": "MATXI1B26",
+              "name": "Gauze Pad",
+              "quantity": 7,
+              "unitCost": 39.64,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "medications": [
+            {
+              "medicationId": "MED_0005",
+              "code": "MEDAPD31H",
+              "name": "Paracetamol",
+              "dosage": "31.6mg",
+              "quantity": 4,
+              "unitCost": 18.78,
+              "totalCost": null,
+              "riskCategory": "HIGH",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            },
+            {
+              "medicationId": "MED_0003",
+              "code": "MEDUFCNZB",
+              "name": "Rocuronium",
+              "dosage": "27.8mcg",
+              "quantity": 5,
+              "unitCost": 41.84,
+              "totalCost": null,
+              "riskCategory": "MEDIUM",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            },
+            {
+              "medicationId": "MED_0006",
+              "code": "MEDUOAOII",
+              "name": "Ibuprofen",
+              "dosage": "49.3units",
+              "quantity": 3,
+              "unitCost": 29.99,
+              "totalCost": null,
+              "riskCategory": "LOW",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            }
+          ],
+          "duration": 113
+        },
+        "closure": {
+          "materials": [
+            {
+              "materialId": "MAT_0006",
+              "code": "MATOZ6GOE",
+              "name": "Bandage",
+              "quantity": 7,
+              "unitCost": 57.4,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 20
+        }
+      },
+      "complications": [
+        "Unexpected_Findings"
+      ],
+      "intraOpNotes": "Porro torqueo in auctus benevolentia aliquid numquam curriculum. Conservo defessus valde suscipit chirographum attero. Aer reiciendis illum officia iusto adiuvo recusandae odit vallum stips."
+    },
+    "postOpSection": {
+      "medications": [
+        {
+          "medicationId": "MED_0007",
+          "name": "Morphine",
+          "dosage": "56units",
+          "frequency": "PRN",
+          "duration": "7 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0008",
+          "name": "Lidocaine",
+          "dosage": "38.9mg",
+          "frequency": "TID",
+          "duration": "14 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0000",
+          "name": "Propofol",
+          "dosage": "10.1ml",
+          "frequency": "QID",
+          "duration": "3 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        }
+      ],
+      "materials": [
+        {
+          "materialId": "MAT_0002",
+          "code": "MAT93VPIV",
+          "name": "Surgical Gloves",
+          "quantity": 5,
+          "unitCost": 453.91,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0005",
+          "code": "MATVNGU2B",
+          "name": "Surgical Mask",
+          "quantity": 10,
+          "unitCost": 284.79,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0007",
+          "code": "MATFIZJUT",
+          "name": "Surgical Blade",
+          "quantity": 1,
+          "unitCost": 104.39,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0006",
+          "code": "MATOZ6GOE",
+          "name": "Bandage",
+          "quantity": 5,
+          "unitCost": 57.4,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "recoveryMetrics": {
+        "painScore": 5,
+        "nauseaScore": 0,
+        "mobilityScore": 4,
+        "dischargeReadiness": true
+      },
+      "dischargeInstructions": {
+        "medications": "Vicissitudo adnuo aggredior. Doloremque beneficium crux voluptatum summisse delego tumultus. Neque vitiosus aer thorax numquam barba audentia terra claro cedo.",
+        "followUp": "2025-10-27T01:26:50.688Z",
+        "restrictions": "Cito quasi utilis tremo bestia claudeo nisi constans thorax. Cruentus consuasor peccatus defendo tergiversatio territo."
+      }
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T13:01:55.139Z",
+      "updatedAt": "2025-07-29T13:01:55.139Z",
+      "bookingTimestamp": "2025-09-07T01:33:52.222Z"
+    },
+    "_testMetadata": {
+      "caseIndex": 2,
+      "generatedAt": 1753794115139,
+      "expectedFragments": {
+        "materialCosts": true,
+        "medicationCosts": true,
+        "procedureCosts": true,
+        "anesthesiaCosts": true,
+        "totalCosts": true
+      },
+      "dependencyChains": [
+        "patientWeight -> medicationDosages -> totalMedicationCost",
+        "surgeryComplexity -> materialRequirements -> totalMaterialCost",
+        "anesthesiaTime -> anesthesiaCost -> totalAnesthesiaCost",
+        "allCosts -> totalCaseCost -> billingAmount",
+        "riskFactors -> insuranceCoverage -> patientResponsibility"
+      ]
+    }
+  },
+  {
+    "caseNumber": "STRESS_000003",
+    "status": "PENDING",
+    "bookingPatient": {
+      "patientId": "PAT_001934",
+      "name": "Jena",
+      "surname": "Gutmann",
+      "birthDate": "1965-01-20T19:31:09.394Z",
+      "insuranceType": "SELF_PAY",
+      "riskFactors": [
+        "OBESITY",
+        "HYPERTENSION",
+        "DIABETES"
+      ],
+      "emergencyContact": {
+        "name": "Blake Collins DDS",
+        "phone": "1-435-631-2927"
+      }
+    },
+    "patientRef": "PAT_001934",
+    "bookingSection": {
+      "date": "2025-08-19T00:50:26.998Z",
+      "doctorId": "DOC_0010",
+      "contractId": "CONTRACT_008",
+      "opStandardId": "OPS_0039",
+      "duration": 77,
+      "estimatedDuration": 103,
+      "priority": "ROUTINE",
+      "operatingRoom": "OR4"
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_0007",
+          "code": "MATFIZJUT",
+          "name": "Surgical Blade",
+          "quantity": 6,
+          "unitCost": 104.39,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0006",
+          "code": "MATOZ6GOE",
+          "name": "Bandage",
+          "quantity": 4,
+          "unitCost": 57.4,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0005",
+          "code": "MATVNGU2B",
+          "name": "Surgical Mask",
+          "quantity": 10,
+          "unitCost": 284.79,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0000",
+          "code": "MATRNE5MD",
+          "name": "Surgical Suture",
+          "quantity": 6,
+          "unitCost": 426.01,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0003",
+          "code": "MATQSIGWN",
+          "name": "Syringe",
+          "quantity": 9,
+          "unitCost": 240.76,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0000",
+          "code": "MATRNE5MD",
+          "name": "Surgical Suture",
+          "quantity": 6,
+          "unitCost": 426.01,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0001",
+          "code": "MATXI1B26",
+          "name": "Gauze Pad",
+          "quantity": 10,
+          "unitCost": 39.64,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0005",
+          "code": "MATVNGU2B",
+          "name": "Surgical Mask",
+          "quantity": 8,
+          "unitCost": 284.79,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_0007",
+          "code": "MEDZMFXDD",
+          "name": "Morphine",
+          "dosage": "17.6units",
+          "quantity": 3,
+          "unitCost": 4.54,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0004",
+          "code": "MEDKO5VO6",
+          "name": "Cefazolin",
+          "dosage": "60.7ml",
+          "quantity": 5,
+          "unitCost": 41.49,
+          "totalCost": null,
+          "riskCategory": "MEDIUM",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        }
+      ],
+      "assessment": {
+        "riskScore": 8,
+        "allergies": [
+          "Latex"
+        ],
+        "vitalSigns": {
+          "bloodPressure": "113/84",
+          "heartRate": 69,
+          "temperature": 37.4,
+          "oxygenSaturation": 98
+        }
+      },
+      "specialInstructions": "Casso tabula ulciscor suus communis tabella communis. Vivo peccatus cilicium suppellex vapulus carcer defetiscor officia.",
+      "preparationTime": 57
+    },
+    "surgerySection": {
+      "surgeryType": "Endoprothese",
+      "approach": "Endoscopic",
+      "estimatedBloodLoss": 967,
+      "complexity": "HIGH",
+      "equipmentRequired": [
+        "Laparoscope",
+        "C_Arm",
+        "Suction",
+        "Electrocautery",
+        "Irrigation"
+      ],
+      "estimatedCost": 3993.28,
+      "riskFactors": [
+        "Anesthesia_Complications"
+      ]
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia",
+        "Sedation"
+      ],
+      "anesthesiologistPresence": "AUTO",
+      "medications": [
+        {
+          "medicationId": "MED_0008",
+          "name": "Lidocaine",
+          "dosage": "4.9mg",
+          "route": "Inhalation",
+          "timing": "Induction",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0003",
+          "name": "Rocuronium",
+          "dosage": "31mcg",
+          "route": "Intrathecal",
+          "timing": "Induction",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        }
+      ],
+      "monitoring": {
+        "ecg": true,
+        "bloodPressure": true,
+        "oxygenSaturation": true,
+        "capnography": true,
+        "temperatureMonitoring": true
+      },
+      "estimatedAnesthesiaTime": 263,
+      "riskAssessment": {
+        "asa_class": "IV",
+        "mallampati": "III",
+        "difficultAirway": true
+      }
+    },
+    "intraOpSection": {
+      "phases": {
+        "preparation": {
+          "materials": [
+            {
+              "materialId": "MAT_0002",
+              "code": "MAT93VPIV",
+              "name": "Surgical Gloves",
+              "quantity": 7,
+              "unitCost": 453.91,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0005",
+              "code": "MATVNGU2B",
+              "name": "Surgical Mask",
+              "quantity": 10,
+              "unitCost": 284.79,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0002",
+              "code": "MAT93VPIV",
+              "name": "Surgical Gloves",
+              "quantity": 2,
+              "unitCost": 453.91,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 16
+        },
+        "procedure": {
+          "materials": [
+            {
+              "materialId": "MAT_0002",
+              "code": "MAT93VPIV",
+              "name": "Surgical Gloves",
+              "quantity": 2,
+              "unitCost": 453.91,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 7,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0006",
+              "code": "MATOZ6GOE",
+              "name": "Bandage",
+              "quantity": 5,
+              "unitCost": 57.4,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0003",
+              "code": "MATQSIGWN",
+              "name": "Syringe",
+              "quantity": 7,
+              "unitCost": 240.76,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0003",
+              "code": "MATQSIGWN",
+              "name": "Syringe",
+              "quantity": 9,
+              "unitCost": 240.76,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "medications": [
+            {
+              "medicationId": "MED_0005",
+              "code": "MEDAPD31H",
+              "name": "Paracetamol",
+              "dosage": "4.1mg",
+              "quantity": 4,
+              "unitCost": 18.78,
+              "totalCost": null,
+              "riskCategory": "HIGH",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            }
+          ],
+          "duration": 104
+        },
+        "closure": {
+          "materials": [
+            {
+              "materialId": "MAT_0001",
+              "code": "MATXI1B26",
+              "name": "Gauze Pad",
+              "quantity": 2,
+              "unitCost": 39.64,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0000",
+              "code": "MATRNE5MD",
+              "name": "Surgical Suture",
+              "quantity": 2,
+              "unitCost": 426.01,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 18
+        }
+      },
+      "complications": [],
+      "intraOpNotes": "Pectus decet voluptatum barba via volup sum tum. Textus carmen beneficium. Stella contigo verbum vetus nulla."
+    },
+    "postOpSection": {
+      "medications": [
+        {
+          "medicationId": "MED_0006",
+          "name": "Ibuprofen",
+          "dosage": "82.3units",
+          "frequency": "BID",
+          "duration": "14 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0008",
+          "name": "Lidocaine",
+          "dosage": "33.6mg",
+          "frequency": "Daily",
+          "duration": "3 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0007",
+          "name": "Morphine",
+          "dosage": "69.3units",
+          "frequency": "PRN",
+          "duration": "14 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0000",
+          "name": "Propofol",
+          "dosage": "75.2ml",
+          "frequency": "TID",
+          "duration": "14 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0005",
+          "name": "Paracetamol",
+          "dosage": "84.9mg",
+          "frequency": "PRN",
+          "duration": "3 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0001",
+          "name": "Midazolam",
+          "dosage": "85.1units",
+          "frequency": "PRN",
+          "duration": "14 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        }
+      ],
+      "materials": [
+        {
+          "materialId": "MAT_0002",
+          "code": "MAT93VPIV",
+          "name": "Surgical Gloves",
+          "quantity": 1,
+          "unitCost": 453.91,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0005",
+          "code": "MATVNGU2B",
+          "name": "Surgical Mask",
+          "quantity": 3,
+          "unitCost": 284.79,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "recoveryMetrics": {
+        "painScore": 10,
+        "nauseaScore": 0,
+        "mobilityScore": 4,
+        "dischargeReadiness": false
+      },
+      "dischargeInstructions": {
+        "medications": "Vis demonstro delicate accommodo usque aurum tendo triduana. Tyrannus vacuus vir auxilium tot corrigo sol defungo tutamen consuasor. Verus stabilis tabgo soluta.",
+        "followUp": "2025-09-12T03:11:10.708Z",
+        "restrictions": "Studio utrimque acsi defessus volo libero vindico campana. Itaque carmen custodia surculus adeptio."
+      }
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T13:01:55.140Z",
+      "updatedAt": "2025-07-29T13:01:55.140Z",
+      "bookingTimestamp": "2025-08-19T00:50:26.998Z"
+    },
+    "_testMetadata": {
+      "caseIndex": 3,
+      "generatedAt": 1753794115140,
+      "expectedFragments": {
+        "materialCosts": true,
+        "medicationCosts": true,
+        "procedureCosts": true,
+        "anesthesiaCosts": true,
+        "totalCosts": true
+      },
+      "dependencyChains": [
+        "patientWeight -> medicationDosages -> totalMedicationCost",
+        "surgeryComplexity -> materialRequirements -> totalMaterialCost",
+        "anesthesiaTime -> anesthesiaCost -> totalAnesthesiaCost",
+        "allCosts -> totalCaseCost -> billingAmount",
+        "riskFactors -> insuranceCoverage -> patientResponsibility"
+      ]
+    }
+  },
+  {
+    "caseNumber": "STRESS_000004",
+    "status": "PENDING",
+    "bookingPatient": {
+      "patientId": "PAT_001657",
+      "name": "Tad",
+      "surname": "Reichert-Crooks",
+      "birthDate": "1941-01-01T07:02:09.405Z",
+      "insuranceType": "PRIVATE",
+      "riskFactors": [
+        "OBESITY",
+        "ALLERGIES",
+        "HYPERTENSION"
+      ],
+      "emergencyContact": {
+        "name": "Mrs. Francis Aufderhar",
+        "phone": "1-982-703-5135 x044"
+      }
+    },
+    "patientRef": "PAT_001657",
+    "bookingSection": {
+      "date": "2025-10-15T14:09:12.480Z",
+      "doctorId": "DOC_0025",
+      "contractId": "CONTRACT_006",
+      "opStandardId": "OPS_0044",
+      "duration": 171,
+      "estimatedDuration": 170,
+      "priority": "URGENT",
+      "operatingRoom": "OR3"
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_0001",
+          "code": "MATXI1B26",
+          "name": "Gauze Pad",
+          "quantity": 3,
+          "unitCost": 39.64,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0006",
+          "code": "MATOZ6GOE",
+          "name": "Bandage",
+          "quantity": 5,
+          "unitCost": 57.4,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0003",
+          "code": "MATQSIGWN",
+          "name": "Syringe",
+          "quantity": 5,
+          "unitCost": 240.76,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0005",
+          "code": "MATVNGU2B",
+          "name": "Surgical Mask",
+          "quantity": 1,
+          "unitCost": 284.79,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0002",
+          "code": "MAT93VPIV",
+          "name": "Surgical Gloves",
+          "quantity": 7,
+          "unitCost": 453.91,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0002",
+          "code": "MAT93VPIV",
+          "name": "Surgical Gloves",
+          "quantity": 5,
+          "unitCost": 453.91,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_0002",
+          "code": "MEDPK2UK8",
+          "name": "Fentanyl",
+          "dosage": "15.5ml",
+          "quantity": 4,
+          "unitCost": 42.19,
+          "totalCost": null,
+          "riskCategory": "LOW",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0001",
+          "code": "MEDWSARKI",
+          "name": "Midazolam",
+          "dosage": "37.7units",
+          "quantity": 3,
+          "unitCost": 16.09,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0006",
+          "code": "MEDUOAOII",
+          "name": "Ibuprofen",
+          "dosage": "30units",
+          "quantity": 3,
+          "unitCost": 29.99,
+          "totalCost": null,
+          "riskCategory": "LOW",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        }
+      ],
+      "assessment": {
+        "riskScore": 5,
+        "allergies": [
+          "Iodine"
+        ],
+        "vitalSigns": {
+          "bloodPressure": "132/85",
+          "heartRate": 64,
+          "temperature": 36.1,
+          "oxygenSaturation": 99
+        }
+      },
+      "specialInstructions": "Corrigo deprimo spoliatio. Sponte cum auxilium sequi vomito utique totidem.",
+      "preparationTime": 37
+    },
+    "surgerySection": {
+      "surgeryType": "Arthroskopie",
+      "approach": "Minimally_Invasive",
+      "estimatedBloodLoss": 652,
+      "complexity": "HIGH",
+      "equipmentRequired": [
+        "Irrigation",
+        "Electrocautery",
+        "Laparoscope"
+      ],
+      "estimatedCost": 21798.68,
+      "riskFactors": [
+        "Infection"
+      ]
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "anesthesiologistPresence": "AUTO",
+      "medications": [
+        {
+          "medicationId": "MED_0002",
+          "name": "Fentanyl",
+          "dosage": "38.5ml",
+          "route": "IV",
+          "timing": "Emergence",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0004",
+          "name": "Cefazolin",
+          "dosage": "8.1ml",
+          "route": "IV",
+          "timing": "Emergence",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0005",
+          "name": "Paracetamol",
+          "dosage": "29mg",
+          "route": "Inhalation",
+          "timing": "Maintenance",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0000",
+          "name": "Propofol",
+          "dosage": "28.3ml",
+          "route": "Intrathecal",
+          "timing": "Induction",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0009",
+          "name": "Epinephrine",
+          "dosage": "27.2ml",
+          "route": "Intrathecal",
+          "timing": "Emergence",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        }
+      ],
+      "monitoring": {
+        "ecg": true,
+        "bloodPressure": true,
+        "oxygenSaturation": true,
+        "capnography": false,
+        "temperatureMonitoring": true
+      },
+      "estimatedAnesthesiaTime": 263,
+      "riskAssessment": {
+        "asa_class": "II",
+        "mallampati": "IV",
+        "difficultAirway": true
+      }
+    },
+    "intraOpSection": {
+      "phases": {
+        "preparation": {
+          "materials": [
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 2,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0006",
+              "code": "MATOZ6GOE",
+              "name": "Bandage",
+              "quantity": 3,
+              "unitCost": 57.4,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0008",
+              "code": "MAT18VLUL",
+              "name": "Irrigation Solution",
+              "quantity": 9,
+              "unitCost": 474.22,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 23
+        },
+        "procedure": {
+          "materials": [
+            {
+              "materialId": "MAT_0000",
+              "code": "MATRNE5MD",
+              "name": "Surgical Suture",
+              "quantity": 9,
+              "unitCost": 426.01,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0008",
+              "code": "MAT18VLUL",
+              "name": "Irrigation Solution",
+              "quantity": 2,
+              "unitCost": 474.22,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0001",
+              "code": "MATXI1B26",
+              "name": "Gauze Pad",
+              "quantity": 2,
+              "unitCost": 39.64,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0008",
+              "code": "MAT18VLUL",
+              "name": "Irrigation Solution",
+              "quantity": 4,
+              "unitCost": 474.22,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0002",
+              "code": "MAT93VPIV",
+              "name": "Surgical Gloves",
+              "quantity": 10,
+              "unitCost": 453.91,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0000",
+              "code": "MATRNE5MD",
+              "name": "Surgical Suture",
+              "quantity": 10,
+              "unitCost": 426.01,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "medications": [
+            {
+              "medicationId": "MED_0001",
+              "code": "MEDWSARKI",
+              "name": "Midazolam",
+              "dosage": "21.7units",
+              "quantity": 2,
+              "unitCost": 16.09,
+              "totalCost": null,
+              "riskCategory": "HIGH",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            }
+          ],
+          "duration": 202
+        },
+        "closure": {
+          "materials": [
+            {
+              "materialId": "MAT_0005",
+              "code": "MATVNGU2B",
+              "name": "Surgical Mask",
+              "quantity": 9,
+              "unitCost": 284.79,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0002",
+              "code": "MAT93VPIV",
+              "name": "Surgical Gloves",
+              "quantity": 1,
+              "unitCost": 453.91,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 6,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 20
+        }
+      },
+      "complications": [],
+      "intraOpNotes": "Trado bellicus vitae aperte vergo nulla. Dens abundans aut vesica vae vado succurro decerno delinquo. Tibi velut derideo."
+    },
+    "postOpSection": {
+      "medications": [
+        {
+          "medicationId": "MED_0000",
+          "name": "Propofol",
+          "dosage": "71ml",
+          "frequency": "Daily",
+          "duration": "14 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0005",
+          "name": "Paracetamol",
+          "dosage": "35mg",
+          "frequency": "TID",
+          "duration": "14 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0008",
+          "name": "Lidocaine",
+          "dosage": "31.9mg",
+          "frequency": "QID",
+          "duration": "14 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0007",
+          "name": "Morphine",
+          "dosage": "72.7units",
+          "frequency": "QID",
+          "duration": "14 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        }
+      ],
+      "materials": [
+        {
+          "materialId": "MAT_0006",
+          "code": "MATOZ6GOE",
+          "name": "Bandage",
+          "quantity": 8,
+          "unitCost": 57.4,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "recoveryMetrics": {
+        "painScore": 1,
+        "nauseaScore": 3,
+        "mobilityScore": 2,
+        "dischargeReadiness": true
+      },
+      "dischargeInstructions": {
+        "medications": "Adopto architecto fugit depulso acceptus dicta. Spiculum aedificium aureus vulnus nihil adeo argumentum pecto sit. Ancilla caterva confugo casso amaritudo antepono adipiscor accendo adinventitias.",
+        "followUp": "2025-09-20T09:18:51.718Z",
+        "restrictions": "Debilito comes thema depopulo sophismata desipio omnis cerno adulescens cedo. Basium decumbo balbus confero curto copiose arceo bonus."
+      }
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T13:01:55.141Z",
+      "updatedAt": "2025-07-29T13:01:55.141Z",
+      "bookingTimestamp": "2025-10-15T14:09:12.480Z"
+    },
+    "_testMetadata": {
+      "caseIndex": 4,
+      "generatedAt": 1753794115141,
+      "expectedFragments": {
+        "materialCosts": true,
+        "medicationCosts": true,
+        "procedureCosts": true,
+        "anesthesiaCosts": true,
+        "totalCosts": true
+      },
+      "dependencyChains": [
+        "patientWeight -> medicationDosages -> totalMedicationCost",
+        "surgeryComplexity -> materialRequirements -> totalMaterialCost",
+        "anesthesiaTime -> anesthesiaCost -> totalAnesthesiaCost",
+        "allCosts -> totalCaseCost -> billingAmount",
+        "riskFactors -> insuranceCoverage -> patientResponsibility"
+      ]
+    }
+  },
+  {
+    "caseNumber": "STRESS_000005",
+    "status": "PENDING",
+    "bookingPatient": {
+      "patientId": "PAT_001962",
+      "name": "Maiya",
+      "surname": "Willms",
+      "birthDate": "1962-12-02T08:55:53.796Z",
+      "insuranceType": "PRIVATE",
+      "riskFactors": [],
+      "emergencyContact": {
+        "name": "Francis Dibbert",
+        "phone": "1-984-305-1318"
+      }
+    },
+    "patientRef": "PAT_001962",
+    "bookingSection": {
+      "date": "2025-09-17T13:57:24.214Z",
+      "doctorId": "DOC_0008",
+      "contractId": "CONTRACT_005",
+      "opStandardId": "OPS_0035",
+      "duration": 265,
+      "estimatedDuration": 320,
+      "priority": "EMERGENCY",
+      "operatingRoom": "OR5"
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_0001",
+          "code": "MATXI1B26",
+          "name": "Gauze Pad",
+          "quantity": 2,
+          "unitCost": 39.64,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0002",
+          "code": "MAT93VPIV",
+          "name": "Surgical Gloves",
+          "quantity": 9,
+          "unitCost": 453.91,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0000",
+          "code": "MATRNE5MD",
+          "name": "Surgical Suture",
+          "quantity": 8,
+          "unitCost": 426.01,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0005",
+          "code": "MATVNGU2B",
+          "name": "Surgical Mask",
+          "quantity": 4,
+          "unitCost": 284.79,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0007",
+          "code": "MATFIZJUT",
+          "name": "Surgical Blade",
+          "quantity": 10,
+          "unitCost": 104.39,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_0007",
+          "code": "MEDZMFXDD",
+          "name": "Morphine",
+          "dosage": "2.9units",
+          "quantity": 3,
+          "unitCost": 4.54,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0009",
+          "code": "MEDCEA4GQ",
+          "name": "Epinephrine",
+          "dosage": "60.1ml",
+          "quantity": 3,
+          "unitCost": 34.14,
+          "totalCost": null,
+          "riskCategory": "MEDIUM",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0007",
+          "code": "MEDZMFXDD",
+          "name": "Morphine",
+          "dosage": "7.7units",
+          "quantity": 2,
+          "unitCost": 4.54,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        }
+      ],
+      "assessment": {
+        "riskScore": 10,
+        "allergies": [
+          "Iodine"
+        ],
+        "vitalSigns": {
+          "bloodPressure": "137/81",
+          "heartRate": 60,
+          "temperature": 36.3,
+          "oxygenSaturation": 96
+        }
+      },
+      "specialInstructions": "Statua urbs caries vitae consequatur temperantia nobis teneo necessitatibus voluptas. Patruus sapiente vulgivagus depromo ultio antepono audentia tendo vomica.",
+      "preparationTime": 15
+    },
+    "surgerySection": {
+      "surgeryType": "Cholezystektomie",
+      "approach": "Robotic",
+      "estimatedBloodLoss": 334,
+      "complexity": "CRITICAL",
+      "equipmentRequired": [
+        "C_Arm",
+        "Irrigation",
+        "Electrocautery",
+        "Suction"
+      ],
+      "estimatedCost": 32638.590000000004,
+      "riskFactors": [
+        "Organ_Injury",
+        "Infection",
+        "Anesthesia_Complications"
+      ]
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia",
+        "General_Anesthesia"
+      ],
+      "anesthesiologistPresence": "WITHOUT_ANESTHESIOLOGIST",
+      "medications": [
+        {
+          "medicationId": "MED_0001",
+          "name": "Midazolam",
+          "dosage": "7.5units",
+          "route": "Epidural",
+          "timing": "Maintenance",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0003",
+          "name": "Rocuronium",
+          "dosage": "38.9mcg",
+          "route": "Epidural",
+          "timing": "Maintenance",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0009",
+          "name": "Epinephrine",
+          "dosage": "22.6ml",
+          "route": "Inhalation",
+          "timing": "Maintenance",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0004",
+          "name": "Cefazolin",
+          "dosage": "25.2ml",
+          "route": "IV",
+          "timing": "Emergence",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        }
+      ],
+      "monitoring": {
+        "ecg": true,
+        "bloodPressure": true,
+        "oxygenSaturation": true,
+        "capnography": true,
+        "temperatureMonitoring": false
+      },
+      "estimatedAnesthesiaTime": 88,
+      "riskAssessment": {
+        "asa_class": "III",
+        "mallampati": "III",
+        "difficultAirway": true
+      }
+    },
+    "intraOpSection": {
+      "phases": {
+        "preparation": {
+          "materials": [
+            {
+              "materialId": "MAT_0000",
+              "code": "MATRNE5MD",
+              "name": "Surgical Suture",
+              "quantity": 7,
+              "unitCost": 426.01,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0003",
+              "code": "MATQSIGWN",
+              "name": "Syringe",
+              "quantity": 10,
+              "unitCost": 240.76,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0003",
+              "code": "MATQSIGWN",
+              "name": "Syringe",
+              "quantity": 2,
+              "unitCost": 240.76,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 18
+        },
+        "procedure": {
+          "materials": [
+            {
+              "materialId": "MAT_0006",
+              "code": "MATOZ6GOE",
+              "name": "Bandage",
+              "quantity": 8,
+              "unitCost": 57.4,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0000",
+              "code": "MATRNE5MD",
+              "name": "Surgical Suture",
+              "quantity": 6,
+              "unitCost": 426.01,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0005",
+              "code": "MATVNGU2B",
+              "name": "Surgical Mask",
+              "quantity": 9,
+              "unitCost": 284.79,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0001",
+              "code": "MATXI1B26",
+              "name": "Gauze Pad",
+              "quantity": 6,
+              "unitCost": 39.64,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0003",
+              "code": "MATQSIGWN",
+              "name": "Syringe",
+              "quantity": 6,
+              "unitCost": 240.76,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "medications": [
+            {
+              "medicationId": "MED_0004",
+              "code": "MEDKO5VO6",
+              "name": "Cefazolin",
+              "dosage": "88.5ml",
+              "quantity": 1,
+              "unitCost": 41.49,
+              "totalCost": null,
+              "riskCategory": "MEDIUM",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            }
+          ],
+          "duration": 140
+        },
+        "closure": {
+          "materials": [
+            {
+              "materialId": "MAT_0006",
+              "code": "MATOZ6GOE",
+              "name": "Bandage",
+              "quantity": 10,
+              "unitCost": 57.4,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 11
+        }
+      },
+      "complications": [
+        "Bleeding",
+        "Equipment_Malfunction"
+      ],
+      "intraOpNotes": "Cubitum paulatim caelum tenetur cenaculum solum arbustum. Attonbitus claustrum voluptates theologus color adulescens victoria curiositas testimonium. Somnus consequatur corona voco ullam quod incidunt trepide tamdiu."
+    },
+    "postOpSection": {
+      "medications": [
+        {
+          "medicationId": "MED_0001",
+          "name": "Midazolam",
+          "dosage": "43.8units",
+          "frequency": "PRN",
+          "duration": "3 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0002",
+          "name": "Fentanyl",
+          "dosage": "69.2ml",
+          "frequency": "Daily",
+          "duration": "14 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        }
+      ],
+      "materials": [
+        {
+          "materialId": "MAT_0001",
+          "code": "MATXI1B26",
+          "name": "Gauze Pad",
+          "quantity": 3,
+          "unitCost": 39.64,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0008",
+          "code": "MAT18VLUL",
+          "name": "Irrigation Solution",
+          "quantity": 1,
+          "unitCost": 474.22,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "recoveryMetrics": {
+        "painScore": 6,
+        "nauseaScore": 3,
+        "mobilityScore": 3,
+        "dischargeReadiness": true
+      },
+      "dischargeInstructions": {
+        "medications": "Stipes supellex beneficium textilis validus. Officiis adsuesco esse concido tempus addo aduro animus. Venia vicissitudo aeneus talis ullus adsum cubitum beatae vitiosus.",
+        "followUp": "2025-08-26T17:44:44.691Z",
+        "restrictions": "Clibanus theologus adnuo nulla. Benigne advenio aetas adeo depopulo aufero."
+      }
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T13:01:55.141Z",
+      "updatedAt": "2025-07-29T13:01:55.141Z",
+      "bookingTimestamp": "2025-09-17T13:57:24.214Z"
+    },
+    "_testMetadata": {
+      "caseIndex": 5,
+      "generatedAt": 1753794115141,
+      "expectedFragments": {
+        "materialCosts": true,
+        "medicationCosts": true,
+        "procedureCosts": true,
+        "anesthesiaCosts": true,
+        "totalCosts": true
+      },
+      "dependencyChains": [
+        "patientWeight -> medicationDosages -> totalMedicationCost",
+        "surgeryComplexity -> materialRequirements -> totalMaterialCost",
+        "anesthesiaTime -> anesthesiaCost -> totalAnesthesiaCost",
+        "allCosts -> totalCaseCost -> billingAmount",
+        "riskFactors -> insuranceCoverage -> patientResponsibility"
+      ]
+    }
+  },
+  {
+    "caseNumber": "STRESS_000006",
+    "status": "PENDING",
+    "bookingPatient": {
+      "patientId": "PAT_000101",
+      "name": "Donny",
+      "surname": "Konopelski",
+      "birthDate": "1965-07-19T21:27:57.469Z",
+      "insuranceType": "PUBLIC",
+      "riskFactors": [
+        "HYPERTENSION",
+        "OBESITY",
+        "ALLERGIES"
+      ],
+      "emergencyContact": {
+        "name": "Marlene Daugherty MD",
+        "phone": "(967) 487-5335 x325"
+      }
+    },
+    "patientRef": "PAT_000101",
+    "bookingSection": {
+      "date": "2025-09-09T09:36:51.340Z",
+      "doctorId": "DOC_0032",
+      "contractId": "CONTRACT_004",
+      "opStandardId": "OPS_0090",
+      "duration": 431,
+      "estimatedDuration": 472,
+      "priority": "EMERGENCY",
+      "operatingRoom": "OR2"
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_0001",
+          "code": "MATXI1B26",
+          "name": "Gauze Pad",
+          "quantity": 7,
+          "unitCost": 39.64,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0008",
+          "code": "MAT18VLUL",
+          "name": "Irrigation Solution",
+          "quantity": 2,
+          "unitCost": 474.22,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0003",
+          "code": "MATQSIGWN",
+          "name": "Syringe",
+          "quantity": 10,
+          "unitCost": 240.76,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0007",
+          "code": "MATFIZJUT",
+          "name": "Surgical Blade",
+          "quantity": 8,
+          "unitCost": 104.39,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0006",
+          "code": "MATOZ6GOE",
+          "name": "Bandage",
+          "quantity": 9,
+          "unitCost": 57.4,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0003",
+          "code": "MATQSIGWN",
+          "name": "Syringe",
+          "quantity": 10,
+          "unitCost": 240.76,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0000",
+          "code": "MATRNE5MD",
+          "name": "Surgical Suture",
+          "quantity": 9,
+          "unitCost": 426.01,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0007",
+          "code": "MATFIZJUT",
+          "name": "Surgical Blade",
+          "quantity": 1,
+          "unitCost": 104.39,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_0007",
+          "code": "MEDZMFXDD",
+          "name": "Morphine",
+          "dosage": "76.5units",
+          "quantity": 2,
+          "unitCost": 4.54,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0009",
+          "code": "MEDCEA4GQ",
+          "name": "Epinephrine",
+          "dosage": "48.1ml",
+          "quantity": 3,
+          "unitCost": 34.14,
+          "totalCost": null,
+          "riskCategory": "MEDIUM",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        }
+      ],
+      "assessment": {
+        "riskScore": 10,
+        "allergies": [
+          "Iodine",
+          "Latex",
+          "Penicillin"
+        ],
+        "vitalSigns": {
+          "bloodPressure": "123/96",
+          "heartRate": 86,
+          "temperature": 37.4,
+          "oxygenSaturation": 99
+        }
+      },
+      "specialInstructions": "Aetas thesaurus ocer. Dolorem debilito adopto utroque acquiro tricesimus adduco.",
+      "preparationTime": 19
+    },
+    "surgerySection": {
+      "surgeryType": "Thorakoskopie",
+      "approach": "Open",
+      "estimatedBloodLoss": 601,
+      "complexity": "LOW",
+      "equipmentRequired": [
+        "Suction",
+        "Laparoscope"
+      ],
+      "estimatedCost": 14097.05,
+      "riskFactors": [
+        "Organ_Injury",
+        "Bleeding",
+        "Anesthesia_Complications"
+      ]
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia",
+        "Sedation"
+      ],
+      "anesthesiologistPresence": "AUTO",
+      "medications": [
+        {
+          "medicationId": "MED_0002",
+          "name": "Fentanyl",
+          "dosage": "8.5ml",
+          "route": "Intrathecal",
+          "timing": "Induction",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0003",
+          "name": "Rocuronium",
+          "dosage": "38.6mcg",
+          "route": "Intrathecal",
+          "timing": "Emergence",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        }
+      ],
+      "monitoring": {
+        "ecg": true,
+        "bloodPressure": true,
+        "oxygenSaturation": true,
+        "capnography": false,
+        "temperatureMonitoring": false
+      },
+      "estimatedAnesthesiaTime": 35,
+      "riskAssessment": {
+        "asa_class": "I",
+        "mallampati": "II",
+        "difficultAirway": false
+      }
+    },
+    "intraOpSection": {
+      "phases": {
+        "preparation": {
+          "materials": [
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 1,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0005",
+              "code": "MATVNGU2B",
+              "name": "Surgical Mask",
+              "quantity": 10,
+              "unitCost": 284.79,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0005",
+              "code": "MATVNGU2B",
+              "name": "Surgical Mask",
+              "quantity": 7,
+              "unitCost": 284.79,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0001",
+              "code": "MATXI1B26",
+              "name": "Gauze Pad",
+              "quantity": 9,
+              "unitCost": 39.64,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 30
+        },
+        "procedure": {
+          "materials": [
+            {
+              "materialId": "MAT_0003",
+              "code": "MATQSIGWN",
+              "name": "Syringe",
+              "quantity": 2,
+              "unitCost": 240.76,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0008",
+              "code": "MAT18VLUL",
+              "name": "Irrigation Solution",
+              "quantity": 10,
+              "unitCost": 474.22,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0003",
+              "code": "MATQSIGWN",
+              "name": "Syringe",
+              "quantity": 8,
+              "unitCost": 240.76,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0005",
+              "code": "MATVNGU2B",
+              "name": "Surgical Mask",
+              "quantity": 4,
+              "unitCost": 284.79,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0001",
+              "code": "MATXI1B26",
+              "name": "Gauze Pad",
+              "quantity": 4,
+              "unitCost": 39.64,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0001",
+              "code": "MATXI1B26",
+              "name": "Gauze Pad",
+              "quantity": 6,
+              "unitCost": 39.64,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 7,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "medications": [
+            {
+              "medicationId": "MED_0006",
+              "code": "MEDUOAOII",
+              "name": "Ibuprofen",
+              "dosage": "1.3units",
+              "quantity": 2,
+              "unitCost": 29.99,
+              "totalCost": null,
+              "riskCategory": "LOW",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            },
+            {
+              "medicationId": "MED_0005",
+              "code": "MEDAPD31H",
+              "name": "Paracetamol",
+              "dosage": "13.2mg",
+              "quantity": 1,
+              "unitCost": 18.78,
+              "totalCost": null,
+              "riskCategory": "HIGH",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            },
+            {
+              "medicationId": "MED_0002",
+              "code": "MEDPK2UK8",
+              "name": "Fentanyl",
+              "dosage": "35.7ml",
+              "quantity": 2,
+              "unitCost": 42.19,
+              "totalCost": null,
+              "riskCategory": "LOW",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            },
+            {
+              "medicationId": "MED_0001",
+              "code": "MEDWSARKI",
+              "name": "Midazolam",
+              "dosage": "56.9units",
+              "quantity": 1,
+              "unitCost": 16.09,
+              "totalCost": null,
+              "riskCategory": "HIGH",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            }
+          ],
+          "duration": 56
+        },
+        "closure": {
+          "materials": [
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 10,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 1,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0005",
+              "code": "MATVNGU2B",
+              "name": "Surgical Mask",
+              "quantity": 10,
+              "unitCost": 284.79,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 20
+        }
+      },
+      "complications": [],
+      "intraOpNotes": "Vestigium articulus crur tibi. Decerno bos desidero sublime. Conservo texo umerus pectus adnuo tertius cubo textus dedecor nesciunt."
+    },
+    "postOpSection": {
+      "medications": [
+        {
+          "medicationId": "MED_0007",
+          "name": "Morphine",
+          "dosage": "11.8units",
+          "frequency": "BID",
+          "duration": "14 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0000",
+          "name": "Propofol",
+          "dosage": "93.2ml",
+          "frequency": "BID",
+          "duration": "3 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        }
+      ],
+      "materials": [
+        {
+          "materialId": "MAT_0001",
+          "code": "MATXI1B26",
+          "name": "Gauze Pad",
+          "quantity": 5,
+          "unitCost": 39.64,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0006",
+          "code": "MATOZ6GOE",
+          "name": "Bandage",
+          "quantity": 1,
+          "unitCost": 57.4,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0000",
+          "code": "MATRNE5MD",
+          "name": "Surgical Suture",
+          "quantity": 7,
+          "unitCost": 426.01,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0004",
+          "code": "MATDFKKPB",
+          "name": "Catheter",
+          "quantity": 6,
+          "unitCost": 353.93,
+          "totalCost": null,
+          "category": "SURGICAL_INSTRUMENT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "recoveryMetrics": {
+        "painScore": 3,
+        "nauseaScore": 4,
+        "mobilityScore": 1,
+        "dischargeReadiness": true
+      },
+      "dischargeInstructions": {
+        "medications": "Usitas sollicito accusantium attero deserunt. Officiis tersus trucido maxime utique torqueo cado deludo depromo. Nobis clam demoror.",
+        "followUp": "2025-09-20T20:53:56.065Z",
+        "restrictions": "Solitudo vallum ad coniecto umquam adfero arca adficio ducimus. Avarus color accusantium thermae ventosus crur aestas trado socius."
+      }
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T13:01:55.142Z",
+      "updatedAt": "2025-07-29T13:01:55.142Z",
+      "bookingTimestamp": "2025-09-09T09:36:51.340Z"
+    },
+    "_testMetadata": {
+      "caseIndex": 6,
+      "generatedAt": 1753794115142,
+      "expectedFragments": {
+        "materialCosts": true,
+        "medicationCosts": true,
+        "procedureCosts": true,
+        "anesthesiaCosts": true,
+        "totalCosts": true
+      },
+      "dependencyChains": [
+        "patientWeight -> medicationDosages -> totalMedicationCost",
+        "surgeryComplexity -> materialRequirements -> totalMaterialCost",
+        "anesthesiaTime -> anesthesiaCost -> totalAnesthesiaCost",
+        "allCosts -> totalCaseCost -> billingAmount",
+        "riskFactors -> insuranceCoverage -> patientResponsibility"
+      ]
+    }
+  },
+  {
+    "caseNumber": "STRESS_000007",
+    "status": "PENDING",
+    "bookingPatient": {
+      "patientId": "PAT_001580",
+      "name": "Emmanuel",
+      "surname": "Konopelski",
+      "birthDate": "2000-09-05T05:18:04.056Z",
+      "insuranceType": "SELF_PAY",
+      "riskFactors": [
+        "DIABETES"
+      ],
+      "emergencyContact": {
+        "name": "Priscilla Schmeler",
+        "phone": "891-946-6415"
+      }
+    },
+    "patientRef": "PAT_001580",
+    "bookingSection": {
+      "date": "2025-08-20T08:52:01.356Z",
+      "doctorId": "DOC_0041",
+      "contractId": "CONTRACT_002",
+      "opStandardId": "OPS_0087",
+      "duration": 308,
+      "estimatedDuration": 287,
+      "priority": "ROUTINE",
+      "operatingRoom": "OR4"
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_0006",
+          "code": "MATOZ6GOE",
+          "name": "Bandage",
+          "quantity": 1,
+          "unitCost": 57.4,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0008",
+          "code": "MAT18VLUL",
+          "name": "Irrigation Solution",
+          "quantity": 5,
+          "unitCost": 474.22,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0007",
+          "code": "MATFIZJUT",
+          "name": "Surgical Blade",
+          "quantity": 2,
+          "unitCost": 104.39,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_0001",
+          "code": "MEDWSARKI",
+          "name": "Midazolam",
+          "dosage": "53.2units",
+          "quantity": 5,
+          "unitCost": 16.09,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0006",
+          "code": "MEDUOAOII",
+          "name": "Ibuprofen",
+          "dosage": "99.1units",
+          "quantity": 1,
+          "unitCost": 29.99,
+          "totalCost": null,
+          "riskCategory": "LOW",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0001",
+          "code": "MEDWSARKI",
+          "name": "Midazolam",
+          "dosage": "61.4units",
+          "quantity": 2,
+          "unitCost": 16.09,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0009",
+          "code": "MEDCEA4GQ",
+          "name": "Epinephrine",
+          "dosage": "85.1ml",
+          "quantity": 5,
+          "unitCost": 34.14,
+          "totalCost": null,
+          "riskCategory": "MEDIUM",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0007",
+          "code": "MEDZMFXDD",
+          "name": "Morphine",
+          "dosage": "28units",
+          "quantity": 2,
+          "unitCost": 4.54,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0008",
+          "code": "MEDXDLXPS",
+          "name": "Lidocaine",
+          "dosage": "63mg",
+          "quantity": 3,
+          "unitCost": 16.59,
+          "totalCost": null,
+          "riskCategory": "LOW",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        }
+      ],
+      "assessment": {
+        "riskScore": 9,
+        "allergies": [
+          "NSAIDs",
+          "Contrast_Dye"
+        ],
+        "vitalSigns": {
+          "bloodPressure": "134/81",
+          "heartRate": 72,
+          "temperature": 36.3,
+          "oxygenSaturation": 99
+        }
+      },
+      "specialInstructions": "Cupiditas tenus et amiculum cuppedia verbum. Eligendi carmen cupio auctus sapiente sapiente volva tonsor dolor cura.",
+      "preparationTime": 20
+    },
+    "surgerySection": {
+      "surgeryType": "Endoprothese",
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 836,
+      "complexity": "MEDIUM",
+      "equipmentRequired": [
+        "C_Arm",
+        "Electrocautery",
+        "Laparoscope"
+      ],
+      "estimatedCost": 1228.5749999999998,
+      "riskFactors": [
+        "Infection",
+        "Bleeding",
+        "Anesthesia_Complications"
+      ]
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia",
+        "Regional_Anesthesia"
+      ],
+      "anesthesiologistPresence": "AUTO",
+      "medications": [
+        {
+          "medicationId": "MED_0005",
+          "name": "Paracetamol",
+          "dosage": "33.8mg",
+          "route": "IV",
+          "timing": "Emergence",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0002",
+          "name": "Fentanyl",
+          "dosage": "36.3ml",
+          "route": "Inhalation",
+          "timing": "Induction",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0008",
+          "name": "Lidocaine",
+          "dosage": "16.4mg",
+          "route": "Intrathecal",
+          "timing": "Induction",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        }
+      ],
+      "monitoring": {
+        "ecg": true,
+        "bloodPressure": true,
+        "oxygenSaturation": true,
+        "capnography": true,
+        "temperatureMonitoring": true
+      },
+      "estimatedAnesthesiaTime": 303,
+      "riskAssessment": {
+        "asa_class": "III",
+        "mallampati": "III",
+        "difficultAirway": false
+      }
+    },
+    "intraOpSection": {
+      "phases": {
+        "preparation": {
+          "materials": [
+            {
+              "materialId": "MAT_0008",
+              "code": "MAT18VLUL",
+              "name": "Irrigation Solution",
+              "quantity": 2,
+              "unitCost": 474.22,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0000",
+              "code": "MATRNE5MD",
+              "name": "Surgical Suture",
+              "quantity": 5,
+              "unitCost": 426.01,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 20
+        },
+        "procedure": {
+          "materials": [
+            {
+              "materialId": "MAT_0001",
+              "code": "MATXI1B26",
+              "name": "Gauze Pad",
+              "quantity": 8,
+              "unitCost": 39.64,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0000",
+              "code": "MATRNE5MD",
+              "name": "Surgical Suture",
+              "quantity": 6,
+              "unitCost": 426.01,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0001",
+              "code": "MATXI1B26",
+              "name": "Gauze Pad",
+              "quantity": 4,
+              "unitCost": 39.64,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "medications": [
+            {
+              "medicationId": "MED_0009",
+              "code": "MEDCEA4GQ",
+              "name": "Epinephrine",
+              "dosage": "67ml",
+              "quantity": 5,
+              "unitCost": 34.14,
+              "totalCost": null,
+              "riskCategory": "MEDIUM",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            },
+            {
+              "medicationId": "MED_0000",
+              "code": "MEDX0FH4H",
+              "name": "Propofol",
+              "dosage": "60.7ml",
+              "quantity": 5,
+              "unitCost": 25.53,
+              "totalCost": null,
+              "riskCategory": "HIGH",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            }
+          ],
+          "duration": 52
+        },
+        "closure": {
+          "materials": [
+            {
+              "materialId": "MAT_0006",
+              "code": "MATOZ6GOE",
+              "name": "Bandage",
+              "quantity": 9,
+              "unitCost": 57.4,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0005",
+              "code": "MATVNGU2B",
+              "name": "Surgical Mask",
+              "quantity": 8,
+              "unitCost": 284.79,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0000",
+              "code": "MATRNE5MD",
+              "name": "Surgical Suture",
+              "quantity": 10,
+              "unitCost": 426.01,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 29
+        }
+      },
+      "complications": [],
+      "intraOpNotes": "Vesica vicissitudo temporibus copiose adeo explicabo. Molestias amaritudo decens. Adnuo contra acerbitas clamo depromo aequitas beatus eveniet viriliter."
+    },
+    "postOpSection": {
+      "medications": [
+        {
+          "medicationId": "MED_0007",
+          "name": "Morphine",
+          "dosage": "46.8units",
+          "frequency": "PRN",
+          "duration": "7 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0008",
+          "name": "Lidocaine",
+          "dosage": "76.9mg",
+          "frequency": "BID",
+          "duration": "3 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0001",
+          "name": "Midazolam",
+          "dosage": "72.5units",
+          "frequency": "Daily",
+          "duration": "3 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0002",
+          "name": "Fentanyl",
+          "dosage": "11.6ml",
+          "frequency": "TID",
+          "duration": "14 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        }
+      ],
+      "materials": [
+        {
+          "materialId": "MAT_0004",
+          "code": "MATDFKKPB",
+          "name": "Catheter",
+          "quantity": 1,
+          "unitCost": 353.93,
+          "totalCost": null,
+          "category": "SURGICAL_INSTRUMENT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "recoveryMetrics": {
+        "painScore": 6,
+        "nauseaScore": 4,
+        "mobilityScore": 4,
+        "dischargeReadiness": false
+      },
+      "dischargeInstructions": {
+        "medications": "Abbas vulariter adiuvo porro video cohors amitto assumenda adsum. Adduco antepono decens surgo casus. Veritatis quasi inflammatio abduco caecus videlicet amo carpo argumentum charisma.",
+        "followUp": "2025-09-02T08:17:26.877Z",
+        "restrictions": "Avaritia amoveo conculco defessus comprehendo ustilo tabula. Abstergo asperiores apostolus ars."
+      }
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T13:01:55.143Z",
+      "updatedAt": "2025-07-29T13:01:55.143Z",
+      "bookingTimestamp": "2025-08-20T08:52:01.356Z"
+    },
+    "_testMetadata": {
+      "caseIndex": 7,
+      "generatedAt": 1753794115143,
+      "expectedFragments": {
+        "materialCosts": true,
+        "medicationCosts": true,
+        "procedureCosts": true,
+        "anesthesiaCosts": true,
+        "totalCosts": true
+      },
+      "dependencyChains": [
+        "patientWeight -> medicationDosages -> totalMedicationCost",
+        "surgeryComplexity -> materialRequirements -> totalMaterialCost",
+        "anesthesiaTime -> anesthesiaCost -> totalAnesthesiaCost",
+        "allCosts -> totalCaseCost -> billingAmount",
+        "riskFactors -> insuranceCoverage -> patientResponsibility"
+      ]
+    }
+  },
+  {
+    "caseNumber": "STRESS_000008",
+    "status": "PENDING",
+    "bookingPatient": {
+      "patientId": "PAT_001616",
+      "name": "Rebekah",
+      "surname": "Morissette",
+      "birthDate": "1951-10-06T20:56:08.410Z",
+      "insuranceType": "PUBLIC",
+      "riskFactors": [
+        "DIABETES",
+        "HEART_DISEASE"
+      ],
+      "emergencyContact": {
+        "name": "Estelle Jacobson-Larson II",
+        "phone": "(537) 695-4166 x1876"
+      }
+    },
+    "patientRef": "PAT_001616",
+    "bookingSection": {
+      "date": "2025-08-13T04:40:43.364Z",
+      "doctorId": "DOC_0026",
+      "contractId": "CONTRACT_007",
+      "opStandardId": "OPS_0051",
+      "duration": 198,
+      "estimatedDuration": 191,
+      "priority": "URGENT",
+      "operatingRoom": "OR3"
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_0000",
+          "code": "MATRNE5MD",
+          "name": "Surgical Suture",
+          "quantity": 6,
+          "unitCost": 426.01,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0008",
+          "code": "MAT18VLUL",
+          "name": "Irrigation Solution",
+          "quantity": 9,
+          "unitCost": 474.22,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0004",
+          "code": "MATDFKKPB",
+          "name": "Catheter",
+          "quantity": 4,
+          "unitCost": 353.93,
+          "totalCost": null,
+          "category": "SURGICAL_INSTRUMENT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_0001",
+          "code": "MEDWSARKI",
+          "name": "Midazolam",
+          "dosage": "77.1units",
+          "quantity": 4,
+          "unitCost": 16.09,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0006",
+          "code": "MEDUOAOII",
+          "name": "Ibuprofen",
+          "dosage": "68.5units",
+          "quantity": 3,
+          "unitCost": 29.99,
+          "totalCost": null,
+          "riskCategory": "LOW",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0006",
+          "code": "MEDUOAOII",
+          "name": "Ibuprofen",
+          "dosage": "53.2units",
+          "quantity": 3,
+          "unitCost": 29.99,
+          "totalCost": null,
+          "riskCategory": "LOW",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0003",
+          "code": "MEDUFCNZB",
+          "name": "Rocuronium",
+          "dosage": "68.1mcg",
+          "quantity": 3,
+          "unitCost": 41.84,
+          "totalCost": null,
+          "riskCategory": "MEDIUM",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0005",
+          "code": "MEDAPD31H",
+          "name": "Paracetamol",
+          "dosage": "16mg",
+          "quantity": 1,
+          "unitCost": 18.78,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        }
+      ],
+      "assessment": {
+        "riskScore": 9,
+        "allergies": [
+          "Contrast_Dye",
+          "NSAIDs",
+          "Penicillin"
+        ],
+        "vitalSigns": {
+          "bloodPressure": "139/81",
+          "heartRate": 79,
+          "temperature": 37,
+          "oxygenSaturation": 95
+        }
+      },
+      "specialInstructions": "Confido umerus theologus bellicus creator. Vestigium dolor clementia curvo tum conservo crastinus.",
+      "preparationTime": 34
+    },
+    "surgerySection": {
+      "surgeryType": "Endoprothese",
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 709,
+      "complexity": "HIGH",
+      "equipmentRequired": [
+        "Suction",
+        "C_Arm",
+        "Irrigation",
+        "Laparoscope",
+        "Electrocautery"
+      ],
+      "estimatedCost": 21169.2,
+      "riskFactors": [
+        "Organ_Injury"
+      ]
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia",
+        "Sedation"
+      ],
+      "anesthesiologistPresence": "WITHOUT_ANESTHESIOLOGIST",
+      "medications": [
+        {
+          "medicationId": "MED_0008",
+          "name": "Lidocaine",
+          "dosage": "41.3mg",
+          "route": "Inhalation",
+          "timing": "Emergence",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0004",
+          "name": "Cefazolin",
+          "dosage": "29.7ml",
+          "route": "Intrathecal",
+          "timing": "Emergence",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0005",
+          "name": "Paracetamol",
+          "dosage": "10mg",
+          "route": "Epidural",
+          "timing": "Induction",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0009",
+          "name": "Epinephrine",
+          "dosage": "17.6ml",
+          "route": "Epidural",
+          "timing": "Induction",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        }
+      ],
+      "monitoring": {
+        "ecg": true,
+        "bloodPressure": true,
+        "oxygenSaturation": true,
+        "capnography": false,
+        "temperatureMonitoring": true
+      },
+      "estimatedAnesthesiaTime": 358,
+      "riskAssessment": {
+        "asa_class": "III",
+        "mallampati": "II",
+        "difficultAirway": true
+      }
+    },
+    "intraOpSection": {
+      "phases": {
+        "preparation": {
+          "materials": [
+            {
+              "materialId": "MAT_0005",
+              "code": "MATVNGU2B",
+              "name": "Surgical Mask",
+              "quantity": 3,
+              "unitCost": 284.79,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0008",
+              "code": "MAT18VLUL",
+              "name": "Irrigation Solution",
+              "quantity": 8,
+              "unitCost": 474.22,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0004",
+              "code": "MATDFKKPB",
+              "name": "Catheter",
+              "quantity": 3,
+              "unitCost": 353.93,
+              "totalCost": null,
+              "category": "SURGICAL_INSTRUMENT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 12
+        },
+        "procedure": {
+          "materials": [
+            {
+              "materialId": "MAT_0006",
+              "code": "MATOZ6GOE",
+              "name": "Bandage",
+              "quantity": 10,
+              "unitCost": 57.4,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0001",
+              "code": "MATXI1B26",
+              "name": "Gauze Pad",
+              "quantity": 7,
+              "unitCost": 39.64,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0001",
+              "code": "MATXI1B26",
+              "name": "Gauze Pad",
+              "quantity": 1,
+              "unitCost": 39.64,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0002",
+              "code": "MAT93VPIV",
+              "name": "Surgical Gloves",
+              "quantity": 10,
+              "unitCost": 453.91,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0008",
+              "code": "MAT18VLUL",
+              "name": "Irrigation Solution",
+              "quantity": 4,
+              "unitCost": 474.22,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0005",
+              "code": "MATVNGU2B",
+              "name": "Surgical Mask",
+              "quantity": 9,
+              "unitCost": 284.79,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0005",
+              "code": "MATVNGU2B",
+              "name": "Surgical Mask",
+              "quantity": 7,
+              "unitCost": 284.79,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0004",
+              "code": "MATDFKKPB",
+              "name": "Catheter",
+              "quantity": 10,
+              "unitCost": 353.93,
+              "totalCost": null,
+              "category": "SURGICAL_INSTRUMENT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "medications": [
+            {
+              "medicationId": "MED_0007",
+              "code": "MEDZMFXDD",
+              "name": "Morphine",
+              "dosage": "29.3units",
+              "quantity": 4,
+              "unitCost": 4.54,
+              "totalCost": null,
+              "riskCategory": "HIGH",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            },
+            {
+              "medicationId": "MED_0002",
+              "code": "MEDPK2UK8",
+              "name": "Fentanyl",
+              "dosage": "59.8ml",
+              "quantity": 2,
+              "unitCost": 42.19,
+              "totalCost": null,
+              "riskCategory": "LOW",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            }
+          ],
+          "duration": 43
+        },
+        "closure": {
+          "materials": [
+            {
+              "materialId": "MAT_0002",
+              "code": "MAT93VPIV",
+              "name": "Surgical Gloves",
+              "quantity": 10,
+              "unitCost": 453.91,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 21
+        }
+      },
+      "complications": [],
+      "intraOpNotes": "Eveniet natus armarium ullam aiunt iure anser sto. Color sunt centum deludo quod concido iusto. Acies curis suus accusator corporis totidem."
+    },
+    "postOpSection": {
+      "medications": [
+        {
+          "medicationId": "MED_0008",
+          "name": "Lidocaine",
+          "dosage": "68mg",
+          "frequency": "PRN",
+          "duration": "1 day",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0005",
+          "name": "Paracetamol",
+          "dosage": "48.8mg",
+          "frequency": "Daily",
+          "duration": "7 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        }
+      ],
+      "materials": [
+        {
+          "materialId": "MAT_0007",
+          "code": "MATFIZJUT",
+          "name": "Surgical Blade",
+          "quantity": 4,
+          "unitCost": 104.39,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0005",
+          "code": "MATVNGU2B",
+          "name": "Surgical Mask",
+          "quantity": 10,
+          "unitCost": 284.79,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "recoveryMetrics": {
+        "painScore": 7,
+        "nauseaScore": 4,
+        "mobilityScore": 1,
+        "dischargeReadiness": true
+      },
+      "dischargeInstructions": {
+        "medications": "Solio advenio cervus anser tot. Debeo virtus delicate auditor minus absque creta tener. Labore fugiat textor solium tumultus aeger bellum ago.",
+        "followUp": "2025-08-03T21:45:20.186Z",
+        "restrictions": "Commodo uredo defendo corrupti enim. Universe demoror cubo compono defendo nam ventito arceo."
+      }
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T13:01:55.145Z",
+      "updatedAt": "2025-07-29T13:01:55.145Z",
+      "bookingTimestamp": "2025-08-13T04:40:43.364Z"
+    },
+    "_testMetadata": {
+      "caseIndex": 8,
+      "generatedAt": 1753794115145,
+      "expectedFragments": {
+        "materialCosts": true,
+        "medicationCosts": true,
+        "procedureCosts": true,
+        "anesthesiaCosts": true,
+        "totalCosts": true
+      },
+      "dependencyChains": [
+        "patientWeight -> medicationDosages -> totalMedicationCost",
+        "surgeryComplexity -> materialRequirements -> totalMaterialCost",
+        "anesthesiaTime -> anesthesiaCost -> totalAnesthesiaCost",
+        "allCosts -> totalCaseCost -> billingAmount",
+        "riskFactors -> insuranceCoverage -> patientResponsibility"
+      ]
+    }
+  },
+  {
+    "caseNumber": "STRESS_000009",
+    "status": "PENDING",
+    "bookingPatient": {
+      "patientId": "PAT_001076",
+      "name": "Litzy",
+      "surname": "Vandervort",
+      "birthDate": "1947-04-30T17:44:09.650Z",
+      "insuranceType": "SELF_PAY",
+      "riskFactors": [
+        "HEART_DISEASE",
+        "OBESITY"
+      ],
+      "emergencyContact": {
+        "name": "Courtney Rempel",
+        "phone": "422-367-1423 x0849"
+      }
+    },
+    "patientRef": "PAT_001076",
+    "bookingSection": {
+      "date": "2025-09-06T03:11:40.860Z",
+      "doctorId": "DOC_0048",
+      "contractId": "CONTRACT_005",
+      "opStandardId": "OPS_0031",
+      "duration": 284,
+      "estimatedDuration": 341,
+      "priority": "EMERGENCY",
+      "operatingRoom": "OR3"
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_0008",
+          "code": "MAT18VLUL",
+          "name": "Irrigation Solution",
+          "quantity": 2,
+          "unitCost": 474.22,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0000",
+          "code": "MATRNE5MD",
+          "name": "Surgical Suture",
+          "quantity": 6,
+          "unitCost": 426.01,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0005",
+          "code": "MATVNGU2B",
+          "name": "Surgical Mask",
+          "quantity": 2,
+          "unitCost": 284.79,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0001",
+          "code": "MATXI1B26",
+          "name": "Gauze Pad",
+          "quantity": 9,
+          "unitCost": 39.64,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0005",
+          "code": "MATVNGU2B",
+          "name": "Surgical Mask",
+          "quantity": 2,
+          "unitCost": 284.79,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0004",
+          "code": "MATDFKKPB",
+          "name": "Catheter",
+          "quantity": 1,
+          "unitCost": 353.93,
+          "totalCost": null,
+          "category": "SURGICAL_INSTRUMENT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0000",
+          "code": "MATRNE5MD",
+          "name": "Surgical Suture",
+          "quantity": 6,
+          "unitCost": 426.01,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0001",
+          "code": "MATXI1B26",
+          "name": "Gauze Pad",
+          "quantity": 5,
+          "unitCost": 39.64,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_0007",
+          "code": "MEDZMFXDD",
+          "name": "Morphine",
+          "dosage": "92.4units",
+          "quantity": 4,
+          "unitCost": 4.54,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0008",
+          "code": "MEDXDLXPS",
+          "name": "Lidocaine",
+          "dosage": "61.9mg",
+          "quantity": 1,
+          "unitCost": 16.59,
+          "totalCost": null,
+          "riskCategory": "LOW",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0008",
+          "code": "MEDXDLXPS",
+          "name": "Lidocaine",
+          "dosage": "39.6mg",
+          "quantity": 3,
+          "unitCost": 16.59,
+          "totalCost": null,
+          "riskCategory": "LOW",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        }
+      ],
+      "assessment": {
+        "riskScore": 2,
+        "allergies": [
+          "NSAIDs"
+        ],
+        "vitalSigns": {
+          "bloodPressure": "148/89",
+          "heartRate": 95,
+          "temperature": 36.6,
+          "oxygenSaturation": 97
+        }
+      },
+      "specialInstructions": "Cultura decor cubicularis tricesimus capitulus talio vix alveus coaegresco aiunt. Consequatur defleo dicta ulterius umbra nam reprehenderit.",
+      "preparationTime": 36
+    },
+    "surgerySection": {
+      "surgeryType": "Laparoskopie",
+      "approach": "Endoscopic",
+      "estimatedBloodLoss": 649,
+      "complexity": "CRITICAL",
+      "equipmentRequired": [
+        "Laparoscope",
+        "Suction"
+      ],
+      "estimatedCost": 4234.47,
+      "riskFactors": [
+        "Anesthesia_Complications",
+        "Organ_Injury"
+      ]
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia",
+        "Regional_Anesthesia"
+      ],
+      "anesthesiologistPresence": "AUTO",
+      "medications": [
+        {
+          "medicationId": "MED_0003",
+          "name": "Rocuronium",
+          "dosage": "13.4mcg",
+          "route": "Intrathecal",
+          "timing": "Emergence",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0002",
+          "name": "Fentanyl",
+          "dosage": "28.2ml",
+          "route": "Inhalation",
+          "timing": "Induction",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0001",
+          "name": "Midazolam",
+          "dosage": "45units",
+          "route": "Inhalation",
+          "timing": "Induction",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0009",
+          "name": "Epinephrine",
+          "dosage": "27.8ml",
+          "route": "IV",
+          "timing": "Maintenance",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        }
+      ],
+      "monitoring": {
+        "ecg": true,
+        "bloodPressure": true,
+        "oxygenSaturation": true,
+        "capnography": true,
+        "temperatureMonitoring": false
+      },
+      "estimatedAnesthesiaTime": 189,
+      "riskAssessment": {
+        "asa_class": "I",
+        "mallampati": "I",
+        "difficultAirway": true
+      }
+    },
+    "intraOpSection": {
+      "phases": {
+        "preparation": {
+          "materials": [
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 2,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 2,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 15
+        },
+        "procedure": {
+          "materials": [
+            {
+              "materialId": "MAT_0008",
+              "code": "MAT18VLUL",
+              "name": "Irrigation Solution",
+              "quantity": 1,
+              "unitCost": 474.22,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 2,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0006",
+              "code": "MATOZ6GOE",
+              "name": "Bandage",
+              "quantity": 9,
+              "unitCost": 57.4,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0000",
+              "code": "MATRNE5MD",
+              "name": "Surgical Suture",
+              "quantity": 5,
+              "unitCost": 426.01,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "medications": [
+            {
+              "medicationId": "MED_0004",
+              "code": "MEDKO5VO6",
+              "name": "Cefazolin",
+              "dosage": "82ml",
+              "quantity": 5,
+              "unitCost": 41.49,
+              "totalCost": null,
+              "riskCategory": "MEDIUM",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            }
+          ],
+          "duration": 159
+        },
+        "closure": {
+          "materials": [
+            {
+              "materialId": "MAT_0008",
+              "code": "MAT18VLUL",
+              "name": "Irrigation Solution",
+              "quantity": 8,
+              "unitCost": 474.22,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0005",
+              "code": "MATVNGU2B",
+              "name": "Surgical Mask",
+              "quantity": 3,
+              "unitCost": 284.79,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 14
+        }
+      },
+      "complications": [],
+      "intraOpNotes": "Arca causa cur bestia facere cerno color. Surgo cinis civitas cena xiphias temptatio suggero thema dignissimos. Odit volutabrum adstringo comprehendo conitor calamitas."
+    },
+    "postOpSection": {
+      "medications": [
+        {
+          "medicationId": "MED_0007",
+          "name": "Morphine",
+          "dosage": "85.3units",
+          "frequency": "BID",
+          "duration": "1 day",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0006",
+          "name": "Ibuprofen",
+          "dosage": "58.2units",
+          "frequency": "BID",
+          "duration": "1 day",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0002",
+          "name": "Fentanyl",
+          "dosage": "6.4ml",
+          "frequency": "BID",
+          "duration": "14 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0000",
+          "name": "Propofol",
+          "dosage": "35.5ml",
+          "frequency": "PRN",
+          "duration": "7 days",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        }
+      ],
+      "materials": [
+        {
+          "materialId": "MAT_0007",
+          "code": "MATFIZJUT",
+          "name": "Surgical Blade",
+          "quantity": 4,
+          "unitCost": 104.39,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "recoveryMetrics": {
+        "painScore": 1,
+        "nauseaScore": 4,
+        "mobilityScore": 3,
+        "dischargeReadiness": false
+      },
+      "dischargeInstructions": {
+        "medications": "Tumultus molestias architecto ut vociferor umerus. Cupio cubicularis aeneus. Tripudio deputo cena rem acquiro assentator urbs thesaurus clementia.",
+        "followUp": "2025-09-18T12:18:25.992Z",
+        "restrictions": "Caveo doloribus sint adopto aggredior. Defendo recusandae termes."
+      }
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T13:01:55.146Z",
+      "updatedAt": "2025-07-29T13:01:55.146Z",
+      "bookingTimestamp": "2025-09-06T03:11:40.860Z"
+    },
+    "_testMetadata": {
+      "caseIndex": 9,
+      "generatedAt": 1753794115146,
+      "expectedFragments": {
+        "materialCosts": true,
+        "medicationCosts": true,
+        "procedureCosts": true,
+        "anesthesiaCosts": true,
+        "totalCosts": true
+      },
+      "dependencyChains": [
+        "patientWeight -> medicationDosages -> totalMedicationCost",
+        "surgeryComplexity -> materialRequirements -> totalMaterialCost",
+        "anesthesiaTime -> anesthesiaCost -> totalAnesthesiaCost",
+        "allCosts -> totalCaseCost -> billingAmount",
+        "riskFactors -> insuranceCoverage -> patientResponsibility"
+      ]
+    }
+  },
+  {
+    "caseNumber": "STRESS_000010",
+    "status": "PENDING",
+    "bookingPatient": {
+      "patientId": "PAT_001461",
+      "name": "Caitlyn",
+      "surname": "McGlynn",
+      "birthDate": "1948-09-23T07:45:39.101Z",
+      "insuranceType": "PRIVATE",
+      "riskFactors": [
+        "HYPERTENSION"
+      ],
+      "emergencyContact": {
+        "name": "Mae Kuphal",
+        "phone": "(920) 257-0704 x254"
+      }
+    },
+    "patientRef": "PAT_001461",
+    "bookingSection": {
+      "date": "2025-10-12T11:42:13.198Z",
+      "doctorId": "DOC_0008",
+      "contractId": "CONTRACT_006",
+      "opStandardId": "OPS_0020",
+      "duration": 391,
+      "estimatedDuration": 421,
+      "priority": "ROUTINE",
+      "operatingRoom": "OR4"
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_0003",
+          "code": "MATQSIGWN",
+          "name": "Syringe",
+          "quantity": 2,
+          "unitCost": 240.76,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0001",
+          "code": "MATXI1B26",
+          "name": "Gauze Pad",
+          "quantity": 2,
+          "unitCost": 39.64,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0002",
+          "code": "MAT93VPIV",
+          "name": "Surgical Gloves",
+          "quantity": 10,
+          "unitCost": 453.91,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0006",
+          "code": "MATOZ6GOE",
+          "name": "Bandage",
+          "quantity": 2,
+          "unitCost": 57.4,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0001",
+          "code": "MATXI1B26",
+          "name": "Gauze Pad",
+          "quantity": 9,
+          "unitCost": 39.64,
+          "totalCost": null,
+          "category": "DISPOSABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_0005",
+          "code": "MEDAPD31H",
+          "name": "Paracetamol",
+          "dosage": "3.4mg",
+          "quantity": 4,
+          "unitCost": 18.78,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        },
+        {
+          "medicationId": "MED_0007",
+          "code": "MEDZMFXDD",
+          "name": "Morphine",
+          "dosage": "58.5units",
+          "quantity": 1,
+          "unitCost": 4.54,
+          "totalCost": null,
+          "riskCategory": "HIGH",
+          "dosagePerKg": null,
+          "maxDailyDose": null,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "dosageValidation": "dosage <= maxDailyDose",
+            "riskAssessment": "riskCategory + patientRiskFactors"
+          }
+        }
+      ],
+      "assessment": {
+        "riskScore": 6,
+        "allergies": [
+          "Iodine"
+        ],
+        "vitalSigns": {
+          "bloodPressure": "127/100",
+          "heartRate": 92,
+          "temperature": 37,
+          "oxygenSaturation": 99
+        }
+      },
+      "specialInstructions": "Adicio atque commodi concido aequitas cado advoco circumvenio arceo. Aperio aurum quis decerno agnitio vulgus alienus nam aeternus deficio.",
+      "preparationTime": 20
+    },
+    "surgerySection": {
+      "surgeryType": "Thorakoskopie",
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 98,
+      "complexity": "HIGH",
+      "equipmentRequired": [
+        "Irrigation",
+        "Laparoscope",
+        "Electrocautery",
+        "Suction"
+      ],
+      "estimatedCost": 12170.8,
+      "riskFactors": [
+        "Organ_Injury",
+        "Anesthesia_Complications",
+        "Infection"
+      ]
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "anesthesiologistPresence": "AUTO",
+      "medications": [
+        {
+          "medicationId": "MED_0002",
+          "name": "Fentanyl",
+          "dosage": "48ml",
+          "route": "Intrathecal",
+          "timing": "Induction",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0005",
+          "name": "Paracetamol",
+          "dosage": "7.4mg",
+          "route": "Intrathecal",
+          "timing": "Induction",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0001",
+          "name": "Midazolam",
+          "dosage": "16.8units",
+          "route": "Inhalation",
+          "timing": "Emergence",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0004",
+          "name": "Cefazolin",
+          "dosage": "37.7ml",
+          "route": "Epidural",
+          "timing": "Maintenance",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        },
+        {
+          "medicationId": "MED_0000",
+          "name": "Propofol",
+          "dosage": "9.2ml",
+          "route": "IV",
+          "timing": "Induction",
+          "_dependencies": {
+            "dosageCalculation": "patientWeight * dosagePerKg",
+            "routeValidation": "route in approvedRoutes"
+          }
+        }
+      ],
+      "monitoring": {
+        "ecg": true,
+        "bloodPressure": true,
+        "oxygenSaturation": true,
+        "capnography": false,
+        "temperatureMonitoring": true
+      },
+      "estimatedAnesthesiaTime": 338,
+      "riskAssessment": {
+        "asa_class": "I",
+        "mallampati": "I",
+        "difficultAirway": true
+      }
+    },
+    "intraOpSection": {
+      "phases": {
+        "preparation": {
+          "materials": [
+            {
+              "materialId": "MAT_0001",
+              "code": "MATXI1B26",
+              "name": "Gauze Pad",
+              "quantity": 8,
+              "unitCost": 39.64,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0006",
+              "code": "MATOZ6GOE",
+              "name": "Bandage",
+              "quantity": 2,
+              "unitCost": 57.4,
+              "totalCost": null,
+              "category": "CONSUMABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0001",
+              "code": "MATXI1B26",
+              "name": "Gauze Pad",
+              "quantity": 6,
+              "unitCost": 39.64,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 24
+        },
+        "procedure": {
+          "materials": [
+            {
+              "materialId": "MAT_0002",
+              "code": "MAT93VPIV",
+              "name": "Surgical Gloves",
+              "quantity": 8,
+              "unitCost": 453.91,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0003",
+              "code": "MATQSIGWN",
+              "name": "Syringe",
+              "quantity": 5,
+              "unitCost": 240.76,
+              "totalCost": null,
+              "category": "IMPLANT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0004",
+              "code": "MATDFKKPB",
+              "name": "Catheter",
+              "quantity": 3,
+              "unitCost": 353.93,
+              "totalCost": null,
+              "category": "SURGICAL_INSTRUMENT",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            },
+            {
+              "materialId": "MAT_0007",
+              "code": "MATFIZJUT",
+              "name": "Surgical Blade",
+              "quantity": 2,
+              "unitCost": 104.39,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": true,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "medications": [
+            {
+              "medicationId": "MED_0007",
+              "code": "MEDZMFXDD",
+              "name": "Morphine",
+              "dosage": "47.6units",
+              "quantity": 5,
+              "unitCost": 4.54,
+              "totalCost": null,
+              "riskCategory": "HIGH",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            },
+            {
+              "medicationId": "MED_0000",
+              "code": "MEDX0FH4H",
+              "name": "Propofol",
+              "dosage": "67.2ml",
+              "quantity": 5,
+              "unitCost": 25.53,
+              "totalCost": null,
+              "riskCategory": "HIGH",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            },
+            {
+              "medicationId": "MED_0007",
+              "code": "MEDZMFXDD",
+              "name": "Morphine",
+              "dosage": "7units",
+              "quantity": 4,
+              "unitCost": 4.54,
+              "totalCost": null,
+              "riskCategory": "HIGH",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            },
+            {
+              "medicationId": "MED_0005",
+              "code": "MEDAPD31H",
+              "name": "Paracetamol",
+              "dosage": "42.7mg",
+              "quantity": 5,
+              "unitCost": 18.78,
+              "totalCost": null,
+              "riskCategory": "HIGH",
+              "dosagePerKg": null,
+              "maxDailyDose": null,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "dosageValidation": "dosage <= maxDailyDose",
+                "riskAssessment": "riskCategory + patientRiskFactors"
+              }
+            }
+          ],
+          "duration": 206
+        },
+        "closure": {
+          "materials": [
+            {
+              "materialId": "MAT_0008",
+              "code": "MAT18VLUL",
+              "name": "Irrigation Solution",
+              "quantity": 5,
+              "unitCost": 474.22,
+              "totalCost": null,
+              "category": "DISPOSABLE",
+              "sterilizable": false,
+              "_dependencies": {
+                "costCalculation": "quantity * unitCost",
+                "categoryValidation": "category in approvedCategories",
+                "availabilityCheck": "quantity <= stockLevel"
+              }
+            }
+          ],
+          "duration": 21
+        }
+      },
+      "complications": [],
+      "intraOpNotes": "Verumtamen tenuis cetera corrumpo villa surgo concido verecundia. Arbustum iste subseco tego saepe spoliatio bestia vigilo suppellex avaritia. Deprecator verto delectatio claudeo."
+    },
+    "postOpSection": {
+      "medications": [
+        {
+          "medicationId": "MED_0008",
+          "name": "Lidocaine",
+          "dosage": "86.4mg",
+          "frequency": "QID",
+          "duration": "1 day",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        },
+        {
+          "medicationId": "MED_0007",
+          "name": "Morphine",
+          "dosage": "76.2units",
+          "frequency": "TID",
+          "duration": "1 day",
+          "_dependencies": {
+            "dosageAdjustment": "surgeryComplexity * baseDosage",
+            "durationCalculation": "recoveryRisk + patientAge"
+          }
+        }
+      ],
+      "materials": [
+        {
+          "materialId": "MAT_0002",
+          "code": "MAT93VPIV",
+          "name": "Surgical Gloves",
+          "quantity": 10,
+          "unitCost": 453.91,
+          "totalCost": null,
+          "category": "IMPLANT",
+          "sterilizable": false,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        },
+        {
+          "materialId": "MAT_0006",
+          "code": "MATOZ6GOE",
+          "name": "Bandage",
+          "quantity": 8,
+          "unitCost": 57.4,
+          "totalCost": null,
+          "category": "CONSUMABLE",
+          "sterilizable": true,
+          "_dependencies": {
+            "costCalculation": "quantity * unitCost",
+            "categoryValidation": "category in approvedCategories",
+            "availabilityCheck": "quantity <= stockLevel"
+          }
+        }
+      ],
+      "recoveryMetrics": {
+        "painScore": 4,
+        "nauseaScore": 1,
+        "mobilityScore": 4,
+        "dischargeReadiness": true
+      },
+      "dischargeInstructions": {
+        "medications": "Terminatio teneo temeritas terga virtus. Bellum spiculum vaco. Vomito voluntarius coerceo demergo tabernus eaque despecto ea traho.",
+        "followUp": "2025-07-31T00:59:23.951Z",
+        "restrictions": "Consectetur animi degenero tracto ars. Ulterius cur cohibeo aperiam aggredior cunctatio."
+      }
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T13:01:55.148Z",
+      "updatedAt": "2025-07-29T13:01:55.148Z",
+      "bookingTimestamp": "2025-10-12T11:42:13.198Z"
+    },
+    "_testMetadata": {
+      "caseIndex": 10,
+      "generatedAt": 1753794115148,
+      "expectedFragments": {
+        "materialCosts": true,
+        "medicationCosts": true,
+        "procedureCosts": true,
+        "anesthesiaCosts": true,
+        "totalCosts": true
+      },
+      "dependencyChains": [
+        "patientWeight -> medicationDosages -> totalMedicationCost",
+        "surgeryComplexity -> materialRequirements -> totalMaterialCost",
+        "anesthesiaTime -> anesthesiaCost -> totalAnesthesiaCost",
+        "allCosts -> totalCaseCost -> billingAmount",
+        "riskFactors -> insuranceCoverage -> patientResponsibility"
+      ]
+    }
+  }
+]

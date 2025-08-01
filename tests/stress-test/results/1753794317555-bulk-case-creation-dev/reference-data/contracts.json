@@ -1,0 +1,202 @@
+[
+  {
+    "contractId": "CONTRACT_000",
+    "name": "Hand and Sons",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 14,
+      "discountEarly": 0.04
+    }
+  },
+  {
+    "contractId": "CONTRACT_001",
+    "name": "Donnelly - Hermiston",
+    "type": "INSURANCE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0.04
+    }
+  },
+  {
+    "contractId": "CONTRACT_002",
+    "name": "Hahn and Sons",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 21,
+      "discountEarly": 0.05
+    }
+  },
+  {
+    "contractId": "CONTRACT_003",
+    "name": "Flatley - Hand",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0
+    }
+  },
+  {
+    "contractId": "CONTRACT_004",
+    "name": "Franey - Abernathy",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 21,
+      "discountEarly": 0.04
+    }
+  },
+  {
+    "contractId": "CONTRACT_005",
+    "name": "Wyman, Balistreri and Tremblay",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0.01
+    }
+  },
+  {
+    "contractId": "CONTRACT_006",
+    "name": "O'Reilly and Sons",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 60,
+      "discountEarly": 0.05
+    }
+  },
+  {
+    "contractId": "CONTRACT_007",
+    "name": "Hoeger - Barrows",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 14,
+      "discountEarly": 0.03
+    }
+  },
+  {
+    "contractId": "CONTRACT_008",
+    "name": "Kuhn and Sons",
+    "type": "INSURANCE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 21,
+      "discountEarly": 0.04
+    }
+  },
+  {
+    "contractId": "CONTRACT_009",
+    "name": "Crooks Group",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0.03
+    }
+  }
+]

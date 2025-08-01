@@ -1,0 +1,30 @@
+[
+  {
+    "timestamp": 1753962884543,
+    "type": "test_started",
+    "message": "Started bulk-case-creation stress test",
+    "config": {}
+  },
+  {
+    "timestamp": 1753962886405,
+    "type": "validation_started",
+    "message": "Comprehensive validation started"
+  },
+  {
+    "timestamp": 1753962896585,
+    "type": "validation_completed",
+    "message": "Comprehensive validation completed",
+    "results": {
+      "proxiesCreated": "0/10",
+      "fragmentsValid": "0/0",
+      "dependenciesComplete": "0/0",
+      "performanceTargetsMet": "1/3"
+    }
+  },
+  {
+    "timestamp": 1753962896687,
+    "type": "test_failed",
+    "message": "Test failed: this.getMemoryStatus is not a function",
+    "error": "this.getMemoryStatus is not a function"
+  }
+]

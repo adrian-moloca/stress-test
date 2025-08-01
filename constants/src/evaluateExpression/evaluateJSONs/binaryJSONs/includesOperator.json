@@ -1,0 +1,120 @@
+[
+  {
+    "data": {
+      "expressionKind": "includesOperator",
+      "left": {
+        "expressionKind": "literalList",
+        "value": [
+           10,
+           15
+        ]
+      },
+      "right": {
+        "expressionKind": "literalNumber",
+        "value": 15
+      }
+    },
+    "expected": true
+  },
+  {
+    "data": {
+      "expressionKind": "includesOperator",
+      "left": {
+        "expressionKind": "literalList",
+        "value": [
+          10,
+          15
+        ]
+      },
+      "right": {
+        "expressionKind": "literalNumber",
+        "value": 23
+      }
+    },
+    "expected": false
+  },
+  {
+    "data": {
+      "expressionKind": "includesOperator",
+      "left": {
+        "expressionKind": "literalListOfExpressions",
+        "value": [
+          {
+            "expressionKind": "literalObj",
+            "value": {
+              "first": "Hello",
+              "second": "World"
+            }
+          },
+          {
+            "expressionKind": "literalObj",
+            "value": {
+              "first": "Prova",
+              "second": "Quale"
+            }
+          }
+        ]
+      },
+      "right": {
+        "expressionKind": "literalObj",
+        "value": {
+          "first": "Hello",
+          "second": "World"
+        }
+      }
+    },
+    "expected": true
+  },
+  {
+    "data": {
+      "expressionKind": "includesOperator",
+      "left": {
+        "expressionKind": "literalListOfExpressions",
+        "value": [
+          {
+            "expressionKind": "literalObj",
+            "value": {
+              "first": "Hello",
+              "second": "World"
+            }
+          },
+          {
+            "expressionKind": "literalObj",
+            "value": {
+              "first": {
+                "expressionKind": "literalString",
+                "value": "Prova"
+              },
+              "second": {
+                "expressionKind": "literalString",
+                "value": "Quale"
+              }
+            }
+          }
+        ]
+      },
+      "right": {
+        "expressionKind": "literalObj",
+        "value": {
+          "first": "Hello",
+          "second": "World!"
+        }
+      }
+    },
+    "expected": false
+  },
+  {
+    "data": {
+      "expressionKind": "includesOperator",
+      "left": {
+        "expressionKind": "literalString",
+        "value": "[1, 2, 3, 4, 5]"
+      },
+      "right": {
+        "expressionKind": "literalNumber",
+        "value": 23
+      }
+    },
+    "error": "Invalid Array"
+  }
+]

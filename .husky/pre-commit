@@ -1,0 +1,2 @@
+./prelint.sh
+echo "Linted!"

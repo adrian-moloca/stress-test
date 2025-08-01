@@ -1,0 +1,227 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "standard",
+        "plugin:react/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": [
+            "./tsconfig.json"
+        ]
+    },
+    "ignorePatterns": [
+        "**/node_modules",
+        "**/controllers/cases.controller.ts",
+        "**/functions/lib/**/*",
+        "**/dist/**/*",
+        "**/docker/**",
+        "constantjs/**",
+        "uploads/**",
+        "tests/**",
+        "**/commons-be/lib/**",
+        "**/constantsjs",
+        "playwright.config.ts"
+    ],
+    "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint",
+        "unused-imports",
+        "@stylistic/eslint-plugin",
+        "etc",
+        "eslint-plugin-react"
+    ],
+    "rules": {
+        "unused-imports/no-unused-imports": "error",
+        "comma-dangle": [
+            "error",
+            "only-multiline"
+        ],
+        "curly": [
+            "error",
+            "multi",
+            "consistent"
+        ],
+        "no-console": [
+            "error",
+            {
+                "allow": [
+                    "warn",
+                    "error",
+                    "debug",
+                    "trace"
+                ]
+            }
+        ],
+        "no-useless-constructor": "off",
+        "no-case-declarations": "off",
+        "prefer-const": "off",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            {
+                "args": "all",
+                "argsIgnorePattern": "^_",
+                "caughtErrors": "all",
+                "caughtErrorsIgnorePattern": "^_",
+                "destructuredArrayIgnorePattern": "^_",
+                "varsIgnorePattern": "^_",
+                "ignoreRestSiblings": true
+            }
+        ],
+        "no-use-before-define": "off",
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "arrow-parens": [
+            "error",
+            "as-needed"
+        ],
+        "quote-props": [
+            "error",
+            "as-needed"
+        ],
+        "@typescript-eslint/no-use-before-define": "off",
+        "react/prop-types": "off",
+        "react/display-name": "off",
+        "indent": "off",
+        "@typescript-eslint/indent": "off",
+        "@stylistic/indent": [
+            "error",
+            2
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 100,
+                "ignoreComments": true,
+                "ignoreTrailingComments": true,
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreRegExpLiterals": true
+            }
+        ],
+        "jsx-quotes": [
+            "error",
+            "prefer-single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "camelcase": "off",
+        "no-trailing-spaces": "error",
+        "no-nested-ternary": "error",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "@stylistic/function-call-argument-newline": [
+            "error",
+            "consistent"
+        ],
+        "@stylistic/lines-around-comment": [
+            "error",
+            {
+                "ignorePattern": "eslint",
+                "beforeBlockComment": true,
+                "allowClassStart": true,
+                "allowObjectStart": true
+            }
+        ],
+        "@stylistic/max-statements-per-line": [
+            "error",
+            {
+                "max": 1
+            }
+        ],
+        "@stylistic/multiline-ternary": [
+            "error",
+            "always-multiline"
+        ],
+        "@stylistic/newline-per-chained-call": [
+            "error",
+            {
+                "ignoreChainWithDepth": 2
+            }
+        ],
+        "@stylistic/no-mixed-operators": "error",
+        "@stylistic/no-multi-spaces": "error",
+        "@stylistic/no-trailing-spaces": "error",
+        "@stylistic/space-before-blocks": "error",
+        "@stylistic/space-before-function-paren": [
+            "error",
+            {
+                "anonymous": "always",
+                "named": "always",
+                "asyncArrow": "always"
+            }
+        ],
+        "space-before-function-paren": "off",
+        "@stylistic/function-paren-newline": [
+            "error",
+            "consistent"
+        ],
+        "dot-notation": "off",
+        "react/jsx-props-no-spreading": "warn",
+        "etc/no-assign-mutated-array": "error",
+        "etc/no-commented-out-code": "error",
+        "react/jsx-max-props-per-line": [1, { "maximum": 1 }]
+    },
+    "settings": {
+        "react": {
+            "createClass": "createReactClass",
+            "pragma": "React",
+            "fragment": "Fragment",
+            "version": "detect",
+            "flowVersion": "0.53"
+        },
+        "propWrapperFunctions": [
+            "forbidExtraProps",
+            {
+                "property": "freeze",
+                "object": "Object"
+            },
+            {
+                "property": "myFavoriteWrapper"
+            },
+            {
+                "property": "forbidExtraProps",
+                "exact": true
+            }
+        ],
+        "componentWrapperFunctions": [
+            "observer",
+            {
+                "property": "styled"
+            },
+            {
+                "property": "observer",
+                "object": "Mobx"
+            },
+            {
+                "property": "observer",
+                "object": "<pragma>"
+            }
+        ],
+        "formComponents": [
+            "CustomForm",
+            {
+                "name": "Form",
+                "formAttribute": "endpoint"
+            }
+        ],
+        "linkComponents": [
+            "Hyperlink",
+            {
+                "name": "Link",
+                "linkAttribute": "to"
+            }
+        ]
+    }
+}

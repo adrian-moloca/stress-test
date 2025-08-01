@@ -1,0 +1,13 @@
+[
+  {
+    "timestamp": 1753882397907,
+    "type": "test_started",
+    "message": "Started bulk-case-creation stress test"
+  },
+  {
+    "timestamp": 1753882403396,
+    "type": "test_completed",
+    "message": "Stress test completed successfully",
+    "duration": 5489
+  }
+]

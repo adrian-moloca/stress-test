@@ -1,0 +1,83 @@
+[
+  {
+    "data": {
+      "capability": "P:USERS:VIEW",
+      "expressionKind": "hasOwnerInCapability",
+      "scope": "ALL_DATA",
+      "ownerId": {
+        "expressionKind": "selfOperator",
+        "paths": ["ownerId"]
+      }
+    },
+    "expected": true,
+    "scope": {
+      "self": {
+        "ownerId": "123"
+      },
+      "userPermissions": {
+        "P:USERS:VIEW": {
+          "scope": "ANOTHER_USER_DATA",
+          "users": ["123"]
+        }
+      }
+    }
+  }, {
+    "data": {
+      "capability": "P:USERS:VIEW",
+      "expressionKind": "hasOwnerInCapability",
+      "scope": "ALL_DATA",
+      "ownerId": {
+        "expressionKind": "selfOperator",
+        "paths": ["ownerId"]
+      }
+    },
+    "expected": true,
+    "scope": {
+      "self": {
+        "ownerId": "1234"
+      },
+      "userPermissions": {
+        "P:USERS:VIEW": {
+          "scope": "ALL_DATA",
+          "users": ["123"]
+        }
+      }
+    }
+  }, {
+    "data": {
+      "capability": "P:USERS:VIEW",
+      "expressionKind": "hasOwnerInCapability",
+      "scope": "ALL_DATA",
+      "ownerId": {
+        "expressionKind": "selfOperator",
+        "paths": ["ownerId"]
+      }
+    },
+    "expected": false,
+    "scope": {
+      "self": {
+        "ownerId": "1234"
+      },
+      "userPermissions": {
+        "P:USERS:VIEW": {
+          "scope": "ANOTHER_USER_DATA",
+          "users": ["123"]
+        }
+      }
+    }
+  },  {
+    "data": {
+      "expressionKind": "hasScope"
+    },
+    "error": "requestedCapabilityUndefined",
+    "expected": false
+  },
+  {
+    "data": {
+      "capability": "P:USERS:VIEW",
+      "expressionKind": "hasScope"
+    },
+    "error": "requestedScopeUndefined",
+    "expected": false
+  }
+]

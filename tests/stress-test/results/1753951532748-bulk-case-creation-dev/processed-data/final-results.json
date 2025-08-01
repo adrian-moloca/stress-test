@@ -1,0 +1,124 @@
+{
+  "testId": "1753951532748-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753951532751,
+  "endTime": 1753951542824,
+  "totalCasesAttempted": 10,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {},
+  "performanceMetrics": {
+    "totalCases": 10,
+    "successfulCases": 0,
+    "failedCases": 10,
+    "successRate": 0,
+    "totalDuration": 9888,
+    "averageResponseTime": 4328.5,
+    "casesPerSecond": 0,
+    "batchSize": 5,
+    "realReferenceData": {
+      "contractIds": 8,
+      "doctorIds": 4,
+      "opStandardIds": 10
+    }
+  },
+  "successRate": 0,
+  "scenarioType": "bulk-case-creation",
+  "casesGenerated": 10,
+  "failedCases": 10,
+  "totalDuration": 10073,
+  "averageResponseTime": 4328.5,
+  "casesPerSecond": 0,
+  "results": [
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000001",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T08:45:37.174Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}",
+      "timestamp": "2025-07-31T08:45:37.190Z",
+      "responseTime": 4289
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000002",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T08:45:37.048Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}",
+      "timestamp": "2025-07-31T08:45:37.059Z",
+      "responseTime": 4156
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000003",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T08:45:37.359Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}",
+      "timestamp": "2025-07-31T08:45:37.363Z",
+      "responseTime": 4456
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000004",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T08:45:37.342Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}",
+      "timestamp": "2025-07-31T08:45:37.347Z",
+      "responseTime": 4442
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000005",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T08:45:37.313Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}",
+      "timestamp": "2025-07-31T08:45:37.317Z",
+      "responseTime": 4407
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000006",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T08:45:42.551Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}",
+      "timestamp": "2025-07-31T08:45:42.556Z",
+      "responseTime": 4190
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000007",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T08:45:42.621Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}",
+      "timestamp": "2025-07-31T08:45:42.634Z",
+      "responseTime": 4261
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000008",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T08:45:42.657Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}",
+      "timestamp": "2025-07-31T08:45:42.665Z",
+      "responseTime": 4294
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000009",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T08:45:42.784Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}",
+      "timestamp": "2025-07-31T08:45:42.786Z",
+      "responseTime": 4410
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000010",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-31T08:45:42.756Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}",
+      "timestamp": "2025-07-31T08:45:42.764Z",
+      "responseTime": 4380
+    }
+  ],
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753951532748-bulk-case-creation-dev/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753951532748-bulk-case-creation-dev/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753951532748-bulk-case-creation-dev/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753951532748-bulk-case-creation-dev/reports/system-limits.html"
+  }
+}

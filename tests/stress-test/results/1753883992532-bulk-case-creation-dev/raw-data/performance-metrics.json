@@ -1,0 +1,15 @@
+{
+  "totalCases": 1000,
+  "successfulCases": 1000,
+  "failedCases": 0,
+  "successRate": 100,
+  "totalDuration": 304854,
+  "averageResponseTime": 457.131,
+  "casesPerSecond": 3.2802587468099484,
+  "batchSize": 5,
+  "realReferenceData": {
+    "contractIds": 8,
+    "doctorIds": 4,
+    "opStandardIds": 10
+  }
+}

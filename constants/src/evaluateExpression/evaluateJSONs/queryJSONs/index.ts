@@ -1,0 +1,8 @@
+export { default as queryAnagraphics } from './queryAnagraphics.json'
+export { default as queryCases } from './queryCases.json'
+export { default as queryContracts } from './queryContracts.json'
+export { default as queryOrManagement } from './queryOrManagement.json'
+export { default as queryPatients } from './queryPatients.json'
+export { default as queryUsers } from './queryUsers.json'
+export { default as queryResultsSelector } from './queryResultsSelector.json'
+export { default as querySystemConfigurations } from './querySystemConfigurations.json'

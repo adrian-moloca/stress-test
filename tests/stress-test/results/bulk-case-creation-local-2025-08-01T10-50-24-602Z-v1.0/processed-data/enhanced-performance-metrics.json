@@ -1,0 +1,24 @@
+{
+  "totalCases": 10,
+  "successfulCases": 10,
+  "failedCases": 0,
+  "successRate": 100,
+  "totalDuration": 814,
+  "responseTimes": {
+    "min": 286,
+    "max": 702,
+    "avg": 399.6,
+    "p95": 702,
+    "p99": 702
+  },
+  "throughput": {
+    "casesPerSecond": 12.285012285012286,
+    "peakConcurrency": 50
+  },
+  "errors": [],
+  "realReferenceData": {
+    "contractIds": 8,
+    "doctorIds": 4,
+    "opStandardIds": 10
+  }
+}

@@ -1,0 +1,869 @@
+[
+  {
+    "caseNumber": "STRESS_000001",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Eli",
+      "surname": "Goyette",
+      "patientId": "P735459",
+      "birthDate": "1952-08-13T21:43:07.781Z",
+      "gender": "FEMALE",
+      "genderBirth": "FEMALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "7350 Cronin Spring",
+        "houseNumber": "87279",
+        "postalCode": "99714-5595",
+        "city": "Blickview",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2025-12-23T19:06:06.164Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_7dGTBRBRnvwta7tdo",
+      "opStandardId": "op_NWHDm6pHP7q88NKpE",
+      "duration": 44,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "XVVU00BE",
+          "name": "Surgical Drape",
+          "quantity": 2,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "Z2RZMFH7",
+          "name": "Midazolam",
+          "dosage": "65mg",
+          "quantity": 1
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 198,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "14mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-07-31T11:53:33.447Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000002",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Felicity",
+      "surname": "Abernathy",
+      "patientId": "P466761",
+      "birthDate": "1926-06-26T05:45:15.853Z",
+      "gender": "MALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "47785 Sipes Burgs",
+        "houseNumber": "1265",
+        "postalCode": "10217-9087",
+        "city": "Keeblerburgh",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2025-12-26T11:31:21.723Z",
+      "doctorId": "user_iEiaY2pk7dtDu3pza",
+      "contractId": "contract_a3JdoQd7okkRPGtGM",
+      "opStandardId": "op_yJhQ5Sgx6gNdWhL9j",
+      "duration": 148,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "UJSPZOWS",
+          "name": "Scalpel Blade",
+          "quantity": 2,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "YMXRBCQE",
+          "name": "Rocuronium",
+          "dosage": "100mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 196,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "49mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-07-31T11:53:33.449Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000003",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Elwyn",
+      "surname": "Stark",
+      "patientId": "P357553",
+      "birthDate": "1934-11-22T00:26:01.283Z",
+      "gender": "FEMALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "55321 University Avenue",
+        "houseNumber": "700",
+        "postalCode": "95553",
+        "city": "Ullrichville",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2025-12-16T18:36:03.613Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_miua7tR4TjnN7hfSj",
+      "duration": 179,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "VKVLPDD6",
+          "name": "Scalpel Blade",
+          "quantity": 3,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "XHKPXHWG",
+          "name": "Surgical Gloves",
+          "quantity": 1,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "3ORPDQXK",
+          "name": "Surgical Gloves",
+          "quantity": 8,
+          "unitCost": 8
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "WJMEHB9M",
+          "name": "Sevoflurane",
+          "dosage": "70mg",
+          "quantity": 5
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "IXW5UE17",
+          "name": "Fentanyl",
+          "dosage": "23mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 446,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "45mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-07-31T11:53:33.449Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000004",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Ezequiel",
+      "surname": "Gerhold",
+      "patientId": "P621056",
+      "birthDate": "1922-09-07T23:48:35.935Z",
+      "gender": "MALE",
+      "genderBirth": "FEMALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "9984 New Lane",
+        "houseNumber": "3789",
+        "postalCode": "60232",
+        "city": "Finnbury",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2025-08-20T04:42:53.352Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_2pbkjnGytRFTaqYtv",
+      "duration": 142,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "GVEBS8ME",
+          "name": "Surgical Drape",
+          "quantity": 6,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "IRNRO3MR",
+          "name": "Fentanyl",
+          "dosage": "31mg",
+          "quantity": 3
+        },
+        {
+          "medicationId": "MED_003",
+          "code": "6CVYV8NH",
+          "name": "Midazolam",
+          "dosage": "15mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 287,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "24mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-07-31T11:53:33.450Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000005",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Harvey",
+      "surname": "Mante",
+      "patientId": "P414199",
+      "birthDate": "1949-04-23T23:42:29.263Z",
+      "gender": "MALE",
+      "genderBirth": "FEMALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "89619 Schulist Meadow",
+        "houseNumber": "3237",
+        "postalCode": "38415",
+        "city": "West Ulisesborough",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2025-11-08T21:30:54.456Z",
+      "doctorId": "user_iEiaY2pk7dtDu3pza",
+      "contractId": "contract_7dGTBRBRnvwta7tdo",
+      "opStandardId": "op_ZmchAa7M8Gzagkyf2",
+      "duration": 229,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "VOEKQXQE",
+          "name": "Gauze Pad",
+          "quantity": 6,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "ARTYZM5I",
+          "name": "Gauze Pad",
+          "quantity": 3,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "HYPIPIV5",
+          "name": "Scalpel Blade",
+          "quantity": 5,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "UKINI71M",
+          "name": "Rocuronium",
+          "dosage": "70mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 496,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "38mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-07-31T11:53:33.450Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000006",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Else",
+      "surname": "Fritsch",
+      "patientId": "P717737",
+      "birthDate": "1955-03-28T18:18:01.352Z",
+      "gender": "FEMALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "4803 Avery Lights",
+        "houseNumber": "1529",
+        "postalCode": "35260",
+        "city": "West Ernestotown",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2026-03-16T16:17:46.173Z",
+      "doctorId": "user_Fp4Tprck8CFJH5QeP",
+      "contractId": "contract_a3JdoQd7okkRPGtGM",
+      "opStandardId": "op_a4kv9hxbmZxmS2fDL",
+      "duration": 205,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "F6GPQ7QC",
+          "name": "Surgical Drape",
+          "quantity": 7,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "QDNSAPKH",
+          "name": "Surgical Gloves",
+          "quantity": 8,
+          "unitCost": 8
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 104,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "48mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-07-31T11:53:33.450Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000007",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Jeff",
+      "surname": "Orn",
+      "patientId": "P534200",
+      "birthDate": "1953-03-24T22:08:04.828Z",
+      "gender": "FEMALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "43710 Isabell Vista",
+        "houseNumber": "517",
+        "postalCode": "79557-7867",
+        "city": "Monaland",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2025-11-15T07:18:26.829Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_ZChfoaktz7RzHKiEa",
+      "opStandardId": "op_tBmgzSSuSbrrpsqiM",
+      "duration": 169,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "Y5AVOV53",
+          "name": "Surgical Drape",
+          "quantity": 5,
+          "unitCost": 25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 379,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "17mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-07-31T11:53:33.450Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000008",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Keagan",
+      "surname": "Terry",
+      "patientId": "P399028",
+      "birthDate": "1950-02-05T04:39:58.484Z",
+      "gender": "MALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "136 Henry Street",
+        "houseNumber": "968",
+        "postalCode": "85820-8941",
+        "city": "Arvada",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2025-11-17T00:55:31.691Z",
+      "doctorId": "user_Fp4Tprck8CFJH5QeP",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_2pbkjnGytRFTaqYtv",
+      "duration": 77,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "GYRRIESX",
+          "name": "Surgical Drape",
+          "quantity": 7,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "OGLQ7OXG",
+          "name": "Surgical Suture",
+          "quantity": 8,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "TQUPS2LD",
+          "name": "Surgical Gloves",
+          "quantity": 10,
+          "unitCost": 8
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 430,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "12mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-07-31T11:53:33.451Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000009",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Josie",
+      "surname": "Doyle",
+      "patientId": "P932136",
+      "birthDate": "1920-10-10T23:23:25.159Z",
+      "gender": "MALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "754 Griffin Parkways",
+        "houseNumber": "564",
+        "postalCode": "58342",
+        "city": "Laguna Niguel",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2026-05-05T13:48:45.331Z",
+      "doctorId": "user_iEiaY2pk7dtDu3pza",
+      "contractId": "contract_a3JdoQd7okkRPGtGM",
+      "opStandardId": "op_JB2bQKeGiuCbqKENZ",
+      "duration": 147,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "DIQOOSLE",
+          "name": "Surgical Suture",
+          "quantity": 9,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "RXPET3FF",
+          "name": "Surgical Drape",
+          "quantity": 5,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "UCMMQPD2",
+          "name": "Surgical Suture",
+          "quantity": 5,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "X5SP6TWG",
+          "name": "Rocuronium",
+          "dosage": "98mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 325,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "14mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-07-31T11:53:33.451Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000010",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Lea",
+      "surname": "Fritsch",
+      "patientId": "P127160",
+      "birthDate": "1983-08-13T06:15:06.422Z",
+      "gender": "FEMALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "29512 N Center Street",
+        "houseNumber": "59740",
+        "postalCode": "47409",
+        "city": "North Lavern",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2026-03-12T14:31:29.232Z",
+      "doctorId": "user_Fp4Tprck8CFJH5QeP",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_a4kv9hxbmZxmS2fDL",
+      "duration": 142,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "TS8ILZUB",
+          "name": "Scalpel Blade",
+          "quantity": 1,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "DP8UFP63",
+          "name": "Scalpel Blade",
+          "quantity": 7,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "VRMLEBSW",
+          "name": "Sevoflurane",
+          "dosage": "55mg",
+          "quantity": 1
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "NVHBWL67",
+          "name": "Fentanyl",
+          "dosage": "69mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 167,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "26mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-07-31T11:53:33.451Z"
+    }
+  }
+]

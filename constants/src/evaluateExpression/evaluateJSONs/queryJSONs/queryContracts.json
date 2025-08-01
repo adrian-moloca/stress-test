@@ -1,0 +1,31 @@
+[
+  {
+    "data": {
+      "collection": "contracts",
+      "expressionKind": "query",
+      "where": {
+        "args": [
+          {
+            "arg": {
+              "expressionKind": "literalString",
+              "value": "user_iEiaY2pk7dtDu3pza"
+            },
+            "expressionKind": "queryWhere",
+            "operator": "equalsOperator",
+            "path": "details.doctorId"
+          }
+        ],
+        "expressionKind": "queryTie",
+        "tieOperator": "AND"
+      },
+      "yields": {
+        "details.validFrom": {
+          "expressionKind": "literalBoolean",
+          "value": true
+        }
+      }
+    },
+    "expected": null,
+    "impure": true
+  }
+]

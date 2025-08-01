@@ -1,0 +1,42 @@
+services:
+
+  init:
+    container_name: init
+    build:
+      context: ./docker/init
+      dockerfile: Dockerfile
+    depends_on:
+      ascos-anagraphics:
+        condition: service_healthy
+      ascos-auth:
+        condition: service_healthy
+      ascos-billing:
+        condition: service_healthy
+      ascos-bucket:
+        condition: service_healthy
+      ascos-contracts:
+        condition: service_healthy
+      ascos-logs:
+        condition: service_healthy
+      ascos-notifications:
+        condition: service_healthy
+      ascos-ormanagement:
+        condition: service_healthy 
+      ascos-patient-anagraphics:   
+        condition: service_healthy    
+      ascos-roles:  
+        condition: service_healthy
+      ascos-scheduling-cases:
+        condition: service_healthy
+      ascos-system-configuration:
+        condition: service_healthy
+      ascos-tenants:
+        condition: service_healthy
+      ascos-users:
+        condition: service_healthy
+    networks:
+      - smambu
+
+
+networks:
+  smambu:

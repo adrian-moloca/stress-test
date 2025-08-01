@@ -1,0 +1,202 @@
+[
+  {
+    "contractId": "CONTRACT_000",
+    "name": "Graham - Treutel",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 14,
+      "discountEarly": 0.04
+    }
+  },
+  {
+    "contractId": "CONTRACT_001",
+    "name": "Considine Inc",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0
+    }
+  },
+  {
+    "contractId": "CONTRACT_002",
+    "name": "Ortiz - Lueilwitz",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 21,
+      "discountEarly": 0.01
+    }
+  },
+  {
+    "contractId": "CONTRACT_003",
+    "name": "Sauer LLC",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0
+    }
+  },
+  {
+    "contractId": "CONTRACT_004",
+    "name": "Treutel, Lowe and Block",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 60,
+      "discountEarly": 0.04
+    }
+  },
+  {
+    "contractId": "CONTRACT_005",
+    "name": "Lueilwitz Group",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 21,
+      "discountEarly": 0
+    }
+  },
+  {
+    "contractId": "CONTRACT_006",
+    "name": "MacGyver - Ortiz",
+    "type": "INSURANCE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 14,
+      "discountEarly": 0.02
+    }
+  },
+  {
+    "contractId": "CONTRACT_007",
+    "name": "Lockman - Crist",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 14,
+      "discountEarly": 0.02
+    }
+  },
+  {
+    "contractId": "CONTRACT_008",
+    "name": "Nitzsche and Sons",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 14,
+      "discountEarly": 0
+    }
+  },
+  {
+    "contractId": "CONTRACT_009",
+    "name": "Schimmel - Howe",
+    "type": "INSURANCE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0.05
+    }
+  }
+]

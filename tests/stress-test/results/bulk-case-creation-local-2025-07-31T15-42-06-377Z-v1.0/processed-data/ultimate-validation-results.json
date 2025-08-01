@@ -1,0 +1,4968 @@
+{
+  "timestamp": "2025-07-31T15:42:59.308Z",
+  "comprehensive": {
+    "summary": {
+      "overallStatus": "❌ POOR",
+      "eventFlowSummary": {
+        "eventsImported": "0/500",
+        "eventsProcessed": "0/0",
+        "cronJobsHealthy": true
+      },
+      "triggerSummary": {
+        "triggersEvaluated": "0/500",
+        "conditionsPassed": "0/0",
+        "contextKeysGenerated": 0
+      },
+      "proxySummary": {
+        "proxiesCreated": "0/500",
+        "contextValid": "0/0",
+        "dynamicFieldsInitialized": "0/0",
+        "successRate": "0.00"
+      },
+      "dependencySummary": {
+        "nodesCreated": 1000,
+        "nodesEvaluated": "500/1000",
+        "fieldsUpdated": 0,
+        "evaluationErrors": 0
+      },
+      "endToEndSummary": {
+        "completeFlows": "0/10",
+        "avgCompletionTime": "0.00ms",
+        "bottlenecks": 0
+      },
+      "performancePassed": false,
+      "recommendations": [
+        "🔍 Investigate proxy creation failures"
+      ]
+    },
+    "details": {
+      "eventFlow": {
+        "eventsImported": 0,
+        "eventsProcessed": 0,
+        "eventProcessingTime": {},
+        "cronJobsStatus": {
+          "EventsProcesser": {
+            "running": true,
+            "lastRun": "2025-07-31T15:43:18.310Z"
+          },
+          "DependenciesEvaluator": {
+            "running": true,
+            "lastRun": "2025-07-31T15:43:18.310Z"
+          },
+          "FieldOperationsAnalyzer": {
+            "running": true,
+            "lastRun": "2025-07-31T15:43:18.310Z"
+          },
+          "EventsSender": {
+            "running": true,
+            "lastRun": "2025-07-31T15:43:18.310Z"
+          }
+        },
+        "queueMetrics": {
+          "URTriggerEvents": {
+            "waiting": 7,
+            "active": 4,
+            "completed": 91,
+            "failed": 1,
+            "delayed": 0
+          },
+          "LocalEventsURQueue": {
+            "waiting": 3,
+            "active": 1,
+            "completed": 72,
+            "failed": 1,
+            "delayed": 0
+          },
+          "GraphFieldsQueue": {
+            "waiting": 1,
+            "active": 4,
+            "completed": 14,
+            "failed": 1,
+            "delayed": 0
+          },
+          "DepenenciesGraphQueue": {
+            "waiting": 1,
+            "active": 4,
+            "completed": 53,
+            "failed": 0,
+            "delayed": 0
+          }
+        },
+        "failures": [
+          {
+            "caseNumber": "STRESS_000001",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000002",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000003",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000004",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000005",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000006",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000007",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000008",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000009",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000010",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000011",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000012",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000013",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000014",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000015",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000016",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000017",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000018",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000019",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000020",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000021",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000022",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000023",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000024",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000025",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000026",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000027",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000028",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000029",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000030",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000031",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000032",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000033",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000034",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000035",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000036",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000037",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000038",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000039",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000040",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000041",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000042",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000043",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000044",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000045",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000046",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000047",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000048",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000049",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000050",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000051",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000052",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000053",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000054",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000055",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000056",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000057",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000058",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000059",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000060",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000061",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000062",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000063",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000064",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000065",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000066",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000067",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000068",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000069",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000070",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000071",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000072",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000073",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000074",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000075",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000076",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000077",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000078",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000079",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000080",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000081",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000082",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000083",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000084",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000085",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000086",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000087",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000088",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000089",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000090",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000091",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000092",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000093",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000094",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000095",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000096",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000097",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000098",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000099",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000100",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000101",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000102",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000103",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000104",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000105",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000106",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000107",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000108",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000109",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000110",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000111",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000112",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000113",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000114",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000115",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000116",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000117",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000118",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000119",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000120",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000121",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000122",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000123",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000124",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000125",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000126",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000127",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000128",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000129",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000130",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000131",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000132",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000133",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000134",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000135",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000136",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000137",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000138",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000139",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000140",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000141",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000142",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000143",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000144",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000145",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000146",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000147",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000148",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000149",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000150",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000151",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000152",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000153",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000154",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000155",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000156",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000157",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000158",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000159",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000160",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000161",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000162",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000163",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000164",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000165",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000166",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000167",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000168",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000169",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000170",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000171",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000172",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000173",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000174",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000175",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000176",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000177",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000178",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000179",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000180",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000181",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000182",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000183",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000184",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000185",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000186",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000187",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000188",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000189",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000190",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000191",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000192",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000193",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000194",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000195",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000196",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000197",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000198",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000199",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000200",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000201",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000202",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000203",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000204",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000205",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000206",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000207",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000208",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000209",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000210",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000211",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000212",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000213",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000214",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000215",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000216",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000217",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000218",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000219",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000220",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000221",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000222",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000223",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000224",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000225",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000226",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000227",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000228",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000229",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000230",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000231",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000232",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000233",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000234",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000235",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000236",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000237",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000238",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000239",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000240",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000241",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000242",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000243",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000244",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000245",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000246",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000247",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000248",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000249",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000250",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000251",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000252",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000253",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000254",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000255",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000256",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000257",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000258",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000259",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000260",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000261",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000262",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000263",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000264",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000265",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000266",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000267",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000268",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000269",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000270",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000271",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000272",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000273",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000274",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000275",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000276",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000277",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000278",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000279",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000280",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000281",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000282",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000283",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000284",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000285",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000286",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000287",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000288",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000289",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000290",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000291",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000292",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000293",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000294",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000295",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000296",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000297",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000298",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000299",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000300",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000301",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000302",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000303",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000304",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000305",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000306",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000307",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000308",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000309",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000310",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000311",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000312",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000313",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000314",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000315",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000316",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000317",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000318",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000319",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000320",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000321",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000322",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000323",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000324",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000325",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000326",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000327",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000328",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000329",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000330",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000331",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000332",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000333",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000334",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000335",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000336",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000337",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000338",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000339",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000340",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000341",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000342",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000343",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000344",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000345",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000346",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000347",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000348",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000349",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000350",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000351",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000352",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000353",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000354",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000355",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000356",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000357",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000358",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000359",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000360",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000361",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000362",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000363",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000364",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000365",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000366",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000367",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000368",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000369",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000370",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000371",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000372",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000373",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000374",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000375",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000376",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000377",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000378",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000379",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000380",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000381",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000382",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000383",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000384",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000385",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000386",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000387",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000388",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000389",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000390",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000391",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000392",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000393",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000394",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000395",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000396",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000397",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000398",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000399",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000400",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000401",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000402",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000403",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000404",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000405",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000406",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000407",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000408",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000409",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000410",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000411",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000412",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000413",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000414",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000415",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000416",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000417",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000418",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000419",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000420",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000421",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000422",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000423",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000424",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000425",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000426",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000427",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000428",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000429",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000430",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000431",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000432",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000433",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000434",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000435",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000436",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000437",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000438",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000439",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000440",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000441",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000442",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000443",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000444",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000445",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000446",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000447",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000448",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000449",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000450",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000451",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000452",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000453",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000454",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000455",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000456",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000457",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000458",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000459",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000460",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000461",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000462",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000463",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000464",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000465",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000466",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000467",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000468",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000469",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000470",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000471",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000472",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000473",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000474",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000475",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000476",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000477",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000478",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000479",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000480",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000481",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000482",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000483",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000484",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000485",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000486",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000487",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000488",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000489",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000490",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000491",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000492",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000493",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000494",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000495",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000496",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000497",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000498",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000499",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          },
+          {
+            "caseNumber": "STRESS_000500",
+            "stage": "import",
+            "reason": "Event not found in ImportedEvents"
+          }
+        ]
+      },
+      "proxy": {
+        "checked": 500,
+        "found": 0,
+        "contextValid": 0,
+        "dynamicFieldsInitialized": 0,
+        "details": [
+          {
+            "caseNumber": "STRESS_000001",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000002",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000003",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000004",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000005",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000006",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000007",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000008",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000009",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000010",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000011",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000012",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000013",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000014",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000015",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000016",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000017",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000018",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000019",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000020",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000021",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000022",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000023",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000024",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000025",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000026",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000027",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000028",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000029",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000030",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000031",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000032",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000033",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000034",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000035",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000036",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000037",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000038",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000039",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000040",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000041",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000042",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000043",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000044",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000045",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000046",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000047",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000048",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000049",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000050",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000051",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000052",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000053",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000054",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000055",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000056",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000057",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000058",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000059",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000060",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000061",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000062",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000063",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000064",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000065",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000066",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000067",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000068",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000069",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000070",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000071",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000072",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000073",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000074",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000075",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000076",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000077",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000078",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000079",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000080",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000081",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000082",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000083",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000084",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000085",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000086",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000087",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000088",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000089",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000090",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000091",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000092",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000093",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000094",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000095",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000096",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000097",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000098",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000099",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000100",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000101",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000102",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000103",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000104",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000105",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000106",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000107",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000108",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000109",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000110",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000111",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000112",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000113",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000114",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000115",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000116",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000117",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000118",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000119",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000120",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000121",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000122",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000123",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000124",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000125",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000126",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000127",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000128",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000129",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000130",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000131",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000132",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000133",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000134",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000135",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000136",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000137",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000138",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000139",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000140",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000141",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000142",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000143",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000144",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000145",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000146",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000147",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000148",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000149",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000150",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000151",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000152",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000153",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000154",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000155",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000156",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000157",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000158",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000159",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000160",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000161",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000162",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000163",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000164",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000165",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000166",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000167",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000168",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000169",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000170",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000171",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000172",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000173",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000174",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000175",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000176",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000177",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000178",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000179",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000180",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000181",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000182",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000183",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000184",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000185",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000186",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000187",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000188",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000189",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000190",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000191",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000192",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000193",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000194",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000195",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000196",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000197",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000198",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000199",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000200",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000201",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000202",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000203",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000204",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000205",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000206",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000207",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000208",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000209",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000210",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000211",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000212",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000213",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000214",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000215",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000216",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000217",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000218",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000219",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000220",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000221",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000222",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000223",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000224",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000225",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000226",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000227",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000228",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000229",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000230",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000231",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000232",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000233",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000234",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000235",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000236",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000237",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000238",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000239",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000240",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000241",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000242",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000243",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000244",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000245",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000246",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000247",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000248",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000249",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000250",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000251",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000252",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000253",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000254",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000255",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000256",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000257",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000258",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000259",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000260",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000261",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000262",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000263",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000264",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000265",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000266",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000267",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000268",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000269",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000270",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000271",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000272",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000273",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000274",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000275",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000276",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000277",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000278",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000279",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000280",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000281",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000282",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000283",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000284",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000285",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000286",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000287",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000288",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000289",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000290",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000291",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000292",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000293",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000294",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000295",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000296",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000297",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000298",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000299",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000300",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000301",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000302",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000303",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000304",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000305",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000306",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000307",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000308",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000309",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000310",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000311",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000312",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000313",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000314",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000315",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000316",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000317",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000318",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000319",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000320",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000321",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000322",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000323",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000324",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000325",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000326",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000327",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000328",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000329",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000330",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000331",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000332",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000333",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000334",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000335",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000336",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000337",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000338",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000339",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000340",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000341",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000342",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000343",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000344",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000345",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000346",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000347",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000348",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000349",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000350",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000351",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000352",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000353",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000354",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000355",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000356",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000357",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000358",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000359",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000360",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000361",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000362",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000363",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000364",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000365",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000366",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000367",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000368",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000369",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000370",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000371",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000372",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000373",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000374",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000375",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000376",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000377",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000378",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000379",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000380",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000381",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000382",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000383",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000384",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000385",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000386",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000387",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000388",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000389",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000390",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000391",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000392",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000393",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000394",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000395",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000396",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000397",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000398",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000399",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000400",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000401",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000402",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000403",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000404",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000405",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000406",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000407",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000408",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000409",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000410",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000411",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000412",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000413",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000414",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000415",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000416",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000417",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000418",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000419",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000420",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000421",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000422",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000423",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000424",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000425",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000426",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000427",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000428",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000429",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000430",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000431",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000432",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000433",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000434",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000435",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000436",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000437",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000438",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000439",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000440",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000441",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000442",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000443",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000444",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000445",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000446",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000447",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000448",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000449",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000450",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000451",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000452",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000453",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000454",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000455",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000456",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000457",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000458",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000459",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000460",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000461",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000462",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000463",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000464",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000465",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000466",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000467",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000468",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000469",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000470",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000471",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000472",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000473",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000474",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000475",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000476",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000477",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000478",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000479",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000480",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000481",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000482",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000483",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000484",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000485",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000486",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000487",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000488",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000489",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000490",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000491",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000492",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000493",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000494",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000495",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000496",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000497",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000498",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000499",
+            "error": "fetch failed"
+          },
+          {
+            "caseNumber": "STRESS_000500",
+            "error": "fetch failed"
+          }
+        ],
+        "fieldAnalysis": {},
+        "contextAnalysis": {},
+        "uniqueConstraintViolations": 0,
+        "successRate": 0,
+        "contextValidityRate": null
+      },
+      "fragment": {
+        "proxiesWithFragments": 0,
+        "fragmentTypes": {},
+        "fragmentValidation": [],
+        "fragmentIntegrity": {
+          "complete": 0,
+          "partial": 0,
+          "missing": 0
+        }
+      },
+      "dependency": {
+        "nodesCreated": 1000,
+        "nodesEvaluated": 500,
+        "fieldsUpdated": 0,
+        "nodesByStatus": {
+          "EVALUATED": 500,
+          "DIRTY": 500
+        },
+        "nodesByTarget": {
+          "PROXY": 1000
+        },
+        "evaluationMetrics": {
+          "avgEvaluationTime": 250,
+          "failedEvaluations": 0,
+          "expressionErrors": 0,
+          "conditionErrors": 0
+        },
+        "fieldOperations": {
+          "created": 1000,
+          "updated": 0,
+          "deleted": 0,
+          "blocked": 0
+        }
+      },
+      "trigger": {
+        "triggersEvaluated": 0,
+        "conditionsPassed": 0,
+        "contextKeysGenerated": 0,
+        "emitExpressionResults": [],
+        "triggerFailures": [],
+        "domainConfiguration": {
+          "exists": true,
+          "domainId": "schedulingCases",
+          "trigger": {
+            "configured": true,
+            "eventType": "SCHEDULING_CASE_CREATED",
+            "hasCondition": true,
+            "hasEmitExpression": true,
+            "hasContextKey": true
+          },
+          "proxyFields": {
+            "count": 4,
+            "fields": [
+              "caseNumber",
+              "patientName",
+              "patientNickName",
+              "patientNickTitle"
+            ]
+          },
+          "permissions": {
+            "canAccessProxies": true,
+            "canAccessProxyDetails": true,
+            "canEditProxy": true
+          }
+        }
+      },
+      "expression": {
+        "expressionsEvaluated": 0,
+        "expressionTypes": {},
+        "evaluationErrors": [
+          {
+            "expression": "contextKey",
+            "error": "fetch failed",
+            "caseNumber": "STRESS_000001"
+          },
+          {
+            "expression": "patientName",
+            "error": "fetch failed",
+            "caseNumber": "STRESS_000001"
+          },
+          {
+            "expression": "contextKey",
+            "error": "fetch failed",
+            "caseNumber": "STRESS_000002"
+          },
+          {
+            "expression": "patientName",
+            "error": "fetch failed",
+            "caseNumber": "STRESS_000002"
+          },
+          {
+            "expression": "contextKey",
+            "error": "fetch failed",
+            "caseNumber": "STRESS_000003"
+          },
+          {
+            "expression": "patientName",
+            "error": "fetch failed",
+            "caseNumber": "STRESS_000003"
+          },
+          {
+            "expression": "contextKey",
+            "error": "fetch failed",
+            "caseNumber": "STRESS_000004"
+          },
+          {
+            "expression": "patientName",
+            "error": "fetch failed",
+            "caseNumber": "STRESS_000004"
+          },
+          {
+            "expression": "contextKey",
+            "error": "fetch failed",
+            "caseNumber": "STRESS_000005"
+          },
+          {
+            "expression": "patientName",
+            "error": "fetch failed",
+            "caseNumber": "STRESS_000005"
+          }
+        ],
+        "performanceMetrics": {
+          "avgEvaluationTime": 0,
+          "slowestExpression": null,
+          "fastestExpression": null
+        },
+        "namedExpressions": {
+          "used": 5,
+          "unique": {}
+        }
+      }
+    }
+  },
+  "endToEndValidation": {
+    "completeFlows": 0,
+    "partialFlows": 0,
+    "failedFlows": 10,
+    "flowBreakdown": [
+      {
+        "caseNumber": "STRESS_000001",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": false,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": false,
+          "fieldsEvaluated": false,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0
+        },
+        "startTime": 1753976599698,
+        "error": "fetch failed"
+      },
+      {
+        "caseNumber": "STRESS_000002",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": false,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": false,
+          "fieldsEvaluated": false,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0
+        },
+        "startTime": 1753976599700,
+        "error": "fetch failed"
+      },
+      {
+        "caseNumber": "STRESS_000003",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": false,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": false,
+          "fieldsEvaluated": false,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0
+        },
+        "startTime": 1753976599702,
+        "error": "fetch failed"
+      },
+      {
+        "caseNumber": "STRESS_000004",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": false,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": false,
+          "fieldsEvaluated": false,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0
+        },
+        "startTime": 1753976599703,
+        "error": "fetch failed"
+      },
+      {
+        "caseNumber": "STRESS_000005",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": false,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": false,
+          "fieldsEvaluated": false,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0
+        },
+        "startTime": 1753976599706,
+        "error": "fetch failed"
+      },
+      {
+        "caseNumber": "STRESS_000006",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": false,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": false,
+          "fieldsEvaluated": false,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0
+        },
+        "startTime": 1753976599708,
+        "error": "fetch failed"
+      },
+      {
+        "caseNumber": "STRESS_000007",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": false,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": false,
+          "fieldsEvaluated": false,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0
+        },
+        "startTime": 1753976599710,
+        "error": "fetch failed"
+      },
+      {
+        "caseNumber": "STRESS_000008",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": false,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": false,
+          "fieldsEvaluated": false,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0
+        },
+        "startTime": 1753976599712,
+        "error": "fetch failed"
+      },
+      {
+        "caseNumber": "STRESS_000009",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": false,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": false,
+          "fieldsEvaluated": false,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0
+        },
+        "startTime": 1753976599714,
+        "error": "fetch failed"
+      },
+      {
+        "caseNumber": "STRESS_000010",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": false,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": false,
+          "fieldsEvaluated": false,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0
+        },
+        "startTime": 1753976599716,
+        "error": "fetch failed"
+      }
+    ],
+    "avgCompletionTime": 0,
+    "bottlenecks": []
+  },
+  "dependencyGraphAnalysis": {
+    "totalNodes": 100,
+    "nodeDistribution": {
+      "DIRTY": 20,
+      "CLEAN": 60,
+      "EVALUATED": 15,
+      "ERROR_CONDITION": 3,
+      "ERROR_EXPRESSION": 2
+    },
+    "evaluationQueue": {
+      "pending": 0,
+      "processing": 0,
+      "completed": 15
+    },
+    "graphComplexity": {
+      "avgDependencies": 2.5,
+      "maxDepth": 5,
+      "circularDependencies": 0
+    },
+    "performanceMetrics": {
+      "avgProcessingTime": 300,
+      "queueBacklog": 10,
+      "throughput": 50
+    }
+  },
+  "performanceValidation": {
+    "passed": false,
+    "details": {
+      "responseTime": {
+        "p95": 4464,
+        "target": 200,
+        "passed": false
+      },
+      "throughput": {
+        "actual": 23.438964935308455,
+        "target": 16.67,
+        "passed": true
+      },
+      "successRate": {
+        "actual": 100,
+        "target": 95,
+        "passed": true
+      }
+    },
+    "recommendations": [
+      "Optimize API response times - P95 exceeds 200ms target"
+    ]
+  },
+  "validationDuration": 20411
+}

@@ -1,0 +1,5 @@
+export const DATA_PATH = 'data'
+export const FIELDS_PATH = 'fields'
+export const DYNAMIC_FIELDS_PATH = 'dynamicFields'
+export const DYNAMIC_DATA_PATH = 'dynamicData'
+export const REPRESENTATION_PATH = 'representation'

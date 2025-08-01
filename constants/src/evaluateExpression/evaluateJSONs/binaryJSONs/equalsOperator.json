@@ -1,0 +1,140 @@
+[
+  {
+    "data": {
+      "expressionKind": "equalsOperator",
+      "left": {
+          "expressionKind": "literalString",
+          "value": "assdas"
+      },
+      "right": {
+          "expressionKind": "literalString",
+          "value": "assdas"
+      }
+    },
+    "expected": true
+  },
+  {
+    "data": {
+      "expressionKind": "equalsOperator",
+      "left": {
+          "expressionKind": "literalString",
+          "value": "assdas"
+      },
+      "right": {
+          "expressionKind": "literalString",
+          "value": "assddas"
+      }
+    },
+    "expected": false
+  },
+  {
+    "data": {
+      "expressionKind": "equalsOperator",
+      "left": {
+          "expressionKind": "literalString",
+          "value": "345"
+      },
+      "right": {
+          "expressionKind": "literalNumber",
+          "value": 345
+      }
+    },
+    "expected": false
+  },
+  {
+    "data": {
+      "expressionKind": "equalsOperator",
+      "left": {
+        "expressionKind": "objectOfExpressions",
+        "value": {
+          "case": {
+            "expressionKind": "objectOfExpressions",
+            "value": {
+              "caseNumber": {
+                "expressionKind": "literalString",
+                "value": "caseNumber001"
+              },
+              "isBillable": {
+                "expressionKind": "literalBoolean",
+                "value": true
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "expressionKind": "objectOfExpressions",
+        "value": {
+          "case": {
+            "expressionKind": "objectOfExpressions",
+            "value": {
+              "caseNumber": {
+                "expressionKind": "literalString",
+                "value": "caseNumber001"
+              },
+              "isBillable": {
+                "expressionKind": "literalBoolean",
+                "value": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "expected": true
+  }, {
+    "data": {
+      "expressionKind": "equalsOperator",
+      "left": {
+        "expressionKind": "objectOfExpressions",
+        "value": {
+          "case": {
+            "expressionKind": "objectOfExpressions",
+            "value": {
+              "caseNumber": {
+                "expressionKind": "literalString",
+                "value": "caseNumber001"
+              },
+              "isBillable": {
+                "expressionKind": "literalBoolean",
+                "value": true
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "expressionKind": "objectOfExpressions",
+        "value": {
+          "case": {
+            "expressionKind": "objectOfExpressions",
+            "value": {
+              "caseNumber": {
+                "expressionKind": "literalString",
+                "value": "caseNumber001"
+              },
+              "isBillable": {
+                "expressionKind": "literalBoolean",
+                "value": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "expected": false
+  }, {
+    "error": "invalidString",
+    "data": {
+      "expressionKind": "equalsOperator",
+      "left": {
+        "expressionKind": "literalString",
+        "value": "true"
+      },
+      "right": {
+        "expressionKind": "literalString",
+        "value": true
+      }
+    }
+  }
+]

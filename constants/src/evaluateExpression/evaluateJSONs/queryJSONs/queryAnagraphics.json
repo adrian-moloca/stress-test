@@ -1,0 +1,39 @@
+[
+  {
+    "data": {
+      "collection": "materialsDatabase",
+      "expressionKind": "query",
+      "atDate": {
+        "expressionKind": "literalDate",
+        "value": "2024-04-28T09:06:01.632+0000"
+      },
+      "where": {
+            "arg": {
+              "expressionKind": "literalString",
+              "value": "2"
+            },
+            "expressionKind": "queryWhere",
+            "operator": "equalsOperator",
+            "path": "artikelnummer"
+      },
+      "yields": {
+        "artikelnummer": {
+          "expressionKind": "literalBoolean",
+          "typeHint": {
+            "kind": "boolean"
+          },
+          "value": true
+        },
+        "artikelbezeichnung": {
+          "expressionKind": "literalBoolean",
+          "typeHint": {
+            "kind": "boolean"
+          },
+          "value": true
+        }
+      }
+    },
+    "expected": null,
+    "impure": true
+  }
+]

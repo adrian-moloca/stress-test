@@ -1,0 +1,233 @@
+[
+  {
+    "data": {
+      "expressionKind": "queryResultsSelector",
+      "query": {
+        "collection": "patients",
+        "expressionKind": "query",
+        "where": {
+          "args": [
+            {
+              "arg": {
+                "expressionKind": "literalString",
+                "value": "2"
+              },
+              "expressionKind": "queryWhere",
+              "operator": "equalsOperator",
+              "path": "patientNumber"
+            }
+          ],
+          "expressionKind": "queryTie",
+          "tieOperator": "AND"
+        },
+        "yields": {
+          "birthDate": {
+            "expressionKind": "literalBoolean",
+            "value": true
+          }
+        }
+      },
+      "resultsType": "many"
+    },
+    "expected": null,
+    "impure": true
+  },
+  {
+    "data": {
+      "expressionKind": "queryResultsSelector",
+      "query": {
+        "collection": "patients",
+        "expressionKind": "query",
+        "where": {
+          "args": [
+            {
+              "arg": {
+                "expressionKind": "literalString",
+                "value": "2"
+              },
+              "expressionKind": "queryWhere",
+              "operator": "equalsOperator",
+              "path": "patientNumber"
+            }
+          ],
+          "expressionKind": "queryTie",
+          "tieOperator": "AND"
+        },
+        "yields": {
+          "birthDate": {
+            "expressionKind": "literalBoolean",
+            "value": true
+          }
+        }
+      },
+      "resultsType": "first"
+    },
+    "expected": null,
+    "impure": true
+  },
+  {
+    "data": {
+      "expressionKind": "queryResultsSelector",
+      "query": {
+        "collection": "patients",
+        "expressionKind": "query",
+        "where": {
+          "args": [
+            {
+              "arg": {
+                "expressionKind": "literalString",
+                "value": "2"
+              },
+              "expressionKind": "queryWhere",
+              "operator": "equalsOperator",
+              "path": "patientNumber"
+            }
+          ],
+          "expressionKind": "queryTie",
+          "tieOperator": "AND"
+        },
+        "yields": {
+          "birthDate": {
+            "expressionKind": "literalBoolean",
+            "value": true
+          }
+        }
+      },
+      "resultsType": "exactlyOne"
+    },
+    "expected": null,
+    "impure": true
+  },
+  {
+    "data": {
+      "expressionKind": "queryResultsSelector",
+      "query": {
+        "collection": "patients",
+        "expressionKind": "query",
+        "where": {
+          "args": [
+            {
+              "arg": {
+                "expressionKind": "literalString",
+                "value": "1"
+              },
+              "expressionKind": "queryWhere",
+              "operator": "equalsOperator",
+              "path": "patientNumber"
+            }
+          ],
+          "expressionKind": "queryTie",
+          "tieOperator": "AND"
+        },
+        "yields": {
+          "birthDate": {
+            "expressionKind": "literalBoolean",
+            "value": true
+          }
+        }
+      },
+      "resultsType": "first"
+    },
+    "expected": null,
+    "impure": true
+  },
+  {
+    "data": {
+      "expressionKind": "queryResultsSelector",
+      "query": {
+        "collection": "patients",
+        "expressionKind": "query",
+        "where": {
+          "args": [
+            {
+              "arg": {
+                "expressionKind": "literalString",
+                "value": "0"
+              },
+              "expressionKind": "queryWhere",
+              "operator": "equalsOperator",
+              "path": "patientNumber"
+            }
+          ],
+          "expressionKind": "queryTie",
+          "tieOperator": "AND"
+        },
+        "yields": {
+          "birthDate": {
+            "expressionKind": "literalBoolean",
+            "value": true
+          }
+        }
+      },
+      "resultsType": "first"
+    },
+    "expected": null,
+    "error": "noResultsError"
+  },
+  {
+    "data": {
+      "expressionKind": "queryResultsSelector",
+      "query": {
+        "collection": "patients",
+        "expressionKind": "query",
+        "where": {
+          "args": [
+            {
+              "arg": {
+                "expressionKind": "literalString",
+                "value": "1"
+              },
+              "expressionKind": "queryWhere",
+              "operator": "equalsOperator",
+              "path": "patientNumber"
+            }
+          ],
+          "expressionKind": "queryTie",
+          "tieOperator": "AND"
+        },
+        "yields": {
+          "birthDate": {
+            "expressionKind": "literalBoolean",
+            "value": true
+          }
+        }
+      },
+      "resultsType": "exactlyOne"
+    },
+    "expected": null,
+    "error": "moreThanOneError"
+  },
+  {
+    "data": {
+      "expressionKind": "queryResultsSelector",
+      "query": {
+        "collection": "patients",
+        "expressionKind": "query",
+        "where": {
+          "args": [
+            {
+              "arg": {
+                "expressionKind": "literalString",
+                "value": "0"
+              },
+              "expressionKind": "queryWhere",
+              "operator": "equalsOperator",
+              "path": "patientNumber"
+            }
+          ],
+          "expressionKind": "queryTie",
+          "tieOperator": "AND"
+        },
+        "yields": {
+          "birthDate": {
+            "expressionKind": "literalBoolean",
+            "value": true
+          }
+        }
+      },
+      "resultsType": "exactlyOne"
+    },
+    "expected": null,
+    "error": "moreThanOneError"
+  }
+]

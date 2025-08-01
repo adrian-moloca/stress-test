@@ -1,0 +1,31 @@
+[
+  {
+    "data": {
+      "collection": "orManagement",
+      "expressionKind": "query",
+      "where": {
+        "args": [
+          {
+            "arg": {
+              "expressionKind": "literalString",
+              "value": "operatingRoom_L2ky8dTEqEWJJpFzz"
+            },
+            "expressionKind": "queryWhere",
+            "operator": "equalsOperator",
+            "path": "operatingRoomId"
+          }
+        ],
+        "expressionKind": "queryTie",
+        "tieOperator": "AND"
+      },
+      "yields": {
+        "exception.startDate": {
+          "expressionKind": "literalBoolean",
+          "value": true
+        }
+      }
+    },
+    "expected": null,
+    "impure": true
+  }
+]

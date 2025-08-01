@@ -1,0 +1,57 @@
+{
+  "checked": 10,
+  "found": 0,
+  "missing": [
+    {
+      "caseNumber": "STRESS_000001",
+      "reason": "Not found after 1 attempts",
+      "checkedAt": 1753963176491
+    },
+    {
+      "caseNumber": "STRESS_000002",
+      "reason": "Not found after 1 attempts",
+      "checkedAt": 1753963177492
+    },
+    {
+      "caseNumber": "STRESS_000003",
+      "reason": "Not found after 1 attempts",
+      "checkedAt": 1753963178493
+    },
+    {
+      "caseNumber": "STRESS_000004",
+      "reason": "Not found after 1 attempts",
+      "checkedAt": 1753963179495
+    },
+    {
+      "caseNumber": "STRESS_000005",
+      "reason": "Not found after 1 attempts",
+      "checkedAt": 1753963180497
+    },
+    {
+      "caseNumber": "STRESS_000006",
+      "reason": "Not found after 1 attempts",
+      "checkedAt": 1753963181499
+    },
+    {
+      "caseNumber": "STRESS_000007",
+      "reason": "Not found after 1 attempts",
+      "checkedAt": 1753963182501
+    },
+    {
+      "caseNumber": "STRESS_000008",
+      "reason": "Not found after 1 attempts",
+      "checkedAt": 1753963183503
+    },
+    {
+      "caseNumber": "STRESS_000009",
+      "reason": "Not found after 1 attempts",
+      "checkedAt": 1753963184505
+    },
+    {
+      "caseNumber": "STRESS_000010",
+      "reason": "Not found after 1 attempts",
+      "checkedAt": 1753963185506
+    }
+  ],
+  "details": []
+}

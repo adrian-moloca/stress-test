@@ -1,0 +1,8 @@
+[
+  {
+    "timestamp": 1754040391882,
+    "type": "test_started",
+    "message": "Started bulk-case-creation stress test",
+    "config": {}
+  }
+]

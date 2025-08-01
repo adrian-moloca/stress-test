@@ -1,0 +1,13 @@
+[
+  {
+    "timestamp": 1753796836655,
+    "type": "test_started",
+    "message": "Started bulk-case-creation stress test"
+  },
+  {
+    "timestamp": 1753796836697,
+    "type": "test_failed",
+    "message": "Test failed: this.generateMaterials is not a function",
+    "error": "this.generateMaterials is not a function"
+  }
+]

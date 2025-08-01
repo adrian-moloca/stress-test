@@ -1,0 +1,101 @@
+{
+  "duration": 31909,
+  "metricsCollected": 6,
+  "peakMemoryUsage": "63MB",
+  "avgMemoryUsage": "59MB",
+  "currentMemory": "65MB",
+  "overallHealth": "STABLE",
+  "crashDetected": false,
+  "timeline": [
+    {
+      "timestamp": 1753977290319,
+      "memoryUsage": {
+        "heapUsed": 52,
+        "heapTotal": 84,
+        "external": 2,
+        "rss": 144
+      },
+      "cpuUsage": {
+        "user": 2255686,
+        "system": 270682
+      },
+      "activeRequests": 0,
+      "queueLength": 0
+    },
+    {
+      "timestamp": 1753977295321,
+      "memoryUsage": {
+        "heapUsed": 57,
+        "heapTotal": 85,
+        "external": 4,
+        "rss": 145
+      },
+      "cpuUsage": {
+        "user": 2335000,
+        "system": 276054
+      },
+      "activeRequests": 0,
+      "queueLength": 0
+    },
+    {
+      "timestamp": 1753977300322,
+      "memoryUsage": {
+        "heapUsed": 62,
+        "heapTotal": 85,
+        "external": 6,
+        "rss": 147
+      },
+      "cpuUsage": {
+        "user": 2421087,
+        "system": 281582
+      },
+      "activeRequests": 0,
+      "queueLength": 0
+    },
+    {
+      "timestamp": 1753977305323,
+      "memoryUsage": {
+        "heapUsed": 60,
+        "heapTotal": 86,
+        "external": 7,
+        "rss": 150
+      },
+      "cpuUsage": {
+        "user": 2578032,
+        "system": 292436
+      },
+      "activeRequests": 0,
+      "queueLength": 0
+    },
+    {
+      "timestamp": 1753977310323,
+      "memoryUsage": {
+        "heapUsed": 63,
+        "heapTotal": 87,
+        "external": 11,
+        "rss": 156
+      },
+      "cpuUsage": {
+        "user": 2790664,
+        "system": 315622
+      },
+      "activeRequests": 0,
+      "queueLength": 0
+    },
+    {
+      "timestamp": 1753977315324,
+      "memoryUsage": {
+        "heapUsed": 61,
+        "heapTotal": 90,
+        "external": 14,
+        "rss": 162
+      },
+      "cpuUsage": {
+        "user": 2943943,
+        "system": 336107
+      },
+      "activeRequests": 0,
+      "queueLength": 0
+    }
+  ]
+}

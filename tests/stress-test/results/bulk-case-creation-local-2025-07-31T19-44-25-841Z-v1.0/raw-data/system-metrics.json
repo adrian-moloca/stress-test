@@ -1,0 +1,56 @@
+{
+  "duration": 18926,
+  "metricsCollected": 3,
+  "peakMemoryUsage": "63MB",
+  "avgMemoryUsage": "60MB",
+  "currentMemory": "57MB",
+  "overallHealth": "STABLE",
+  "crashDetected": false,
+  "timeline": [
+    {
+      "timestamp": 1753991070849,
+      "memoryUsage": {
+        "heapUsed": 58,
+        "heapTotal": 85,
+        "external": 4,
+        "rss": 145
+      },
+      "cpuUsage": {
+        "user": 1961224,
+        "system": 255336
+      },
+      "activeRequests": 0,
+      "queueLength": 0
+    },
+    {
+      "timestamp": 1753991075850,
+      "memoryUsage": {
+        "heapUsed": 60,
+        "heapTotal": 86,
+        "external": 7,
+        "rss": 149
+      },
+      "cpuUsage": {
+        "user": 2145365,
+        "system": 276531
+      },
+      "activeRequests": 0,
+      "queueLength": 0
+    },
+    {
+      "timestamp": 1753991080850,
+      "memoryUsage": {
+        "heapUsed": 63,
+        "heapTotal": 87,
+        "external": 12,
+        "rss": 156
+      },
+      "cpuUsage": {
+        "user": 2421057,
+        "system": 309007
+      },
+      "activeRequests": 0,
+      "queueLength": 0
+    }
+  ]
+}

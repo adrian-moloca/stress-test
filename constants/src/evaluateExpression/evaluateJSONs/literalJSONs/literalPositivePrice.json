@@ -1,0 +1,76 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalPositivePrice",
+      "value": 2
+    },
+    "expected": 2
+  },
+  {
+    "data": {
+      "expressionKind": "literalPositivePrice",
+      "value": 20.45
+    },
+    "expected": 20.45
+  },
+  {
+    "data": {
+      "expressionKind": "literalPositivePrice",
+      "value": -2
+    },
+    "error": "Negative price"
+  },
+  {
+    "data": {
+      "expressionKind": "literalPositivePrice",
+      "value": -20.45
+    },
+    "error": "Negative price"
+  },
+  {
+    "data": {
+      "expressionKind": "literalPositivePrice",
+      "value": "2"
+    },
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalPositivePrice",
+      "value": "2.0"
+    },
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalPositivePrice",
+      "value": "true"
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalPositivePrice",
+      "value": "false"
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalPositivePrice",
+      "value": "null"
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalPositivePrice",
+      "value": "undefined"
+    },
+    "expected": null,
+    "error": true
+  }
+]

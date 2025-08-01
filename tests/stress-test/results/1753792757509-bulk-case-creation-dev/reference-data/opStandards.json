@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "OPS_0000",
+    "name": "Endoprothese",
+    "duration": 413,
+    "category": "C3",
+    "complexity": "LOW",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 6750.27,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0001",
+    "name": "Arthroskopie",
+    "duration": 380,
+    "category": "C1",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 2604.8,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0002",
+    "name": "Koloskopie",
+    "duration": 312,
+    "category": "A",
+    "complexity": "LOW",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 9024.62,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0003",
+    "name": "Thorakoskopie",
+    "duration": 318,
+    "category": "F",
+    "complexity": "LOW",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 13330.59,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0004",
+    "name": "Hernioplastik",
+    "duration": 88,
+    "category": "C3",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 9778.48,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0005",
+    "name": "Endoprothese",
+    "duration": 70,
+    "category": "F",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 2904.3,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0006",
+    "name": "Endoprothese",
+    "duration": 372,
+    "category": "B",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 3789.56,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0007",
+    "name": "Thorakoskopie",
+    "duration": 450,
+    "category": "G",
+    "complexity": "LOW",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 12208.36,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0008",
+    "name": "Endoprothese",
+    "duration": 255,
+    "category": "D",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 8542.23,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0009",
+    "name": "Koloskopie",
+    "duration": 359,
+    "category": "D",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 6169.47,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0010",
+    "name": "Koloskopie",
+    "duration": 356,
+    "category": "A",
+    "complexity": "LOW",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 5531.53,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0011",
+    "name": "Thorakoskopie",
+    "duration": 226,
+    "category": "C1",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 6861.36,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0012",
+    "name": "Appendektomie",
+    "duration": 457,
+    "category": "C2",
+    "complexity": "LOW",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 11281.11,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0013",
+    "name": "Cholezystektomie",
+    "duration": 278,
+    "category": "A",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 13683.39,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0014",
+    "name": "Cholezystektomie",
+    "duration": 291,
+    "category": "G",
+    "complexity": "LOW",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 10807.9,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0015",
+    "name": "Endoprothese",
+    "duration": 466,
+    "category": "E",
+    "complexity": "LOW",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 9280.49,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0016",
+    "name": "Thorakoskopie",
+    "duration": 379,
+    "category": "C2",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 13648.27,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0017",
+    "name": "Appendektomie",
+    "duration": 254,
+    "category": "D",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 5223.37,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0018",
+    "name": "Thorakoskopie",
+    "duration": 344,
+    "category": "G",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 13554.03,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0019",
+    "name": "Arthroskopie",
+    "duration": 163,
+    "category": "C1",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 9827.6,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0020",
+    "name": "Cholezystektomie",
+    "duration": 162,
+    "category": "D",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 5583.37,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0021",
+    "name": "Thorakoskopie",
+    "duration": 102,
+    "category": "C3",
+    "complexity": "LOW",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 1577.68,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0022",
+    "name": "Appendektomie",
+    "duration": 242,
+    "category": "F",
+    "complexity": "LOW",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 12844.52,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0023",
+    "name": "Endoprothese",
+    "duration": 192,
+    "category": "B",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 2302.6,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0024",
+    "name": "Thorakoskopie",
+    "duration": 353,
+    "category": "C3",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 6254.09,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0025",
+    "name": "Endoprothese",
+    "duration": 160,
+    "category": "C1",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 9133.68,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0026",
+    "name": "Appendektomie",
+    "duration": 96,
+    "category": "F",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 12813.95,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0027",
+    "name": "Laparoskopie",
+    "duration": 245,
+    "category": "E",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 2627.69,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0028",
+    "name": "Thorakoskopie",
+    "duration": 93,
+    "category": "D",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 11584.56,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0029",
+    "name": "Cholezystektomie",
+    "duration": 112,
+    "category": "C2",
+    "complexity": "LOW",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 10953.77,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0030",
+    "name": "Cholezystektomie",
+    "duration": 181,
+    "category": "C3",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 11932.29,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0031",
+    "name": "Arthroskopie",
+    "duration": 112,
+    "category": "E",
+    "complexity": "LOW",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 7561.72,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0032",
+    "name": "Endoprothese",
+    "duration": 151,
+    "category": "G",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 3986.36,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0033",
+    "name": "Cholezystektomie",
+    "duration": 357,
+    "category": "A",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 6269.65,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0034",
+    "name": "Laparoskopie",
+    "duration": 454,
+    "category": "E",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 8348.16,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0035",
+    "name": "Koloskopie",
+    "duration": 244,
+    "category": "D",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 6981.79,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0036",
+    "name": "Hernioplastik",
+    "duration": 76,
+    "category": "C3",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 12126.63,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0037",
+    "name": "Laparoskopie",
+    "duration": 268,
+    "category": "C1",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 7871.74,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0038",
+    "name": "Arthroskopie",
+    "duration": 308,
+    "category": "C1",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 8555.92,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0039",
+    "name": "Appendektomie",
+    "duration": 159,
+    "category": "A",
+    "complexity": "LOW",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 14098.33,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0040",
+    "name": "Arthroskopie",
+    "duration": 336,
+    "category": "E",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 2000.31,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0041",
+    "name": "Hernioplastik",
+    "duration": 346,
+    "category": "A",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 1592.21,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0042",
+    "name": "Appendektomie",
+    "duration": 108,
+    "category": "E",
+    "complexity": "LOW",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 10152.64,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0043",
+    "name": "Koloskopie",
+    "duration": 259,
+    "category": "A",
+    "complexity": "LOW",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 2949.15,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0044",
+    "name": "Koloskopie",
+    "duration": 420,
+    "category": "E",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 1722.23,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0045",
+    "name": "Cholezystektomie",
+    "duration": 237,
+    "category": "A",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 3443.43,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0046",
+    "name": "Endoprothese",
+    "duration": 214,
+    "category": "F",
+    "complexity": "LOW",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 14500.6,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0047",
+    "name": "Thorakoskopie",
+    "duration": 41,
+    "category": "A",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 7045.11,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0048",
+    "name": "Endoprothese",
+    "duration": 111,
+    "category": "D",
+    "complexity": "LOW",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 12391.51,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0049",
+    "name": "Endoprothese",
+    "duration": 268,
+    "category": "C2",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 10584.18,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0050",
+    "name": "Thorakoskopie",
+    "duration": 233,
+    "category": "G",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 5942.42,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0051",
+    "name": "Cholezystektomie",
+    "duration": 295,
+    "category": "E",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 7844.03,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0052",
+    "name": "Laparoskopie",
+    "duration": 213,
+    "category": "C2",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 7322.8,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0053",
+    "name": "Koloskopie",
+    "duration": 341,
+    "category": "A",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 2468.66,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0054",
+    "name": "Cholezystektomie",
+    "duration": 248,
+    "category": "B",
+    "complexity": "LOW",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 6098.96,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0055",
+    "name": "Cholezystektomie",
+    "duration": 436,
+    "category": "D",
+    "complexity": "LOW",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 14254.48,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0056",
+    "name": "Koloskopie",
+    "duration": 313,
+    "category": "C2",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 4889.87,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0057",
+    "name": "Koloskopie",
+    "duration": 328,
+    "category": "A",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 10999.21,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0058",
+    "name": "Hernioplastik",
+    "duration": 285,
+    "category": "C1",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 12887.91,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0059",
+    "name": "Koloskopie",
+    "duration": 275,
+    "category": "D",
+    "complexity": "LOW",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 7054.93,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0060",
+    "name": "Endoprothese",
+    "duration": 312,
+    "category": "D",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 10175.63,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0061",
+    "name": "Koloskopie",
+    "duration": 312,
+    "category": "E",
+    "complexity": "LOW",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 3887.12,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0062",
+    "name": "Arthroskopie",
+    "duration": 42,
+    "category": "A",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 9311.57,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0063",
+    "name": "Appendektomie",
+    "duration": 229,
+    "category": "F",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 3348.48,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0064",
+    "name": "Endoprothese",
+    "duration": 79,
+    "category": "C2",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 14200.84,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0065",
+    "name": "Appendektomie",
+    "duration": 103,
+    "category": "D",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 8471.62,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0066",
+    "name": "Arthroskopie",
+    "duration": 255,
+    "category": "E",
+    "complexity": "LOW",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 14732.27,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0067",
+    "name": "Cholezystektomie",
+    "duration": 382,
+    "category": "C2",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 10736.66,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0068",
+    "name": "Laparoskopie",
+    "duration": 265,
+    "category": "C3",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 1355.49,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0069",
+    "name": "Endoprothese",
+    "duration": 43,
+    "category": "A",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 5101.87,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0070",
+    "name": "Hernioplastik",
+    "duration": 404,
+    "category": "D",
+    "complexity": "LOW",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 3961.24,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0071",
+    "name": "Thorakoskopie",
+    "duration": 239,
+    "category": "C1",
+    "complexity": "LOW",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 6295.7,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0072",
+    "name": "Endoprothese",
+    "duration": 33,
+    "category": "D",
+    "complexity": "LOW",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 8561.82,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0073",
+    "name": "Endoprothese",
+    "duration": 101,
+    "category": "E",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 8258.84,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0074",
+    "name": "Cholezystektomie",
+    "duration": 101,
+    "category": "C3",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 8978.7,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0075",
+    "name": "Hernioplastik",
+    "duration": 301,
+    "category": "C2",
+    "complexity": "LOW",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 4243.98,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0076",
+    "name": "Laparoskopie",
+    "duration": 351,
+    "category": "A",
+    "complexity": "LOW",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 14238.02,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0077",
+    "name": "Appendektomie",
+    "duration": 240,
+    "category": "C3",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 13002.26,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0078",
+    "name": "Thorakoskopie",
+    "duration": 440,
+    "category": "C2",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 14186.95,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0079",
+    "name": "Endoprothese",
+    "duration": 384,
+    "category": "B",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 1450.21,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0080",
+    "name": "Endoprothese",
+    "duration": 257,
+    "category": "C1",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 7202.3,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0081",
+    "name": "Thorakoskopie",
+    "duration": 264,
+    "category": "C2",
+    "complexity": "LOW",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 13071.85,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0082",
+    "name": "Laparoskopie",
+    "duration": 368,
+    "category": "E",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 7873.46,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0083",
+    "name": "Arthroskopie",
+    "duration": 429,
+    "category": "E",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 7987.59,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0084",
+    "name": "Thorakoskopie",
+    "duration": 287,
+    "category": "C3",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 5992.98,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0085",
+    "name": "Endoprothese",
+    "duration": 156,
+    "category": "F",
+    "complexity": "LOW",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 7744.69,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0086",
+    "name": "Koloskopie",
+    "duration": 296,
+    "category": "C2",
+    "complexity": "LOW",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 3099.45,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0087",
+    "name": "Thorakoskopie",
+    "duration": 107,
+    "category": "F",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 11448.41,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0088",
+    "name": "Endoprothese",
+    "duration": 309,
+    "category": "A",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 7711.19,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0089",
+    "name": "Koloskopie",
+    "duration": 96,
+    "category": "G",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 13224.31,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0090",
+    "name": "Endoprothese",
+    "duration": 97,
+    "category": "C2",
+    "complexity": "CRITICAL",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 12853.72,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0091",
+    "name": "Koloskopie",
+    "duration": 164,
+    "category": "A",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 3133.36,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0092",
+    "name": "Koloskopie",
+    "duration": 287,
+    "category": "E",
+    "complexity": "LOW",
+    "anesthesiaRequired": "LOCAL",
+    "estimatedCost": 11956.06,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0093",
+    "name": "Hernioplastik",
+    "duration": 475,
+    "category": "D",
+    "complexity": "LOW",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 5331.61,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0094",
+    "name": "Koloskopie",
+    "duration": 475,
+    "category": "F",
+    "complexity": "LOW",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 7518.25,
+    "riskLevel": "LOW"
+  },
+  {
+    "id": "OPS_0095",
+    "name": "Thorakoskopie",
+    "duration": 438,
+    "category": "B",
+    "complexity": "HIGH",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 7323.39,
+    "riskLevel": "HIGH"
+  },
+  {
+    "id": "OPS_0096",
+    "name": "Hernioplastik",
+    "duration": 66,
+    "category": "A",
+    "complexity": "LOW",
+    "anesthesiaRequired": "SEDATION",
+    "estimatedCost": 1419.93,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0097",
+    "name": "Arthroskopie",
+    "duration": 178,
+    "category": "D",
+    "complexity": "LOW",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 11952.92,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0098",
+    "name": "Thorakoskopie",
+    "duration": 36,
+    "category": "C3",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "GENERAL",
+    "estimatedCost": 9060.82,
+    "riskLevel": "MEDIUM"
+  },
+  {
+    "id": "OPS_0099",
+    "name": "Cholezystektomie",
+    "duration": 399,
+    "category": "A",
+    "complexity": "MEDIUM",
+    "anesthesiaRequired": "REGIONAL",
+    "estimatedCost": 1087.58,
+    "riskLevel": "LOW"
+  }
+]

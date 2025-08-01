@@ -1,0 +1,79 @@
+{
+  "testId": "1753883920857-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753883920863,
+  "endTime": 1753883921871,
+  "totalCasesAttempted": 5,
+  "casesCreated": 5,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {},
+  "performanceMetrics": {
+    "totalCases": 5,
+    "successfulCases": 5,
+    "failedCases": 0,
+    "successRate": 100,
+    "totalDuration": 512,
+    "averageResponseTime": 449.4,
+    "casesPerSecond": 9.765625,
+    "batchSize": 5,
+    "realReferenceData": {
+      "contractIds": 8,
+      "doctorIds": 4,
+      "opStandardIds": 10
+    }
+  },
+  "successRate": 100,
+  "scenarioType": "bulk-case-creation",
+  "casesGenerated": 5,
+  "failedCases": 0,
+  "totalDuration": 1008,
+  "averageResponseTime": 449.4,
+  "casesPerSecond": 9.765625,
+  "results": [
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000001",
+      "success": true,
+      "timestamp": "2025-07-30T13:58:41.736Z",
+      "responseTime": 413
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000002",
+      "success": true,
+      "timestamp": "2025-07-30T13:58:41.770Z",
+      "responseTime": 437
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000003",
+      "success": true,
+      "timestamp": "2025-07-30T13:58:41.791Z",
+      "responseTime": 455
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000004",
+      "success": true,
+      "timestamp": "2025-07-30T13:58:41.793Z",
+      "responseTime": 453
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000005",
+      "success": true,
+      "timestamp": "2025-07-30T13:58:41.832Z",
+      "responseTime": 489
+    }
+  ],
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753883920857-bulk-case-creation-dev/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753883920857-bulk-case-creation-dev/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753883920857-bulk-case-creation-dev/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753883920857-bulk-case-creation-dev/reports/system-limits.html"
+  }
+}

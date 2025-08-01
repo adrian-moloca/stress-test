@@ -1,0 +1,47 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalAddress",
+      "value": {
+        "city": "AAAAAA",
+        "country": "BBBBBB",
+        "houseNumber": "FFFFFF",
+        "postalCode": "CCCCCC",
+        "state": "DDDDDD",
+        "street": "EEEEEE"
+      }
+    },
+    "expected": {
+      "city": "AAAAAA",
+      "country": "BBBBBB",
+      "houseNumber": "FFFFFF",
+      "postalCode": "CCCCCC",
+      "state": "DDDDDD",
+      "street": "EEEEEE"
+    },
+    "expectedType": "Address"
+  },
+  {
+    "data": {
+      "expressionKind": "literalAddress",
+      "value": null
+    },
+    "error": "Address is null",
+    "expected": null
+  },
+  {
+    "data": {
+      "expressionKind": "literalAddress",
+      "value": {
+        "city": "AAAAAA",
+        "country": "BBBBBB",
+        "houseNumber": 123456,
+        "postalCode": "CCCCCC",
+        "state": "DDDDDD",
+        "street": "EEEEEE"
+      }
+    },
+    "error": "houseNumber is a number",
+    "expected": null
+  }
+]

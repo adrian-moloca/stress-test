@@ -1,0 +1,67 @@
+[
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "every",
+      "parameters": {
+        "callback": {
+          "args": [
+            "current"
+          ],
+          "body": {
+            "expressionKind": "greaterThanOperator",
+            "left": {
+              "expressionKind": "symbolOperator",
+              "name": "current"
+            },
+            "right": {
+              "expressionKind": "literalNumber",
+              "value": 5
+            }
+          },
+          "expressionKind": "lambdaOperator"
+        },
+        "sourceArray": {
+          "expressionKind": "literalList",
+          "value": [
+            10,
+            15
+          ]
+        }
+      }
+    },
+    "expected": true
+  }, {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "every",
+      "parameters": {
+        "callback": {
+          "args": [
+            "current"
+          ],
+          "body": {
+            "expressionKind": "greaterThanOperator",
+            "left": {
+              "expressionKind": "symbolOperator",
+              "name": "current"
+            },
+            "right": {
+              "expressionKind": "literalNumber",
+              "value": 15
+            }
+          },
+          "expressionKind": "lambdaOperator"
+        },
+        "sourceArray": {
+          "expressionKind": "literalList",
+          "value": [
+            10,
+            15
+          ]
+        }
+      }
+    },
+    "expected": false
+  }
+]

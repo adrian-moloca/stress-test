@@ -1,0 +1,554 @@
+{
+  "timestamp": 1753965400151,
+  "summary": {
+    "proxiesCreated": "0/100",
+    "fragmentsValid": "0/0",
+    "dependenciesComplete": "0/0",
+    "performanceTargetsMet": "1/3"
+  },
+  "details": {
+    "proxy": {
+      "checked": 100,
+      "found": 0,
+      "missing": [
+        {
+          "caseNumber": "STRESS_000001",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965300840
+        },
+        {
+          "caseNumber": "STRESS_000002",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965301842
+        },
+        {
+          "caseNumber": "STRESS_000003",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965302843
+        },
+        {
+          "caseNumber": "STRESS_000004",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965303844
+        },
+        {
+          "caseNumber": "STRESS_000005",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965304850
+        },
+        {
+          "caseNumber": "STRESS_000006",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965305852
+        },
+        {
+          "caseNumber": "STRESS_000007",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965306856
+        },
+        {
+          "caseNumber": "STRESS_000008",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965307859
+        },
+        {
+          "caseNumber": "STRESS_000009",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965308871
+        },
+        {
+          "caseNumber": "STRESS_000010",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965309875
+        },
+        {
+          "caseNumber": "STRESS_000011",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965310880
+        },
+        {
+          "caseNumber": "STRESS_000012",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965311882
+        },
+        {
+          "caseNumber": "STRESS_000013",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965312886
+        },
+        {
+          "caseNumber": "STRESS_000014",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965313886
+        },
+        {
+          "caseNumber": "STRESS_000015",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965314890
+        },
+        {
+          "caseNumber": "STRESS_000016",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965315893
+        },
+        {
+          "caseNumber": "STRESS_000017",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965316896
+        },
+        {
+          "caseNumber": "STRESS_000018",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965317899
+        },
+        {
+          "caseNumber": "STRESS_000019",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965318902
+        },
+        {
+          "caseNumber": "STRESS_000020",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965319905
+        },
+        {
+          "caseNumber": "STRESS_000021",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965320909
+        },
+        {
+          "caseNumber": "STRESS_000022",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965321912
+        },
+        {
+          "caseNumber": "STRESS_000023",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965322915
+        },
+        {
+          "caseNumber": "STRESS_000024",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965323918
+        },
+        {
+          "caseNumber": "STRESS_000025",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965324920
+        },
+        {
+          "caseNumber": "STRESS_000026",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965325923
+        },
+        {
+          "caseNumber": "STRESS_000027",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965326924
+        },
+        {
+          "caseNumber": "STRESS_000028",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965327928
+        },
+        {
+          "caseNumber": "STRESS_000029",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965328931
+        },
+        {
+          "caseNumber": "STRESS_000030",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965329933
+        },
+        {
+          "caseNumber": "STRESS_000031",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965330935
+        },
+        {
+          "caseNumber": "STRESS_000032",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965331938
+        },
+        {
+          "caseNumber": "STRESS_000033",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965332941
+        },
+        {
+          "caseNumber": "STRESS_000034",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965333946
+        },
+        {
+          "caseNumber": "STRESS_000035",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965334947
+        },
+        {
+          "caseNumber": "STRESS_000036",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965335950
+        },
+        {
+          "caseNumber": "STRESS_000037",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965336954
+        },
+        {
+          "caseNumber": "STRESS_000038",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965337957
+        },
+        {
+          "caseNumber": "STRESS_000039",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965338960
+        },
+        {
+          "caseNumber": "STRESS_000040",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965339963
+        },
+        {
+          "caseNumber": "STRESS_000041",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965340966
+        },
+        {
+          "caseNumber": "STRESS_000042",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965341968
+        },
+        {
+          "caseNumber": "STRESS_000043",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965342973
+        },
+        {
+          "caseNumber": "STRESS_000044",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965343978
+        },
+        {
+          "caseNumber": "STRESS_000045",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965344979
+        },
+        {
+          "caseNumber": "STRESS_000046",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965345982
+        },
+        {
+          "caseNumber": "STRESS_000047",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965346988
+        },
+        {
+          "caseNumber": "STRESS_000048",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965347991
+        },
+        {
+          "caseNumber": "STRESS_000049",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965348992
+        },
+        {
+          "caseNumber": "STRESS_000050",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965349994
+        },
+        {
+          "caseNumber": "STRESS_000051",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965350995
+        },
+        {
+          "caseNumber": "STRESS_000052",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965351998
+        },
+        {
+          "caseNumber": "STRESS_000053",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965353005
+        },
+        {
+          "caseNumber": "STRESS_000054",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965354009
+        },
+        {
+          "caseNumber": "STRESS_000055",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965355012
+        },
+        {
+          "caseNumber": "STRESS_000056",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965356013
+        },
+        {
+          "caseNumber": "STRESS_000057",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965357016
+        },
+        {
+          "caseNumber": "STRESS_000058",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965358018
+        },
+        {
+          "caseNumber": "STRESS_000059",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965359022
+        },
+        {
+          "caseNumber": "STRESS_000060",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965360023
+        },
+        {
+          "caseNumber": "STRESS_000061",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965361035
+        },
+        {
+          "caseNumber": "STRESS_000062",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965362037
+        },
+        {
+          "caseNumber": "STRESS_000063",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965363040
+        },
+        {
+          "caseNumber": "STRESS_000064",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965364044
+        },
+        {
+          "caseNumber": "STRESS_000065",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965365046
+        },
+        {
+          "caseNumber": "STRESS_000066",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965366049
+        },
+        {
+          "caseNumber": "STRESS_000067",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965367054
+        },
+        {
+          "caseNumber": "STRESS_000068",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965368058
+        },
+        {
+          "caseNumber": "STRESS_000069",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965369060
+        },
+        {
+          "caseNumber": "STRESS_000070",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965370063
+        },
+        {
+          "caseNumber": "STRESS_000071",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965371065
+        },
+        {
+          "caseNumber": "STRESS_000072",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965372068
+        },
+        {
+          "caseNumber": "STRESS_000073",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965373071
+        },
+        {
+          "caseNumber": "STRESS_000074",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965374073
+        },
+        {
+          "caseNumber": "STRESS_000075",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965375075
+        },
+        {
+          "caseNumber": "STRESS_000076",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965376077
+        },
+        {
+          "caseNumber": "STRESS_000077",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965377079
+        },
+        {
+          "caseNumber": "STRESS_000078",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965378081
+        },
+        {
+          "caseNumber": "STRESS_000079",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965379084
+        },
+        {
+          "caseNumber": "STRESS_000080",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965380087
+        },
+        {
+          "caseNumber": "STRESS_000081",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965381091
+        },
+        {
+          "caseNumber": "STRESS_000082",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965382094
+        },
+        {
+          "caseNumber": "STRESS_000083",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965383097
+        },
+        {
+          "caseNumber": "STRESS_000084",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965384102
+        },
+        {
+          "caseNumber": "STRESS_000085",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965385105
+        },
+        {
+          "caseNumber": "STRESS_000086",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965386109
+        },
+        {
+          "caseNumber": "STRESS_000087",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965387111
+        },
+        {
+          "caseNumber": "STRESS_000088",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965388113
+        },
+        {
+          "caseNumber": "STRESS_000089",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965389116
+        },
+        {
+          "caseNumber": "STRESS_000090",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965390118
+        },
+        {
+          "caseNumber": "STRESS_000091",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965391121
+        },
+        {
+          "caseNumber": "STRESS_000092",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965392123
+        },
+        {
+          "caseNumber": "STRESS_000093",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965393126
+        },
+        {
+          "caseNumber": "STRESS_000094",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965394129
+        },
+        {
+          "caseNumber": "STRESS_000095",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965395131
+        },
+        {
+          "caseNumber": "STRESS_000096",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965396133
+        },
+        {
+          "caseNumber": "STRESS_000097",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965397136
+        },
+        {
+          "caseNumber": "STRESS_000098",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965398138
+        },
+        {
+          "caseNumber": "STRESS_000099",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965399142
+        },
+        {
+          "caseNumber": "STRESS_000100",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753965400145
+        }
+      ],
+      "details": []
+    },
+    "fragment": {
+      "checked": 0,
+      "valid": 0,
+      "invalid": [],
+      "details": []
+    },
+    "dependency": {
+      "checked": 0,
+      "complete": 0,
+      "incomplete": [],
+      "details": []
+    },
+    "performance": {
+      "responseTime": {
+        "average": 0,
+        "p95": 0,
+        "p99": 0,
+        "max": 0
+      },
+      "successRate": {
+        "rate": 1,
+        "successRate": 0
+      },
+      "throughput": {
+        "requestsPerSecond": 0,
+        "totalRequests": 0
+      },
+      "thresholds": {},
+      "validation": {
+        "responseTimeValid": true,
+        "successRateValid": false,
+        "throughputValid": false,
+        "thresholdsMetrics": []
+      },
+      "validatedAt": 1753965400150
+    }
+  }
+}

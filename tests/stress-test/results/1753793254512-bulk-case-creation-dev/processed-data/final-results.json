@@ -1,0 +1,261 @@
+{
+  "testId": "1753793254512-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753793254521,
+  "endTime": 1753793256958,
+  "totalCasesAttempted": 1000,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "k6Results": {},
+  "systemMetrics": {},
+  "scenarioType": "bulk-case-creation",
+  "casesGenerated": 1000,
+  "creationResults": {
+    "successfulCases": 0,
+    "failedCases": 100,
+    "errors": [
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - ",
+      "HTTP 404: Not Found - "
+    ],
+    "creationTimings": [
+      {
+        "batchIndex": 0,
+        "batchSize": 10,
+        "duration": 90,
+        "casesPerSecond": 111.1111111111111
+      },
+      {
+        "batchIndex": 1,
+        "batchSize": 10,
+        "duration": 21,
+        "casesPerSecond": 476.19047619047615
+      },
+      {
+        "batchIndex": 2,
+        "batchSize": 10,
+        "duration": 23,
+        "casesPerSecond": 434.7826086956522
+      },
+      {
+        "batchIndex": 3,
+        "batchSize": 10,
+        "duration": 19,
+        "casesPerSecond": 526.3157894736842
+      },
+      {
+        "batchIndex": 4,
+        "batchSize": 10,
+        "duration": 10,
+        "casesPerSecond": 1000
+      },
+      {
+        "batchIndex": 5,
+        "batchSize": 10,
+        "duration": 37,
+        "casesPerSecond": 270.27027027027026
+      },
+      {
+        "batchIndex": 6,
+        "batchSize": 10,
+        "duration": 19,
+        "casesPerSecond": 526.3157894736842
+      },
+      {
+        "batchIndex": 7,
+        "batchSize": 10,
+        "duration": 17,
+        "casesPerSecond": 588.2352941176471
+      },
+      {
+        "batchIndex": 8,
+        "batchSize": 10,
+        "duration": 13,
+        "casesPerSecond": 769.2307692307693
+      },
+      {
+        "batchIndex": 9,
+        "batchSize": 10,
+        "duration": 47,
+        "casesPerSecond": 212.7659574468085
+      }
+    ],
+    "memoryUsage": [
+      {
+        "batchIndex": 0,
+        "heapUsed": 93632632,
+        "heapTotal": 117952512,
+        "memoryIncrease": 5722552
+      },
+      {
+        "batchIndex": 1,
+        "heapUsed": 95364392,
+        "heapTotal": 118476800,
+        "memoryIncrease": 1717680
+      },
+      {
+        "batchIndex": 2,
+        "heapUsed": 64810136,
+        "heapTotal": 98250752,
+        "memoryIncrease": -30562712
+      },
+      {
+        "batchIndex": 3,
+        "heapUsed": 66028256,
+        "heapTotal": 98250752,
+        "memoryIncrease": 1209112
+      },
+      {
+        "batchIndex": 4,
+        "heapUsed": 67250728,
+        "heapTotal": 98250752,
+        "memoryIncrease": 1214880
+      },
+      {
+        "batchIndex": 5,
+        "heapUsed": 68692008,
+        "heapTotal": 98512896,
+        "memoryIncrease": 1434240
+      },
+      {
+        "batchIndex": 6,
+        "heapUsed": 70158672,
+        "heapTotal": 98775040,
+        "memoryIncrease": 1455552
+      },
+      {
+        "batchIndex": 7,
+        "heapUsed": 71365632,
+        "heapTotal": 98775040,
+        "memoryIncrease": 1199056
+      },
+      {
+        "batchIndex": 8,
+        "heapUsed": 72568608,
+        "heapTotal": 98775040,
+        "memoryIncrease": 1195472
+      },
+      {
+        "batchIndex": 9,
+        "heapUsed": 73785920,
+        "heapTotal": 98775040,
+        "memoryIncrease": 1202800
+      }
+    ],
+    "casesCreated": [],
+    "summary": {
+      "totalTime": 1305,
+      "averageTimePerCase": 13.05,
+      "successRate": 0,
+      "throughput": 0
+    }
+  },
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753793254512-bulk-case-creation-dev/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753793254512-bulk-case-creation-dev/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753793254512-bulk-case-creation-dev/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753793254512-bulk-case-creation-dev/reports/system-limits.html"
+  },
+  "totalDuration": 2437
+}

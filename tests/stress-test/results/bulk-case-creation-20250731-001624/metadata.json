@@ -1,0 +1,15 @@
+{
+  "runId": "bulk-case-creation-20250731-001624",
+  "timestamp": "20250731-001624",
+  "scenario": "bulk-case-creation",
+  "volume": null,
+  "env": "local",
+  "dryRun": false,
+  "onlyGenerate": false,
+  "customOptions": {},
+  "system": {
+    "platform": "linux",
+    "cpus": 8,
+    "memoryGB": 31
+  }
+}

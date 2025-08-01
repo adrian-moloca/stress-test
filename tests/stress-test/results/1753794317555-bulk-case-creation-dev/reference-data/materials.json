@@ -1,0 +1,83 @@
+[
+  {
+    "id": "MAT_0000",
+    "code": "MATZRBVBK",
+    "name": "Surgical Suture",
+    "category": "IMPLANT",
+    "unit": "unit",
+    "costPerUnit": 93.61,
+    "sterilizable": true
+  },
+  {
+    "id": "MAT_0001",
+    "code": "MATL0OSFY",
+    "name": "Gauze Pad",
+    "category": "SURGICAL_INSTRUMENT",
+    "unit": "piece",
+    "costPerUnit": 442.18,
+    "sterilizable": false
+  },
+  {
+    "id": "MAT_0002",
+    "code": "MATWUGHJH",
+    "name": "Surgical Gloves",
+    "category": "SURGICAL_INSTRUMENT",
+    "unit": "unit",
+    "costPerUnit": 377.64,
+    "sterilizable": true
+  },
+  {
+    "id": "MAT_0003",
+    "code": "MATDSULBK",
+    "name": "Syringe",
+    "category": "CONSUMABLE",
+    "unit": "piece",
+    "costPerUnit": 204.74,
+    "sterilizable": true
+  },
+  {
+    "id": "MAT_0004",
+    "code": "MATBWWTM5",
+    "name": "Catheter",
+    "category": "CONSUMABLE",
+    "unit": "piece",
+    "costPerUnit": 32.52,
+    "sterilizable": false
+  },
+  {
+    "id": "MAT_0005",
+    "code": "MATL5ZZKJ",
+    "name": "Surgical Mask",
+    "category": "IMPLANT",
+    "unit": "unit",
+    "costPerUnit": 344.98,
+    "sterilizable": true
+  },
+  {
+    "id": "MAT_0006",
+    "code": "MATACXSNB",
+    "name": "Bandage",
+    "category": "DISPOSABLE",
+    "unit": "unit",
+    "costPerUnit": 401.47,
+    "sterilizable": true
+  },
+  {
+    "id": "MAT_0007",
+    "code": "MATMG10TR",
+    "name": "Surgical Blade",
+    "category": "IMPLANT",
+    "unit": "pack",
+    "costPerUnit": 409.85,
+    "sterilizable": true
+  },
+  {
+    "id": "MAT_0008",
+    "code": "MATPC2FVO",
+    "name": "Irrigation Solution",
+    "category": "DISPOSABLE",
+    "unit": "pack",
+    "costPerUnit": 493.54,
+    "sterilizable": true
+  }
+]

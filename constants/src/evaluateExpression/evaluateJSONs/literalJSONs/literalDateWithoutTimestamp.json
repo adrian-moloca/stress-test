@@ -1,0 +1,45 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalDateWithoutTimestamp",
+      "value": {
+        "day": 1,
+        "month": 1,
+        "year": 2021
+      }
+    },
+    "expected": "2020-12-31T23:00:00.000Z"
+  },
+  {
+    "data": {
+      "expressionKind": "literalDateWithoutTimestamp",
+      "value": {
+        "day": 1,
+        "month": 1
+      }
+    },
+    "error": "Missing year"
+  },
+  {
+    "data": {
+      "expressionKind": "literalDateWithoutTimestamp",
+      "value": {
+        "day": 32,
+        "month": 1,
+        "year": 2021
+      }
+    },
+    "error": "Invalid date"
+  },
+  {
+    "data": {
+      "expressionKind": "literalDateWithoutTimestamp",
+      "value": {
+        "day": 32,
+        "month": 1,
+        "year": "2021"
+      }
+    },
+    "error": "Invalid year"
+  }
+]

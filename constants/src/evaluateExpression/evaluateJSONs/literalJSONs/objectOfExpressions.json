@@ -1,0 +1,47 @@
+[
+  {
+    "data": {
+      "expressionKind": "objectOfExpressions",
+      "value": {
+        "first": {
+          "expressionKind": "literalNumber",
+          "value": 4
+        },
+        "second": {
+          "expressionKind": "literalString",
+          "value": "World"
+        },
+        "third": {
+          "expressionKind": "literalBoolean",
+          "value": true
+        }
+      }
+    },
+    "expected": {
+      "first": 4,
+      "second": "World",
+      "third": true
+    }
+  },
+  {
+    "data": {
+      "expressionKind": "objectOfExpressions",
+      "value": [
+        {
+          "expressionKind": "literalNumber",
+          "value": 4
+        },
+        {
+          "expressionKind": "literalString",
+          "value": "World"
+        },
+        {
+          "expressionKind": "literalBoolean",
+          "value": true
+        }
+      ]
+    },
+    "expected": null,
+    "error": true
+  }
+]

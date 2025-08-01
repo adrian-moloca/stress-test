@@ -1,0 +1,63 @@
+{
+  "testId": "1753818921271-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753818921279,
+  "endTime": 1753818922186,
+  "totalCasesAttempted": 10,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "k6Results": {},
+  "systemMetrics": {},
+  "scenarioType": "bulk-case-creation",
+  "casesGenerated": 10,
+  "creationResults": {
+    "successfulCases": 0,
+    "failedCases": 10,
+    "errors": [
+      "HTTP 401: Unauthorized - {\"message\":\"error_noAuthorizationHeader\",\"error\":\"Unauthorized\",\"statusCode\":401}",
+      "HTTP 401: Unauthorized - {\"message\":\"error_noAuthorizationHeader\",\"error\":\"Unauthorized\",\"statusCode\":401}",
+      "HTTP 401: Unauthorized - {\"message\":\"error_noAuthorizationHeader\",\"error\":\"Unauthorized\",\"statusCode\":401}",
+      "HTTP 401: Unauthorized - {\"message\":\"error_noAuthorizationHeader\",\"error\":\"Unauthorized\",\"statusCode\":401}",
+      "HTTP 401: Unauthorized - {\"message\":\"error_noAuthorizationHeader\",\"error\":\"Unauthorized\",\"statusCode\":401}",
+      "HTTP 401: Unauthorized - {\"message\":\"error_noAuthorizationHeader\",\"error\":\"Unauthorized\",\"statusCode\":401}",
+      "HTTP 401: Unauthorized - {\"message\":\"error_noAuthorizationHeader\",\"error\":\"Unauthorized\",\"statusCode\":401}",
+      "HTTP 401: Unauthorized - {\"message\":\"error_noAuthorizationHeader\",\"error\":\"Unauthorized\",\"statusCode\":401}",
+      "HTTP 401: Unauthorized - {\"message\":\"error_noAuthorizationHeader\",\"error\":\"Unauthorized\",\"statusCode\":401}",
+      "HTTP 401: Unauthorized - {\"message\":\"error_noAuthorizationHeader\",\"error\":\"Unauthorized\",\"statusCode\":401}"
+    ],
+    "creationTimings": [
+      {
+        "batchIndex": 0,
+        "batchSize": 10,
+        "duration": 695,
+        "casesPerSecond": 14.388489208633095
+      }
+    ],
+    "memoryUsage": [
+      {
+        "batchIndex": 0,
+        "heapUsed": 43221328,
+        "heapTotal": 80424960,
+        "memoryIncrease": 5409144
+      }
+    ],
+    "casesCreated": [],
+    "summary": {
+      "totalTime": 795,
+      "averageTimePerCase": 79.5,
+      "successRate": 0,
+      "throughput": 0
+    }
+  },
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753818921271-bulk-case-creation-dev/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753818921271-bulk-case-creation-dev/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753818921271-bulk-case-creation-dev/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753818921271-bulk-case-creation-dev/reports/system-limits.html"
+  },
+  "totalDuration": 907
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "contractId": "CONTRACT_000",
+    "name": "Hessel Group",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 14,
+      "discountEarly": 0.04
+    }
+  },
+  {
+    "contractId": "CONTRACT_001",
+    "name": "Conn Inc",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0.05
+    }
+  },
+  {
+    "contractId": "CONTRACT_002",
+    "name": "Kub and Sons",
+    "type": "INSURANCE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 21,
+      "discountEarly": 0
+    }
+  },
+  {
+    "contractId": "CONTRACT_003",
+    "name": "Wolf, Heller and Goyette",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 14,
+      "discountEarly": 0
+    }
+  },
+  {
+    "contractId": "CONTRACT_004",
+    "name": "Mayert Inc",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 14,
+      "discountEarly": 0
+    }
+  },
+  {
+    "contractId": "CONTRACT_005",
+    "name": "Willms, Franey and VonRueden",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0.01
+    }
+  },
+  {
+    "contractId": "CONTRACT_006",
+    "name": "Quitzon, Medhurst and Stamm",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 60,
+      "discountEarly": 0.05
+    }
+  },
+  {
+    "contractId": "CONTRACT_007",
+    "name": "Mills and Sons",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 60,
+      "discountEarly": 0
+    }
+  },
+  {
+    "contractId": "CONTRACT_008",
+    "name": "Volkman - Thiel",
+    "type": "INSURANCE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 14,
+      "discountEarly": 0.05
+    }
+  },
+  {
+    "contractId": "CONTRACT_009",
+    "name": "Glover, Mosciski and Kuvalis",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0.04
+    }
+  }
+]

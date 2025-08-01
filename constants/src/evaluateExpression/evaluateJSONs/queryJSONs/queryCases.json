@@ -1,0 +1,36 @@
+[
+  {
+    "data": {
+      "collection": "cases",
+      "expressionKind": "query",
+      "where": {
+        "args": [
+          {
+            "arg": {
+              "expressionKind": "literalString",
+              "value": "1"
+            },
+            "expressionKind": "queryWhere",
+            "operator": "equalsOperator",
+            "path": "caseNumber"
+          }
+        ],
+        "expressionKind": "queryTie",
+        "tieOperator": "AND"
+      },
+      "yields": {
+        "bookingPatient.patientId": {
+          "expressionKind": "literalBoolean",
+          "value": true
+        },
+        "uploads": {
+          "expressionKind": "literalBoolean",
+          "value": true
+        }
+      },
+      "__ignorePermissions": true
+    },
+    "expected": null,
+    "impure": true
+  }
+]

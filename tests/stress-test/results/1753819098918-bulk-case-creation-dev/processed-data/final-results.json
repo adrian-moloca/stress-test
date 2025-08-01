@@ -1,0 +1,63 @@
+{
+  "testId": "1753819098918-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753819098930,
+  "endTime": 1753819100252,
+  "totalCasesAttempted": 10,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "k6Results": {},
+  "systemMetrics": {},
+  "scenarioType": "bulk-case-creation",
+  "casesGenerated": 10,
+  "creationResults": {
+    "successfulCases": 0,
+    "failedCases": 10,
+    "errors": [
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T19:58:19.735Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id contract-007 not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T19:58:19.758Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id contract-002 not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T19:58:19.990Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id contract-009 not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T19:58:20.028Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id contract-004 not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T19:58:19.916Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id contract-005 not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T19:58:19.907Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id contract-007 not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T19:58:20.090Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id contract-010 not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T19:58:19.995Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id contract-008 not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T19:58:19.938Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id contract-002 not found\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T19:58:20.101Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Contract with id contract-006 not found\"}}"
+    ],
+    "creationTimings": [
+      {
+        "batchIndex": 0,
+        "batchSize": 10,
+        "duration": 1116,
+        "casesPerSecond": 8.960573476702509
+      }
+    ],
+    "memoryUsage": [
+      {
+        "batchIndex": 0,
+        "heapUsed": 43817208,
+        "heapTotal": 80424960,
+        "memoryIncrease": 6109872
+      }
+    ],
+    "casesCreated": [],
+    "summary": {
+      "totalTime": 1217,
+      "averageTimePerCase": 121.7,
+      "successRate": 0,
+      "throughput": 0
+    }
+  },
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753819098918-bulk-case-creation-dev/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753819098918-bulk-case-creation-dev/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753819098918-bulk-case-creation-dev/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753819098918-bulk-case-creation-dev/reports/system-limits.html"
+  },
+  "totalDuration": 1322
+}

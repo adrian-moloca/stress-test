@@ -1,0 +1,16 @@
+[  
+  {
+    "data": {
+      "expressionKind": "http",
+      "url": "USER_API_URL",
+      "method": "GET",
+      "path": {
+        "expressionKind": "literalString",
+        "value": "/doctors"
+      }
+    },
+    "invocationType": "frontend",
+    "expected": null,
+    "impure": true
+  }
+]

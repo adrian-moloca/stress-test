@@ -1,0 +1,114 @@
+{
+  "testId": "1753955356061-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753955356067,
+  "endTime": 1753955358380,
+  "totalCasesAttempted": 10,
+  "casesCreated": 10,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {},
+  "performanceMetrics": {
+    "totalCases": 10,
+    "successfulCases": 10,
+    "failedCases": 0,
+    "successRate": 100,
+    "totalDuration": 2025,
+    "averageResponseTime": 444.6,
+    "casesPerSecond": 4.938271604938272,
+    "batchSize": 5,
+    "realReferenceData": {
+      "contractIds": 8,
+      "doctorIds": 4,
+      "opStandardIds": 10
+    }
+  },
+  "successRate": 100,
+  "scenarioType": "bulk-case-creation",
+  "casesGenerated": 10,
+  "failedCases": 0,
+  "totalDuration": 2313,
+  "averageResponseTime": 444.6,
+  "casesPerSecond": 4.938271604938272,
+  "results": [
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000001",
+      "success": true,
+      "timestamp": "2025-07-31T09:49:16.617Z",
+      "responseTime": 344
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000002",
+      "success": true,
+      "timestamp": "2025-07-31T09:49:16.588Z",
+      "responseTime": 310
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000003",
+      "success": true,
+      "timestamp": "2025-07-31T09:49:16.660Z",
+      "responseTime": 383
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000004",
+      "success": true,
+      "timestamp": "2025-07-31T09:49:16.639Z",
+      "responseTime": 360
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000005",
+      "success": true,
+      "timestamp": "2025-07-31T09:49:16.643Z",
+      "responseTime": 363
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000006",
+      "success": true,
+      "timestamp": "2025-07-31T09:49:18.136Z",
+      "responseTime": 473
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000007",
+      "success": true,
+      "timestamp": "2025-07-31T09:49:18.164Z",
+      "responseTime": 494
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000008",
+      "success": true,
+      "timestamp": "2025-07-31T09:49:18.249Z",
+      "responseTime": 577
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000009",
+      "success": true,
+      "timestamp": "2025-07-31T09:49:18.207Z",
+      "responseTime": 526
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000010",
+      "success": true,
+      "timestamp": "2025-07-31T09:49:18.297Z",
+      "responseTime": 616
+    }
+  ],
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753955356061-bulk-case-creation-dev/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753955356061-bulk-case-creation-dev/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753955356061-bulk-case-creation-dev/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753955356061-bulk-case-creation-dev/reports/system-limits.html"
+  }
+}

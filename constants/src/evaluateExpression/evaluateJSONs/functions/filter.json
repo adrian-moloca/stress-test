@@ -1,0 +1,166 @@
+[
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "filter",
+      "parameters": {
+        "callback": {
+          "args": [
+            "current"
+          ],
+          "body": {
+            "expressionKind": "greaterThanOperator",
+            "left": {
+              "expressionKind": "symbolOperator",
+              "name": "current"
+            },
+            "right": {
+              "expressionKind": "literalNumber",
+              "value": 10
+            }
+          },
+          "expressionKind": "lambdaOperator"
+        },
+        "sourceArray": {
+          "expressionKind": "literalList",
+          "value": [
+            10,
+            15
+          ]
+        }
+      }
+    },
+    "expected": [
+      15
+    ]
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "filter",
+      "parameters": {
+        "callback": {
+          "args": [
+            "current"
+          ],
+          "body": {
+            "expressionKind": "endsWithOperator",
+            "left": {
+              "expressionKind": "symbolOperator",
+              "name": "current"
+            },
+            "right": {
+              "expressionKind": "literalString",
+              "value": "piatto"
+            }
+          },
+          "expressionKind": "lambdaOperator"
+        },
+        "sourceArray": {
+          "expressionKind": "literalListOfExpressions",
+          "value": [
+            {
+              "expressionKind": "literalString",
+              "value": "Primo piatto"
+            },
+            {
+              "expressionKind": "functionInvocation",
+              "function": "concat",
+              "parameters": {
+                "stringsToConcat": {
+                  "expressionKind": "literalList",
+                  "value": [
+                    "Secondo",
+                    " piatto"
+                  ]
+                }
+              }
+            },
+            {
+              "expressionKind": "functionInvocation",
+              "function": "concat",
+              "parameters": {
+                "stringsToConcat": {
+                  "expressionKind": "literalList",
+                  "value": [
+                    "Dolce",
+                    " e caffè!"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "expected": [
+      "Primo piatto",
+      "Secondo piatto"
+    ]
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "filter",
+      "parameters": {
+        "callback": {
+          "args": [
+            "current"
+          ],
+          "body": {
+            "expressionKind": "greaterThanOperator",
+            "left": {
+              "expressionKind": "symbolOperator",
+              "name": "current"
+            },
+            "right": {
+              "expressionKind": "literalNumber",
+              "value": 10
+            }
+          },
+          "expressionKind": "lambdaOperator"
+        },
+        "sourceArray": {
+          "expressionKind": "literalNumber",
+          "value": 20
+        }
+      }
+    },
+    "error": true,
+    "expected": null
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "filter",
+      "parameters": {
+        "callback": {
+          "args": [
+            "current"
+          ],
+          "body": {
+            "expressionKind": "greaterThanOperator",
+            "left": {
+              "expressionKind": "symbolOperator",
+              "name": "current"
+            },
+            "right": {
+              "expressionKind": "literalNumber",
+              "value": 10
+            }
+          },
+          "expressionKind": "lambdaOperator"
+        },
+        "sourceArray": {
+          "expressionKind": "literalList",
+          "value": [
+            "10",
+            "15"
+          ]
+        }
+      }
+    },
+    "error": true,
+    "expected": null
+  }
+]

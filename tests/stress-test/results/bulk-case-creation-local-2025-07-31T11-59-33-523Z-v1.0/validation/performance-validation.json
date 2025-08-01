@@ -1,0 +1,24 @@
+{
+  "responseTime": {
+    "average": 0,
+    "p95": 0,
+    "p99": 0,
+    "max": 0
+  },
+  "successRate": {
+    "rate": 1,
+    "successRate": 0
+  },
+  "throughput": {
+    "requestsPerSecond": 0,
+    "totalRequests": 0
+  },
+  "thresholds": {},
+  "validation": {
+    "responseTimeValid": true,
+    "successRateValid": false,
+    "throughputValid": false,
+    "thresholdsMetrics": []
+  },
+  "validatedAt": 1753963185510
+}

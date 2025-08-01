@@ -1,0 +1,74 @@
+[
+  {
+    "data": {
+      "expressionKind": "lessOrEqualsOperator",
+      "left": {
+        "expressionKind": "literalNumber",
+        "value": 3
+      },
+      "right": {
+        "expressionKind": "literalNumber",
+        "value": 5.6
+      }
+    },
+    "expected": true
+  },
+  {
+    "data": {
+      "expressionKind": "lessOrEqualsOperator",
+      "left": {
+        "expressionKind": "literalNumber",
+        "value": 5
+      },
+      "right": {
+        "expressionKind": "literalNumber",
+        "value": 3
+      }
+    },
+    "expected": false
+  },
+  {
+    "data": {
+      "expressionKind": "lessOrEqualsOperator",
+      "left": {
+        "expressionKind": "literalNumber",
+        "value": 3
+      },
+      "right": {
+        "expressionKind": "literalNumber",
+        "value": 3
+      }
+    },
+    "expected": true
+  },
+  {
+    "data": {
+      "expressionKind": "lessOrEqualsOperator",
+      "left": {
+          "expressionKind": "literalString",
+          "value": "3"
+      },
+      "right": {
+          "expressionKind": "literalNumber",
+          "value": -6
+      }
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "lessOrEqualsOperator",
+      "left": {
+        "expressionKind": "literalNumber",
+        "value": 3
+      },
+      "right": {
+        "expressionKind": "literalString",
+        "value": "3"
+      }
+    },
+    "error": true,
+    "expected": null
+  }
+]

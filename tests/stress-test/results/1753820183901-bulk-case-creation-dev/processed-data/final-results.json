@@ -1,0 +1,54 @@
+{
+  "testId": "1753820183901-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753820184100,
+  "endTime": 1753820184635,
+  "totalCasesAttempted": 1,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "k6Results": {},
+  "systemMetrics": {},
+  "scenarioType": "bulk-case-creation",
+  "casesGenerated": 1,
+  "creationResults": {
+    "successfulCases": 0,
+    "failedCases": 1,
+    "errors": [
+      "fetch failed"
+    ],
+    "creationTimings": [
+      {
+        "batchIndex": 0,
+        "batchSize": 1,
+        "duration": 18,
+        "casesPerSecond": 55.55555555555555
+      }
+    ],
+    "memoryUsage": [
+      {
+        "batchIndex": 0,
+        "heapUsed": 45806840,
+        "heapTotal": 79114240,
+        "memoryIncrease": 112536
+      }
+    ],
+    "casesCreated": [],
+    "summary": {
+      "totalTime": 121,
+      "averageTimePerCase": 121,
+      "successRate": 0,
+      "throughput": 0
+    }
+  },
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753820183901-bulk-case-creation-dev/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753820183901-bulk-case-creation-dev/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753820183901-bulk-case-creation-dev/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753820183901-bulk-case-creation-dev/reports/system-limits.html"
+  },
+  "totalDuration": 535
+}

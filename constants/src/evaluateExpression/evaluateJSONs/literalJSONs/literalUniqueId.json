@@ -1,0 +1,9 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalUniqueId"
+    },
+    "expected": "test",
+    "impure": true
+  }
+]

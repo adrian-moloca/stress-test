@@ -1,0 +1,84 @@
+{
+  "testId": "1753885958966-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753885958971,
+  "endTime": 1753885959821,
+  "totalCasesAttempted": 5,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {},
+  "performanceMetrics": {
+    "totalCases": 5,
+    "successfulCases": 0,
+    "failedCases": 5,
+    "successRate": 0,
+    "totalDuration": 570,
+    "averageResponseTime": 501.2,
+    "casesPerSecond": 0,
+    "batchSize": 5,
+    "realReferenceData": {
+      "contractIds": 8,
+      "doctorIds": 4,
+      "opStandardIds": 10
+    }
+  },
+  "successRate": 0,
+  "scenarioType": "bulk-case-creation",
+  "casesGenerated": 5,
+  "failedCases": 5,
+  "totalDuration": 850,
+  "averageResponseTime": 501.2,
+  "casesPerSecond": 0,
+  "results": [
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000001",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T14:32:39.621Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"usersToNotify.map is not a function\"}}",
+      "timestamp": "2025-07-30T14:32:39.623Z",
+      "responseTime": 410
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000002",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T14:32:39.658Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"usersToNotify.map is not a function\"}}",
+      "timestamp": "2025-07-30T14:32:39.663Z",
+      "responseTime": 447
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000003",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T14:32:39.764Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"usersToNotify.map is not a function\"}}",
+      "timestamp": "2025-07-30T14:32:39.766Z",
+      "responseTime": 550
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000004",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T14:32:39.782Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"usersToNotify.map is not a function\"}}",
+      "timestamp": "2025-07-30T14:32:39.783Z",
+      "responseTime": 565
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000005",
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-30T14:32:39.752Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"usersToNotify.map is not a function\"}}",
+      "timestamp": "2025-07-30T14:32:39.753Z",
+      "responseTime": 534
+    }
+  ],
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753885958966-bulk-case-creation-dev/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753885958966-bulk-case-creation-dev/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753885958966-bulk-case-creation-dev/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/1753885958966-bulk-case-creation-dev/reports/system-limits.html"
+  }
+}

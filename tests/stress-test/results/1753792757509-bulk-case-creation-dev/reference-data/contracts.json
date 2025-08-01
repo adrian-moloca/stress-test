@@ -1,0 +1,202 @@
+[
+  {
+    "contractId": "CONTRACT_000",
+    "name": "Bayer Inc",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 21,
+      "discountEarly": 0
+    }
+  },
+  {
+    "contractId": "CONTRACT_001",
+    "name": "Schoen, Steuber and Dooley",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0.02
+    }
+  },
+  {
+    "contractId": "CONTRACT_002",
+    "name": "Rippin, Dach and Beatty",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 14,
+      "discountEarly": 0.01
+    }
+  },
+  {
+    "contractId": "CONTRACT_003",
+    "name": "Ernser - Mills",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 14,
+      "discountEarly": 0.01
+    }
+  },
+  {
+    "contractId": "CONTRACT_004",
+    "name": "Stiedemann Inc",
+    "type": "INSURANCE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 21,
+      "discountEarly": 0.01
+    }
+  },
+  {
+    "contractId": "CONTRACT_005",
+    "name": "Friesen and Sons",
+    "type": "PUBLIC",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0
+    }
+  },
+  {
+    "contractId": "CONTRACT_006",
+    "name": "Bayer - Grady",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 60,
+      "discountEarly": 0
+    }
+  },
+  {
+    "contractId": "CONTRACT_007",
+    "name": "Casper Inc",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0
+    }
+  },
+  {
+    "contractId": "CONTRACT_008",
+    "name": "Kohler Inc",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 21,
+      "discountEarly": 0.05
+    }
+  },
+  {
+    "contractId": "CONTRACT_009",
+    "name": "Prohaska LLC",
+    "type": "PRIVATE",
+    "billingCategories": [
+      "A",
+      "B",
+      "C1",
+      "C2",
+      "C3",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "paymentTerms": {
+      "daysNet": 30,
+      "discountEarly": 0.03
+    }
+  }
+]

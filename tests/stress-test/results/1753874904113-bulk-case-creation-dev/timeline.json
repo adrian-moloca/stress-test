@@ -1,0 +1,13 @@
+[
+  {
+    "timestamp": 1753874904126,
+    "type": "test_started",
+    "message": "Started bulk-case-creation stress test"
+  },
+  {
+    "timestamp": 1753874906954,
+    "type": "test_failed",
+    "message": "Test failed: this.dataManager.saveCaseCreationResults is not a function",
+    "error": "this.dataManager.saveCaseCreationResults is not a function"
+  }
+]

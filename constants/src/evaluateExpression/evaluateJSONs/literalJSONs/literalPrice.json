@@ -1,0 +1,76 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalPrice",
+      "value": 2
+    },
+    "expected": 2
+  },
+  {
+    "data": {
+      "expressionKind": "literalPrice",
+      "value": 20.45
+    },
+    "expected": 20.45
+  },
+  {
+    "data": {
+      "expressionKind": "literalPrice",
+      "value": -2
+    },
+    "expected": -2
+  },
+  {
+    "data": {
+      "expressionKind": "literalPrice",
+      "value": -20.45
+    },
+    "expected": -20.45
+  },
+  {
+    "data": {
+      "expressionKind": "literalPrice",
+      "value": "2"
+    },
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalPrice",
+      "value": "2.0"
+    },
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalPrice",
+      "value": "true"
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalPrice",
+      "value": "false"
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalPrice",
+      "value": "null"
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalPrice",
+      "value": "undefined"
+    },
+    "expected": null,
+    "error": true
+  }
+]

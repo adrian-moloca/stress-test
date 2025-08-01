@@ -1,0 +1,91 @@
+steps:
+  - name: 'gcr.io/$PROJECT_ID/restore_cache'
+    id: 'Restoring NPM modules cache'
+    args:
+      - --bucket=gs://${PROJECT_ID}_cloudbuild
+      - --key=npm-build-cache-$( checksum package.json )-$( checksum package-lock.json )
+  
+  - name: 'node'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        # Check if node_modules exists and is not empty
+        if [ -d "node_modules" ] && [ "$(ls -A node_modules)" ]; then
+          echo "node_modules found, skipping npm ci."
+        else
+          echo "node_modules not found, running npm ci."
+          npm ci --legacy-peer-deps
+        fi
+    id: 'check cached node_modules else install them'
+
+  - name: 'gcr.io/$PROJECT_ID/save_cache'
+    id: 'Saving npm cache'
+    args:
+      - --bucket=gs://${PROJECT_ID}_cloudbuild
+      - --key=npm-build-cache-$( checksum package.json )-$( checksum package-lock.json )
+      - --path=node_modules
+      - --no-clobber
+
+  - name: 'node'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        npm run compile:constants && npm run compile:commons-be
+    id: 'compile constants & commons-be'
+
+  - name: 'gcr.io/cloud-builders/docker'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        NODE_ENV=ci DOCKER_PLATFORM=linux/amd64 docker compose -f docker-compose.yml -f docker-compose-db.yml  -f docker-compose-reset-db.yml -f docker-compose-network-override-external-cloudbuild.yml --env-file .env.ci up -d
+    id: 'launch test environment'
+
+  - name: 'node'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        cp .env.ci .env
+        npx playwright install --with-deps chromium
+        npx playwright test --output=/workspace/reports/$COMMIT_SHA || echo "run-tests" >> /workspace/failed_steps.txt
+    id: 'run tests'
+  
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'cp', '-r', '/workspace/reports/*', 'gs://${_BUCKET_NAME}/${_FOLDER_PATH}']
+    id: "upload failed tests' traces"
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+    - '-c'
+    - |
+      echo -e "##########################\n\n"
+      if [ -f /workspace/failed_steps.txt ]; then
+        echo "One or more steps failed:"
+        cat /workspace/failed_steps.txt
+
+        _comment=":x: Build failed. Check traces [here](https://trace.playwright.dev/).\n\nTraces folder:\n(link)[https://console.cloud.google.com/storage/browser/${_BUCKET_NAME}/${_FOLDER_PATH}/${COMMIT_SHA}]"
+
+        echo -e "${_comment}"
+        echo -e "\n\n##########################"
+        exit 1
+      else
+        _comment="✅ Build success!"
+        echo -e "${_comment}"
+        echo -e "\n\n##########################"
+      fi
+    id: 'check-failures with links'
+
+
+substitutions:
+    _BUCKET_NAME: automated-tests-reports
+    _FOLDER_PATH: e2e
+    _EXPIRATION: 1h
+
+options:
+  pool:
+    name: projects/smambu-devops/locations/europe-west1/workerPools/automated-tests
+  automapSubstitutions: true

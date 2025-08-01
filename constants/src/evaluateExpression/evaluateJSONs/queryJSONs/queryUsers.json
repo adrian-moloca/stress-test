@@ -1,0 +1,95 @@
+[
+  {
+    "data": {
+      "collection": "users",
+      "expressionKind": "query",
+      "where": {
+        "args": [
+          {
+            "arg": {
+              "expressionKind": "literalString",
+              "value": "Test"
+            },
+            "expressionKind": "queryWhere",
+            "operator": "equalsOperator",
+            "path": "firstName"
+          },
+          {
+            "arg": {
+              "expressionKind": "literalString",
+              "value": "Test"
+            },
+            "expressionKind": "queryWhere",
+            "operator": "equalsOperator",
+            "path": "lastName"
+          }
+        ],
+        "expressionKind": "queryTie",
+        "tieOperator": "AND"
+      },
+      "yields": {
+        "address.street": {
+          "expressionKind": "literalBoolean",
+          "typeHint": {
+            "kind": "boolean"
+          },
+          "value": true
+        },
+        "id": {
+          "expressionKind": "literalBoolean",
+          "typeHint": {
+            "kind": "boolean"
+          },
+          "value": true
+        }
+      }
+    },
+    "expected": null,
+    "impure": true
+  },
+  {
+    "data": {
+      "collection": "users",
+      "expressionKind": "query",
+      "sort": {
+        "expressionKind": "literalObj",
+        "value": {
+          "lastName": 1
+        }
+      },
+      "where": {
+        "args": [
+          {
+            "arg": {
+              "expressionKind": "literalString",
+              "value": "Daniele"
+            },
+            "expressionKind": "queryWhere",
+            "operator": "equalsOperator",
+            "path": "firstName"
+          }
+        ],
+        "expressionKind": "queryTie",
+        "tieOperator": "AND"
+      },
+      "yields": {
+        "firstName": {
+          "expressionKind": "literalBoolean",
+          "typeHint": {
+            "kind": "boolean"
+          },
+          "value": true
+        },
+        "lastName": {
+          "expressionKind": "literalBoolean",
+          "typeHint": {
+            "kind": "boolean"
+          },
+          "value": true
+        }
+      }
+    },
+    "expected": null,
+    "impure": true
+  }
+]

@@ -1,0 +1,278 @@
+[
+  {
+    "caseNumber": "STRESS_000001",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Terrence",
+      "surname": "Friesen",
+      "patientId": "P266503",
+      "birthDate": "1942-04-18T17:14:51.597Z"
+    },
+    "bookingSection": {
+      "date": "2026-01-12T20:29:28.264Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 101
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "V0YYVRP4",
+          "name": "Surgical Suture",
+          "quantity": 3,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "YZRH9SNJ",
+          "name": "Scalpel Blade",
+          "quantity": 3,
+          "unitCost": 12
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 67,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "18mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T20:57:44.922Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000002",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Lemuel",
+      "surname": "Kunze",
+      "patientId": "P267959",
+      "birthDate": "1988-10-10T18:38:41.868Z"
+    },
+    "bookingSection": {
+      "date": "2025-12-07T04:53:51.514Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 58
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "EJ98ZNF8",
+          "name": "Surgical Drape",
+          "quantity": 1,
+          "unitCost": 25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 297,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "34mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T20:57:44.922Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000003",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Jamir",
+      "surname": "Brakus",
+      "patientId": "P956580",
+      "birthDate": "1998-09-02T10:36:24.566Z"
+    },
+    "bookingSection": {
+      "date": "2026-02-20T15:43:05.660Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 96
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "RFSCECBW",
+          "name": "Scalpel Blade",
+          "quantity": 3,
+          "unitCost": 12
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 70,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "14mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T20:57:44.922Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000004",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Francesca",
+      "surname": "Wilkinson",
+      "patientId": "P846706",
+      "birthDate": "1950-11-16T02:42:25.170Z"
+    },
+    "bookingSection": {
+      "date": "2026-04-18T15:58:23.857Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 178
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "QNENB3PC",
+          "name": "Surgical Suture",
+          "quantity": 3,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 120,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "12mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T20:57:44.923Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000005",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Stephen",
+      "surname": "Kuhlman",
+      "patientId": "P470987",
+      "birthDate": "1961-09-06T19:48:09.346Z"
+    },
+    "bookingSection": {
+      "date": "2025-10-02T18:38:10.992Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 35
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "G4KMHVZJ",
+          "name": "Scalpel Blade",
+          "quantity": 7,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "M8AY3AX0",
+          "name": "Surgical Drape",
+          "quantity": 9,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "UXOZ30AP",
+          "name": "Scalpel Blade",
+          "quantity": 1,
+          "unitCost": 12
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 256,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "12mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-29T20:57:44.923Z"
+    }
+  }
+]

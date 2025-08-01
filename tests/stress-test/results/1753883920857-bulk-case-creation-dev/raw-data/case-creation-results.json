@@ -1,0 +1,37 @@
+[
+  {
+    "index": 1,
+    "caseNumber": "STRESS_000001",
+    "success": true,
+    "timestamp": "2025-07-30T13:58:41.736Z",
+    "responseTime": 413
+  },
+  {
+    "index": 2,
+    "caseNumber": "STRESS_000002",
+    "success": true,
+    "timestamp": "2025-07-30T13:58:41.770Z",
+    "responseTime": 437
+  },
+  {
+    "index": 3,
+    "caseNumber": "STRESS_000003",
+    "success": true,
+    "timestamp": "2025-07-30T13:58:41.791Z",
+    "responseTime": 455
+  },
+  {
+    "index": 4,
+    "caseNumber": "STRESS_000004",
+    "success": true,
+    "timestamp": "2025-07-30T13:58:41.793Z",
+    "responseTime": 453
+  },
+  {
+    "index": 5,
+    "caseNumber": "STRESS_000005",
+    "success": true,
+    "timestamp": "2025-07-30T13:58:41.832Z",
+    "responseTime": 489
+  }
+]

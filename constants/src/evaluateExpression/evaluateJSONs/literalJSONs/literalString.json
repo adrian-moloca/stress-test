@@ -1,0 +1,77 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalString",
+      "value": "Prova di prova"
+    },
+    "expected": "Prova di prova"
+  },
+  {
+    "data": {
+      "expressionKind": "literalString",
+      "value": 2
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalString",
+      "value": "2"
+    },
+    "expected": "2"
+  },
+  {
+    "data": {
+      "expressionKind": "literalString",
+      "value": "2.0"
+    },
+    "expected": "2.0"
+  },
+  {
+    "data": {
+      "expressionKind": "literalString",
+      "value": "true"
+    },
+    "expected": "true"
+  },
+  {
+    "data": {
+      "expressionKind": "literalString",
+      "value": "false"
+    },
+    "expected": "false"
+  },
+  {
+    "data": {
+      "expressionKind": "literalString",
+      "value": "null"
+    },
+    "expected": "null"
+  },
+  {
+    "data": {
+      "expressionKind": "literalString",
+      "value": "undefined"
+    },
+    "expected": "undefined"
+  },
+  {
+    "data": {
+      "expressionKind": "selfOperator",
+      "paths": [ "value" ],
+      "typeHint": { "kind": "string" }
+    },
+    "expected": "string",
+    "scope": { "self": { "value": "string" } }
+  }, {
+    "data": {
+      "expressionKind": "selfOperator",
+      "paths": [ "value" ],
+      "typeHint": { "kind": "string" }
+    },
+    "scope": { "self": { "value": 2 } },
+    "expected": null,
+    "error": true
+  }
+]

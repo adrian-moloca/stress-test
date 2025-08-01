@@ -1,0 +1,428 @@
+[
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "map",
+      "parameters": {
+        "callback": {
+          "args": [
+            "current"
+          ],
+          "body": {
+            "expressionKind": "functionInvocation",
+            "function": "concat",
+            "parameters": {
+              "stringsToConcat": {
+                "expressionKind": "literalListOfExpressions",
+                "value": [
+                  {
+                    "expressionKind": "dotOperator",
+                    "paths": [
+                      "firstName"
+                    ],
+                    "source": {
+                      "expressionKind": "symbolOperator",
+                      "name": "current"
+                    }
+                  },
+                  {
+                    "expressionKind": "dotOperator",
+                    "paths": [
+                      "lastName"
+                    ],
+                    "source": {
+                      "expressionKind": "symbolOperator",
+                      "name": "current"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "expressionKind": "lambdaOperator"
+        },
+        "sourceArray": {
+          "expressionKind": "functionInvocation",
+          "function": "filter",
+          "parameters": {
+            "callback": {
+              "args": [
+                "current"
+              ],
+              "body": {
+                "expressionKind": "startsWithOperator",
+                "left": {
+                  "expressionKind": "dotOperator",
+                  "paths": [
+                    "lastName"
+                  ],
+                  "source": {
+                    "expressionKind": "symbolOperator",
+                    "name": "current"
+                  }
+                },
+                "right": {
+                  "expressionKind": "literalString",
+                  "value": "Trebbi?"
+                }
+              },
+              "expressionKind": "lambdaOperator"
+            },
+            "sourceArray": {
+              "expressionKind": "functionInvocation",
+              "function": "map",
+              "parameters": {
+                "callback": {
+                  "args": [
+                    "current"
+                  ],
+                  "body": {
+                    "expressionKind": "objectOfExpressions",
+                    "value": {
+                      "firstName": {
+                        "expressionKind": "dotOperator",
+                        "paths": [
+                          "firstName"
+                        ],
+                        "source": {
+                          "expressionKind": "symbolOperator",
+                          "name": "current"
+                        }
+                      },
+                      "lastName": {
+                        "expressionKind": "dotOperator",
+                        "paths": [
+                          "lastName"
+                        ],
+                        "source": {
+                          "expressionKind": "symbolOperator",
+                          "name": "current"
+                        }
+                      }
+                    }
+                  },
+                  "expressionKind": "lambdaOperator"
+                },
+                "sourceArray": {
+                  "collection": "users",
+                  "expressionKind": "query",
+                  "where": {
+                    "arg": {
+                      "expressionKind": "literalString",
+                      "value": "Daniele"
+                    },
+                    "expressionKind": "queryWhere",
+                    "operator": "equalsOperator",
+                    "path": "firstName"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "description": "Test complex return of dependecies",
+    "expected": null,
+    "impure": true
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "map",
+      "parameters": {
+        "callback": {
+          "args": [
+            "current"
+          ],
+          "body": {
+            "expressionKind": "dotOperator",
+            "paths": [
+              "fullName"
+            ],
+            "source": {
+              "expressionKind": "symbolOperator",
+              "name": "current"
+            }
+          },
+          "expressionKind": "lambdaOperator"
+        },
+        "sourceArray": {
+          "expressionKind": "functionInvocation",
+          "function": "map",
+          "parameters": {
+            "callback": {
+              "args": [
+                "current"
+              ],
+              "body": {
+                "expressionKind": "objectOfExpressions",
+                "value": {
+                  "fullName": {
+                    "expressionKind": "functionInvocation",
+                    "function": "concat",
+                    "parameters": {
+                      "stringsToConcat": {
+                        "expressionKind": "literalListOfExpressions",
+                        "value": [
+                          {
+                            "expressionKind": "dotOperator",
+                            "paths": [
+                              "firstName"
+                            ],
+                            "source": {
+                              "expressionKind": "symbolOperator",
+                              "name": "current"
+                            }
+                          },
+                          {
+                            "expressionKind": "dotOperator",
+                            "paths": [
+                              "lastName"
+                            ],
+                            "source": {
+                              "expressionKind": "symbolOperator",
+                              "name": "current"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "expressionKind": "lambdaOperator"
+            },
+            "sourceArray": {
+              "collection": "users",
+              "expressionKind": "query",
+              "where": {
+                "arg": {
+                  "expressionKind": "literalString",
+                  "value": "Daniele"
+                },
+                "expressionKind": "queryWhere",
+                "operator": "equalsOperator",
+                "path": "firstName"
+              }
+            }
+          }
+        }
+      }
+    },
+    "description": "Test complex return of dependecies",
+    "expected": null,
+    "impure": true
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "map",
+      "parameters": {
+        "callback": {
+          "args": [
+            "current"
+          ],
+          "body": {
+            "expressionKind": "dotOperator",
+            "paths": [
+              "fullName"
+            ],
+            "source": {
+              "expressionKind": "symbolOperator",
+              "name": "current"
+            }
+          },
+          "expressionKind": "lambdaOperator"
+        },
+        "sourceArray": {
+          "expressionKind": "functionInvocation",
+          "function": "map",
+          "parameters": {
+            "callback": {
+              "args": [
+                "current"
+              ],
+              "body": {
+                "expressionKind": "objectOfExpressions",
+                "value": {
+                  "fullName": {
+                    "expressionKind": "functionInvocation",
+                    "function": "concat",
+                    "parameters": {
+                      "stringsToConcat": {
+                        "expressionKind": "literalListOfExpressions",
+                        "value": [
+                          {
+                            "expressionKind": "dotOperator",
+                            "paths": [
+                              "firstName"
+                            ],
+                            "source": {
+                              "expressionKind": "symbolOperator",
+                              "name": "current"
+                            }
+                          },
+                          {
+                            "expressionKind": "dotOperator",
+                            "paths": [
+                              "lastName"
+                            ],
+                            "source": {
+                              "expressionKind": "symbolOperator",
+                              "name": "current"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "expressionKind": "lambdaOperator"
+            },
+            "sourceArray": {
+              "collection": "users",
+              "expressionKind": "query",
+              "where": {
+                "arg": {
+                  "expressionKind": "literalString",
+                  "value": "Daniele"
+                },
+                "expressionKind": "queryWhere",
+                "operator": "equalsOperator",
+                "path": "firstName"
+              }
+            }
+          }
+        }
+      }
+    },
+    "description": "Test complex return of dependecies",
+    "expected": null,
+    "impure": true
+  },
+  {
+    "data": {
+      "expressionKind": "startsWithOperator",
+      "left": {
+        "expressionKind": "selfOperator",
+        "paths": [
+          "lastName"
+        ]
+      },
+      "right": {
+        "expressionKind": "selfOperator",
+        "paths": [
+          "operator"
+        ]
+      }
+    },
+    "description": "Should return both self.operator and self.lastName dependencies",
+    "expected": true,
+    "scope": {
+      "self": {
+        "lastName": "Trebbi?",
+        "operator": "Trebbi"
+      }
+    }
+  },
+  {
+    "data": {
+      "condition": {
+        "expressionKind": "equalsOperator",
+        "left": {
+          "expressionKind": "selfOperator",
+          "paths": [
+            "a"
+          ]
+        },
+        "right": {
+          "expressionKind": "literalNumber",
+          "value": 1
+        }
+      },
+      "expressionKind": "ruleOperator",
+      "then": {
+        "expressionKind": "selfOperator",
+        "paths": [
+          "b"
+        ]
+      }
+    },
+    "description": "But we need to keep track of the dependency by the self.a value",
+    "expected": 2,
+    "scope": {
+      "self": {
+        "a": 1,
+        "b": 2
+      }
+    }
+  },
+  {
+    "data": {
+      "else": {
+        "expressionKind": "literalNumber",
+        "value": 3
+      },
+      "expressionKind": "rulesOperator",
+      "rules": [
+        {
+          "condition": {
+            "expressionKind": "equalsOperator",
+            "left": {
+              "expressionKind": "selfOperator",
+              "paths": [
+                "a"
+              ]
+            },
+            "right": {
+              "expressionKind": "literalNumber",
+              "value": 1
+            }
+          },
+          "expressionKind": "ruleOperator",
+          "then": {
+            "expressionKind": "selfOperator",
+            "paths": [
+              "b"
+            ]
+          }
+        }
+      ]
+    },
+    "description": "We need to keep track of the dependency by the self.a value",
+    "expected": 3,
+    "scope": {
+      "self": {
+        "a": 2,
+        "b": 2
+      }
+    }
+  },
+  {
+    "description": "We need to keep track that the arg of where came from self.name",
+    "data": {
+      "collection": "users",
+      "expressionKind": "query",
+      "where": {
+        "arg": {
+          "expressionKind": "selfOperator",
+          "paths": [
+            "firstName"
+          ]
+        },
+        "expressionKind": "queryWhere",
+        "operator": "equalsOperator",
+        "path": "firstName"
+      }
+    },
+    "expected": null,
+    "impure": true,
+    "scope": {
+      "self": {
+        "firstName": "Daniele"
+      }
+    }
+  }
+]

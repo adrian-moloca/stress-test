@@ -1,0 +1,411 @@
+x-common-variables: &common-variables
+  image: node:22.11.0
+  working_dir: /app
+  platform: ${DOCKER_PLATFORM}
+  env_file:
+    - .env.${NODE_ENV}
+  environment:
+    - NODE_ENV=${NODE_ENV}
+  networks:
+    - smambu
+
+services:
+
+
+  autoheal:
+    image: willfarrell/autoheal:latest
+    tty: true
+    container_name: autoheal
+    networks:
+      - smambu
+    environment:
+      - AUTOHEAL_CONTAINER_LABEL=all
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+
+  ascos-anagraphics:
+    <<: *common-variables
+    container_name: ascos-anagraphics
+    volumes:
+      - ./backend/ascos-anagraphics:/app/backend/ascos-anagraphics
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${ANAGRAPHICS_PORT}:${ANAGRAPHICS_PORT}
+      - ${ANAGRAPHICS_SERVICE_PORT}:${ANAGRAPHICS_SERVICE_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${ANAGRAPHICS_PORT}/api/anagraphics/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/ascos-anagraphics && npm run dev'
+
+  ascos-auth:
+    <<: *common-variables
+    container_name: ascos-auth
+    volumes:
+      - ./backend/ascos-auth:/app/backend/ascos-auth
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${AUTH_PORT}:${AUTH_PORT}
+      - ${AUTH_SERVICE_PORT}:${AUTH_SERVICE_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${AUTH_PORT}/api/auth/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/ascos-auth && if [ "$NODE_ENV" = "ci" ]; then npm run start; else npm run dev; fi'
+
+  ascos-billing:
+    <<: *common-variables
+    container_name: ascos-billing
+    volumes:
+      - ./backend/ascos-billing:/app/backend/ascos-billing
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${BILLING_PORT}:${BILLING_PORT}
+      - ${BILLING_SERVICE_PORT}:${BILLING_SERVICE_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${BILLING_PORT}/api/billing/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/ascos-billing && if [ "$NODE_ENV" = "ci" ]; then npm run start; else npm run dev; fi'
+    depends_on:
+      ascos-logs:
+        condition: service_healthy
+
+  ascos-bucket:
+    <<: *common-variables
+    container_name: ascos-bucket
+    volumes:
+      - ./backend/ascos-bucket:/app/backend/ascos-bucket
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${BUCKET_PORT}:${BUCKET_PORT}
+      - ${BUCKET_SERVICE_PORT}:${BUCKET_SERVICE_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${BUCKET_PORT}/api/bucket/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/ascos-bucket && if [ "$NODE_ENV" = "ci" ]; then npm run start; else npm run dev; fi'
+
+  ascos-contracts:
+    <<: *common-variables
+    container_name: ascos-contracts
+    volumes:
+      - ./backend/ascos-contracts:/app/backend/ascos-contracts
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${CONTRACT_PORT}:${CONTRACT_PORT}
+      - ${CONTRACT_SERVICE_PORT}:${CONTRACT_SERVICE_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${CONTRACT_PORT}/api/contract/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/ascos-contracts && if [ "$NODE_ENV" = "ci" ]; then npm run start; else npm run dev; fi'
+
+  ascos-logs:
+    <<: *common-variables
+    container_name: ascos-logs
+    volumes:
+      - ./backend/ascos-logs:/app/backend/ascos-logs
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${LOGS_PORT}:${LOGS_PORT}
+      - ${LOGS_SERVICE_PORT}:${LOGS_SERVICE_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${LOGS_PORT}/api/log/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/ascos-logs && if [ "$NODE_ENV" = "ci" ]; then npm run start; else npm run dev; fi'
+
+  ascos-notifications:
+    <<: *common-variables
+    container_name: ascos-notifications
+    volumes:
+      - ./backend/ascos-notifications:/app/backend/ascos-notifications
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${NOTIFICATIONS_PORT}:${NOTIFICATIONS_PORT}
+      - ${NOTIFICATIONS_SERVICE_PORT}:${NOTIFICATIONS_SERVICE_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${NOTIFICATIONS_PORT}/api/notifications/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/ascos-notifications &&  npm run dev'
+
+  ascos-ormanagement:
+    <<: *common-variables
+    container_name: ascos-ormanagement
+    volumes:
+      - ./backend/ascos-ormanagement:/app/backend/ascos-ormanagement
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${OR_MANAGEMENT_PORT}:${OR_MANAGEMENT_PORT}
+      - ${OR_MANAGEMENT_SERVICE_PORT}:${OR_MANAGEMENT_SERVICE_PORT}
+    healthcheck:
+      
+      test: ["CMD-SHELL", "curl -f http://localhost:${OR_MANAGEMENT_PORT}/api/or-management/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/ascos-ormanagement && if [ "$NODE_ENV" = "ci" ]; then npm run start; else npm run dev; fi'
+
+  ascos-patient-anagraphics:
+    <<: *common-variables
+    container_name: ascos-patient-anagraphics
+    volumes:
+      - ./backend/ascos-patient-anagraphics:/app/backend/ascos-patient-anagraphics
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${PATIENTS_ANAGRAPHICS_PORT}:${PATIENTS_ANAGRAPHICS_PORT}
+      - ${PATIENTS_ANAGRAPHICS_SERVICE_PORT}:${PATIENTS_ANAGRAPHICS_SERVICE_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${PATIENTS_ANAGRAPHICS_PORT}/api/patientAnagraphics/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/ascos-patient-anagraphics && if [ "$NODE_ENV" = "ci" ]; then npm run start; else npm run dev; fi'
+
+  ascos-roles:
+    <<: *common-variables
+    container_name: ascos-roles
+    volumes:
+      - ./backend/ascos-roles:/app/backend/ascos-roles
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${ROLE_PORT}:${ROLE_PORT}
+      - ${ROLE_SERVICE_PORT}:${ROLE_SERVICE_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${ROLE_PORT}/api/role/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/ascos-roles && if [ "$NODE_ENV" = "ci" ]; then npm run start; else npm run dev; fi'
+
+
+  ascos-scheduling-cases:
+    <<: *common-variables
+    container_name: ascos-scheduling-cases
+    volumes:
+      - ./backend/ascos-scheduling-cases:/app/backend/ascos-scheduling-cases
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${SCHEDULING_CASES_PORT}:${SCHEDULING_CASES_PORT}
+      - ${SCHEDULING_CASES_SERVICE_PORT}:${SCHEDULING_CASES_SERVICE_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${SCHEDULING_CASES_PORT}/api/schedulingcases/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/ascos-scheduling-cases && if [ "$NODE_ENV" = "ci" ]; then npm run start; else npm run dev; fi'
+
+  ascos-system-configuration:
+    <<: *common-variables
+    container_name: ascos-system-configuration
+    volumes:
+      - ./backend/ascos-system-configuration:/app/backend/ascos-system-configuration
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${SYSTEM_CONFIGURATION_PORT}:${SYSTEM_CONFIGURATION_PORT}
+      - ${SYSTEM_CONFIGURATION_SERVICE_PORT}:${SYSTEM_CONFIGURATION_SERVICE_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${SYSTEM_CONFIGURATION_PORT}/api/system-configuration/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/ascos-system-configuration && if [ "$NODE_ENV" = "ci" ]; then npm run start; else npm run dev; fi'
+
+  ascos-tenants:
+    <<: *common-variables
+    container_name: ascos-tenants
+    volumes:
+      - ./backend/ascos-tenants:/app/backend/ascos-tenants
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${TENANTS_PORT}:${TENANTS_PORT}
+      - ${TENANTS_SERVICE_PORT}:${TENANTS_SERVICE_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${TENANTS_PORT}/api/tenant/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/ascos-tenants && if [ "$NODE_ENV" = "ci" ]; then npm run start; else npm run dev; fi'
+
+  ascos-users:
+    <<: *common-variables
+    container_name: ascos-users
+    volumes:
+      - ./backend/ascos-users:/app/backend/ascos-users
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${USER_PORT}:${USER_PORT}
+      - ${USER_SERVICE_PORT}:${USER_SERVICE_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${USER_PORT}/api/user/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/ascos-users && if [ "$NODE_ENV" = "ci" ]; then npm run start; else npm run dev; fi'
+
+
+  ascos-universal-reporting:
+    <<: *common-variables
+    container_name: ascos-universal-reporting
+    volumes:
+      - ./backend/universal-reporting:/app/backend/universal-reporting
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./commons-be:/app/commons-be
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    ports:
+      - ${UR_PORT}:${UR_PORT}
+      - ${UR_SERVICE_PORT}:${UR_SERVICE_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${UR_PORT}/api/ur/healthz || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    command: >
+      sh -c 'cd backend/universal-reporting && if [ "$NODE_ENV" = "ci" ]; then npm run start; else npm run dev; fi'
+
+  frontend:
+    <<: *common-variables
+    container_name: frontend
+    ports:
+      - 3000:3000
+    volumes:
+      - ./frontend:/app/frontend
+      - ./constants:/app/constants
+      - ./constantsjs:/app/constantsjs
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env.${NODE_ENV}:/app/.env
+      - ./node_modules:/app/node_modules
+      - ./tsconfig.base.json:/app/tsconfig.base.json
+    command: >
+      sh -c 'cd frontend && npm run dev'
+
+networks:
+  smambu:

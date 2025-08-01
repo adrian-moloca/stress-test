@@ -1,0 +1,27 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalObj",
+      "value": {
+        "first": "Hello",
+        "second": "World"
+      }
+    },
+    "expected": {
+      "first": "Hello",
+      "second": "World"
+    }
+  },
+  {
+    "data": {
+      "expressionKind": "literalObj",
+      "value": [
+        4,
+        "World",
+        true
+      ]
+    },
+    "error": true,
+    "expected": null
+  }
+]

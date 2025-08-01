@@ -1,0 +1,26 @@
+{
+  "duration": 5619,
+  "metricsCollected": 1,
+  "peakMemoryUsage": "57MB",
+  "avgMemoryUsage": "57MB",
+  "currentMemory": "57MB",
+  "overallHealth": "STABLE",
+  "crashDetected": false,
+  "timeline": [
+    {
+      "timestamp": 1753996297120,
+      "memoryUsage": {
+        "heapUsed": 57,
+        "heapTotal": 81,
+        "external": 2,
+        "rss": 140
+      },
+      "cpuUsage": {
+        "user": 1682702,
+        "system": 265383
+      },
+      "activeRequests": 0,
+      "queueLength": 0
+    }
+  ]
+}

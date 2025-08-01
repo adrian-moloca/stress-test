@@ -1,0 +1,13 @@
+[
+  {
+    "timestamp": 1753965452965,
+    "type": "test_started",
+    "message": "Started bulk-case-creation stress test",
+    "config": {}
+  },
+  {
+    "timestamp": 1753965631991,
+    "type": "validation_started",
+    "message": "Comprehensive validation started"
+  }
+]

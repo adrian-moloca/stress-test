@@ -1,0 +1,236 @@
+{
+  "successfulCases": 0,
+  "failedCases": 100,
+  "errors": [
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - ",
+    "HTTP 404: Not Found - "
+  ],
+  "creationTimings": [
+    {
+      "batchIndex": 0,
+      "batchSize": 10,
+      "duration": 98,
+      "casesPerSecond": 102.04081632653062
+    },
+    {
+      "batchIndex": 1,
+      "batchSize": 10,
+      "duration": 15,
+      "casesPerSecond": 666.6666666666666
+    },
+    {
+      "batchIndex": 2,
+      "batchSize": 10,
+      "duration": 11,
+      "casesPerSecond": 909.090909090909
+    },
+    {
+      "batchIndex": 3,
+      "batchSize": 10,
+      "duration": 10,
+      "casesPerSecond": 1000
+    },
+    {
+      "batchIndex": 4,
+      "batchSize": 10,
+      "duration": 8,
+      "casesPerSecond": 1250
+    },
+    {
+      "batchIndex": 5,
+      "batchSize": 10,
+      "duration": 10,
+      "casesPerSecond": 1000
+    },
+    {
+      "batchIndex": 6,
+      "batchSize": 10,
+      "duration": 8,
+      "casesPerSecond": 1250
+    },
+    {
+      "batchIndex": 7,
+      "batchSize": 10,
+      "duration": 8,
+      "casesPerSecond": 1250
+    },
+    {
+      "batchIndex": 8,
+      "batchSize": 10,
+      "duration": 10,
+      "casesPerSecond": 1000
+    },
+    {
+      "batchIndex": 9,
+      "batchSize": 10,
+      "duration": 10,
+      "casesPerSecond": 1000
+    }
+  ],
+  "memoryUsage": [
+    {
+      "batchIndex": 0,
+      "heapUsed": 55484312,
+      "heapTotal": 85520384,
+      "memoryIncrease": 5638520
+    },
+    {
+      "batchIndex": 1,
+      "heapUsed": 57193384,
+      "heapTotal": 86306816,
+      "memoryIncrease": 1697696
+    },
+    {
+      "batchIndex": 2,
+      "heapUsed": 58347384,
+      "heapTotal": 86306816,
+      "memoryIncrease": 1145120
+    },
+    {
+      "batchIndex": 3,
+      "heapUsed": 59496168,
+      "heapTotal": 86306816,
+      "memoryIncrease": 1142976
+    },
+    {
+      "batchIndex": 4,
+      "heapUsed": 60653672,
+      "heapTotal": 86306816,
+      "memoryIncrease": 1150864
+    },
+    {
+      "batchIndex": 5,
+      "heapUsed": 47988392,
+      "heapTotal": 82259968,
+      "memoryIncrease": -12683760
+    },
+    {
+      "batchIndex": 6,
+      "heapUsed": 49170384,
+      "heapTotal": 82259968,
+      "memoryIncrease": 1171432
+    },
+    {
+      "batchIndex": 7,
+      "heapUsed": 50359744,
+      "heapTotal": 82259968,
+      "memoryIncrease": 1181464
+    },
+    {
+      "batchIndex": 8,
+      "heapUsed": 51785248,
+      "heapTotal": 82522112,
+      "memoryIncrease": 1419240
+    },
+    {
+      "batchIndex": 9,
+      "heapUsed": 52941136,
+      "heapTotal": 82522112,
+      "memoryIncrease": 1143152
+    }
+  ],
+  "summary": {
+    "totalTime": 1193,
+    "averageTimePerCase": 11.93,
+    "successRate": 0,
+    "throughput": 0
+  }
+}

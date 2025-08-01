@@ -1,0 +1,98 @@
+[
+  {
+    "data": {
+      "expressionKind": "selfOperator",
+      "paths": [
+        "first",
+        "second"
+      ]
+    },
+    "expected": "founded",
+    "scope": {
+      "self": {
+        "first": {
+          "second": "founded"
+        }
+      }
+    }
+  },
+  {
+    "data": {
+      "expressionKind": "selfOperator",
+      "paths": [
+        "first",
+        1
+      ]
+    },
+    "expected": "notFound",
+    "scope": {
+      "self": {
+        "first": [
+          "Found",
+          "notFound"
+        ]
+      }
+    }
+  },
+  {
+    "data": {
+      "expressionKind": "selfOperator",
+      "paths": [
+        "first",
+        "second"
+      ]
+    },
+    "scope": {
+      "self": {
+        "first": {
+          "third": "founded"
+        }
+      }
+    },
+    "expected": null,
+    "error": "pathNotFound"
+  },
+  {
+    "data": {
+      "expressionKind": "selfOperator",
+      "paths": "first.second"
+    },
+    "error": "invalidPaths",
+    "scope": {
+      "self": {
+        "first": {
+          "second": "founded"
+        }
+      }
+    }
+  },
+  {
+    "data": {
+      "expressionKind": "selfOperator",
+      "paths": [
+        "first",
+        "second"
+      ]
+    },
+    "error": "selfNotFound",
+    "scope": {
+    }
+  },
+  {
+    "data": {
+      "expressionKind": "selfOperator",
+      "paths": [
+        "third",
+        "second"
+      ]
+    },
+    "error": "invalid parent",
+    "scope": {
+      "self": {
+        "first": {
+          "second": "founded"
+        }
+      }
+    }
+  }
+]

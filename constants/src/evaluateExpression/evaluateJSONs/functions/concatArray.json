@@ -1,0 +1,121 @@
+[
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "concatArray",
+      "parameters": {
+        "arraysToConcat": {
+          "expressionKind": "literalList",
+          "value": [
+            ["test"],
+            ["concatArray"]
+          ]
+        }
+      }
+    },
+    "expected": ["test", "concatArray"]
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "concatArray",
+      "parameters": {
+        "arraysToConcat": {
+          "expressionKind": "literalList",
+          "value": [
+            [1, 2],
+            [3, 4]
+          ]
+        }
+      }
+    },
+    "expected": [1, 2, 3, 4]
+  },
+    {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "concatArray",
+      "parameters": {
+        "arraysToConcat": {
+          "expressionKind": "literalListOfExpressions",
+          "value": [
+            {
+              "collection": "contracts",
+              "expressionKind": "query",
+              "where": {
+                "args": [
+                  {
+                    "arg": {
+                      "expressionKind": "literalString",
+                      "value": "user_iEiaY2pk7dtDu3pza"
+                    },
+                    "expressionKind": "queryWhere",
+                    "operator": "equalsOperator",
+                    "path": "details.doctorId"
+                  }
+                ],
+                "expressionKind": "queryTie",
+                "tieOperator": "AND"
+              },
+              "yields": {
+                "details.validFrom": {
+                  "expressionKind": "literalBoolean",
+                  "value": true
+                }
+              }
+            }, {
+              "collection": "cases",
+              "expressionKind": "query",
+              "where": {
+                "args": [
+                  {
+                    "arg": {
+                      "expressionKind": "literalString",
+                      "value": "1"
+                    },
+                    "expressionKind": "queryWhere",
+                    "operator": "equalsOperator",
+                    "path": "caseNumber"
+                  }
+                ],
+                "expressionKind": "queryTie",
+                "tieOperator": "AND"
+              },
+              "yields": {
+                "bookingPatient.patientId": {
+                  "expressionKind": "literalBoolean",
+                  "value": true
+                },
+                "uploads": {
+                  "expressionKind": "literalBoolean",
+                  "value": true
+                }
+              },
+              "__ignorePermissions": true
+            }
+          ]
+        }
+      }
+    },
+    "expected": null,
+    "impure": true
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "concatArray",
+      "parameters": {
+        "arraysToConcat": {
+          "expressionKind": "literalList",
+          "value": [
+            "test",
+            ["concatArray"],
+            ["test2"]
+          ]
+        }
+      }
+    },
+    "expected": null,
+    "error": true
+  }
+]

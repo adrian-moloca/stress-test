@@ -1,0 +1,24 @@
+steps:
+- id: 'build-image'
+  name: 'gcr.io/cloud-builders/docker'
+  args: [ 
+          'build', 
+          '-t', '${_IMAGE_URL}/${_IMAGE_NAME}:${TAG_NAME}',
+          '-f', './${_DOCKERFILE_PATH}/Dockerfile', 
+          '.' 
+        ]
+- id: 'push-image'
+  name: 'gcr.io/cloud-builders/docker'
+  args: ['push', '${_IMAGE_URL}/${_IMAGE_NAME}:${TAG_NAME}']
+
+images:
+  - '${_IMAGE_URL}/${_IMAGE_NAME}:${TAG_NAME}'
+
+options:
+  substitutionOption: ALLOW_LOOSE
+  dynamic_substitutions: true
+  machineType: E2_HIGHCPU_8
+substitutions:
+  _REGISTRY_LOCATION: europe-west3
+  _DOCKER_REPOSITORY: smambu
+  _IMAGE_URL: ${_REGISTRY_LOCATION}-docker.pkg.dev/${PROJECT_ID}/${_DOCKER_REPOSITORY}

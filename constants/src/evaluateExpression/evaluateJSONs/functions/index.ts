@@ -1,0 +1,8 @@
+export { default as concat } from './concat.json'
+export { default as concatArray } from './concatArray.json'
+export { default as every } from './every.json'
+export { default as filter } from './filter.json'
+export { default as map } from './map.json'
+export { default as objectValues } from './objectValues.json'
+export { default as parsePattern } from './parsePattern.json'
+export { default as unique } from './unique.json'

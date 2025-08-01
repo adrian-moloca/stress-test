@@ -1,0 +1,74 @@
+[
+  {
+    "data": {
+      "expressionKind": "divisionOperator",
+      "left": {
+          "expressionKind": "literalNumber",
+          "value": 15
+      },
+      "right": {
+          "expressionKind": "literalNumber",
+          "value": 3
+      }
+    },
+    "expected": 5
+  },
+  {
+    "data": {
+      "expressionKind": "divisionOperator",
+      "left": {
+          "expressionKind": "literalNumber",
+          "value": 270
+      },
+      "right": {
+          "expressionKind": "literalNumber",
+          "value": 3
+      }
+    },
+    "expected": 90
+  },
+  {
+    "data": {
+      "expressionKind": "divisionOperator",
+      "left": {
+          "expressionKind": "literalNumber",
+          "value": 30
+      },
+      "right": {
+          "expressionKind": "literalNumber",
+          "value": -6
+      }
+    },
+    "expected": -5
+  },
+  {
+    "data": {
+      "expressionKind": "divisionOperator",
+      "left": {
+          "expressionKind": "literalString",
+          "value": "3"
+      },
+      "right": {
+          "expressionKind": "literalNumber",
+          "value": -6
+      }
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "divisionOperator",
+      "left": {
+          "expressionKind": "literalNumber",
+          "value": 3
+      },
+      "right": {
+          "expressionKind": "literalString",
+          "value": "3"
+      }
+    },
+    "expected": null,
+    "error": true
+  }
+]

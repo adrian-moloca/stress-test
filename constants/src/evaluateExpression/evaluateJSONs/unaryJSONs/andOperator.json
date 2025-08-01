@@ -1,0 +1,64 @@
+[
+  {
+    "data": {
+      "expressionKind": "andOperator",
+      "args": [
+        {
+          "expressionKind": "literalBoolean",
+          "value": true
+        },
+        {
+          "expressionKind": "literalBoolean",
+          "value": true
+        }
+      ]
+    },
+    "expected": true
+  }, {
+    "data": {
+      "expressionKind": "andOperator",
+      "args": [
+        {
+          "expressionKind": "literalBoolean",
+          "value": true
+        },
+        {
+          "expressionKind": "literalBoolean",
+          "value": false
+        }
+      ]
+    },
+    "expected": false
+  }, {
+    "data": {
+      "expressionKind": "andOperator",
+      "args": [
+        {
+          "expressionKind": "literalBoolean",
+          "value": false
+        },
+        {
+          "expressionKind": "literalBoolean",
+          "value": false
+        }
+      ]
+    },
+    "expected": false
+  }, {
+    "data": {
+      "expressionKind": "andOperator",
+      "args": [
+        {
+          "expressionKind": "literalString",
+          "value": "test"
+        },
+        {
+          "expressionKind": "literalBoolean",
+          "value": true
+        }
+      ]
+    },
+    "expected": null,
+    "error": "invalidBoolean"
+  }
+]

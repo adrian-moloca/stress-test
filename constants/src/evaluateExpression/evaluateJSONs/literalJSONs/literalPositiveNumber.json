@@ -1,0 +1,38 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalPositiveNumber",
+      "value": 1
+    },
+    "expected": 1
+  },
+  {
+    "data": {
+      "expressionKind": "literalPositiveNumber",
+      "value": 100
+    },
+    "expected": 100
+  },
+  {
+    "error": "Invalid number",
+    "data": {
+      "expressionKind": "literalPositiveNumber",
+      "value": 0
+    },
+    "expected": 0
+  },
+  {
+    "error": "Invalid number",
+    "data": {
+      "expressionKind": "literalPositiveNumber",
+      "value": -1
+    }
+  },
+  {
+    "error": "Invalid number",
+    "data": {
+      "expressionKind": "literalPositiveNumber",
+      "value": "1"
+    }
+  }
+]

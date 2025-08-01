@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist"
+  },
+  "references": [
+    {
+      "path": "../../constantsjs"
+    },
+    {
+      "path": "../../commons-be"
+    }
+  ]
+}

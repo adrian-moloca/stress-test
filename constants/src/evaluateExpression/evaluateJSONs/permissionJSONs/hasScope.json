@@ -1,0 +1,76 @@
+[
+  {
+    "data": {
+      "capability": "P:USERS:VIEW",
+      "expressionKind": "hasScope",
+      "scope": "ALL_DATA"
+    },
+    "expected": true,
+    "scope": {
+      "userPermissions": {
+        "P:USERS:VIEW": {
+          "scope": "ALL_DATA",
+          "users": []
+        }
+      }
+    }
+  },
+  {
+    "data": {
+      "capability": "P:USERS:VIEW",
+      "expressionKind": "hasScope",
+      "scope": "ALL_DATA"
+    },
+    "expected": false,
+    "scope": {
+      "userPermissions": {
+        "P:USERS:VIEW": {
+          "scope": "OWN_DATA",
+          "users": []
+        }
+      }
+    }
+  },
+  {
+    "data": {
+      "capability": "P:USERS:VIEW",
+      "expressionKind": "hasScope",
+      "scope": "ALL_DATA"
+    },
+    "expected": false,
+    "scope": {
+      "userPermissions": {
+        "P:USERS:EDIT": {
+          "scope": "ALL_DATA",
+          "users": []
+        }
+      }
+    }
+  },
+  {
+    "data": {
+      "capability": "P:USERS:VIEW",
+      "expressionKind": "hasScope",
+      "scope": "ALL_DATA"
+    },
+    "scope": {
+      "userPermissions": {}
+    },
+    "expected": false
+  },
+  {
+    "data": {
+      "expressionKind": "hasScope"
+    },
+    "error": "requestedCapabilityUndefined",
+    "expected": false
+  },
+  {
+    "data": {
+      "capability": "P:USERS:VIEW",
+      "expressionKind": "hasScope"
+    },
+    "error": "requestedScopeUndefined",
+    "expected": false
+  }
+]

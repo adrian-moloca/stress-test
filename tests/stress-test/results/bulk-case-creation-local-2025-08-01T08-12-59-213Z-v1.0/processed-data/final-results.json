@@ -1,0 +1,690 @@
+{
+  "testId": "bulk-case-creation-local-2025-08-01T08-12-59-213Z-v1.0",
+  "scenario": "bulk-case-creation",
+  "startTime": 1754035979217,
+  "endTime": 1754036019035,
+  "totalCasesAttempted": 10,
+  "casesCreated": 10,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {
+    "duration": 1092,
+    "metricsCollected": 0,
+    "peakMemoryUsage": "0MB",
+    "avgMemoryUsage": "0MB",
+    "currentMemory": "58MB",
+    "overallHealth": "STABLE",
+    "crashDetected": false,
+    "timeline": []
+  },
+  "performanceMetrics": {
+    "totalCases": 10,
+    "successfulCases": 10,
+    "failedCases": 0,
+    "successRate": 100,
+    "totalDuration": 847,
+    "responseTimes": {
+      "min": 664,
+      "max": 743,
+      "avg": 702.5,
+      "p95": 743,
+      "p99": 743
+    },
+    "throughput": {
+      "casesPerSecond": 11.80637544273908,
+      "peakConcurrency": 50
+    },
+    "errors": [],
+    "realReferenceData": {
+      "contractIds": 8,
+      "doctorIds": 4,
+      "opStandardIds": 10
+    }
+  },
+  "validationResults": {
+    "timestamp": "2025-08-01T08:13:30.337Z",
+    "comprehensive": {
+      "summary": {
+        "overallStatus": "❌ POOR",
+        "eventFlowSummary": {
+          "eventsImported": "0/10",
+          "eventsProcessed": "0/0",
+          "cronJobsHealthy": true
+        },
+        "triggerSummary": {
+          "triggersEvaluated": "0/10",
+          "conditionsPassed": "0/0",
+          "contextKeysGenerated": 0
+        },
+        "proxySummary": {
+          "proxiesCreated": "0/10",
+          "contextValid": "0/0",
+          "dynamicFieldsInitialized": "0/0",
+          "successRate": "0.00"
+        },
+        "dependencySummary": {
+          "nodesCreated": 20,
+          "nodesEvaluated": "10/20",
+          "fieldsUpdated": 0,
+          "evaluationErrors": 0
+        },
+        "endToEndSummary": {
+          "completeFlows": "0/10",
+          "avgCompletionTime": "0.00ms",
+          "bottlenecks": 0
+        },
+        "performancePassed": false,
+        "recommendations": [
+          "🔍 Investigate proxy creation failures"
+        ]
+      },
+      "details": {
+        "eventFlow": {
+          "eventsImported": 0,
+          "eventsProcessed": 0,
+          "eventProcessingTime": {},
+          "cronJobsStatus": {
+            "EventsProcesser": {
+              "running": true,
+              "lastRun": "2025-08-01T08:13:31.464Z"
+            },
+            "DependenciesEvaluator": {
+              "running": true,
+              "lastRun": "2025-08-01T08:13:31.464Z"
+            },
+            "FieldOperationsAnalyzer": {
+              "running": true,
+              "lastRun": "2025-08-01T08:13:31.464Z"
+            },
+            "EventsSender": {
+              "running": true,
+              "lastRun": "2025-08-01T08:13:31.464Z"
+            }
+          },
+          "queueMetrics": {
+            "URTriggerEvents": {
+              "waiting": 5,
+              "active": 3,
+              "completed": 19,
+              "failed": 0,
+              "delayed": 0
+            },
+            "LocalEventsURQueue": {
+              "waiting": 6,
+              "active": 0,
+              "completed": 56,
+              "failed": 1,
+              "delayed": 0
+            },
+            "GraphFieldsQueue": {
+              "waiting": 3,
+              "active": 3,
+              "completed": 69,
+              "failed": 0,
+              "delayed": 0
+            },
+            "DepenenciesGraphQueue": {
+              "waiting": 6,
+              "active": 0,
+              "completed": 52,
+              "failed": 0,
+              "delayed": 0
+            }
+          },
+          "failures": [
+            {
+              "caseNumber": "STRESS_000001",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000002",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000003",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000004",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000005",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000006",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000007",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000008",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000009",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000010",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            }
+          ]
+        },
+        "proxy": {
+          "checked": 10,
+          "found": 0,
+          "contextValid": 0,
+          "dynamicFieldsInitialized": 0,
+          "details": [
+            {
+              "caseNumber": "STRESS_000001",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:32.521Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000001\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+            },
+            {
+              "caseNumber": "STRESS_000002",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:32.675Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000002\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+            },
+            {
+              "caseNumber": "STRESS_000003",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:32.817Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000003\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+            },
+            {
+              "caseNumber": "STRESS_000004",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:32.961Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000004\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+            },
+            {
+              "caseNumber": "STRESS_000005",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:33.106Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000005\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+            },
+            {
+              "caseNumber": "STRESS_000006",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:33.222Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000006\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+            },
+            {
+              "caseNumber": "STRESS_000007",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:33.336Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000007\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+            },
+            {
+              "caseNumber": "STRESS_000008",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:33.426Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000008\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+            },
+            {
+              "caseNumber": "STRESS_000009",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:33.480Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000009\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+            },
+            {
+              "caseNumber": "STRESS_000010",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:33.521Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000010\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+            }
+          ],
+          "fieldAnalysis": {},
+          "contextAnalysis": {},
+          "uniqueConstraintViolations": 0,
+          "successRate": 0,
+          "contextValidityRate": null
+        },
+        "fragment": {
+          "proxiesWithFragments": 0,
+          "fragmentTypes": {},
+          "fragmentValidation": [],
+          "fragmentIntegrity": {
+            "complete": 0,
+            "partial": 0,
+            "missing": 0
+          }
+        },
+        "dependency": {
+          "nodesCreated": 20,
+          "nodesEvaluated": 10,
+          "fieldsUpdated": 0,
+          "nodesByStatus": {
+            "EVALUATED": 10,
+            "DIRTY": 10
+          },
+          "nodesByTarget": {
+            "PROXY": 20
+          },
+          "evaluationMetrics": {
+            "avgEvaluationTime": 250,
+            "failedEvaluations": 0,
+            "expressionErrors": 0,
+            "conditionErrors": 0
+          },
+          "fieldOperations": {
+            "created": 20,
+            "updated": 0,
+            "deleted": 0,
+            "blocked": 0
+          }
+        },
+        "trigger": {
+          "triggersEvaluated": 0,
+          "conditionsPassed": 0,
+          "contextKeysGenerated": 0,
+          "emitExpressionResults": [],
+          "triggerFailures": [],
+          "domainConfiguration": {
+            "exists": true,
+            "domainId": "schedulingCases",
+            "trigger": {
+              "configured": true,
+              "eventType": "SCHEDULING_CASE_CREATED",
+              "hasCondition": true,
+              "hasEmitExpression": true,
+              "hasContextKey": true
+            },
+            "proxyFields": {
+              "count": 4,
+              "fields": [
+                "caseNumber",
+                "patientName",
+                "patientNickName",
+                "patientNickTitle"
+              ]
+            },
+            "permissions": {
+              "canAccessProxies": true,
+              "canAccessProxyDetails": true,
+              "canEditProxy": true
+            }
+          }
+        },
+        "expression": {
+          "expressionsEvaluated": 10,
+          "expressionTypes": {
+            "functionInvocation": 5,
+            "dotOperator": 5
+          },
+          "evaluationErrors": [],
+          "performanceMetrics": {
+            "avgEvaluationTime": 0,
+            "slowestExpression": {
+              "name": "patientName",
+              "time": 84
+            },
+            "fastestExpression": {
+              "name": "contextKey",
+              "time": 25
+            }
+          },
+          "namedExpressions": {
+            "used": 5,
+            "unique": {}
+          }
+        }
+      }
+    },
+    "endToEndValidation": {
+      "completeFlows": 0,
+      "partialFlows": 0,
+      "failedFlows": 10,
+      "flowBreakdown": [
+        {
+          "caseNumber": "STRESS_000001",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754036016074,
+          "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:36.565Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000001\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+        },
+        {
+          "caseNumber": "STRESS_000002",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754036016567,
+          "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:36.716Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000002\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+        },
+        {
+          "caseNumber": "STRESS_000003",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754036016717,
+          "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:36.867Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000003\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+        },
+        {
+          "caseNumber": "STRESS_000004",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754036016868,
+          "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:37.195Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000004\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+        },
+        {
+          "caseNumber": "STRESS_000005",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754036017198,
+          "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:37.564Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000005\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+        },
+        {
+          "caseNumber": "STRESS_000006",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754036017568,
+          "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:37.994Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000006\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+        },
+        {
+          "caseNumber": "STRESS_000007",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754036017998,
+          "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:38.271Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000007\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+        },
+        {
+          "caseNumber": "STRESS_000008",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754036018272,
+          "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:38.460Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000008\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+        },
+        {
+          "caseNumber": "STRESS_000009",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754036018461,
+          "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:38.689Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000009\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+        },
+        {
+          "caseNumber": "STRESS_000010",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754036018690,
+          "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T08:13:38.939Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000010\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+        }
+      ],
+      "avgCompletionTime": 0,
+      "bottlenecks": []
+    },
+    "dependencyGraphAnalysis": {
+      "totalNodes": 100,
+      "nodeDistribution": {
+        "DIRTY": 20,
+        "CLEAN": 60,
+        "EVALUATED": 15,
+        "ERROR_CONDITION": 3,
+        "ERROR_EXPRESSION": 2
+      },
+      "evaluationQueue": {
+        "pending": 1,
+        "processing": 1,
+        "completed": 9
+      },
+      "graphComplexity": {
+        "avgDependencies": 2.5,
+        "maxDepth": 5,
+        "circularDependencies": 0
+      },
+      "performanceMetrics": {
+        "avgProcessingTime": 300,
+        "queueBacklog": 10,
+        "throughput": 50
+      }
+    },
+    "performanceValidation": {
+      "passed": false,
+      "details": {
+        "responseTime": {
+          "p95": 743,
+          "target": 200,
+          "passed": false
+        },
+        "throughput": {
+          "actual": 11.80637544273908,
+          "target": 16.67,
+          "passed": false
+        },
+        "successRate": {
+          "actual": 100,
+          "target": 95,
+          "passed": true
+        }
+      },
+      "recommendations": [
+        "Optimize API response times - P95 exceeds 200ms target",
+        "Increase system throughput - below 1000 cases/minute target"
+      ]
+    },
+    "validationDuration": 8609,
+    "criteriaComparison": {
+      "proxyCreationRate": {
+        "actual": "0/0",
+        "target": 0.99,
+        "passed": false
+      },
+      "fragmentCreationRate": {
+        "actual": "0/0",
+        "target": 0.98,
+        "passed": false
+      },
+      "dependencyCompletionRate": {
+        "actual": "0/0",
+        "target": 0.97,
+        "passed": false
+      }
+    }
+  },
+  "scenarioSpecificResults": {},
+  "scenarioType": "enhanced-bulk-case-creation",
+  "casesGenerated": 10,
+  "creationResults": [
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000001",
+      "success": true,
+      "responseTime": 702,
+      "caseId": "688c770bab5eff9bd2e1e5e5"
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000002",
+      "success": true,
+      "responseTime": 743,
+      "caseId": "688c770cab5eff9bd2e1e636"
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000003",
+      "success": true,
+      "responseTime": 699,
+      "caseId": "688c770bab5eff9bd2e1e5d3"
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000004",
+      "success": true,
+      "responseTime": 664,
+      "caseId": "688c770bab5eff9bd2e1e5ce"
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000005",
+      "success": true,
+      "responseTime": 680,
+      "caseId": "688c770bab5eff9bd2e1e5d4"
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000006",
+      "success": true,
+      "responseTime": 698,
+      "caseId": "688c770bab5eff9bd2e1e5d6"
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000007",
+      "success": true,
+      "responseTime": 708,
+      "caseId": "688c770bab5eff9bd2e1e5d5"
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000008",
+      "success": true,
+      "responseTime": 698,
+      "caseId": "688c770bab5eff9bd2e1e5e6"
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000009",
+      "success": true,
+      "responseTime": 706,
+      "caseId": "688c770bab5eff9bd2e1e5f3"
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000010",
+      "success": true,
+      "responseTime": 727,
+      "caseId": "688c770bab5eff9bd2e1e5f2"
+    }
+  ],
+  "baselineComparison": {
+    "caseCreation": {
+      "responseTime": {
+        "p95": {
+          "actual": 743,
+          "target": 200,
+          "passed": false
+        },
+        "avg": {
+          "actual": 702.5,
+          "target": 120,
+          "passed": false
+        }
+      },
+      "throughput": {
+        "actual": 11.80637544273908,
+        "target": 16.67,
+        "passed": false
+      },
+      "errorRate": {
+        "actual": 0,
+        "target": 0.01,
+        "passed": true
+      }
+    },
+    "overallPassed": false
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T08-12-59-213Z-v1.0/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T08-12-59-213Z-v1.0/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T08-12-59-213Z-v1.0/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T08-12-59-213Z-v1.0/reports/system-limits.html",
+    "baselineComparisonReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T08-12-59-213Z-v1.0/reports/baseline-comparison.html",
+    "parallelExecutionReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T08-12-59-213Z-v1.0/reports/parallel-execution.html",
+    "ultimateValidationReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T08-12-59-213Z-v1.0/reports/ultimate-validation.html"
+  },
+  "totalDuration": 39818
+}

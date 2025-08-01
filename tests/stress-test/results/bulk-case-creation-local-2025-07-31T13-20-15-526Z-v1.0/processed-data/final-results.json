@@ -1,0 +1,2408 @@
+{
+  "testId": "bulk-case-creation-local-2025-07-31T13-20-15-526Z-v1.0",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753968015538,
+  "endTime": 1753968034193,
+  "totalCasesAttempted": 100,
+  "casesCreated": 100,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {
+    "duration": 17969,
+    "metricsCollected": 3,
+    "peakMemoryUsage": "59MB",
+    "avgMemoryUsage": "56MB",
+    "currentMemory": "45MB",
+    "overallHealth": "STABLE",
+    "crashDetected": false,
+    "timeline": [
+      {
+        "timestamp": 1753968020539,
+        "memoryUsage": {
+          "heapUsed": 53,
+          "heapTotal": 84,
+          "external": 3,
+          "rss": 143
+        },
+        "cpuUsage": {
+          "user": 2171074,
+          "system": 292740
+        },
+        "activeRequests": 0,
+        "queueLength": 0
+      },
+      {
+        "timestamp": 1753968025540,
+        "memoryUsage": {
+          "heapUsed": 56,
+          "heapTotal": 84,
+          "external": 4,
+          "rss": 144
+        },
+        "cpuUsage": {
+          "user": 2228442,
+          "system": 298192
+        },
+        "activeRequests": 0,
+        "queueLength": 0
+      },
+      {
+        "timestamp": 1753968030540,
+        "memoryUsage": {
+          "heapUsed": 59,
+          "heapTotal": 84,
+          "external": 5,
+          "rss": 145
+        },
+        "cpuUsage": {
+          "user": 2295604,
+          "system": 307482
+        },
+        "activeRequests": 0,
+        "queueLength": 0
+      }
+    ]
+  },
+  "performanceMetrics": {
+    "totalCases": 100,
+    "successfulCases": 100,
+    "failedCases": 0,
+    "successRate": 100,
+    "totalDuration": 17529,
+    "responseTimes": {
+      "min": 250,
+      "max": 1151,
+      "avg": 498.52,
+      "p95": 747,
+      "p99": 897
+    },
+    "throughput": {
+      "casesPerSecond": 5.704831992697815,
+      "peakConcurrency": 10
+    },
+    "errors": [],
+    "realReferenceData": {
+      "contractIds": 8,
+      "doctorIds": 4,
+      "opStandardIds": 10
+    }
+  },
+  "validationResults": {
+    "timestamp": "2025-07-31T13:20:33.514Z",
+    "comprehensive": {
+      "summary": {
+        "overallStatus": "POOR",
+        "proxiesCreated": "0/100",
+        "fragmentsValid": "0/0",
+        "dependenciesComplete": "0/100",
+        "eventsProcessed": "0/0",
+        "triggersExecuted": "0/100",
+        "performancePassed": false,
+        "recommendations": [
+          "Investigate proxy creation - success rate below 95%",
+          "Review trigger conditions - not all triggers executed",
+          "Check service health: cases-service, ur-service, users-service, system-configuration"
+        ]
+      },
+      "details": {
+        "proxy": {
+          "checked": 100,
+          "found": 0,
+          "missing": [
+            {
+              "caseNumber": "STRESS_000001",
+              "caseId": "688b6d90c5215a27d8305952",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000001 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.574Z"
+            },
+            {
+              "caseNumber": "STRESS_000002",
+              "caseId": "688b6d90c5215a27d8305956",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000002 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.581Z"
+            },
+            {
+              "caseNumber": "STRESS_000003",
+              "caseId": "688b6d90c5215a27d8305966",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000003 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.586Z"
+            },
+            {
+              "caseNumber": "STRESS_000004",
+              "caseId": "688b6d90c5215a27d8305986",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000004 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.592Z"
+            },
+            {
+              "caseNumber": "STRESS_000005",
+              "caseId": "688b6d90c5215a27d830599d",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000005 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.596Z"
+            },
+            {
+              "caseNumber": "STRESS_000006",
+              "caseId": "688b6d90c5215a27d830597d",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000006 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.600Z"
+            },
+            {
+              "caseNumber": "STRESS_000007",
+              "caseId": "688b6d90c5215a27d83059b1",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000007 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.603Z"
+            },
+            {
+              "caseNumber": "STRESS_000008",
+              "caseId": "688b6d90c5215a27d8305977",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000008 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.606Z"
+            },
+            {
+              "caseNumber": "STRESS_000009",
+              "caseId": "688b6d90c5215a27d830599c",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000009 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.609Z"
+            },
+            {
+              "caseNumber": "STRESS_000010",
+              "caseId": "688b6d90c5215a27d83059bc",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000010 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.613Z"
+            },
+            {
+              "caseNumber": "STRESS_000011",
+              "caseId": "688b6d91c5215a27d83059d5",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000011 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.616Z"
+            },
+            {
+              "caseNumber": "STRESS_000012",
+              "caseId": "688b6d91c5215a27d83059e6",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000012 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.620Z"
+            },
+            {
+              "caseNumber": "STRESS_000013",
+              "caseId": "688b6d91c5215a27d83059e0",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000013 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.624Z"
+            },
+            {
+              "caseNumber": "STRESS_000014",
+              "caseId": "688b6d91c5215a27d83059f9",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000014 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.627Z"
+            },
+            {
+              "caseNumber": "STRESS_000015",
+              "caseId": "688b6d92c5215a27d8305a43",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000015 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.631Z"
+            },
+            {
+              "caseNumber": "STRESS_000016",
+              "caseId": "688b6d91c5215a27d8305a13",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000016 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.634Z"
+            },
+            {
+              "caseNumber": "STRESS_000017",
+              "caseId": "688b6d92c5215a27d8305a39",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000017 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.638Z"
+            },
+            {
+              "caseNumber": "STRESS_000018",
+              "caseId": "688b6d91c5215a27d8305a2b",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000018 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.645Z"
+            },
+            {
+              "caseNumber": "STRESS_000019",
+              "caseId": "688b6d91c5215a27d8305a1f",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000019 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.649Z"
+            },
+            {
+              "caseNumber": "STRESS_000020",
+              "caseId": "688b6d91c5215a27d8305a00",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000020 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.652Z"
+            },
+            {
+              "caseNumber": "STRESS_000021",
+              "caseId": "688b6d93c5215a27d8305a57",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000021 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.656Z"
+            },
+            {
+              "caseNumber": "STRESS_000022",
+              "caseId": "688b6d93c5215a27d8305a61",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000022 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.659Z"
+            },
+            {
+              "caseNumber": "STRESS_000023",
+              "caseId": "688b6d93c5215a27d8305aba",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000023 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.663Z"
+            },
+            {
+              "caseNumber": "STRESS_000024",
+              "caseId": "688b6d93c5215a27d8305a7c",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000024 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.667Z"
+            },
+            {
+              "caseNumber": "STRESS_000025",
+              "caseId": "688b6d93c5215a27d8305a94",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000025 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.671Z"
+            },
+            {
+              "caseNumber": "STRESS_000026",
+              "caseId": "688b6d93c5215a27d8305a6e",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000026 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.675Z"
+            },
+            {
+              "caseNumber": "STRESS_000027",
+              "caseId": "688b6d93c5215a27d8305ac7",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000027 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.682Z"
+            },
+            {
+              "caseNumber": "STRESS_000028",
+              "caseId": "688b6d93c5215a27d8305aa2",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000028 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.686Z"
+            },
+            {
+              "caseNumber": "STRESS_000029",
+              "caseId": "688b6d93c5215a27d8305aa7",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000029 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.690Z"
+            },
+            {
+              "caseNumber": "STRESS_000030",
+              "caseId": "688b6d93c5215a27d8305a6a",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000030 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.695Z"
+            },
+            {
+              "caseNumber": "STRESS_000031",
+              "caseId": "688b6d95c5215a27d8305b18",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000031 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.699Z"
+            },
+            {
+              "caseNumber": "STRESS_000032",
+              "caseId": "688b6d95c5215a27d8305b2f",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000032 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.703Z"
+            },
+            {
+              "caseNumber": "STRESS_000033",
+              "caseId": "688b6d95c5215a27d8305b5b",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000033 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.707Z"
+            },
+            {
+              "caseNumber": "STRESS_000034",
+              "caseId": "688b6d95c5215a27d8305b3e",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000034 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.711Z"
+            },
+            {
+              "caseNumber": "STRESS_000035",
+              "caseId": "688b6d95c5215a27d8305b26",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000035 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.717Z"
+            },
+            {
+              "caseNumber": "STRESS_000036",
+              "caseId": "688b6d95c5215a27d8305b4a",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000036 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.721Z"
+            },
+            {
+              "caseNumber": "STRESS_000037",
+              "caseId": "688b6d95c5215a27d8305b57",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000037 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.728Z"
+            },
+            {
+              "caseNumber": "STRESS_000038",
+              "caseId": "688b6d95c5215a27d8305b4f",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000038 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.732Z"
+            },
+            {
+              "caseNumber": "STRESS_000039",
+              "caseId": "688b6d95c5215a27d8305b52",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000039 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.738Z"
+            },
+            {
+              "caseNumber": "STRESS_000040",
+              "caseId": "688b6d95c5215a27d8305b5c",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000040 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.743Z"
+            },
+            {
+              "caseNumber": "STRESS_000041",
+              "caseId": "688b6d96c5215a27d8305b97",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000041 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.747Z"
+            },
+            {
+              "caseNumber": "STRESS_000042",
+              "caseId": "688b6d96c5215a27d8305bb2",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000042 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.750Z"
+            },
+            {
+              "caseNumber": "STRESS_000043",
+              "caseId": "688b6d96c5215a27d8305b9e",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000043 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.753Z"
+            },
+            {
+              "caseNumber": "STRESS_000044",
+              "caseId": "688b6d96c5215a27d8305bab",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000044 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.756Z"
+            },
+            {
+              "caseNumber": "STRESS_000045",
+              "caseId": "688b6d96c5215a27d8305be1",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000045 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.758Z"
+            },
+            {
+              "caseNumber": "STRESS_000046",
+              "caseId": "688b6d97c5215a27d8305bfb",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000046 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.761Z"
+            },
+            {
+              "caseNumber": "STRESS_000047",
+              "caseId": "688b6d97c5215a27d8305c08",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000047 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.763Z"
+            },
+            {
+              "caseNumber": "STRESS_000048",
+              "caseId": "688b6d96c5215a27d8305bc9",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000048 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.765Z"
+            },
+            {
+              "caseNumber": "STRESS_000049",
+              "caseId": "688b6d96c5215a27d8305bd5",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000049 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.766Z"
+            },
+            {
+              "caseNumber": "STRESS_000050",
+              "caseId": "688b6d96c5215a27d8305bee",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000050 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.768Z"
+            },
+            {
+              "caseNumber": "STRESS_000051",
+              "caseId": "688b6d99c5215a27d8305c1d",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000051 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.770Z"
+            },
+            {
+              "caseNumber": "STRESS_000052",
+              "caseId": "688b6d99c5215a27d8305c1e",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000052 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.774Z"
+            },
+            {
+              "caseNumber": "STRESS_000053",
+              "caseId": "688b6d99c5215a27d8305c67",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000053 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.778Z"
+            },
+            {
+              "caseNumber": "STRESS_000054",
+              "caseId": "688b6d99c5215a27d8305c2b",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000054 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.782Z"
+            },
+            {
+              "caseNumber": "STRESS_000055",
+              "caseId": "688b6d99c5215a27d8305c8a",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000055 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.789Z"
+            },
+            {
+              "caseNumber": "STRESS_000056",
+              "caseId": "688b6d99c5215a27d8305c66",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000056 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.790Z"
+            },
+            {
+              "caseNumber": "STRESS_000057",
+              "caseId": "688b6d99c5215a27d8305c1f",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000057 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.791Z"
+            },
+            {
+              "caseNumber": "STRESS_000058",
+              "caseId": "688b6d99c5215a27d8305c7e",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000058 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.792Z"
+            },
+            {
+              "caseNumber": "STRESS_000059",
+              "caseId": "688b6d99c5215a27d8305c3f",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000059 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.794Z"
+            },
+            {
+              "caseNumber": "STRESS_000060",
+              "caseId": "688b6d99c5215a27d8305c40",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000060 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.796Z"
+            },
+            {
+              "caseNumber": "STRESS_000061",
+              "caseId": "688b6d9ac5215a27d8305c9a",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000061 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.798Z"
+            },
+            {
+              "caseNumber": "STRESS_000062",
+              "caseId": "688b6d9ac5215a27d8305c9f",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000062 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.800Z"
+            },
+            {
+              "caseNumber": "STRESS_000063",
+              "caseId": "688b6d9ac5215a27d8305cc4",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000063 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.801Z"
+            },
+            {
+              "caseNumber": "STRESS_000064",
+              "caseId": "688b6d9ac5215a27d8305cbb",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000064 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.802Z"
+            },
+            {
+              "caseNumber": "STRESS_000065",
+              "caseId": "688b6d9ac5215a27d8305cad",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000065 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.804Z"
+            },
+            {
+              "caseNumber": "STRESS_000066",
+              "caseId": "688b6d9ac5215a27d8305cfd",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000066 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.807Z"
+            },
+            {
+              "caseNumber": "STRESS_000067",
+              "caseId": "688b6d9ac5215a27d8305d0c",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000067 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.808Z"
+            },
+            {
+              "caseNumber": "STRESS_000068",
+              "caseId": "688b6d9ac5215a27d8305cf0",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000068 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.809Z"
+            },
+            {
+              "caseNumber": "STRESS_000069",
+              "caseId": "688b6d9ac5215a27d8305cd2",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000069 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.810Z"
+            },
+            {
+              "caseNumber": "STRESS_000070",
+              "caseId": "688b6d9ac5215a27d8305ce7",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000070 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.810Z"
+            },
+            {
+              "caseNumber": "STRESS_000071",
+              "caseId": "688b6d9cc5215a27d8305d1e",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000071 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.811Z"
+            },
+            {
+              "caseNumber": "STRESS_000072",
+              "caseId": "688b6d9cc5215a27d8305d37",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000072 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.812Z"
+            },
+            {
+              "caseNumber": "STRESS_000073",
+              "caseId": "688b6d9cc5215a27d8305d36",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000073 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.812Z"
+            },
+            {
+              "caseNumber": "STRESS_000074",
+              "caseId": "688b6d9cc5215a27d8305d2b",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000074 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.813Z"
+            },
+            {
+              "caseNumber": "STRESS_000075",
+              "caseId": "688b6d9cc5215a27d8305d50",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000075 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.814Z"
+            },
+            {
+              "caseNumber": "STRESS_000076",
+              "caseId": "688b6d9cc5215a27d8305d74",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000076 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.815Z"
+            },
+            {
+              "caseNumber": "STRESS_000077",
+              "caseId": "688b6d9cc5215a27d8305d51",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000077 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.817Z"
+            },
+            {
+              "caseNumber": "STRESS_000078",
+              "caseId": "688b6d9cc5215a27d8305d5f",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000078 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.819Z"
+            },
+            {
+              "caseNumber": "STRESS_000079",
+              "caseId": "688b6d9cc5215a27d8305d8e",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000079 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.821Z"
+            },
+            {
+              "caseNumber": "STRESS_000080",
+              "caseId": "688b6d9cc5215a27d8305d81",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000080 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.822Z"
+            },
+            {
+              "caseNumber": "STRESS_000081",
+              "caseId": "688b6d9ec5215a27d8305da1",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000081 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.823Z"
+            },
+            {
+              "caseNumber": "STRESS_000082",
+              "caseId": "688b6d9ec5215a27d8305e34",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000082 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.824Z"
+            },
+            {
+              "caseNumber": "STRESS_000083",
+              "caseId": "688b6d9ec5215a27d8305df1",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000083 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.825Z"
+            },
+            {
+              "caseNumber": "STRESS_000084",
+              "caseId": "688b6d9ec5215a27d8305db3",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000084 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.826Z"
+            },
+            {
+              "caseNumber": "STRESS_000085",
+              "caseId": "688b6d9ec5215a27d8305dd8",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000085 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.826Z"
+            },
+            {
+              "caseNumber": "STRESS_000086",
+              "caseId": "688b6d9ec5215a27d8305e06",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000086 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.827Z"
+            },
+            {
+              "caseNumber": "STRESS_000087",
+              "caseId": "688b6d9ec5215a27d8305e25",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000087 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.827Z"
+            },
+            {
+              "caseNumber": "STRESS_000088",
+              "caseId": "688b6d9ec5215a27d8305e17",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000088 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.828Z"
+            },
+            {
+              "caseNumber": "STRESS_000089",
+              "caseId": "688b6d9ec5215a27d8305db4",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000089 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.829Z"
+            },
+            {
+              "caseNumber": "STRESS_000090",
+              "caseId": "688b6d9ec5215a27d8305dc7",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000090 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.829Z"
+            },
+            {
+              "caseNumber": "STRESS_000091",
+              "caseId": "688b6da0c5215a27d8305e88",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000091 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.830Z"
+            },
+            {
+              "caseNumber": "STRESS_000092",
+              "caseId": "688b6da0c5215a27d8305ea7",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000092 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.831Z"
+            },
+            {
+              "caseNumber": "STRESS_000093",
+              "caseId": "688b6da0c5215a27d8305e95",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000093 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.833Z"
+            },
+            {
+              "caseNumber": "STRESS_000094",
+              "caseId": "688b6da0c5215a27d8305e9f",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000094 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.835Z"
+            },
+            {
+              "caseNumber": "STRESS_000095",
+              "caseId": "688b6da0c5215a27d8305ec6",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000095 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.838Z"
+            },
+            {
+              "caseNumber": "STRESS_000096",
+              "caseId": "688b6da0c5215a27d8305ed5",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000096 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.841Z"
+            },
+            {
+              "caseNumber": "STRESS_000097",
+              "caseId": "688b6da0c5215a27d8305eba",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000097 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.842Z"
+            },
+            {
+              "caseNumber": "STRESS_000098",
+              "caseId": "688b6da0c5215a27d8305ed2",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000098 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.843Z"
+            },
+            {
+              "caseNumber": "STRESS_000099",
+              "caseId": "688b6da0c5215a27d8305ed8",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000099 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.843Z"
+            },
+            {
+              "caseNumber": "STRESS_000100",
+              "caseId": "688b6da0c5215a27d8305ef7",
+              "reason": "Error fetching proxy: request to http://localhost:3002/proxies/cases/STRESS_000100 failed, reason: connect ECONNREFUSED 127.0.0.1:3002",
+              "timestamp": "2025-07-31T13:20:33.844Z"
+            }
+          ],
+          "details": [],
+          "domainValidation": {
+            "exists": true,
+            "domainId": "cases",
+            "hasTrigger": true,
+            "triggerEventType": "SCHEDULING_CASE_CREATED",
+            "proxyFieldsCount": 0,
+            "permissions": {
+              "canAccessProxies": true,
+              "canAccessProxyDetails": true,
+              "canEditProxy": true
+            }
+          },
+          "contextKeyValidation": {},
+          "successRate": 0
+        },
+        "fragment": {
+          "checked": 0,
+          "valid": 0,
+          "invalid": [],
+          "fragmentTypes": {},
+          "validationRate": 0
+        },
+        "dependency": {
+          "checked": 100,
+          "complete": 0,
+          "incomplete": [
+            {
+              "caseNumber": "STRESS_000001",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000001 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000002",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000002 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000003",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000003 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000004",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000004 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000005",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000005 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000006",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000006 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000007",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000007 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000008",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000008 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000009",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000009 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000010",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000010 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000011",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000011 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000012",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000012 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000013",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000013 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000014",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000014 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000015",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000015 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000016",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000016 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000017",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000017 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000018",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000018 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000019",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000019 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000020",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000020 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000021",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000021 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000022",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000022 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000023",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000023 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000024",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000024 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000025",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000025 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000026",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000026 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000027",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000027 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000028",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000028 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000029",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000029 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000030",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000030 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000031",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000031 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000032",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000032 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000033",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000033 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000034",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000034 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000035",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000035 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000036",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000036 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000037",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000037 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000038",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000038 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000039",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000039 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000040",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000040 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000041",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000041 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000042",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000042 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000043",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000043 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000044",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000044 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000045",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000045 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000046",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000046 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000047",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000047 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000048",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000048 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000049",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000049 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000050",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000050 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000051",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000051 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000052",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000052 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000053",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000053 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000054",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000054 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000055",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000055 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000056",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000056 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000057",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000057 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000058",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000058 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000059",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000059 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000060",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000060 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000061",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000061 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000062",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000062 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000063",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000063 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000064",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000064 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000065",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000065 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000066",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000066 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000067",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000067 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000068",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000068 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000069",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000069 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000070",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000070 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000071",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000071 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000072",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000072 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000073",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000073 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000074",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000074 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000075",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000075 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000076",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000076 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000077",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000077 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000078",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000078 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000079",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000079 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000080",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000080 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000081",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000081 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000082",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000082 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000083",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000083 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000084",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000084 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000085",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000085 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000086",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000086 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000087",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000087 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000088",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000088 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000089",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000089 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000090",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000090 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000091",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000091 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000092",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000092 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000093",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000093 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000094",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000094 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000095",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000095 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000096",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000096 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000097",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000097 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000098",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000098 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000099",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000099 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            {
+              "caseNumber": "STRESS_000100",
+              "error": "request to http://localhost:3002/proxies/cases/STRESS_000100 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            }
+          ],
+          "serviceHealth": {
+            "cases-service": {
+              "healthy": false,
+              "statusCode": 404,
+              "responseTime": "N/A"
+            },
+            "ur-service": {
+              "healthy": false,
+              "error": "request to http://localhost:3002/health failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+            },
+            "users-service": {
+              "healthy": false,
+              "error": "request to http://localhost:3001/health failed, reason: connect ECONNREFUSED 127.0.0.1:3001"
+            },
+            "system-configuration": {
+              "healthy": false,
+              "error": "request to http://localhost:3003/health failed, reason: connect ECONNREFUSED 127.0.0.1:3003"
+            }
+          },
+          "dynamicFieldsPopulated": 0,
+          "triggerExecutions": 0
+        }
+      }
+    },
+    "performanceValidation": {
+      "passed": false,
+      "details": {
+        "responseTime": {
+          "p95": 747,
+          "target": 200,
+          "passed": false
+        },
+        "throughput": {
+          "actual": 5.704831992697815,
+          "target": 16.67,
+          "passed": false
+        }
+      },
+      "recommendations": [
+        "Optimize API response times - P95 exceeds 200ms target",
+        "Increase system throughput - below 1000 cases/minute target"
+      ]
+    },
+    "eventPropagation": {
+      "checked": 100,
+      "eventsTriggered": 0,
+      "eventsProcessed": 0,
+      "failed": [
+        {
+          "caseNumber": "STRESS_000001",
+          "reason": "Event not found in imported events"
+        },
+        {
+          "caseNumber": "STRESS_000002",
+          "reason": "Event not found in imported events"
+        },
+        {
+          "caseNumber": "STRESS_000003",
+          "reason": "Event not found in imported events"
+        },
+        {
+          "caseNumber": "STRESS_000004",
+          "reason": "Event not found in imported events"
+        },
+        {
+          "caseNumber": "STRESS_000005",
+          "reason": "Event not found in imported events"
+        },
+        {
+          "caseNumber": "STRESS_000006",
+          "reason": "Event not found in imported events"
+        },
+        {
+          "caseNumber": "STRESS_000007",
+          "reason": "Event not found in imported events"
+        },
+        {
+          "caseNumber": "STRESS_000008",
+          "reason": "Event not found in imported events"
+        },
+        {
+          "caseNumber": "STRESS_000009",
+          "reason": "Event not found in imported events"
+        },
+        {
+          "caseNumber": "STRESS_000010",
+          "reason": "Event not found in imported events"
+        }
+      ],
+      "avgPropagationDelay": 0
+    },
+    "triggerValidation": {
+      "expectedTriggers": 100,
+      "executedTriggers": 0,
+      "failedTriggers": [
+        {
+          "caseNumber": "STRESS_000001",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000001 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000002",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000002 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000003",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000003 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000004",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000004 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000005",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000005 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000006",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000006 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000007",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000007 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000008",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000008 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000009",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000009 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000010",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000010 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000011",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000011 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000012",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000012 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000013",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000013 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000014",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000014 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000015",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000015 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000016",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000016 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000017",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000017 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000018",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000018 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000019",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000019 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000020",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000020 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000021",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000021 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000022",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000022 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000023",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000023 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000024",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000024 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000025",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000025 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000026",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000026 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000027",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000027 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000028",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000028 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000029",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000029 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000030",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000030 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000031",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000031 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000032",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000032 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000033",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000033 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000034",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000034 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000035",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000035 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000036",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000036 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000037",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000037 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000038",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000038 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000039",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000039 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000040",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000040 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000041",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000041 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000042",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000042 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000043",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000043 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000044",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000044 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000045",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000045 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000046",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000046 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000047",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000047 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000048",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000048 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000049",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000049 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000050",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000050 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000051",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000051 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000052",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000052 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000053",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000053 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000054",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000054 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000055",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000055 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000056",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000056 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000057",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000057 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000058",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000058 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000059",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000059 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000060",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000060 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000061",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000061 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000062",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000062 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000063",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000063 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000064",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000064 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000065",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000065 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000066",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000066 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000067",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000067 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000068",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000068 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000069",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000069 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000070",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000070 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000071",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000071 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000072",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000072 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000073",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000073 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000074",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000074 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000075",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000075 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000076",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000076 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000077",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000077 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000078",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000078 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000079",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000079 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000080",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000080 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000081",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000081 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000082",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000082 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000083",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000083 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000084",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000084 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000085",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000085 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000086",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000086 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000087",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000087 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000088",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000088 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000089",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000089 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000090",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000090 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000091",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000091 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000092",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000092 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000093",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000093 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000094",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000094 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000095",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000095 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000096",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000096 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000097",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000097 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000098",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000098 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000099",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000099 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        },
+        {
+          "caseNumber": "STRESS_000100",
+          "reason": "request to http://localhost:3002/proxies/cases/STRESS_000100 failed, reason: connect ECONNREFUSED 127.0.0.1:3002"
+        }
+      ],
+      "domainTriggers": {
+        "cases": {
+          "eventType": "SCHEDULING_CASE_CREATED",
+          "hasCondition": true,
+          "hasEmitExpression": true,
+          "hasContextKey": true
+        }
+      },
+      "conditionEvaluations": 0,
+      "successRate": 0
+    },
+    "validationDuration": 643,
+    "criteriaComparison": {
+      "proxyCreationRate": {
+        "actual": "0/0",
+        "target": 0.99,
+        "passed": false
+      },
+      "fragmentCreationRate": {
+        "actual": "0/0",
+        "target": 0.98,
+        "passed": false
+      },
+      "dependencyCompletionRate": {
+        "actual": "0/0",
+        "target": 0.97,
+        "passed": false
+      }
+    }
+  },
+  "scenarioSpecificResults": {},
+  "scenarioType": "enhanced-bulk-case-creation",
+  "casesGenerated": 100,
+  "creationResults": [
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000001",
+      "success": true,
+      "responseTime": 416,
+      "caseId": "688b6d90c5215a27d8305952"
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000002",
+      "success": true,
+      "responseTime": 406,
+      "caseId": "688b6d90c5215a27d8305956"
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000003",
+      "success": true,
+      "responseTime": 436,
+      "caseId": "688b6d90c5215a27d8305966"
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000004",
+      "success": true,
+      "responseTime": 504,
+      "caseId": "688b6d90c5215a27d8305986"
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000005",
+      "success": true,
+      "responseTime": 580,
+      "caseId": "688b6d90c5215a27d830599d"
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000006",
+      "success": true,
+      "responseTime": 492,
+      "caseId": "688b6d90c5215a27d830597d"
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000007",
+      "success": true,
+      "responseTime": 599,
+      "caseId": "688b6d90c5215a27d83059b1"
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000008",
+      "success": true,
+      "responseTime": 469,
+      "caseId": "688b6d90c5215a27d8305977"
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000009",
+      "success": true,
+      "responseTime": 567,
+      "caseId": "688b6d90c5215a27d830599c"
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000010",
+      "success": true,
+      "responseTime": 608,
+      "caseId": "688b6d90c5215a27d83059bc"
+    },
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000011",
+      "success": true,
+      "responseTime": 263,
+      "caseId": "688b6d91c5215a27d83059d5"
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000012",
+      "success": true,
+      "responseTime": 297,
+      "caseId": "688b6d91c5215a27d83059e6"
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000013",
+      "success": true,
+      "responseTime": 282,
+      "caseId": "688b6d91c5215a27d83059e0"
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000014",
+      "success": true,
+      "responseTime": 329,
+      "caseId": "688b6d91c5215a27d83059f9"
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000015",
+      "success": true,
+      "responseTime": 477,
+      "caseId": "688b6d92c5215a27d8305a43"
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000016",
+      "success": true,
+      "responseTime": 360,
+      "caseId": "688b6d91c5215a27d8305a13"
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000017",
+      "success": true,
+      "responseTime": 465,
+      "caseId": "688b6d92c5215a27d8305a39"
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000018",
+      "success": true,
+      "responseTime": 401,
+      "caseId": "688b6d91c5215a27d8305a2b"
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000019",
+      "success": true,
+      "responseTime": 383,
+      "caseId": "688b6d91c5215a27d8305a1f"
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000020",
+      "success": true,
+      "responseTime": 339,
+      "caseId": "688b6d91c5215a27d8305a00"
+    },
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000021",
+      "success": true,
+      "responseTime": 466,
+      "caseId": "688b6d93c5215a27d8305a57"
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000022",
+      "success": true,
+      "responseTime": 500,
+      "caseId": "688b6d93c5215a27d8305a61"
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000023",
+      "success": true,
+      "responseTime": 613,
+      "caseId": "688b6d93c5215a27d8305aba"
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000024",
+      "success": true,
+      "responseTime": 540,
+      "caseId": "688b6d93c5215a27d8305a7c"
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000025",
+      "success": true,
+      "responseTime": 553,
+      "caseId": "688b6d93c5215a27d8305a94"
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000026",
+      "success": true,
+      "responseTime": 530,
+      "caseId": "688b6d93c5215a27d8305a6e"
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000027",
+      "success": true,
+      "responseTime": 696,
+      "caseId": "688b6d93c5215a27d8305ac7"
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000028",
+      "success": true,
+      "responseTime": 583,
+      "caseId": "688b6d93c5215a27d8305aa2"
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000029",
+      "success": true,
+      "responseTime": 593,
+      "caseId": "688b6d93c5215a27d8305aa7"
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000030",
+      "success": true,
+      "responseTime": 520,
+      "caseId": "688b6d93c5215a27d8305a6a"
+    },
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000031",
+      "success": true,
+      "responseTime": 362,
+      "caseId": "688b6d95c5215a27d8305b18"
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000032",
+      "success": true,
+      "responseTime": 461,
+      "caseId": "688b6d95c5215a27d8305b2f"
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000033",
+      "success": true,
+      "responseTime": 626,
+      "caseId": "688b6d95c5215a27d8305b5b"
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000034",
+      "success": true,
+      "responseTime": 475,
+      "caseId": "688b6d95c5215a27d8305b3e"
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000035",
+      "success": true,
+      "responseTime": 453,
+      "caseId": "688b6d95c5215a27d8305b26"
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000036",
+      "success": true,
+      "responseTime": 542,
+      "caseId": "688b6d95c5215a27d8305b4a"
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000037",
+      "success": true,
+      "responseTime": 567,
+      "caseId": "688b6d95c5215a27d8305b57"
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000038",
+      "success": true,
+      "responseTime": 585,
+      "caseId": "688b6d95c5215a27d8305b4f"
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000039",
+      "success": true,
+      "responseTime": 554,
+      "caseId": "688b6d95c5215a27d8305b52"
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000040",
+      "success": true,
+      "responseTime": 626,
+      "caseId": "688b6d95c5215a27d8305b5c"
+    },
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000041",
+      "success": true,
+      "responseTime": 250,
+      "caseId": "688b6d96c5215a27d8305b97"
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000042",
+      "success": true,
+      "responseTime": 274,
+      "caseId": "688b6d96c5215a27d8305bb2"
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000043",
+      "success": true,
+      "responseTime": 262,
+      "caseId": "688b6d96c5215a27d8305b9e"
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000044",
+      "success": true,
+      "responseTime": 268,
+      "caseId": "688b6d96c5215a27d8305bab"
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000045",
+      "success": true,
+      "responseTime": 400,
+      "caseId": "688b6d96c5215a27d8305be1"
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000046",
+      "success": true,
+      "responseTime": 761,
+      "caseId": "688b6d97c5215a27d8305bfb"
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000047",
+      "success": true,
+      "responseTime": 1151,
+      "caseId": "688b6d97c5215a27d8305c08"
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000048",
+      "success": true,
+      "responseTime": 310,
+      "caseId": "688b6d96c5215a27d8305bc9"
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000049",
+      "success": true,
+      "responseTime": 348,
+      "caseId": "688b6d96c5215a27d8305bd5"
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000050",
+      "success": true,
+      "responseTime": 481,
+      "caseId": "688b6d96c5215a27d8305bee"
+    },
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000051",
+      "success": true,
+      "responseTime": 563,
+      "caseId": "688b6d99c5215a27d8305c1d"
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000052",
+      "success": true,
+      "responseTime": 550,
+      "caseId": "688b6d99c5215a27d8305c1e"
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000053",
+      "success": true,
+      "responseTime": 611,
+      "caseId": "688b6d99c5215a27d8305c67"
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000054",
+      "success": true,
+      "responseTime": 561,
+      "caseId": "688b6d99c5215a27d8305c2b"
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000055",
+      "success": true,
+      "responseTime": 677,
+      "caseId": "688b6d99c5215a27d8305c8a"
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000056",
+      "success": true,
+      "responseTime": 585,
+      "caseId": "688b6d99c5215a27d8305c66"
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000057",
+      "success": true,
+      "responseTime": 544,
+      "caseId": "688b6d99c5215a27d8305c1f"
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000058",
+      "success": true,
+      "responseTime": 632,
+      "caseId": "688b6d99c5215a27d8305c7e"
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000059",
+      "success": true,
+      "responseTime": 577,
+      "caseId": "688b6d99c5215a27d8305c3f"
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000060",
+      "success": true,
+      "responseTime": 571,
+      "caseId": "688b6d99c5215a27d8305c40"
+    },
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000061",
+      "success": true,
+      "responseTime": 409,
+      "caseId": "688b6d9ac5215a27d8305c9a"
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000062",
+      "success": true,
+      "responseTime": 419,
+      "caseId": "688b6d9ac5215a27d8305c9f"
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000063",
+      "success": true,
+      "responseTime": 450,
+      "caseId": "688b6d9ac5215a27d8305cc4"
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000064",
+      "success": true,
+      "responseTime": 443,
+      "caseId": "688b6d9ac5215a27d8305cbb"
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000065",
+      "success": true,
+      "responseTime": 437,
+      "caseId": "688b6d9ac5215a27d8305cad"
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000066",
+      "success": true,
+      "responseTime": 531,
+      "caseId": "688b6d9ac5215a27d8305cfd"
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000067",
+      "success": true,
+      "responseTime": 798,
+      "caseId": "688b6d9ac5215a27d8305d0c"
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000068",
+      "success": true,
+      "responseTime": 522,
+      "caseId": "688b6d9ac5215a27d8305cf0"
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000069",
+      "success": true,
+      "responseTime": 454,
+      "caseId": "688b6d9ac5215a27d8305cd2"
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000070",
+      "success": true,
+      "responseTime": 497,
+      "caseId": "688b6d9ac5215a27d8305ce7"
+    },
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000071",
+      "success": true,
+      "responseTime": 329,
+      "caseId": "688b6d9cc5215a27d8305d1e"
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000072",
+      "success": true,
+      "responseTime": 380,
+      "caseId": "688b6d9cc5215a27d8305d37"
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000073",
+      "success": true,
+      "responseTime": 372,
+      "caseId": "688b6d9cc5215a27d8305d36"
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000074",
+      "success": true,
+      "responseTime": 361,
+      "caseId": "688b6d9cc5215a27d8305d2b"
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000075",
+      "success": true,
+      "responseTime": 413,
+      "caseId": "688b6d9cc5215a27d8305d50"
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000076",
+      "success": true,
+      "responseTime": 438,
+      "caseId": "688b6d9cc5215a27d8305d74"
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000077",
+      "success": true,
+      "responseTime": 406,
+      "caseId": "688b6d9cc5215a27d8305d51"
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000078",
+      "success": true,
+      "responseTime": 418,
+      "caseId": "688b6d9cc5215a27d8305d5f"
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000079",
+      "success": true,
+      "responseTime": 897,
+      "caseId": "688b6d9cc5215a27d8305d8e"
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000080",
+      "success": true,
+      "responseTime": 541,
+      "caseId": "688b6d9cc5215a27d8305d81"
+    },
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000081",
+      "success": true,
+      "responseTime": 359,
+      "caseId": "688b6d9ec5215a27d8305da1"
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000082",
+      "success": true,
+      "responseTime": 747,
+      "caseId": "688b6d9ec5215a27d8305e34"
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000083",
+      "success": true,
+      "responseTime": 569,
+      "caseId": "688b6d9ec5215a27d8305df1"
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000084",
+      "success": true,
+      "responseTime": 420,
+      "caseId": "688b6d9ec5215a27d8305db3"
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000085",
+      "success": true,
+      "responseTime": 438,
+      "caseId": "688b6d9ec5215a27d8305dd8"
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000086",
+      "success": true,
+      "responseTime": 640,
+      "caseId": "688b6d9ec5215a27d8305e06"
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000087",
+      "success": true,
+      "responseTime": 712,
+      "caseId": "688b6d9ec5215a27d8305e25"
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000088",
+      "success": true,
+      "responseTime": 688,
+      "caseId": "688b6d9ec5215a27d8305e17"
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000089",
+      "success": true,
+      "responseTime": 409,
+      "caseId": "688b6d9ec5215a27d8305db4"
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000090",
+      "success": true,
+      "responseTime": 425,
+      "caseId": "688b6d9ec5215a27d8305dc7"
+    },
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000091",
+      "success": true,
+      "responseTime": 386,
+      "caseId": "688b6da0c5215a27d8305e88"
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000092",
+      "success": true,
+      "responseTime": 445,
+      "caseId": "688b6da0c5215a27d8305ea7"
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000093",
+      "success": true,
+      "responseTime": 414,
+      "caseId": "688b6da0c5215a27d8305e95"
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000094",
+      "success": true,
+      "responseTime": 433,
+      "caseId": "688b6da0c5215a27d8305e9f"
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000095",
+      "success": true,
+      "responseTime": 493,
+      "caseId": "688b6da0c5215a27d8305ec6"
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000096",
+      "success": true,
+      "responseTime": 570,
+      "caseId": "688b6da0c5215a27d8305ed5"
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000097",
+      "success": true,
+      "responseTime": 467,
+      "caseId": "688b6da0c5215a27d8305eba"
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000098",
+      "success": true,
+      "responseTime": 516,
+      "caseId": "688b6da0c5215a27d8305ed2"
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000099",
+      "success": true,
+      "responseTime": 524,
+      "caseId": "688b6da0c5215a27d8305ed8"
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000100",
+      "success": true,
+      "responseTime": 788,
+      "caseId": "688b6da0c5215a27d8305ef7"
+    }
+  ],
+  "baselineComparison": {
+    "caseCreation": {
+      "responseTime": {
+        "p95": {
+          "actual": 747,
+          "target": 200,
+          "passed": false
+        },
+        "avg": {
+          "actual": 498.52,
+          "target": 120,
+          "passed": false
+        }
+      },
+      "throughput": {
+        "actual": 5.704831992697815,
+        "target": 16.67,
+        "passed": false
+      },
+      "errorRate": {
+        "actual": 0,
+        "target": 0.01,
+        "passed": true
+      }
+    },
+    "overallPassed": false
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T13-20-15-526Z-v1.0/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T13-20-15-526Z-v1.0/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T13-20-15-526Z-v1.0/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T13-20-15-526Z-v1.0/reports/system-limits.html",
+    "baselineComparisonReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T13-20-15-526Z-v1.0/reports/baseline-comparison.html",
+    "parallelExecutionReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-07-31T13-20-15-526Z-v1.0/reports/parallel-execution.html"
+  },
+  "totalDuration": 18655
+}

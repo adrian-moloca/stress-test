@@ -1,0 +1,72 @@
+[
+  {
+    "index": 1,
+    "caseNumber": "STRESS_000001",
+    "success": true,
+    "timestamp": "2025-07-30T18:55:41.178Z",
+    "responseTime": 348
+  },
+  {
+    "index": 2,
+    "caseNumber": "STRESS_000002",
+    "success": true,
+    "timestamp": "2025-07-30T18:55:41.199Z",
+    "responseTime": 372
+  },
+  {
+    "index": 3,
+    "caseNumber": "STRESS_000003",
+    "success": true,
+    "timestamp": "2025-07-30T18:55:41.294Z",
+    "responseTime": 465
+  },
+  {
+    "index": 4,
+    "caseNumber": "STRESS_000004",
+    "success": true,
+    "timestamp": "2025-07-30T18:55:41.238Z",
+    "responseTime": 406
+  },
+  {
+    "index": 5,
+    "caseNumber": "STRESS_000005",
+    "success": true,
+    "timestamp": "2025-07-30T18:55:41.281Z",
+    "responseTime": 448
+  },
+  {
+    "index": 6,
+    "caseNumber": "STRESS_000006",
+    "success": true,
+    "timestamp": "2025-07-30T18:55:42.514Z",
+    "responseTime": 217
+  },
+  {
+    "index": 7,
+    "caseNumber": "STRESS_000007",
+    "success": true,
+    "timestamp": "2025-07-30T18:55:42.556Z",
+    "responseTime": 257
+  },
+  {
+    "index": 8,
+    "caseNumber": "STRESS_000008",
+    "success": true,
+    "timestamp": "2025-07-30T18:55:42.525Z",
+    "responseTime": 228
+  },
+  {
+    "index": 9,
+    "caseNumber": "STRESS_000009",
+    "success": true,
+    "timestamp": "2025-07-30T18:55:42.599Z",
+    "responseTime": 301
+  },
+  {
+    "index": 10,
+    "caseNumber": "STRESS_000010",
+    "success": true,
+    "timestamp": "2025-07-30T18:55:42.630Z",
+    "responseTime": 330
+  }
+]

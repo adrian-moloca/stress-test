@@ -1,0 +1,63 @@
+{
+  "testId": "1753818800833-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753818800842,
+  "endTime": 1753818801176,
+  "totalCasesAttempted": 10,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "k6Results": {},
+  "systemMetrics": {},
+  "scenarioType": "bulk-case-creation",
+  "casesGenerated": 10,
+  "creationResults": {
+    "successfulCases": 0,
+    "failedCases": 10,
+    "errors": [
+      "HTTP 404: Not Found - {\"message\":\"Cannot POST /api/schedulingcases/cases/stress-test\",\"error\":\"Not Found\",\"statusCode\":404}",
+      "HTTP 404: Not Found - {\"message\":\"Cannot POST /api/schedulingcases/cases/stress-test\",\"error\":\"Not Found\",\"statusCode\":404}",
+      "HTTP 404: Not Found - {\"message\":\"Cannot POST /api/schedulingcases/cases/stress-test\",\"error\":\"Not Found\",\"statusCode\":404}",
+      "HTTP 404: Not Found - {\"message\":\"Cannot POST /api/schedulingcases/cases/stress-test\",\"error\":\"Not Found\",\"statusCode\":404}",
+      "HTTP 404: Not Found - {\"message\":\"Cannot POST /api/schedulingcases/cases/stress-test\",\"error\":\"Not Found\",\"statusCode\":404}",
+      "HTTP 404: Not Found - {\"message\":\"Cannot POST /api/schedulingcases/cases/stress-test\",\"error\":\"Not Found\",\"statusCode\":404}",
+      "HTTP 404: Not Found - {\"message\":\"Cannot POST /api/schedulingcases/cases/stress-test\",\"error\":\"Not Found\",\"statusCode\":404}",
+      "HTTP 404: Not Found - {\"message\":\"Cannot POST /api/schedulingcases/cases/stress-test\",\"error\":\"Not Found\",\"statusCode\":404}",
+      "HTTP 404: Not Found - {\"message\":\"Cannot POST /api/schedulingcases/cases/stress-test\",\"error\":\"Not Found\",\"statusCode\":404}",
+      "HTTP 404: Not Found - {\"message\":\"Cannot POST /api/schedulingcases/cases/stress-test\",\"error\":\"Not Found\",\"statusCode\":404}"
+    ],
+    "creationTimings": [
+      {
+        "batchIndex": 0,
+        "batchSize": 10,
+        "duration": 143,
+        "casesPerSecond": 69.93006993006993
+      }
+    ],
+    "memoryUsage": [
+      {
+        "batchIndex": 0,
+        "heapUsed": 43086840,
+        "heapTotal": 80162816,
+        "memoryIncrease": 5472752
+      }
+    ],
+    "casesCreated": [],
+    "summary": {
+      "totalTime": 244,
+      "averageTimePerCase": 24.4,
+      "successRate": 0,
+      "throughput": 0
+    }
+  },
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753818800833-bulk-case-creation-dev/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753818800833-bulk-case-creation-dev/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753818800833-bulk-case-creation-dev/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753818800833-bulk-case-creation-dev/reports/system-limits.html"
+  },
+  "totalDuration": 334
+}

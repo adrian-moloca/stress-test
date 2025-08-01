@@ -1,0 +1,28 @@
+# Docker compose for mongo and redis
+# Mongodb uses a persistent volume, redis is volumeless (for now)
+services:
+  mongo:
+    container_name: mongo
+    platform: ${DOCKER_PLATFORM}
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - smambu
+
+  redis:
+    container_name: redis
+    platform: ${DOCKER_PLATFORM}
+    image: redis
+    ports:
+      - 6380:6379
+    networks:
+      - smambu
+
+volumes:
+  mongo_data:
+
+networks:
+  smambu:

@@ -1,0 +1,68 @@
+[
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "map",
+      "parameters": {
+        "sourceArray": {
+            "expressionKind": "literalList",
+            "value": [
+              10,
+              15
+            ]
+        },
+        "callback": {
+          "expressionKind": "lambdaOperator",
+          "args": ["current"],
+          "body": {
+            "expressionKind": "sumOperator",
+            "left": {
+              "expressionKind": "literalNumber",
+              "value": 5
+            },
+            "right": {
+              "expressionKind": "symbolOperator",
+              "name": "current"
+            }
+          }
+        }
+      }
+    },
+    "expected": [
+      15,
+      20
+    ]
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "map",
+      "parameters": {
+        "sourceArray": {
+            "expressionKind": "literalList",
+            "value": [
+              "10",
+              "15"
+            ]
+        },
+        "callback": {
+          "expressionKind": "lambdaOperator",
+          "args": ["current"],
+          "body": {
+            "expressionKind": "sumOperator",
+            "left": {
+              "expressionKind": "literalNumber",
+              "value": 5
+            },
+            "right": {
+              "expressionKind": "symbolOperator",
+              "name": "current"
+            }
+          }
+        }
+      }
+    },
+    "expected": null,
+    "error": true
+  }
+]

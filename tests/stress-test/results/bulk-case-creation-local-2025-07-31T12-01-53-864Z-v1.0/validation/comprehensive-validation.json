@@ -1,0 +1,104 @@
+{
+  "timestamp": 1753963326103,
+  "summary": {
+    "proxiesCreated": "0/10",
+    "fragmentsValid": "0/0",
+    "dependenciesComplete": "0/0",
+    "performanceTargetsMet": "1/3"
+  },
+  "details": {
+    "proxy": {
+      "checked": 10,
+      "found": 0,
+      "missing": [
+        {
+          "caseNumber": "STRESS_000001",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753963317022
+        },
+        {
+          "caseNumber": "STRESS_000002",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753963318028
+        },
+        {
+          "caseNumber": "STRESS_000003",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753963319032
+        },
+        {
+          "caseNumber": "STRESS_000004",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753963320048
+        },
+        {
+          "caseNumber": "STRESS_000005",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753963321066
+        },
+        {
+          "caseNumber": "STRESS_000006",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753963322070
+        },
+        {
+          "caseNumber": "STRESS_000007",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753963323075
+        },
+        {
+          "caseNumber": "STRESS_000008",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753963324081
+        },
+        {
+          "caseNumber": "STRESS_000009",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753963325088
+        },
+        {
+          "caseNumber": "STRESS_000010",
+          "reason": "Not found after 1 attempts",
+          "checkedAt": 1753963326092
+        }
+      ],
+      "details": []
+    },
+    "fragment": {
+      "checked": 0,
+      "valid": 0,
+      "invalid": [],
+      "details": []
+    },
+    "dependency": {
+      "checked": 0,
+      "complete": 0,
+      "incomplete": [],
+      "details": []
+    },
+    "performance": {
+      "responseTime": {
+        "average": 0,
+        "p95": 0,
+        "p99": 0,
+        "max": 0
+      },
+      "successRate": {
+        "rate": 1,
+        "successRate": 0
+      },
+      "throughput": {
+        "requestsPerSecond": 0,
+        "totalRequests": 0
+      },
+      "thresholds": {},
+      "validation": {
+        "responseTimeValid": true,
+        "successRateValid": false,
+        "throughputValid": false,
+        "thresholdsMetrics": []
+      },
+      "validatedAt": 1753963326102
+    }
+  }
+}

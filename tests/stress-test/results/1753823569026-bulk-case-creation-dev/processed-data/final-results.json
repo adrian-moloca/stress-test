@@ -1,0 +1,58 @@
+{
+  "testId": "1753823569026-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753823569045,
+  "endTime": 1753823573987,
+  "totalCasesAttempted": 5,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "k6Results": {},
+  "systemMetrics": {},
+  "scenarioType": "bulk-case-creation",
+  "casesGenerated": 5,
+  "creationResults": {
+    "successfulCases": 0,
+    "failedCases": 5,
+    "errors": [
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T21:12:53.662Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T21:12:53.694Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T21:12:53.844Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T21:12:53.678Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}",
+      "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-07-29T21:12:53.840Z\",\"path\":\"/api/schedulingcases/cases/stress-test\",\"message\":{\"message\":\"Internal server error\"}}"
+    ],
+    "creationTimings": [
+      {
+        "batchIndex": 0,
+        "batchSize": 5,
+        "duration": 4505,
+        "casesPerSecond": 1.1098779134295227
+      }
+    ],
+    "memoryUsage": [
+      {
+        "batchIndex": 0,
+        "heapUsed": 59338840,
+        "heapTotal": 84668416,
+        "memoryIncrease": 1288200
+      }
+    ],
+    "casesCreated": [],
+    "summary": {
+      "totalTime": 4605,
+      "averageTimePerCase": 921,
+      "successRate": 0,
+      "throughput": 0
+    }
+  },
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753823569026-bulk-case-creation-dev/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753823569026-bulk-case-creation-dev/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753823569026-bulk-case-creation-dev/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753823569026-bulk-case-creation-dev/reports/system-limits.html"
+  },
+  "totalDuration": 4942
+}

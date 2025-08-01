@@ -1,0 +1,87 @@
+[
+  {
+    "data": {
+      "expressionKind": "startsWithOperator",
+      "left": {
+          "expressionKind": "literalString",
+          "value": "Hello World"
+      },
+      "right": {
+          "expressionKind": "literalString",
+          "value": "Hello"
+      }
+    },
+    "expected": true
+  },
+  {
+    "data": {
+      "expressionKind": "startsWithOperator",
+      "left": {
+          "expressionKind": "literalString",
+          "value": "Hello World"
+      },
+      "right": {
+          "expressionKind": "literalString",
+          "value": "World"
+      }
+    },
+    "expected": false
+  },
+  {
+    "data": {
+      "expressionKind": "startsWithOperator",
+      "left": {
+          "expressionKind": "literalString",
+          "value": " Hello World"
+      },
+      "right": {
+          "expressionKind": "literalString",
+          "value": " "
+      }
+    },
+    "expected": true
+  },
+  {
+    "data": {
+      "expressionKind": "startsWithOperator",
+      "left": {
+          "expressionKind": "literalString",
+          "value": "6365343234"
+      },
+      "right": {
+          "expressionKind": "literalString",
+          "value": "6"
+      }
+    },
+    "expected": true
+  },
+  {
+    "data": {
+      "expressionKind": "startsWithOperator",
+      "left": {
+          "expressionKind": "literalString",
+          "value": "365343234"
+      },
+      "right": {
+          "expressionKind": "literalString",
+          "value": "6"
+      }
+    },
+    "expected": false
+  },
+  {
+    "data": {
+      "expressionKind": "startsWithOperator",
+      "left": {
+          "expressionKind": "literalString",
+          "value": "365343234"
+      },
+      "right": {
+          "expressionKind": "literalNumber",
+          "value": 6
+      }
+    },
+    "expected": null,
+    "error": true
+  }
+]

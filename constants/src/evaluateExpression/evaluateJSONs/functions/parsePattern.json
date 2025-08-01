@@ -1,0 +1,55 @@
+[
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "parsePattern",
+      "parameters": {
+        "pattern": {
+          "expressionKind": "literalString",
+          "value": "{number}"
+        },
+        "forbiddenTokens": {
+          "expressionKind": "literalList",
+          "value": []
+        }
+      }
+    },
+    "expected": true
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "parsePattern",
+      "parameters": {
+        "pattern": {
+          "expressionKind": "literalString",
+          "value": "13213"
+        },
+        "forbiddenTokens": {
+          "expressionKind": "literalList",
+          "value": []
+        }
+      }
+    },
+    "expected": null,
+    "error": "no_number_specified_in_pattern"
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "parsePattern",
+      "parameters": {
+        "pattern": {
+          "expressionKind": "literalString",
+          "value": "PAT-{type.number}-{year}"
+        },
+        "forbiddenTokens": {
+          "expressionKind": "literalList",
+          "value": ["type.number", "type.year.number"]
+        }
+      }
+    },
+    "expected": null,
+    "error": "forbidden_token_for_current_pattern"
+  }
+]

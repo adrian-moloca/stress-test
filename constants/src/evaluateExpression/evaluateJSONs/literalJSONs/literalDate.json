@@ -1,0 +1,52 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalDate",
+      "value": "2021-01-01"
+    },
+    "expected": null,
+    "error": "invalidIsoString"
+  },
+  {
+    "data": {
+      "expressionKind": "literalDate",
+      "value": "2021-01-01T00:00:00.000Z"
+    },
+    "expected": "2021-01-01T00:00:00.000Z"
+  },
+  {
+    "data": {
+      "expressionKind": "literalDate",
+      "value": "2021-01-01T00:00:00.000"
+    },
+    "expected": null,
+    "error": "invalidIsoString"
+  },
+  {
+    "data": {
+      "expressionKind": "literalDate",
+      "value": "2021-01-01T00:00:00"
+    },
+    "expected": null,
+    "error": "invalidIsoString"
+  },
+  {
+    "data": {
+      "expressionKind": "literalDate",
+      "value": "21/12/2021"
+    },
+    "expected": null,
+    "error": true
+  },
+  {
+    "data": {
+      "expressionKind": "literalDate",
+      "value": {
+        "expressionKind": "literalString",
+        "value": "2021-01-01T00:00:00"
+      }
+    },
+    "expected": null,
+    "error": true
+  }
+]

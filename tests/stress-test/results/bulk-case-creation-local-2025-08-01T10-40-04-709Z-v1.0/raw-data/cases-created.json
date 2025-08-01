@@ -1,0 +1,52 @@
+[
+  {
+    "caseId": "688c9985800be99c7015a3cd",
+    "caseNumber": "STRESS_000001",
+    "timestamp": "2025-08-01T10:40:05.747Z"
+  },
+  {
+    "caseId": "688c9985800be99c7015a3e0",
+    "caseNumber": "STRESS_000002",
+    "timestamp": "2025-08-01T10:40:05.747Z"
+  },
+  {
+    "caseId": "688c9985800be99c7015a413",
+    "caseNumber": "STRESS_000003",
+    "timestamp": "2025-08-01T10:40:05.747Z"
+  },
+  {
+    "caseId": "688c9985800be99c7015a3d1",
+    "caseNumber": "STRESS_000004",
+    "timestamp": "2025-08-01T10:40:05.747Z"
+  },
+  {
+    "caseId": "688c9985800be99c7015a3de",
+    "caseNumber": "STRESS_000005",
+    "timestamp": "2025-08-01T10:40:05.747Z"
+  },
+  {
+    "caseId": "688c9985800be99c7015a3df",
+    "caseNumber": "STRESS_000006",
+    "timestamp": "2025-08-01T10:40:05.747Z"
+  },
+  {
+    "caseId": "688c9985800be99c7015a3ea",
+    "caseNumber": "STRESS_000007",
+    "timestamp": "2025-08-01T10:40:05.747Z"
+  },
+  {
+    "caseId": "688c9985800be99c7015a3eb",
+    "caseNumber": "STRESS_000008",
+    "timestamp": "2025-08-01T10:40:05.747Z"
+  },
+  {
+    "caseId": "688c9985800be99c7015a428",
+    "caseNumber": "STRESS_000009",
+    "timestamp": "2025-08-01T10:40:05.747Z"
+  },
+  {
+    "caseId": "688c9985800be99c7015a3e1",
+    "caseNumber": "STRESS_000010",
+    "timestamp": "2025-08-01T10:40:05.747Z"
+  }
+]

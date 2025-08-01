@@ -1,0 +1,108 @@
+[
+  {
+    "data": {
+      "expressionKind": "dotOperator",
+      "paths": [
+        "case",
+        "caseNumber"
+      ],
+      "source": {
+        "expressionKind": "objectOfExpressions",
+        "value": {
+          "case": {
+            "expressionKind": "objectOfExpressions",
+            "value": {
+              "caseNumber": {
+                "expressionKind": "literalString",
+                "value": "caseNumber001"
+              },
+              "isBillable": {
+                "expressionKind": "literalBoolean",
+                "value": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "expected": "caseNumber001"
+  },
+  {
+    "data": {
+      "expressionKind": "dotOperator",
+      "paths": [
+        0,
+        "case",
+        "caseNumber"
+      ],
+      "source": {
+        "expressionKind": "literalList",
+        "value": [
+          { "case": { "caseNumber": "caseNumber001" } },
+          { "case": { "caseNumber": "caseNumber002" } }
+        ]
+      }
+    },
+    "expected": "caseNumber001"
+  },
+  {
+    "data": {
+      "expressionKind": "dotOperator",
+      "paths": [
+        "case"
+      ],
+      "source": {
+        "expressionKind": "objectOfExpressions",
+        "value": {
+          "case": {
+            "expressionKind": "objectOfExpressions",
+            "value": {
+              "caseNumber": {
+                "expressionKind": "literalString",
+                "value": "caseNumber001"
+              },
+              "isBillable": {
+                "expressionKind": "literalBoolean",
+                "value": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "expected": {
+      "caseNumber": "caseNumber001",
+      "isBillable": true
+    }
+  },
+  {
+    "data": {
+      "expressionKind": "dotOperator",
+      "paths": [
+        "case",
+        "caseNumber"
+      ],
+      "source": {
+        "expressionKind": "literalObj",
+        "value": {
+          "case": "caseNumber001"
+        }
+      }
+    },
+    "error": "invalid parent"
+  },
+  {
+    "data": {
+      "expressionKind": "dotOperator",
+      "paths": [
+        "case",
+        "caseNumber"
+      ],
+      "source": {
+        "expressionKind": "literalString",
+        "value": "caseNumber001"
+      }
+    },
+    "error": "invalid parent"
+  }
+]

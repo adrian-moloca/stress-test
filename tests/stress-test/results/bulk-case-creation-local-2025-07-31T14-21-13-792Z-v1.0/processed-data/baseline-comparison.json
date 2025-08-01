@@ -1,0 +1,27 @@
+{
+  "caseCreation": {
+    "responseTime": {
+      "p95": {
+        "actual": 1991,
+        "target": 200,
+        "passed": false
+      },
+      "avg": {
+        "actual": 1431.424,
+        "target": 120,
+        "passed": false
+      }
+    },
+    "throughput": {
+      "actual": 26.710828569902237,
+      "target": 16.67,
+      "passed": true
+    },
+    "errorRate": {
+      "actual": 0,
+      "target": 0.01,
+      "passed": true
+    }
+  },
+  "overallPassed": false
+}

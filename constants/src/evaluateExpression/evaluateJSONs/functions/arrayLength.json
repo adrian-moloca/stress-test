@@ -1,0 +1,37 @@
+[
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "arrayLength",
+      "parameters": {
+        "sourceArray": { "expressionKind": "literalList", "value": [1, 2, 3] }
+      }
+    },
+    "expected": {
+      "value": 3,
+      "deps": [],
+      "emits": []
+    }
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "arrayLength",
+      "parameters": { "sourceArray": { "expressionKind": "literalList", "value": [] } }
+    },
+    "expected": {
+      "value": 0,
+      "deps": [],
+      "emits": []
+    }
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "arrayLength",
+      "parameters": { "sourceArray": { "expressionKind": "literalObject", "value": { "length": 2, "b": 2, "c": 3 } } }
+    },
+    "expected": null,
+    "error": "invalidEvaluatedArray"
+  }
+]

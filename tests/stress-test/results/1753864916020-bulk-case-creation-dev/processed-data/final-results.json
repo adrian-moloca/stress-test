@@ -1,0 +1,261 @@
+{
+  "testId": "1753864916020-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753864916428,
+  "endTime": 1753864919291,
+  "totalCasesAttempted": 100,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "k6Results": {},
+  "systemMetrics": {},
+  "scenarioType": "bulk-case-creation",
+  "casesGenerated": 100,
+  "creationResults": {
+    "successfulCases": 0,
+    "failedCases": 100,
+    "errors": [
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed",
+      "fetch failed"
+    ],
+    "creationTimings": [
+      {
+        "batchIndex": 0,
+        "batchSize": 10,
+        "duration": 168,
+        "casesPerSecond": 59.52380952380952
+      },
+      {
+        "batchIndex": 1,
+        "batchSize": 10,
+        "duration": 118,
+        "casesPerSecond": 84.7457627118644
+      },
+      {
+        "batchIndex": 2,
+        "batchSize": 10,
+        "duration": 112,
+        "casesPerSecond": 89.28571428571429
+      },
+      {
+        "batchIndex": 3,
+        "batchSize": 10,
+        "duration": 69,
+        "casesPerSecond": 144.92753623188406
+      },
+      {
+        "batchIndex": 4,
+        "batchSize": 10,
+        "duration": 81,
+        "casesPerSecond": 123.45679012345678
+      },
+      {
+        "batchIndex": 5,
+        "batchSize": 10,
+        "duration": 61,
+        "casesPerSecond": 163.93442622950818
+      },
+      {
+        "batchIndex": 6,
+        "batchSize": 10,
+        "duration": 27,
+        "casesPerSecond": 370.3703703703703
+      },
+      {
+        "batchIndex": 7,
+        "batchSize": 10,
+        "duration": 47,
+        "casesPerSecond": 212.7659574468085
+      },
+      {
+        "batchIndex": 8,
+        "batchSize": 10,
+        "duration": 72,
+        "casesPerSecond": 138.88888888888889
+      },
+      {
+        "batchIndex": 9,
+        "batchSize": 10,
+        "duration": 54,
+        "casesPerSecond": 185.18518518518516
+      }
+    ],
+    "memoryUsage": [
+      {
+        "batchIndex": 0,
+        "heapUsed": 49393864,
+        "heapTotal": 79536128,
+        "memoryIncrease": 1208096
+      },
+      {
+        "batchIndex": 1,
+        "heapUsed": 50283000,
+        "heapTotal": 79798272,
+        "memoryIncrease": 882376
+      },
+      {
+        "batchIndex": 2,
+        "heapUsed": 50921144,
+        "heapTotal": 79798272,
+        "memoryIncrease": 634408
+      },
+      {
+        "batchIndex": 3,
+        "heapUsed": 51577456,
+        "heapTotal": 79798272,
+        "memoryIncrease": 652544
+      },
+      {
+        "batchIndex": 4,
+        "heapUsed": 52247024,
+        "heapTotal": 79798272,
+        "memoryIncrease": 665624
+      },
+      {
+        "batchIndex": 5,
+        "heapUsed": 53148720,
+        "heapTotal": 80060416,
+        "memoryIncrease": 896840
+      },
+      {
+        "batchIndex": 6,
+        "heapUsed": 53788008,
+        "heapTotal": 80060416,
+        "memoryIncrease": 634880
+      },
+      {
+        "batchIndex": 7,
+        "heapUsed": 54428648,
+        "heapTotal": 80060416,
+        "memoryIncrease": 636920
+      },
+      {
+        "batchIndex": 8,
+        "heapUsed": 42483904,
+        "heapTotal": 79900672,
+        "memoryIncrease": -11948520
+      },
+      {
+        "batchIndex": 9,
+        "heapUsed": 43122064,
+        "heapTotal": 79900672,
+        "memoryIncrease": 633176
+      }
+    ],
+    "casesCreated": [],
+    "summary": {
+      "totalTime": 1900,
+      "averageTimePerCase": 19,
+      "successRate": 0,
+      "throughput": 0
+    }
+  },
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753864916020-bulk-case-creation-dev/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753864916020-bulk-case-creation-dev/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753864916020-bulk-case-creation-dev/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753864916020-bulk-case-creation-dev/reports/system-limits.html"
+  },
+  "totalDuration": 2863
+}

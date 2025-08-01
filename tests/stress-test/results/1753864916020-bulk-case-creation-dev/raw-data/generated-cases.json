@@ -1,0 +1,6558 @@
+[
+  {
+    "caseNumber": "STRESS_000001",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Jordi",
+      "surname": "Will",
+      "patientId": "P437336",
+      "birthDate": "1922-02-04T09:11:14.012Z"
+    },
+    "bookingSection": {
+      "date": "2026-05-08T09:31:14.837Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 153
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "2KKK4CBG",
+          "name": "Gauze Pad",
+          "quantity": 7,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "RND8W44M",
+          "name": "Surgical Suture",
+          "quantity": 5,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "3W0RB1KY",
+          "name": "Propofol",
+          "dosage": "43mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 167,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "15mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:56.944Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000002",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Kaylie",
+      "surname": "Marks",
+      "patientId": "P223153",
+      "birthDate": "1926-03-02T14:01:35.964Z"
+    },
+    "bookingSection": {
+      "date": "2026-03-01T13:03:04.905Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 155
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "RXKJL8MW",
+          "name": "Surgical Suture",
+          "quantity": 7,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "YCHKZLZF",
+          "name": "Surgical Drape",
+          "quantity": 6,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "N7MPGCYP",
+          "name": "Surgical Gloves",
+          "quantity": 10,
+          "unitCost": 8
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "XT0PGOME",
+          "name": "Fentanyl",
+          "dosage": "32mg",
+          "quantity": 5
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "KWJKXO6O",
+          "name": "Fentanyl",
+          "dosage": "61mg",
+          "quantity": 3
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 179,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "20mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:56.945Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000003",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Zakary",
+      "surname": "Terry",
+      "patientId": "P222088",
+      "birthDate": "1945-05-07T15:28:43.501Z"
+    },
+    "bookingSection": {
+      "date": "2026-03-06T01:30:29.326Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 152
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "I1MZZQDD",
+          "name": "Surgical Suture",
+          "quantity": 2,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "K6CHS44P",
+          "name": "Sevoflurane",
+          "dosage": "52mg",
+          "quantity": 5
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "UXTYUF9F",
+          "name": "Fentanyl",
+          "dosage": "41mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 146,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "38mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:56.945Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000004",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Vella",
+      "surname": "Luettgen",
+      "patientId": "P810312",
+      "birthDate": "1960-08-17T21:23:05.778Z"
+    },
+    "bookingSection": {
+      "date": "2026-05-09T14:18:17.289Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 189
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "5JEMJOWV",
+          "name": "Surgical Suture",
+          "quantity": 5,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "SIIHGLST",
+          "name": "Surgical Suture",
+          "quantity": 10,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "8WXFQVPG",
+          "name": "Midazolam",
+          "dosage": "24mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 402,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "23mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:56.982Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000005",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Margarett",
+      "surname": "Schamberger",
+      "patientId": "P288801",
+      "birthDate": "1921-02-10T16:10:28.812Z"
+    },
+    "bookingSection": {
+      "date": "2026-06-16T17:31:35.655Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 128
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "IWSWIJPL",
+          "name": "Gauze Pad",
+          "quantity": 10,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "YJZIJRQ4",
+          "name": "Fentanyl",
+          "dosage": "72mg",
+          "quantity": 1
+        },
+        {
+          "medicationId": "MED_001",
+          "code": "V47TUMPK",
+          "name": "Propofol",
+          "dosage": "13mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 92,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "20mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:56.985Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000006",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Rodrigo",
+      "surname": "Jacobi",
+      "patientId": "P286192",
+      "birthDate": "1990-11-21T16:43:06.902Z"
+    },
+    "bookingSection": {
+      "date": "2026-07-05T17:21:14.874Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 162
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "WLJ7BNMD",
+          "name": "Scalpel Blade",
+          "quantity": 6,
+          "unitCost": 12
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 372,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "43mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.005Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000007",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Jevon",
+      "surname": "Wehner",
+      "patientId": "P120039",
+      "birthDate": "1930-11-08T11:34:44.898Z"
+    },
+    "bookingSection": {
+      "date": "2025-09-19T00:05:23.513Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 173
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "OVVX5VLH",
+          "name": "Surgical Suture",
+          "quantity": 5,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "VN8M96VS",
+          "name": "Propofol",
+          "dosage": "67mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 103,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "12mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.006Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000008",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Eula",
+      "surname": "Moen",
+      "patientId": "P034012",
+      "birthDate": "1966-09-10T13:18:11.460Z"
+    },
+    "bookingSection": {
+      "date": "2026-07-22T08:45:34.210Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 39
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "R7F7UTQL",
+          "name": "Scalpel Blade",
+          "quantity": 2,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "N76Z7BWI",
+          "name": "Rocuronium",
+          "dosage": "72mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 77,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "30mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.010Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000009",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Corrine",
+      "surname": "Gislason",
+      "patientId": "P028562",
+      "birthDate": "1945-06-24T15:10:29.042Z"
+    },
+    "bookingSection": {
+      "date": "2025-10-24T04:40:41.009Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 108
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "Q92CQLHJ",
+          "name": "Surgical Drape",
+          "quantity": 9,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "F6JL6MQ5",
+          "name": "Surgical Drape",
+          "quantity": 3,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "HDWZBT7M",
+          "name": "Rocuronium",
+          "dosage": "44mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 318,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "24mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.012Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000010",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Garett",
+      "surname": "Runolfsdottir",
+      "patientId": "P842329",
+      "birthDate": "1948-07-24T02:43:52.326Z"
+    },
+    "bookingSection": {
+      "date": "2025-12-16T14:42:03.093Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 189
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "S2IT5OO8",
+          "name": "Surgical Gloves",
+          "quantity": 1,
+          "unitCost": 8
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "MNEOAMU3",
+          "name": "Sevoflurane",
+          "dosage": "93mg",
+          "quantity": 1
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 475,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "28mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.013Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000011",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Elliot",
+      "surname": "Kohler",
+      "patientId": "P844012",
+      "birthDate": "1998-12-06T09:58:09.280Z"
+    },
+    "bookingSection": {
+      "date": "2025-08-24T19:40:34.657Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 97
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "WT4FUTH9",
+          "name": "Scalpel Blade",
+          "quantity": 1,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "P2FRT7C5",
+          "name": "Surgical Gloves",
+          "quantity": 10,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "PSIAZ0YL",
+          "name": "Gauze Pad",
+          "quantity": 1,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 324,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "27mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.013Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000012",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Woodrow",
+      "surname": "Schultz",
+      "patientId": "P731447",
+      "birthDate": "1981-11-29T09:49:34.064Z"
+    },
+    "bookingSection": {
+      "date": "2026-06-12T03:55:25.342Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 98
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "DTHMEEEW",
+          "name": "Gauze Pad",
+          "quantity": 5,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "1D14Y9JI",
+          "name": "Surgical Suture",
+          "quantity": 2,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "MUATUPHP",
+          "name": "Surgical Drape",
+          "quantity": 4,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "LBETN4BA",
+          "name": "Fentanyl",
+          "dosage": "54mg",
+          "quantity": 4
+        },
+        {
+          "medicationId": "MED_001",
+          "code": "Y0PI4I66",
+          "name": "Propofol",
+          "dosage": "73mg",
+          "quantity": 3
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 452,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "42mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.013Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000013",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Robbie",
+      "surname": "Bayer",
+      "patientId": "P733883",
+      "birthDate": "1924-03-29T16:19:15.196Z"
+    },
+    "bookingSection": {
+      "date": "2025-08-07T10:31:13.552Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 209
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "IDCWBMYZ",
+          "name": "Scalpel Blade",
+          "quantity": 3,
+          "unitCost": 12
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 122,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "48mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.013Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000014",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Makenna",
+      "surname": "Franey",
+      "patientId": "P344782",
+      "birthDate": "1994-06-02T19:50:46.629Z"
+    },
+    "bookingSection": {
+      "date": "2026-07-11T00:55:54.973Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 86
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "BBS2NZRV",
+          "name": "Gauze Pad",
+          "quantity": 1,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "1VWF92YR",
+          "name": "Surgical Gloves",
+          "quantity": 5,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "WUXHIWWW",
+          "name": "Scalpel Blade",
+          "quantity": 4,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "J4TTKXAI",
+          "name": "Propofol",
+          "dosage": "32mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 330,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "21mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.013Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000015",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Jordan",
+      "surname": "Tromp",
+      "patientId": "P419661",
+      "birthDate": "1941-06-20T20:55:29.439Z"
+    },
+    "bookingSection": {
+      "date": "2026-06-13T12:25:14.826Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 155
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "GN1D3QKS",
+          "name": "Scalpel Blade",
+          "quantity": 5,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "H1ZOQXGX",
+          "name": "Midazolam",
+          "dosage": "95mg",
+          "quantity": 1
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 379,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "11mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.013Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000016",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Ford",
+      "surname": "Keebler",
+      "patientId": "P211751",
+      "birthDate": "1958-06-24T23:02:52.660Z"
+    },
+    "bookingSection": {
+      "date": "2026-05-07T15:25:05.427Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 197
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "ULAEYN0P",
+          "name": "Scalpel Blade",
+          "quantity": 8,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "TW9YDG60",
+          "name": "Scalpel Blade",
+          "quantity": 4,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "NMSCJ3OY",
+          "name": "Surgical Drape",
+          "quantity": 6,
+          "unitCost": 25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 380,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "14mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.013Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000017",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Sharon",
+      "surname": "Kovacek",
+      "patientId": "P425472",
+      "birthDate": "1956-01-16T11:39:20.614Z"
+    },
+    "bookingSection": {
+      "date": "2026-03-02T22:53:19.245Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 170
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "CKB3CZHP",
+          "name": "Surgical Suture",
+          "quantity": 4,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "ZBHL6MJZ",
+          "name": "Sevoflurane",
+          "dosage": "55mg",
+          "quantity": 1
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 136,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "19mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.014Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000018",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Kavon",
+      "surname": "Hoppe",
+      "patientId": "P095734",
+      "birthDate": "1926-12-16T20:34:40.100Z"
+    },
+    "bookingSection": {
+      "date": "2026-07-03T17:15:58.227Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 48
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "TVDVW8PF",
+          "name": "Surgical Gloves",
+          "quantity": 8,
+          "unitCost": 8
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 151,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "37mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.014Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000019",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Heidi",
+      "surname": "Walsh",
+      "patientId": "P421677",
+      "birthDate": "1939-07-28T05:33:36.774Z"
+    },
+    "bookingSection": {
+      "date": "2026-06-10T05:04:24.448Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 182
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "TCJRVDYR",
+          "name": "Surgical Drape",
+          "quantity": 3,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "NELGMW7S",
+          "name": "Midazolam",
+          "dosage": "34mg",
+          "quantity": 2
+        },
+        {
+          "medicationId": "MED_004",
+          "code": "ZYRYXITF",
+          "name": "Sevoflurane",
+          "dosage": "50mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 327,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "27mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.014Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000020",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Alec",
+      "surname": "Jerde",
+      "patientId": "P396183",
+      "birthDate": "1938-01-14T06:55:40.889Z"
+    },
+    "bookingSection": {
+      "date": "2026-06-24T08:59:55.063Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 184
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "XJG8QJXG",
+          "name": "Surgical Suture",
+          "quantity": 8,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 301,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "43mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.014Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000021",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Grayce",
+      "surname": "Lindgren",
+      "patientId": "P875110",
+      "birthDate": "1953-05-16T11:13:01.159Z"
+    },
+    "bookingSection": {
+      "date": "2026-02-23T02:30:04.795Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 182
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "JZYJO52I",
+          "name": "Surgical Suture",
+          "quantity": 9,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "YVHGO5VV",
+          "name": "Fentanyl",
+          "dosage": "100mg",
+          "quantity": 3
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 293,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "27mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.014Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000022",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Lazaro",
+      "surname": "Zboncak",
+      "patientId": "P249181",
+      "birthDate": "1946-11-06T19:47:49.264Z"
+    },
+    "bookingSection": {
+      "date": "2026-02-11T23:34:07.708Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 140
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "WFLUIRQD",
+          "name": "Surgical Drape",
+          "quantity": 8,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "5FPYRCYE",
+          "name": "Surgical Gloves",
+          "quantity": 2,
+          "unitCost": 8
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "C8R7I9XL",
+          "name": "Midazolam",
+          "dosage": "59mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 108,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "29mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.014Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000023",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Yvonne",
+      "surname": "Wiza",
+      "patientId": "P023547",
+      "birthDate": "1951-10-04T07:37:20.937Z"
+    },
+    "bookingSection": {
+      "date": "2026-02-19T16:23:26.991Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 59
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "FGDIC3GU",
+          "name": "Gauze Pad",
+          "quantity": 2,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "F6DYJZRP",
+          "name": "Surgical Gloves",
+          "quantity": 6,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "GHK7HJHP",
+          "name": "Surgical Gloves",
+          "quantity": 2,
+          "unitCost": 8
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 172,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "49mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.014Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000024",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Benjamin",
+      "surname": "Corwin",
+      "patientId": "P923534",
+      "birthDate": "1946-05-08T17:07:22.685Z"
+    },
+    "bookingSection": {
+      "date": "2026-02-16T13:58:46.868Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 147
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "91B1FV0G",
+          "name": "Scalpel Blade",
+          "quantity": 1,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "2MQMCHKB",
+          "name": "Surgical Suture",
+          "quantity": 10,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "9KJVSASO",
+          "name": "Gauze Pad",
+          "quantity": 7,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "ZEKWEZDQ",
+          "name": "Rocuronium",
+          "dosage": "42mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 467,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "16mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.014Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000025",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Hassie",
+      "surname": "Smitham",
+      "patientId": "P584468",
+      "birthDate": "1962-05-19T19:23:57.346Z"
+    },
+    "bookingSection": {
+      "date": "2026-05-01T01:16:17.665Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 206
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "HY6B3TAM",
+          "name": "Surgical Suture",
+          "quantity": 8,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 350,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "25mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.014Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000026",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Elwyn",
+      "surname": "Lind",
+      "patientId": "P074592",
+      "birthDate": "1966-10-22T03:01:00.534Z"
+    },
+    "bookingSection": {
+      "date": "2025-11-11T23:37:10.490Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 126
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "DUMJGD4A",
+          "name": "Surgical Suture",
+          "quantity": 3,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "QHBJB4MJ",
+          "name": "Scalpel Blade",
+          "quantity": 7,
+          "unitCost": 12
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 228,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "25mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.014Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000027",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Florence",
+      "surname": "Corkery",
+      "patientId": "P294628",
+      "birthDate": "1953-05-09T16:28:41.082Z"
+    },
+    "bookingSection": {
+      "date": "2026-01-17T15:10:30.935Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 56
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "JLQOJFAW",
+          "name": "Surgical Suture",
+          "quantity": 2,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "LRUNU0JE",
+          "name": "Surgical Drape",
+          "quantity": 7,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "RSG98FIN",
+          "name": "Sevoflurane",
+          "dosage": "36mg",
+          "quantity": 1
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 379,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "40mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.014Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000028",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Jade",
+      "surname": "McKenzie-Schuppe",
+      "patientId": "P298983",
+      "birthDate": "1942-04-30T10:03:52.876Z"
+    },
+    "bookingSection": {
+      "date": "2026-05-01T12:28:12.998Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 214
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "2JVE0YBW",
+          "name": "Surgical Gloves",
+          "quantity": 10,
+          "unitCost": 8
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "R3IV3I1I",
+          "name": "Rocuronium",
+          "dosage": "54mg",
+          "quantity": 3
+        },
+        {
+          "medicationId": "MED_003",
+          "code": "CFXEEIMH",
+          "name": "Midazolam",
+          "dosage": "41mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 141,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "49mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.014Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000029",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Pascale",
+      "surname": "Davis",
+      "patientId": "P479239",
+      "birthDate": "1939-05-21T13:05:53.441Z"
+    },
+    "bookingSection": {
+      "date": "2026-06-06T13:31:21.244Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 215
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "LE17UIBP",
+          "name": "Scalpel Blade",
+          "quantity": 5,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "A8DVYV4J",
+          "name": "Gauze Pad",
+          "quantity": 5,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "GPPYVJWV",
+          "name": "Gauze Pad",
+          "quantity": 9,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "NQ9XWA8F",
+          "name": "Midazolam",
+          "dosage": "66mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 85,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "29mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.015Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000030",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Yasmine",
+      "surname": "Swift",
+      "patientId": "P014218",
+      "birthDate": "1989-02-05T10:38:59.849Z"
+    },
+    "bookingSection": {
+      "date": "2026-01-27T15:49:38.704Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 72
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "DJLS8BVL",
+          "name": "Surgical Drape",
+          "quantity": 8,
+          "unitCost": 25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 59,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "19mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.015Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000031",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Jamaal",
+      "surname": "Ondricka",
+      "patientId": "P055544",
+      "birthDate": "1968-05-21T01:41:24.645Z"
+    },
+    "bookingSection": {
+      "date": "2026-07-26T06:24:10.785Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 64
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "M4KPJDFK",
+          "name": "Surgical Drape",
+          "quantity": 7,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "SZPLBX4G",
+          "name": "Midazolam",
+          "dosage": "63mg",
+          "quantity": 2
+        },
+        {
+          "medicationId": "MED_005",
+          "code": "HQAZTLWY",
+          "name": "Rocuronium",
+          "dosage": "85mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 482,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "25mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.015Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000032",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Simeon",
+      "surname": "Dooley",
+      "patientId": "P319772",
+      "birthDate": "1951-08-05T15:46:23.675Z"
+    },
+    "bookingSection": {
+      "date": "2026-03-22T14:11:14.912Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 80
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "D3NY6Q88",
+          "name": "Surgical Drape",
+          "quantity": 3,
+          "unitCost": 25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 87,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "28mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.015Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000033",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Keegan",
+      "surname": "Gerlach",
+      "patientId": "P379587",
+      "birthDate": "1993-12-09T21:06:19.742Z"
+    },
+    "bookingSection": {
+      "date": "2025-12-28T13:12:05.159Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 151
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "PZZQG79X",
+          "name": "Surgical Gloves",
+          "quantity": 6,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "AISMUFXD",
+          "name": "Surgical Gloves",
+          "quantity": 2,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "PHRPPFJE",
+          "name": "Scalpel Blade",
+          "quantity": 8,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "PV3AJGEQ",
+          "name": "Fentanyl",
+          "dosage": "50mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 98,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "15mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.015Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000034",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Haylee",
+      "surname": "Renner",
+      "patientId": "P694729",
+      "birthDate": "1950-05-13T20:02:18.762Z"
+    },
+    "bookingSection": {
+      "date": "2025-08-13T05:43:03.535Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 211
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "J34DOKJJ",
+          "name": "Surgical Drape",
+          "quantity": 8,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "DZQFPTP6",
+          "name": "Fentanyl",
+          "dosage": "16mg",
+          "quantity": 1
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 398,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "11mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.015Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000035",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Rosie",
+      "surname": "Jast",
+      "patientId": "P842341",
+      "birthDate": "1941-11-09T03:37:52.978Z"
+    },
+    "bookingSection": {
+      "date": "2026-04-02T14:20:03.373Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 89
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "GVDNFASL",
+          "name": "Surgical Suture",
+          "quantity": 10,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "VX1K4D30",
+          "name": "Surgical Suture",
+          "quantity": 3,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "DJUCXIJI",
+          "name": "Surgical Drape",
+          "quantity": 2,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "GUZ3YABP",
+          "name": "Midazolam",
+          "dosage": "67mg",
+          "quantity": 1
+        },
+        {
+          "medicationId": "MED_001",
+          "code": "PPOXU9EK",
+          "name": "Propofol",
+          "dosage": "74mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 362,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "30mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.015Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000036",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Zita",
+      "surname": "Davis",
+      "patientId": "P380075",
+      "birthDate": "1926-04-21T16:13:49.992Z"
+    },
+    "bookingSection": {
+      "date": "2026-02-21T01:16:52.874Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 143
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "BMGINMJZ",
+          "name": "Surgical Suture",
+          "quantity": 1,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "DZJRYLVE",
+          "name": "Rocuronium",
+          "dosage": "46mg",
+          "quantity": 5
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "1KBZE53U",
+          "name": "Fentanyl",
+          "dosage": "13mg",
+          "quantity": 1
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 125,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "44mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.015Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000037",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Leda",
+      "surname": "Douglas",
+      "patientId": "P085112",
+      "birthDate": "1956-02-22T21:23:45.634Z"
+    },
+    "bookingSection": {
+      "date": "2025-11-14T00:45:00.992Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 32
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "LICAHKRU",
+          "name": "Gauze Pad",
+          "quantity": 10,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "2AICPJV3",
+          "name": "Scalpel Blade",
+          "quantity": 3,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "HV2VXPDZ",
+          "name": "Scalpel Blade",
+          "quantity": 2,
+          "unitCost": 12
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 406,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "40mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.015Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000038",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Kadin",
+      "surname": "Kunde",
+      "patientId": "P817666",
+      "birthDate": "1981-04-09T20:42:49.492Z"
+    },
+    "bookingSection": {
+      "date": "2026-06-20T22:38:32.505Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 191
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "EGY7UWTJ",
+          "name": "Scalpel Blade",
+          "quantity": 3,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "2LZW2OUH",
+          "name": "Scalpel Blade",
+          "quantity": 5,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "SYCJA2TK",
+          "name": "Sevoflurane",
+          "dosage": "22mg",
+          "quantity": 3
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 195,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "38mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.015Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000039",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Alexandria",
+      "surname": "Doyle",
+      "patientId": "P848423",
+      "birthDate": "1985-07-16T21:26:22.805Z"
+    },
+    "bookingSection": {
+      "date": "2026-06-13T19:24:16.244Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 94
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "VV4JK3PK",
+          "name": "Surgical Suture",
+          "quantity": 4,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "M0XICGNA",
+          "name": "Gauze Pad",
+          "quantity": 8,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "J133BGPN",
+          "name": "Rocuronium",
+          "dosage": "14mg",
+          "quantity": 3
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 435,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "13mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.015Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000040",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Vida",
+      "surname": "Barrows",
+      "patientId": "P194025",
+      "birthDate": "1984-07-11T16:29:41.432Z"
+    },
+    "bookingSection": {
+      "date": "2025-08-11T13:09:31.519Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 124
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "AIMVGAJM",
+          "name": "Scalpel Blade",
+          "quantity": 10,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "IYMNTMHQ",
+          "name": "Scalpel Blade",
+          "quantity": 7,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "BDTIZ2R0",
+          "name": "Surgical Drape",
+          "quantity": 3,
+          "unitCost": 25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 143,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "12mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.015Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000041",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Dion",
+      "surname": "Block",
+      "patientId": "P359712",
+      "birthDate": "1976-07-21T07:58:01.596Z"
+    },
+    "bookingSection": {
+      "date": "2025-08-10T05:34:04.821Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 114
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "IFCD0QTS",
+          "name": "Surgical Suture",
+          "quantity": 6,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "RZKOOHH8",
+          "name": "Surgical Suture",
+          "quantity": 10,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "HQLDZO9X",
+          "name": "Fentanyl",
+          "dosage": "70mg",
+          "quantity": 4
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "Y1CENB10",
+          "name": "Fentanyl",
+          "dosage": "86mg",
+          "quantity": 1
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 353,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "38mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.016Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000042",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Laurine",
+      "surname": "Heidenreich",
+      "patientId": "P568113",
+      "birthDate": "1951-09-15T19:28:32.004Z"
+    },
+    "bookingSection": {
+      "date": "2025-09-08T17:23:00.705Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 75
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "2W8QD7ZJ",
+          "name": "Surgical Suture",
+          "quantity": 4,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "OB5OTFRF",
+          "name": "Surgical Suture",
+          "quantity": 5,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "CAVXFDFE",
+          "name": "Surgical Gloves",
+          "quantity": 2,
+          "unitCost": 8
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 450,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "40mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.016Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000043",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Alanna",
+      "surname": "Quitzon-Hessel",
+      "patientId": "P463938",
+      "birthDate": "1978-12-21T08:57:28.677Z"
+    },
+    "bookingSection": {
+      "date": "2025-08-06T20:01:08.502Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 164
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "JCYHAAPH",
+          "name": "Scalpel Blade",
+          "quantity": 3,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "PEQRGXLU",
+          "name": "Scalpel Blade",
+          "quantity": 1,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "OESVC3DC",
+          "name": "Propofol",
+          "dosage": "10mg",
+          "quantity": 1
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "VRLOA4UD",
+          "name": "Fentanyl",
+          "dosage": "7mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 416,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "12mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.016Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000044",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Suzanne",
+      "surname": "Abbott",
+      "patientId": "P657871",
+      "birthDate": "1926-04-25T13:47:42.589Z"
+    },
+    "bookingSection": {
+      "date": "2026-04-30T03:11:05.593Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 30
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "QDYRLEAW",
+          "name": "Surgical Drape",
+          "quantity": 2,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "10QTHDVK",
+          "name": "Scalpel Blade",
+          "quantity": 5,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "F5RQFDP4",
+          "name": "Propofol",
+          "dosage": "34mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 290,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "49mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.035Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000045",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Derek",
+      "surname": "Rempel",
+      "patientId": "P745268",
+      "birthDate": "1997-01-11T13:04:33.613Z"
+    },
+    "bookingSection": {
+      "date": "2026-01-27T20:31:17.163Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 91
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "6GAZS3TS",
+          "name": "Gauze Pad",
+          "quantity": 5,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "TV080W1D",
+          "name": "Surgical Drape",
+          "quantity": 8,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "SPQZY7XC",
+          "name": "Gauze Pad",
+          "quantity": 7,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "CMPD3GCP",
+          "name": "Propofol",
+          "dosage": "95mg",
+          "quantity": 2
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "3YWDUDIS",
+          "name": "Fentanyl",
+          "dosage": "27mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 251,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "22mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.035Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000046",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Cornelius",
+      "surname": "Stracke",
+      "patientId": "P940873",
+      "birthDate": "1961-08-18T19:07:45.425Z"
+    },
+    "bookingSection": {
+      "date": "2026-06-07T14:34:07.573Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 214
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "H98GHK7L",
+          "name": "Surgical Gloves",
+          "quantity": 10,
+          "unitCost": 8
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "2CP1GZAE",
+          "name": "Propofol",
+          "dosage": "35mg",
+          "quantity": 1
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 289,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "41mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.035Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000047",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Hilda",
+      "surname": "Padberg",
+      "patientId": "P964592",
+      "birthDate": "1947-11-08T14:26:53.544Z"
+    },
+    "bookingSection": {
+      "date": "2026-07-18T21:38:36.765Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 74
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "UNVHYDGO",
+          "name": "Gauze Pad",
+          "quantity": 8,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "ZCEDDYNJ",
+          "name": "Surgical Gloves",
+          "quantity": 2,
+          "unitCost": 8
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 66,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "38mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.035Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000048",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Ariel",
+      "surname": "Kozey",
+      "patientId": "P164844",
+      "birthDate": "1934-07-29T05:32:46.907Z"
+    },
+    "bookingSection": {
+      "date": "2026-05-10T17:40:15.320Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 202
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "TCAANB9Q",
+          "name": "Scalpel Blade",
+          "quantity": 3,
+          "unitCost": 12
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 352,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "21mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.035Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000049",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Kaley",
+      "surname": "Kessler",
+      "patientId": "P865237",
+      "birthDate": "1927-12-20T05:00:27.737Z"
+    },
+    "bookingSection": {
+      "date": "2025-08-07T16:46:25.419Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 229
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "YPTRH3G5",
+          "name": "Surgical Suture",
+          "quantity": 3,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "4HEI2HZU",
+          "name": "Midazolam",
+          "dosage": "62mg",
+          "quantity": 3
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 201,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "23mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.035Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000050",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Carmel",
+      "surname": "Jacobson",
+      "patientId": "P195275",
+      "birthDate": "1958-11-21T07:35:28.974Z"
+    },
+    "bookingSection": {
+      "date": "2025-10-19T07:13:38.023Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 200
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "AOXDKXYP",
+          "name": "Gauze Pad",
+          "quantity": 10,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "C7OW9DKJ",
+          "name": "Surgical Drape",
+          "quantity": 5,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "RKEXQVXH",
+          "name": "Fentanyl",
+          "dosage": "49mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 240,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "20mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.035Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000051",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Antonina",
+      "surname": "Schroeder",
+      "patientId": "P336714",
+      "birthDate": "1973-05-25T00:40:44.085Z"
+    },
+    "bookingSection": {
+      "date": "2026-05-10T05:06:05.590Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 151
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "V1VPKVID",
+          "name": "Surgical Gloves",
+          "quantity": 9,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "EYGLQATS",
+          "name": "Gauze Pad",
+          "quantity": 10,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 485,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "40mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.035Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000052",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Maya",
+      "surname": "Rau",
+      "patientId": "P519405",
+      "birthDate": "1988-04-30T10:42:44.145Z"
+    },
+    "bookingSection": {
+      "date": "2026-06-10T20:49:53.457Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 147
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "T8VGGXVA",
+          "name": "Surgical Gloves",
+          "quantity": 6,
+          "unitCost": 8
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "NAQCDP6M",
+          "name": "Propofol",
+          "dosage": "32mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 250,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "40mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.036Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000053",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Jalon",
+      "surname": "Swaniawski",
+      "patientId": "P194736",
+      "birthDate": "1976-08-13T12:40:34.547Z"
+    },
+    "bookingSection": {
+      "date": "2025-08-17T21:17:34.819Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 79
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "UDAS0C9G",
+          "name": "Scalpel Blade",
+          "quantity": 5,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "FLAZF3XL",
+          "name": "Propofol",
+          "dosage": "32mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 169,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "22mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.036Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000054",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Monica",
+      "surname": "Von-Fisher",
+      "patientId": "P481004",
+      "birthDate": "1975-01-19T13:47:05.310Z"
+    },
+    "bookingSection": {
+      "date": "2025-11-15T20:19:00.415Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 48
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "6XFXQRRM",
+          "name": "Gauze Pad",
+          "quantity": 8,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "0HUNYCRO",
+          "name": "Surgical Gloves",
+          "quantity": 1,
+          "unitCost": 8
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "IDLWXMOQ",
+          "name": "Rocuronium",
+          "dosage": "55mg",
+          "quantity": 2
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "KWQ1L6SY",
+          "name": "Fentanyl",
+          "dosage": "67mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 294,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "50mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.036Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000055",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Chance",
+      "surname": "Nikolaus",
+      "patientId": "P098538",
+      "birthDate": "1945-02-12T04:22:22.672Z"
+    },
+    "bookingSection": {
+      "date": "2026-07-15T20:17:32.293Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 191
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "L18HW8OF",
+          "name": "Surgical Drape",
+          "quantity": 7,
+          "unitCost": 25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 386,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "46mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.036Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000056",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Bert",
+      "surname": "Feil",
+      "patientId": "P089091",
+      "birthDate": "1939-11-02T07:15:42.601Z"
+    },
+    "bookingSection": {
+      "date": "2025-09-12T12:15:58.934Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 226
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "OVG6IQZ9",
+          "name": "Scalpel Blade",
+          "quantity": 9,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "NH92A9VC",
+          "name": "Sevoflurane",
+          "dosage": "40mg",
+          "quantity": 4
+        },
+        {
+          "medicationId": "MED_003",
+          "code": "OCFBTDQE",
+          "name": "Midazolam",
+          "dosage": "74mg",
+          "quantity": 3
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 370,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "16mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.036Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000057",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Joana",
+      "surname": "Boehm-Hoppe",
+      "patientId": "P625839",
+      "birthDate": "1934-08-09T04:28:46.970Z"
+    },
+    "bookingSection": {
+      "date": "2026-04-25T06:32:55.927Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 33
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "EMOXR2ZE",
+          "name": "Gauze Pad",
+          "quantity": 7,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "7XXDNXUL",
+          "name": "Midazolam",
+          "dosage": "73mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 116,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "12mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.036Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000058",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Georgianna",
+      "surname": "Feeney",
+      "patientId": "P758184",
+      "birthDate": "1973-11-09T11:00:05.742Z"
+    },
+    "bookingSection": {
+      "date": "2025-12-31T18:37:34.672Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 108
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "6HM2E4NS",
+          "name": "Gauze Pad",
+          "quantity": 8,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "RJ8D0INA",
+          "name": "Gauze Pad",
+          "quantity": 6,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "UA8HXVGI",
+          "name": "Gauze Pad",
+          "quantity": 10,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "LABROKGB",
+          "name": "Propofol",
+          "dosage": "47mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 175,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "48mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.036Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000059",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Ryleigh",
+      "surname": "Kshlerin",
+      "patientId": "P395285",
+      "birthDate": "1961-10-19T03:55:49.285Z"
+    },
+    "bookingSection": {
+      "date": "2025-09-19T08:49:04.123Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 81
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "5SOLPLMK",
+          "name": "Surgical Suture",
+          "quantity": 4,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "7MN3GODX",
+          "name": "Midazolam",
+          "dosage": "70mg",
+          "quantity": 4
+        },
+        {
+          "medicationId": "MED_003",
+          "code": "VZIJPPVY",
+          "name": "Midazolam",
+          "dosage": "80mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 457,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "32mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.036Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000060",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Thomas",
+      "surname": "Douglas",
+      "patientId": "P874716",
+      "birthDate": "1973-05-24T05:49:56.012Z"
+    },
+    "bookingSection": {
+      "date": "2025-11-04T16:25:35.254Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 160
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "AVQTNVQN",
+          "name": "Surgical Drape",
+          "quantity": 7,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "O1NZKKSL",
+          "name": "Scalpel Blade",
+          "quantity": 5,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "X6XYFABI",
+          "name": "Surgical Drape",
+          "quantity": 3,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "JPHOASRU",
+          "name": "Sevoflurane",
+          "dosage": "18mg",
+          "quantity": 5
+        },
+        {
+          "medicationId": "MED_005",
+          "code": "SHWLKAPQ",
+          "name": "Rocuronium",
+          "dosage": "60mg",
+          "quantity": 1
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 263,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "39mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.036Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000061",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Mariah",
+      "surname": "Mann",
+      "patientId": "P002054",
+      "birthDate": "1972-03-26T01:48:15.110Z"
+    },
+    "bookingSection": {
+      "date": "2026-05-14T17:05:28.347Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 71
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "MN3ZLK1W",
+          "name": "Surgical Drape",
+          "quantity": 2,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "JZOQACV6",
+          "name": "Midazolam",
+          "dosage": "81mg",
+          "quantity": 5
+        },
+        {
+          "medicationId": "MED_001",
+          "code": "YX7M3YPI",
+          "name": "Propofol",
+          "dosage": "21mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 339,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "30mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.036Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000062",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Karen",
+      "surname": "Larkin",
+      "patientId": "P225358",
+      "birthDate": "1935-08-12T01:40:01.313Z"
+    },
+    "bookingSection": {
+      "date": "2026-02-03T18:31:45.842Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 94
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "XFIBU8AQ",
+          "name": "Scalpel Blade",
+          "quantity": 9,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "P2U264HL",
+          "name": "Gauze Pad",
+          "quantity": 4,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "RXUOQVZL",
+          "name": "Propofol",
+          "dosage": "98mg",
+          "quantity": 1
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "GWVUIAEX",
+          "name": "Fentanyl",
+          "dosage": "67mg",
+          "quantity": 3
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 292,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "36mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.037Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000063",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Kaitlyn",
+      "surname": "Torphy",
+      "patientId": "P121095",
+      "birthDate": "1955-12-15T08:47:06.700Z"
+    },
+    "bookingSection": {
+      "date": "2025-08-14T16:21:12.141Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 46
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "XVGDHSJV",
+          "name": "Gauze Pad",
+          "quantity": 7,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "08Q9QWZA",
+          "name": "Scalpel Blade",
+          "quantity": 9,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "PILR6VVZ",
+          "name": "Surgical Drape",
+          "quantity": 3,
+          "unitCost": 25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 217,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "18mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.037Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000064",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Aurelia",
+      "surname": "Collier",
+      "patientId": "P810785",
+      "birthDate": "1971-04-01T02:47:20.453Z"
+    },
+    "bookingSection": {
+      "date": "2026-07-24T14:03:30.434Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 55
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "WJS0DUGT",
+          "name": "Surgical Suture",
+          "quantity": 9,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "ERIDSVVN",
+          "name": "Surgical Gloves",
+          "quantity": 7,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "XV2X3CBH",
+          "name": "Scalpel Blade",
+          "quantity": 6,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "XCO6U51O",
+          "name": "Rocuronium",
+          "dosage": "23mg",
+          "quantity": 1
+        },
+        {
+          "medicationId": "MED_003",
+          "code": "OQ5ZOX8K",
+          "name": "Midazolam",
+          "dosage": "26mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 301,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "12mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.037Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000065",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Pierce",
+      "surname": "Moore",
+      "patientId": "P168784",
+      "birthDate": "1954-11-10T14:39:28.808Z"
+    },
+    "bookingSection": {
+      "date": "2025-10-27T00:04:39.450Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 146
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "H6Y0R80X",
+          "name": "Surgical Suture",
+          "quantity": 6,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "WBSDKRQZ",
+          "name": "Sevoflurane",
+          "dosage": "9mg",
+          "quantity": 4
+        },
+        {
+          "medicationId": "MED_001",
+          "code": "BJ1X1YZK",
+          "name": "Propofol",
+          "dosage": "59mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 353,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "34mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.037Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000066",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Mary",
+      "surname": "Spencer",
+      "patientId": "P003573",
+      "birthDate": "1983-07-14T23:12:19.809Z"
+    },
+    "bookingSection": {
+      "date": "2026-05-10T04:59:03.975Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 160
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "NGBJECNH",
+          "name": "Gauze Pad",
+          "quantity": 9,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "LWLUD76S",
+          "name": "Scalpel Blade",
+          "quantity": 6,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "FNFHFIA8",
+          "name": "Midazolam",
+          "dosage": "27mg",
+          "quantity": 2
+        },
+        {
+          "medicationId": "MED_005",
+          "code": "EBU122G0",
+          "name": "Rocuronium",
+          "dosage": "56mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 317,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "38mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.037Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000067",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Dante",
+      "surname": "Kerluke",
+      "patientId": "P108304",
+      "birthDate": "1923-05-02T02:38:24.223Z"
+    },
+    "bookingSection": {
+      "date": "2025-12-04T03:00:42.267Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 50
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "WXZBC097",
+          "name": "Gauze Pad",
+          "quantity": 3,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "7YXMVZAI",
+          "name": "Surgical Suture",
+          "quantity": 2,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "31DXYSM0",
+          "name": "Gauze Pad",
+          "quantity": 6,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 155,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "39mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.037Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000068",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Helen",
+      "surname": "Goodwin",
+      "patientId": "P641091",
+      "birthDate": "1993-05-04T20:55:22.281Z"
+    },
+    "bookingSection": {
+      "date": "2025-12-02T19:06:23.327Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 226
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "YUIDFVBF",
+          "name": "Scalpel Blade",
+          "quantity": 1,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "SKRPEBZL",
+          "name": "Surgical Gloves",
+          "quantity": 10,
+          "unitCost": 8
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "VMD9MRX3",
+          "name": "Midazolam",
+          "dosage": "37mg",
+          "quantity": 4
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "GRHU2SIV",
+          "name": "Fentanyl",
+          "dosage": "13mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 155,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "47mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.037Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000069",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Keara",
+      "surname": "Kemmer",
+      "patientId": "P251642",
+      "birthDate": "1983-08-22T20:39:01.110Z"
+    },
+    "bookingSection": {
+      "date": "2025-10-31T20:55:34.119Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 35
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "V78ZILAX",
+          "name": "Surgical Suture",
+          "quantity": 5,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "WIW6KXK4",
+          "name": "Surgical Suture",
+          "quantity": 9,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "IW3TWOMG",
+          "name": "Gauze Pad",
+          "quantity": 7,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 428,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "28mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.037Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000070",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Jadyn",
+      "surname": "Nicolas",
+      "patientId": "P033911",
+      "birthDate": "1942-06-27T09:11:58.798Z"
+    },
+    "bookingSection": {
+      "date": "2026-06-08T03:10:47.798Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 171
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "DETPZI1G",
+          "name": "Scalpel Blade",
+          "quantity": 8,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "OMLM46PS",
+          "name": "Gauze Pad",
+          "quantity": 8,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "UIRVGPYG",
+          "name": "Sevoflurane",
+          "dosage": "85mg",
+          "quantity": 5
+        },
+        {
+          "medicationId": "MED_003",
+          "code": "SKLMNXLY",
+          "name": "Midazolam",
+          "dosage": "33mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 216,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "35mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.038Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000071",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Clarabelle",
+      "surname": "Dicki",
+      "patientId": "P656341",
+      "birthDate": "1978-01-23T03:03:35.689Z"
+    },
+    "bookingSection": {
+      "date": "2026-02-08T10:24:11.218Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 72
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "GBXRMUXG",
+          "name": "Scalpel Blade",
+          "quantity": 10,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "R9EV75LZ",
+          "name": "Surgical Gloves",
+          "quantity": 10,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "NXPAWCAL",
+          "name": "Surgical Drape",
+          "quantity": 9,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "XBONVONK",
+          "name": "Midazolam",
+          "dosage": "63mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 210,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "50mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.038Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000072",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Milton",
+      "surname": "Wiza",
+      "patientId": "P619560",
+      "birthDate": "1961-05-04T04:40:23.590Z"
+    },
+    "bookingSection": {
+      "date": "2026-07-09T02:14:58.696Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 170
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "7LJTBTYH",
+          "name": "Surgical Drape",
+          "quantity": 7,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "3QVFVRJI",
+          "name": "Scalpel Blade",
+          "quantity": 8,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "P4TYPVT7",
+          "name": "Gauze Pad",
+          "quantity": 3,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "OBLKWOAO",
+          "name": "Fentanyl",
+          "dosage": "80mg",
+          "quantity": 3
+        },
+        {
+          "medicationId": "MED_004",
+          "code": "E5B2FGQ2",
+          "name": "Sevoflurane",
+          "dosage": "49mg",
+          "quantity": 1
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 205,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "41mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.053Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000073",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Franco",
+      "surname": "Schulist",
+      "patientId": "P353229",
+      "birthDate": "1926-07-15T14:46:08.442Z"
+    },
+    "bookingSection": {
+      "date": "2025-12-31T08:00:11.004Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 106
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "CCYEINED",
+          "name": "Surgical Gloves",
+          "quantity": 6,
+          "unitCost": 8
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 87,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "44mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.053Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000074",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Lance",
+      "surname": "Stark",
+      "patientId": "P317859",
+      "birthDate": "1931-01-09T22:32:51.876Z"
+    },
+    "bookingSection": {
+      "date": "2025-10-04T03:44:51.355Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 132
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "LUGMN59C",
+          "name": "Surgical Suture",
+          "quantity": 7,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "E3LIQVQO",
+          "name": "Scalpel Blade",
+          "quantity": 10,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "XXQXSXNA",
+          "name": "Gauze Pad",
+          "quantity": 10,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "RY9JOEXF",
+          "name": "Midazolam",
+          "dosage": "97mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 106,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "28mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.053Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000075",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Grant",
+      "surname": "Kiehn-Conroy",
+      "patientId": "P906352",
+      "birthDate": "1952-12-27T08:11:49.468Z"
+    },
+    "bookingSection": {
+      "date": "2025-11-08T01:59:17.041Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 226
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "QIKNPWY7",
+          "name": "Gauze Pad",
+          "quantity": 4,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "YMM0YDUT",
+          "name": "Surgical Suture",
+          "quantity": 1,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "06NP4O5N",
+          "name": "Rocuronium",
+          "dosage": "8mg",
+          "quantity": 4
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "WXUTQS5A",
+          "name": "Fentanyl",
+          "dosage": "50mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 267,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "32mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.053Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000076",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Percy",
+      "surname": "Gleason",
+      "patientId": "P904050",
+      "birthDate": "1999-03-10T20:16:53.440Z"
+    },
+    "bookingSection": {
+      "date": "2025-12-11T03:38:52.450Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 119
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "LPRWQSTY",
+          "name": "Surgical Drape",
+          "quantity": 3,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "CWSU0HKU",
+          "name": "Fentanyl",
+          "dosage": "30mg",
+          "quantity": 2
+        },
+        {
+          "medicationId": "MED_001",
+          "code": "AQ33P1PL",
+          "name": "Propofol",
+          "dosage": "36mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 296,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "28mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.053Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000077",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Maximillian",
+      "surname": "Okuneva",
+      "patientId": "P254730",
+      "birthDate": "1985-04-15T14:50:50.956Z"
+    },
+    "bookingSection": {
+      "date": "2026-04-29T20:36:07.449Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 48
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "SBKFGQB0",
+          "name": "Scalpel Blade",
+          "quantity": 1,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "ZDRIKJXV",
+          "name": "Surgical Suture",
+          "quantity": 6,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "CZHJIX1S",
+          "name": "Gauze Pad",
+          "quantity": 10,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 71,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "33mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.053Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000078",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Santa",
+      "surname": "Haley",
+      "patientId": "P212797",
+      "birthDate": "1984-09-15T05:28:57.671Z"
+    },
+    "bookingSection": {
+      "date": "2026-07-12T06:11:04.046Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 100
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "RVL3YF4P",
+          "name": "Surgical Drape",
+          "quantity": 6,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "OS2GJ1KZ",
+          "name": "Surgical Drape",
+          "quantity": 4,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "MV7FI1S1",
+          "name": "Rocuronium",
+          "dosage": "71mg",
+          "quantity": 4
+        },
+        {
+          "medicationId": "MED_003",
+          "code": "WVQAXZH8",
+          "name": "Midazolam",
+          "dosage": "51mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 106,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "40mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.053Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000079",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Benjamin",
+      "surname": "Effertz",
+      "patientId": "P956728",
+      "birthDate": "1997-04-24T22:30:11.524Z"
+    },
+    "bookingSection": {
+      "date": "2025-12-30T04:27:32.176Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 170
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "BDTAAFP7",
+          "name": "Gauze Pad",
+          "quantity": 8,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 492,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "34mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.053Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000080",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Verda",
+      "surname": "Harvey",
+      "patientId": "P555704",
+      "birthDate": "1950-11-18T12:38:04.083Z"
+    },
+    "bookingSection": {
+      "date": "2026-07-13T04:53:16.506Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 138
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "JFHLMSUZ",
+          "name": "Surgical Gloves",
+          "quantity": 7,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "CX4RFULG",
+          "name": "Surgical Suture",
+          "quantity": 1,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "KSWXCWUK",
+          "name": "Gauze Pad",
+          "quantity": 1,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "YK8RQMER",
+          "name": "Fentanyl",
+          "dosage": "13mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 388,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "17mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.054Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000081",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Eva",
+      "surname": "Pacocha",
+      "patientId": "P544072",
+      "birthDate": "1938-06-07T22:41:23.714Z"
+    },
+    "bookingSection": {
+      "date": "2025-10-09T11:56:19.896Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 56
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "Q6PEACDI",
+          "name": "Surgical Suture",
+          "quantity": 10,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "7MTGBA00",
+          "name": "Rocuronium",
+          "dosage": "54mg",
+          "quantity": 3
+        },
+        {
+          "medicationId": "MED_005",
+          "code": "BH8T2PLW",
+          "name": "Rocuronium",
+          "dosage": "17mg",
+          "quantity": 3
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 442,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "24mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.054Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000082",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Kelvin",
+      "surname": "Haag",
+      "patientId": "P848371",
+      "birthDate": "1950-06-23T12:13:14.621Z"
+    },
+    "bookingSection": {
+      "date": "2026-07-24T00:57:28.714Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 69
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "6WODJO32",
+          "name": "Surgical Gloves",
+          "quantity": 3,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "IAZF30VL",
+          "name": "Surgical Drape",
+          "quantity": 2,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "YNSYUHKA",
+          "name": "Scalpel Blade",
+          "quantity": 10,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "0IT3A5WR",
+          "name": "Sevoflurane",
+          "dosage": "68mg",
+          "quantity": 1
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 308,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "41mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.054Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000083",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Amari",
+      "surname": "Paucek",
+      "patientId": "P890049",
+      "birthDate": "1973-09-09T01:25:44.637Z"
+    },
+    "bookingSection": {
+      "date": "2026-02-03T21:23:36.800Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 58
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "0KL6MZC2",
+          "name": "Scalpel Blade",
+          "quantity": 1,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "BIUIVGCJ",
+          "name": "Fentanyl",
+          "dosage": "94mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 81,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "44mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.054Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000084",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Maverick",
+      "surname": "Weber",
+      "patientId": "P893241",
+      "birthDate": "1953-06-12T10:34:36.262Z"
+    },
+    "bookingSection": {
+      "date": "2026-05-03T11:55:18.531Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 215
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "L62ULCJY",
+          "name": "Surgical Gloves",
+          "quantity": 2,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "EEQO7DC5",
+          "name": "Scalpel Blade",
+          "quantity": 8,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "XLWNMU6W",
+          "name": "Gauze Pad",
+          "quantity": 2,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "I4G2GBJM",
+          "name": "Midazolam",
+          "dosage": "68mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 411,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "43mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.054Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000085",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Angelina",
+      "surname": "Gislason",
+      "patientId": "P985750",
+      "birthDate": "1981-01-23T22:04:16.696Z"
+    },
+    "bookingSection": {
+      "date": "2026-06-23T17:51:43.059Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 106
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "DXHI12JH",
+          "name": "Surgical Drape",
+          "quantity": 6,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "HXJHMPAJ",
+          "name": "Scalpel Blade",
+          "quantity": 6,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "JG5SUVIR",
+          "name": "Surgical Gloves",
+          "quantity": 6,
+          "unitCost": 8
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "CLWYJMI8",
+          "name": "Midazolam",
+          "dosage": "61mg",
+          "quantity": 1
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 71,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "50mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.054Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000086",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Kayleigh",
+      "surname": "Ortiz",
+      "patientId": "P651114",
+      "birthDate": "1958-08-29T05:43:02.275Z"
+    },
+    "bookingSection": {
+      "date": "2026-02-25T21:16:49.742Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 67
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "OGJQR3NH",
+          "name": "Surgical Gloves",
+          "quantity": 9,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "QJVKUYHZ",
+          "name": "Scalpel Blade",
+          "quantity": 3,
+          "unitCost": 12
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 384,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "13mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.054Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000087",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Aurore",
+      "surname": "Kunde",
+      "patientId": "P157185",
+      "birthDate": "1975-01-22T08:22:42.999Z"
+    },
+    "bookingSection": {
+      "date": "2025-10-16T12:29:01.777Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 225
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "IK9CHU2H",
+          "name": "Surgical Drape",
+          "quantity": 10,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "7IWYMM1J",
+          "name": "Scalpel Blade",
+          "quantity": 2,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "FI4CHP1T",
+          "name": "Sevoflurane",
+          "dosage": "56mg",
+          "quantity": 3
+        },
+        {
+          "medicationId": "MED_004",
+          "code": "TGBI5R3S",
+          "name": "Sevoflurane",
+          "dosage": "18mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 363,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "38mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.054Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000088",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Dashawn",
+      "surname": "Labadie",
+      "patientId": "P795565",
+      "birthDate": "1934-04-26T13:34:36.917Z"
+    },
+    "bookingSection": {
+      "date": "2025-09-28T07:29:17.817Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 153
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "XXI4LO30",
+          "name": "Scalpel Blade",
+          "quantity": 9,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "NM05IZ8H",
+          "name": "Surgical Gloves",
+          "quantity": 10,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "BHZOD6M1",
+          "name": "Gauze Pad",
+          "quantity": 3,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 388,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "41mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.054Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000089",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Monserrate",
+      "surname": "Kling",
+      "patientId": "P005199",
+      "birthDate": "1945-04-22T01:00:55.336Z"
+    },
+    "bookingSection": {
+      "date": "2025-12-23T04:10:14.502Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 167
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "18Y1MEFQ",
+          "name": "Surgical Gloves",
+          "quantity": 5,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "L6LSIBMF",
+          "name": "Surgical Drape",
+          "quantity": 5,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "4NOFOVCS",
+          "name": "Scalpel Blade",
+          "quantity": 1,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "2SQNABBK",
+          "name": "Sevoflurane",
+          "dosage": "8mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 101,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "33mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.054Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000090",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Rory",
+      "surname": "Skiles",
+      "patientId": "P250962",
+      "birthDate": "1944-03-30T04:47:18.113Z"
+    },
+    "bookingSection": {
+      "date": "2026-07-24T13:06:03.243Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 85
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "2UB62K2P",
+          "name": "Gauze Pad",
+          "quantity": 9,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "IT8E2PSB",
+          "name": "Surgical Suture",
+          "quantity": 4,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "BJOH46TB",
+          "name": "Surgical Suture",
+          "quantity": 3,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "ZADCHTWK",
+          "name": "Propofol",
+          "dosage": "37mg",
+          "quantity": 5
+        },
+        {
+          "medicationId": "MED_005",
+          "code": "JESUSRNL",
+          "name": "Rocuronium",
+          "dosage": "27mg",
+          "quantity": 1
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 437,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "48mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.054Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000091",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Adolfo",
+      "surname": "Dare",
+      "patientId": "P979473",
+      "birthDate": "1931-07-24T01:06:30.811Z"
+    },
+    "bookingSection": {
+      "date": "2026-01-11T16:08:13.224Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 133
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "K7EPYPMY",
+          "name": "Surgical Drape",
+          "quantity": 8,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "JYMGO95N",
+          "name": "Surgical Suture",
+          "quantity": 6,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "BV0K912H",
+          "name": "Surgical Gloves",
+          "quantity": 1,
+          "unitCost": 8
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "353FXMUU",
+          "name": "Propofol",
+          "dosage": "35mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 236,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "44mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.055Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000092",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Shanie",
+      "surname": "Beatty",
+      "patientId": "P581938",
+      "birthDate": "1971-11-13T23:36:32.481Z"
+    },
+    "bookingSection": {
+      "date": "2025-12-02T06:12:38.587Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_8gvCPHbqX77uKAhcR",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 90
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "A8KQ5JHJ",
+          "name": "Scalpel Blade",
+          "quantity": 10,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "EK5P44IK",
+          "name": "Surgical Drape",
+          "quantity": 5,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "MPIBANGR",
+          "name": "Sevoflurane",
+          "dosage": "25mg",
+          "quantity": 5
+        },
+        {
+          "medicationId": "MED_005",
+          "code": "OG0BBOOS",
+          "name": "Rocuronium",
+          "dosage": "70mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 422,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "37mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.055Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000093",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Haleigh",
+      "surname": "Cummings",
+      "patientId": "P444154",
+      "birthDate": "1949-05-28T23:27:32.744Z"
+    },
+    "bookingSection": {
+      "date": "2025-08-09T03:12:49.903Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 142
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "XF3ZTE1H",
+          "name": "Surgical Drape",
+          "quantity": 6,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "IH8RPAJE",
+          "name": "Surgical Suture",
+          "quantity": 9,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "DEZZY8I4",
+          "name": "Midazolam",
+          "dosage": "43mg",
+          "quantity": 2
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "QARJNRIW",
+          "name": "Fentanyl",
+          "dosage": "88mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 93,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "48mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.055Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000094",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Keven",
+      "surname": "Reichel",
+      "patientId": "P481248",
+      "birthDate": "1987-06-16T14:50:23.022Z"
+    },
+    "bookingSection": {
+      "date": "2026-06-30T05:14:44.771Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 149
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "LGPRD33T",
+          "name": "Surgical Gloves",
+          "quantity": 10,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "8HSU7R0W",
+          "name": "Surgical Suture",
+          "quantity": 5,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "HQ5DSDPL",
+          "name": "Scalpel Blade",
+          "quantity": 4,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "X7KWSXEE",
+          "name": "Propofol",
+          "dosage": "66mg",
+          "quantity": 1
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "MUYWFSD6",
+          "name": "Fentanyl",
+          "dosage": "50mg",
+          "quantity": 4
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 416,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "46mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.055Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000095",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Rowena",
+      "surname": "Gulgowski",
+      "patientId": "P149897",
+      "birthDate": "1998-12-25T23:45:36.352Z"
+    },
+    "bookingSection": {
+      "date": "2026-02-16T15:07:42.907Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 130
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "BZOTOE9I",
+          "name": "Scalpel Blade",
+          "quantity": 6,
+          "unitCost": 12
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "SNNMV7I6",
+          "name": "Propofol",
+          "dosage": "82mg",
+          "quantity": 3
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 245,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "18mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.055Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000096",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Dock",
+      "surname": "Barton",
+      "patientId": "P362864",
+      "birthDate": "1976-07-08T12:44:54.274Z"
+    },
+    "bookingSection": {
+      "date": "2026-06-10T10:33:08.472Z",
+      "doctorId": "user_eY4NJhj5mCSnX9f2w",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_XyoZchRyvFzP5m4ow",
+      "duration": 202
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "HY22FKF1",
+          "name": "Surgical Suture",
+          "quantity": 8,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "AE0AOU3D",
+          "name": "Surgical Drape",
+          "quantity": 4,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_003",
+          "code": "NBWE3TFB",
+          "name": "Surgical Gloves",
+          "quantity": 8,
+          "unitCost": 8
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 498,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "14mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.055Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000097",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Jesse",
+      "surname": "Quigley",
+      "patientId": "P890640",
+      "birthDate": "1944-07-29T04:18:23.240Z"
+    },
+    "bookingSection": {
+      "date": "2026-02-06T02:06:28.121Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_TdqjJp7oNJiG6oRbF",
+      "duration": 87
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "4CAIBDAG",
+          "name": "Surgical Suture",
+          "quantity": 5,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "KC5TKRQR",
+          "name": "Fentanyl",
+          "dosage": "15mg",
+          "quantity": 1
+        },
+        {
+          "medicationId": "MED_002",
+          "code": "KYARM1QS",
+          "name": "Fentanyl",
+          "dosage": "81mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 216,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "28mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.055Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000098",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Sean",
+      "surname": "Grady-Bernier",
+      "patientId": "P880097",
+      "birthDate": "1954-11-22T04:11:56.782Z"
+    },
+    "bookingSection": {
+      "date": "2026-02-18T22:13:54.882Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 199
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "YI45TMXN",
+          "name": "Gauze Pad",
+          "quantity": 4,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 291,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "27mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.055Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000099",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Tressie",
+      "surname": "Hilpert",
+      "patientId": "P574903",
+      "birthDate": "1934-09-16T11:27:50.787Z"
+    },
+    "bookingSection": {
+      "date": "2025-10-01T10:26:24.156Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_5L4D7nEqXDsMsMLFv",
+      "duration": 239
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "FPPWHWSF",
+          "name": "Surgical Drape",
+          "quantity": 3,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "ZEKWC3QS",
+          "name": "Surgical Suture",
+          "quantity": 3,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 478,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "12mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.055Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000100",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Ethel",
+      "surname": "Wisoky",
+      "patientId": "P007554",
+      "birthDate": "1951-12-17T09:21:56.661Z"
+    },
+    "bookingSection": {
+      "date": "2026-03-17T04:48:03.452Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_msEfjHdjtR8uWy8ei",
+      "duration": 51
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "NZMEOG8D",
+          "name": "Scalpel Blade",
+          "quantity": 10,
+          "unitCost": 12
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 490,
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "24mg"
+        }
+      ],
+      "documents": []
+    },
+    "timestamps": {
+      "createdAt": "2025-07-30T08:41:57.055Z"
+    }
+  }
+]

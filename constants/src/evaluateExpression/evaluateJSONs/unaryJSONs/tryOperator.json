@@ -1,0 +1,28 @@
+[
+  {
+    "data": {
+      "expressionKind": "tryOperator",
+      "try": {
+        "expressionKind": "errorOperator"
+      },
+      "catch": {
+        "expressionKind": "literalBoolean",
+        "value": false
+      }
+    },
+    "expected": false
+  }, {
+    "data": {
+      "expressionKind": "tryOperator",
+      "try": {
+        "expressionKind": "literalBoolean",
+        "value": true
+      },
+      "catch": {
+        "expressionKind": "literalBoolean",
+        "value": false
+      }
+    },
+    "expected": true
+  }
+]

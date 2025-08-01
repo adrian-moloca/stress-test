@@ -1,0 +1,13 @@
+[
+  {
+    "timestamp": 1753792757519,
+    "type": "test_started",
+    "message": "Started bulk-case-creation stress test"
+  },
+  {
+    "timestamp": 1753792759024,
+    "type": "test_failed",
+    "message": "Test failed: this.generatePerformanceReport is not a function",
+    "error": "this.generatePerformanceReport is not a function"
+  }
+]

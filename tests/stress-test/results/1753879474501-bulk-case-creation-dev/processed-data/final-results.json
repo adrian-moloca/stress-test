@@ -1,0 +1,124 @@
+{
+  "testId": "1753879474501-bulk-case-creation-dev",
+  "scenario": "bulk-case-creation",
+  "startTime": 1753879474505,
+  "endTime": 1753879475694,
+  "totalCasesAttempted": 10,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {},
+  "performanceMetrics": {
+    "totalCases": 10,
+    "successfulCases": 0,
+    "failedCases": 10,
+    "successRate": 0,
+    "totalDuration": 1025,
+    "averageResponseTime": 7.1,
+    "casesPerSecond": 0,
+    "batchSize": 5,
+    "realReferenceData": {
+      "contractIds": 3,
+      "doctorIds": 3,
+      "opStandardIds": 4
+    }
+  },
+  "successRate": 0,
+  "scenarioType": "bulk-case-creation",
+  "casesGenerated": 10,
+  "failedCases": 10,
+  "totalDuration": 1189,
+  "averageResponseTime": 7.1,
+  "casesPerSecond": 0,
+  "results": [
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000001",
+      "success": false,
+      "error": "fetch failed",
+      "timestamp": "2025-07-30T12:44:34.646Z",
+      "responseTime": 12
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000002",
+      "success": false,
+      "error": "fetch failed",
+      "timestamp": "2025-07-30T12:44:34.646Z",
+      "responseTime": 7
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000003",
+      "success": false,
+      "error": "fetch failed",
+      "timestamp": "2025-07-30T12:44:34.647Z",
+      "responseTime": 7
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000004",
+      "success": false,
+      "error": "fetch failed",
+      "timestamp": "2025-07-30T12:44:34.647Z",
+      "responseTime": 6
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000005",
+      "success": false,
+      "error": "fetch failed",
+      "timestamp": "2025-07-30T12:44:34.648Z",
+      "responseTime": 6
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000006",
+      "success": false,
+      "error": "fetch failed",
+      "timestamp": "2025-07-30T12:44:35.657Z",
+      "responseTime": 9
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000007",
+      "success": false,
+      "error": "fetch failed",
+      "timestamp": "2025-07-30T12:44:35.657Z",
+      "responseTime": 8
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000008",
+      "success": false,
+      "error": "fetch failed",
+      "timestamp": "2025-07-30T12:44:35.658Z",
+      "responseTime": 7
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000009",
+      "success": false,
+      "error": "fetch failed",
+      "timestamp": "2025-07-30T12:44:35.658Z",
+      "responseTime": 5
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000010",
+      "success": false,
+      "error": "fetch failed",
+      "timestamp": "2025-07-30T12:44:35.659Z",
+      "responseTime": 4
+    }
+  ],
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753879474501-bulk-case-creation-dev/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753879474501-bulk-case-creation-dev/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753879474501-bulk-case-creation-dev/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/smambu/tests/stress-test/results/1753879474501-bulk-case-creation-dev/reports/system-limits.html"
+  }
+}

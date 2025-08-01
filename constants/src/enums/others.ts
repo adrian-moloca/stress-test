@@ -1,0 +1,392 @@
+/* eslint-disable no-unused-vars */
+// This should be separated into different files
+
+import { Scenarios } from '../types'
+
+export enum DnDItemTypes {
+  CASE = 'CASE',
+  ANESTHESIOLOGIST = 'ANESTHESIOLOGIST',
+}
+
+// #TODO assegnato alla nascita è solo maschio - femmina, l'altro può essere anche other che però può essere specificato (chiedere a elisa)
+export enum Gender_Name {
+  MALE = 'MALE',
+  FEMALE = 'FEMALE',
+  OTHER = 'OTHER',
+}
+
+export enum OpStandardBillingCategory_Name {
+  C1 = 'C1',
+  C2 = 'C2',
+  D = 'D',
+  G = 'G',
+  AUTO = 'AUTO',
+}
+
+export enum OpStandardSterileGoodType {
+  SINGLE_INSTRUMENT = 'SINGLE_INSTRUMENT',
+  SET = 'SET',
+  CONTAINER = 'CONTAINER',
+}
+
+export enum ReceiptType {
+  DEPOSIT = 'DEPOSIT',
+  PAYMENT = 'PAYMENT',
+  REFUND = 'REFUND',
+}
+
+export enum BookingSurgerySectionAnesthesiaType {
+  REGIONAL = 'REGIONAL',
+  FULL = 'FULL',
+}
+
+export enum InsuranceStatus {
+  PUBLIC = 'PUBLIC',
+  PRIVATE = 'PRIVATE',
+  NONE = 'NONE',
+}
+
+export enum CaseStatus {
+  PENDING = 'PENDING',
+  LOCKED = 'LOCKED',
+  CHANGE_REQUESTED = 'CHANGE_REQUESTED',
+  ON_HOLD = 'ON_HOLD',
+  CHANGE_NOTIFIED = 'CHANGE_NOTIFIED',
+  CONFIRMED = 'CONFIRMED',
+  PATIENT_ARRIVED = 'PATIENT_ARRIVED',
+  IN_PRE_OP = 'IN_PRE_OP',
+  READY_FOR_ANESTHESIA = 'READY_FOR_ANESTHESIA',
+  IN_OR = 'IN_OR',
+  READY_FOR_SURGERY = 'READY_FOR_SURGERY',
+  IN_SURGERY = 'IN_SURGERY',
+  FINISHED_SURGERY = 'FINISHED_SURGERY',
+  IN_RECOVERY = 'IN_RECOVERY',
+  LEFT_OR = 'LEFT_OR',
+  IN_POST_OP = 'IN_POST_OP',
+  READY_FOR_DISCHARGE = 'READY_FOR_DISCHARGE',
+  DISCHARGED = 'DISCHARGED',
+  INFORMATION_INCOMPLETE = 'INFORMATION_INCOMPLETE',
+  BILLABLE = 'BILLABLE',
+  REVIEWED = 'REVIEWED',
+  BILLED_EXTERNALLY = 'BILLED_EXTERNALLY',
+  PARTIALLY_BILLED = 'PARTIALLY_BILLED',
+  BILLED = 'BILLED',
+}
+
+export const NotDeletableCaseStatus = [CaseStatus.BILLED_EXTERNALLY,
+  CaseStatus.BILLED,
+  CaseStatus.PARTIALLY_BILLED]
+
+export const activeCaseStatutes = [
+  CaseStatus.PENDING,
+  CaseStatus.LOCKED,
+  CaseStatus.CHANGE_REQUESTED,
+  CaseStatus.ON_HOLD,
+  CaseStatus.CHANGE_NOTIFIED,
+  CaseStatus.CONFIRMED,
+]
+
+export enum RoomType {
+  ONE_BED = 'ONE_BED',
+  TWO_BEDS = 'TWO_BEDS',
+  THREE_BEDS = 'THREE_BEDS',
+}
+
+export enum InsuranceType {
+  PUBLIC = 'PUBLIC',
+  PRIVATE = 'PRIVATE',
+}
+
+export enum RecipientType {
+  DOCTOR = 'DOCTOR',
+  PATIENT = 'PATIENT',
+  THIRD_PARTY = 'THIRD_PARTY',
+}
+
+export enum OperatingRoomStatus {
+  AVAILABLE = 'AVAILABLE',
+  NOT_AVAILABLE = 'NOT_AVAILABLE',
+}
+
+export enum AnesthesiaType {
+  GENERAL_ANESTHESIA = 'GENERAL_ANESTHESIA',
+  ANALGOSEDATION = 'ANALGOSEDATION',
+  PERIPHERAL_REGION_ANESTHESIA = 'PERIPHERAL_REGION_ANESTHESIA',
+  CENTRAL_REGION_ANESTHESIA = 'CENTRAL_REGION_ANESTHESIA',
+  STAND_BY = 'STAND_BY',
+}
+
+export enum AnesthesiaRegion {
+  UPPER_EXTREMITY = 'UPPER_EXTREMITY',
+  LOWER_EXTREMITY = 'LOWER_EXTREMITY',
+}
+
+export enum AnesthesiaSubRegionUpper {
+  INTERSCALENE_PLEXUS_BLOCK = 'INTERSCALENE_PLEXUS_BLOCK',
+  SUPRACLAVICULAR_PLEXUS_BLOCK = 'SUPRACLAVICULAR_PLEXUS_BLOCK',
+  AXILLARY_PLEXUS_BLOCK = 'AXILLARY_PLEXUS_BLOCK',
+  OTHER = 'OTHER',
+}
+
+export enum AnesthesiaUpperSubRegion {
+  INTERSCALENE_PLEXUS_BLOCK = 'INTERSCALENE_PLEXUS_BLOCK',
+  SUPRACLAVICULAR_PLEXUS_BLOCK = 'SUPRACLAVICULAR_PLEXUS_BLOCK',
+  AXILLARY_PLEXUS_BLOCK = 'AXILLARY_PLEXUS_BLOCK',
+  OTHER = 'OTHER',
+}
+
+export enum AnesthesiaLowerSubRegion {
+  FEMORALIS_BLOCK = 'FEMORALIS_BLOCK',
+  ISCHIADIC_BLOCK = 'ISCHIADIC_BLOCK',
+  OTHER = 'OTHER',
+}
+
+export enum CentralRegionAnesthesia {
+  SPINAL_ANESTHESIA = 'SPINAL_ANESTHESIA',
+  PERIDURAL_ANESTHESIA = 'PERIDURAL_ANESTHESIA',
+  CAUDAL_ANESTHESIA = 'CAUDAL_ANESTHESIA',
+}
+
+export const AnesthesiaSubRegion = {
+  ...AnesthesiaUpperSubRegion,
+  ...AnesthesiaLowerSubRegion,
+} as const
+export type tAnesthesiaSubRegion = AnesthesiaUpperSubRegion | AnesthesiaLowerSubRegion
+
+export enum AnesthesiaSide {
+  LEFT = 'LEFT',
+  RIGHT = 'RIGHT',
+  BOTH = 'BOTH',
+}
+
+export enum SubjectArea {
+  GENERAL_SURGERY = 'GENERAL_SURGERY',
+  VASCULAR_SURGERY = 'VASCULAR_SURGERY',
+  HEART_SURGERY = 'HEART_SURGERY',
+  PEDIATRIC_SURGERY = 'PEDIATRIC_SURGERY',
+  PLASTIC_SURGERY = 'PLASTIC_SURGERY',
+  THORAX_SURGERY = 'THORAX_SURGERY',
+  VISCERAL_SURGERY = 'VISCERAL_SURGERY',
+  ORTHOPAEDICS = 'ORTHOPAEDICS',
+  GYNECOLOGY = 'GYNECOLOGY',
+  OTORHINOLARYNGOLOGY = 'OTORHINOLARYNGOLOGY',
+  NEUROSURGERY = 'NEUROSURGERY',
+  UROLOGY = 'UROLOGY',
+  ORAL_AND_MAXILLOFACIAL_SURGERY = 'ORAL_AND_MAXILLOFACIAL_SURGERY',
+  EYE_SURGERY = 'EYE_SURGERY',
+  ANAESTHESIOLOGY = 'ANAESTHESIOLOGY',
+  SKIN_SURGERY = 'SKIN_SURGERY',
+}
+
+export enum OpStandardPosition_Name {
+  SUPINE_POSITION = 'SUPINE_POSITION',
+  PRONE_POSITION = 'PRONE_POSITION',
+  LITHOMY_POSITION = 'LITHOMY_POSITION',
+  BEACHCHAIR_POSITION = 'BEACHCHAIR_POSITION',
+  LATERAL_POSITION = 'LATERAL_POSITION',
+}
+
+export enum OpStandardSide_Name {
+  RIGHT = 'RIGHT',
+  LEFT = 'LEFT',
+  BOTH = 'BOTH',
+}
+
+export enum OpStandardBodyRegion_Name {
+  HEAD = 'HEAD',
+  UPPER_BACK = 'UPPER_BACK',
+  LOWER_BACK = 'LOWER_BACK',
+  NECK = 'NECK',
+  SHOULDER = 'SHOULDER',
+  BREAST = 'BREAST',
+  AXLE = 'AXLE',
+  ARM = 'ARM',
+  HAND = 'HAND',
+  STOMACH = 'STOMACH',
+  GLUTEAL_REGION = 'GLUTEAL_REGION',
+  LEG = 'LEG',
+  FOOT = 'FOOT',
+  MOUTH = 'MOUTH',
+}
+
+export enum OpStandardSpinalSegment_Name {
+  C1 = 'C1',
+  C2 = 'C2',
+  C3 = 'C3',
+  C4 = 'C4',
+  C5 = 'C5',
+  C6 = 'C6',
+  C7 = 'C7',
+  C8 = 'C8',
+  T1 = 'T1',
+  T2 = 'T2',
+  T3 = 'T3',
+  T4 = 'T4',
+  T5 = 'T5',
+  T6 = 'T6',
+  T7 = 'T7',
+  T8 = 'T8',
+  T9 = 'T9',
+  T10 = 'T10',
+  T11 = 'T11',
+  T12 = 'T12',
+  L1 = 'L1',
+  L2 = 'L2',
+  L3 = 'L3',
+  L4 = 'L4',
+  L5 = 'L5',
+  S1 = 'S1',
+  S2 = 'S2',
+  S3 = 'S3',
+  S4 = 'S4',
+  S5 = 'S5',
+}
+
+export enum OpStandardFinger_Name {
+  THUMB = 'THUMB',
+  INDEX_FINGER = 'INDEX_FINGER',
+  MIDDLE_FINGER = 'MIDDLE_FINGER',
+  RING_FINGER = 'RING_FINGER',
+  LITTLE_FINGER = 'LITTLE_FINGER',
+}
+
+export enum OpStandardFeet_Name {
+  GREAT_PHALANX = 'GREAT_PHALANX',
+  SECOND_TOE = 'SECOND_TOE',
+  THIRD_TOE = 'THIRD_TOE',
+  FOURTH_TOE = 'FOURTH_TOE',
+  FIFTH_TOE = 'FIFTH_TOE',
+}
+
+export const OpStandardTeeth = [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+]
+
+export enum AuditTrailActionType {
+  CREATED = 'CREATED',
+  EDITED = 'EDITED',
+  DELETED = 'DELETED',
+}
+
+export enum Measures {
+  PULSE_OXIMETER = 'PULSE_OXIMETER',
+  NON_INVASIVE_BLOOD_PRESSURE_MEASUREMENT = 'NON_INVASIVE_BLOOD_PRESSURE_MEASUREMENT',
+  ECG = 'ECG',
+  GAS_ANALYSIS = 'GAS_ANALYSIS',
+  RELAXOMETRY = 'RELAXOMETRY',
+  TEMPERATURE = 'TEMPERATURE',
+  BLOOD_BARRIER = 'BLOOD_BARRIER',
+  BODY_TEMPERATURE_MANAGEMENT = 'BODY_TEMPERATURE_MANAGEMENT',
+  REARRANGEMENT_OF_POSITIONING = 'REARRANGEMENT_OF_POSITIONING',
+  CHEST_ORGAN_EXAMINATION = 'CHEST_ORGAN_EXAMINATION',
+}
+
+export enum PreExistingCondition {
+  REDUCED_GENERAL_CONDITION = 'REDUCED_GENERAL_CONDITION',
+  HIGH_AGE = 'HIGH_AGE',
+  OBESITY = 'OBESITY',
+  DIABETES_MELLITUS = 'DIABETES_MELLITUS',
+  ALLERGIES = 'ALLERGIES',
+  IDDM = 'IDDM',
+  THYROID_DISEASE = 'THYROID_DISEASE',
+  NEUROLOGICAL_DISEASE = 'NEUROLOGICAL_DISEASE',
+  KIDNEY_DISEASE = 'KIDNEY_DISEASE',
+  LIVER_DISEASE = 'LIVER_DISEASE',
+  COPD = 'COPD',
+  BRONCHIAL_ASTHMA = 'BRONCHIAL_ASTHMA',
+  CHRONIC_BRONCHITIS = 'CHRONIC_BRONCHITIS',
+  VASCULAR_DISEASE = 'VASCULAR_DISEASE',
+  VEGETATIVE_DYSTONIA = 'VEGETATIVE_DYSTONIA',
+  CARDIAC_ARRHYTHMIA = 'CARDIAC_ARRHYTHMIA',
+  HEART_FAILURE = 'HEART_FAILURE',
+  CONDITION_AFTER_MYOCARDIAL_HEART_ATTACK = 'CONDITION_AFTER_MYOCARDIAL_HEART_ATTACK',
+  CORONARY_HEART_DISEASE = 'CORONARY_HEART_DISEASE',
+  ARTERIAL_HYPERTENSION = 'ARTERIAL_HYPERTENSION',
+  ANTICOAGULATION = 'ANTICOAGULATION',
+}
+
+export enum AnesthesiologicalService {
+  CONTROLLED_BLOOD_PRESSURE_REDUCTION = 'CONTROLLED_BLOOD_PRESSURE_REDUCTION',
+  CONTROLLED_HYPOTHERMIA = 'CONTROLLED_HYPOTHERMIA',
+  ADMINISTRATION_OF_AN_INFUSION = 'ADMINISTRATION_OF_AN_INFUSION',
+  INJECTION_SC = 'INJECTION_SC',
+  INJECTION_SM = 'INJECTION_SM',
+  INJECTION_IC = 'INJECTION_IC',
+  INJECTION_IM = 'INJECTION_IM',
+}
+
+export enum Yes_No {
+  YES = 'YES',
+  NO = 'NO',
+}
+
+export enum DrainageSide {
+  NONE = 'NONE',
+  LEFT_SIDE = 'LEFT_SIDE',
+  RIGHT_SIDE = 'RIGHT_SIDE',
+  BACK = 'BACK',
+  LEFT_OS = 'LEFT_OS',
+  RIGHT_OS = 'RIGHT_OS',
+  SHOULDER_LEFT = 'SHOULDER_LEFT',
+  SHOULDER_RIGHT = 'SHOULDER_RIGHT',
+}
+
+export enum SterileGoodUnits {
+  SINGLE_INSTRUMENT = 'SINGLE_INSTRUMENT',
+  SET = 'SET',
+  CONTAINER = 'CONTAINER',
+}
+
+export const catAScenarios: Scenarios = [
+  { id: 1, name: 'catAscen1' },
+  { id: 2, name: 'catAscen2' },
+  { id: 3, name: 'catAscen3' },
+]
+
+export const catBScenarios: Scenarios = [
+  { id: 1, name: 'catBscen1' },
+  { id: 2, name: 'catBscen2' },
+  { id: 3, name: 'catBscen3' },
+]
+
+export const catEScenarios: Scenarios = [
+  { id: 1, name: 'catEscen1' },
+  { id: 2, name: 'catEscen2' },
+  { id: 3, name: 'catEscen3' },
+]
+
+export const TranslatorLanguages = {
+  en: 'en',
+  de: 'de',
+} as const

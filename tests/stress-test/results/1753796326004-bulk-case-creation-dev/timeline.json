@@ -1,0 +1,13 @@
+[
+  {
+    "timestamp": 1753796326015,
+    "type": "test_started",
+    "message": "Started bulk-case-creation stress test"
+  },
+  {
+    "timestamp": 1753796326019,
+    "type": "test_failed",
+    "message": "Test failed: Cannot read properties of undefined (reading 'patients')",
+    "error": "Cannot read properties of undefined (reading 'patients')"
+  }
+]

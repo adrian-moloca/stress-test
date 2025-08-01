@@ -1,0 +1,176 @@
+{
+  "cases": [
+    {
+      "caseNumber": "SAMPLE_001",
+      "status": "PENDING",
+      "bookingPatient": {
+        "name": "John",
+        "surname": "Doe",
+        "patientId": "P001",
+        "birthDate": "1985-06-15T00:00:00.000Z"
+      },
+      "bookingSection": {
+        "date": "2024-12-20T10:00:00.000Z",
+        "doctorId": "DOC_001",
+        "contractId": "CONTRACT_001",
+        "opStandardId": "OPS_001",
+        "duration": 120
+      },
+      "preOpSection": {
+        "materials": [
+          {
+            "materialId": "MAT_001",
+            "code": "SURG001",
+            "name": "Surgical Suture",
+            "quantity": 3,
+            "unitCost": 15.5
+          }
+        ],
+        "medications": [
+          {
+            "medicationId": "MED_001",
+            "code": "PROP001",
+            "name": "Propofol",
+            "dosage": "20mg",
+            "quantity": 1
+          }
+        ]
+      },
+      "surgerySection": {
+        "approach": "Laparoscopic",
+        "estimatedBloodLoss": 100
+      },
+      "anesthesiaSection": {
+        "anesthesiaTypes": ["General_Anesthesia"],
+        "medications": [
+          {
+            "medicationId": "MED_002",
+            "name": "Midazolam",
+            "dosage": "5mg"
+          }
+        ]
+      },
+      "timestamps": {
+        "createdAt": "2024-12-01T10:00:00.000Z"
+      }
+    },
+    {
+      "caseNumber": "SAMPLE_002",
+      "status": "PENDING",
+      "bookingPatient": {
+        "name": "Jane",
+        "surname": "Smith",
+        "patientId": "P002",
+        "birthDate": "1990-03-22T00:00:00.000Z"
+      },
+      "bookingSection": {
+        "date": "2024-12-21T14:30:00.000Z",
+        "doctorId": "DOC_002",
+        "contractId": "CONTRACT_001",
+        "opStandardId": "OPS_002",
+        "duration": 90
+      },
+      "preOpSection": {
+        "materials": [
+          {
+            "materialId": "MAT_002",
+            "code": "GAUZE001",
+            "name": "Gauze Pad",
+            "quantity": 10,
+            "unitCost": 2.25
+          }
+        ],
+        "medications": []
+      },
+      "surgerySection": {
+        "approach": "Open",
+        "estimatedBloodLoss": 250
+      },
+      "anesthesiaSection": {
+        "anesthesiaTypes": ["Regional_Anesthesia"]
+      },
+      "timestamps": {
+        "createdAt": "2024-12-01T11:00:00.000Z"
+      }
+    },
+    {
+      "caseNumber": "SAMPLE_003",
+      "status": "CONFIRMED",
+      "bookingPatient": {
+        "name": "张伟",
+        "surname": "李",
+        "patientId": "P003",
+        "birthDate": "1978-11-11T00:00:00.000Z"
+      },
+      "bookingSection": {
+        "date": "2025-01-05T08:15:00.000Z",
+        "doctorId": "DOC_003",
+        "contractId": "CONTRACT_002",
+        "opStandardId": "OPS_003",
+        "duration": 150
+      },
+      "preOpSection": {
+        "materials": [
+          {
+            "materialId": "MAT_003",
+            "code": "TOOL001",
+            "name": "Scalpel",
+            "quantity": 0,
+            "unitCost": 9.75
+          }
+        ],
+        "medications": [
+          {
+            "medicationId": "MED_003",
+            "name": "Fentanyl",
+            "dosage": "100μg",
+            "quantity": 1
+          }
+        ]
+      },
+      "surgerySection": {
+        "approach": "Robotic_Assisted",
+        "estimatedBloodLoss": 80
+      },
+      "anesthesiaSection": {
+        "anesthesiaTypes": ["Combined_Spinal_Epidural"],
+        "medications": []
+      },
+      "timestamps": {
+        "createdAt": "2024-12-15T09:45:00.000Z"
+      }
+    },
+    {
+      "caseNumber": "SAMPLE_004",
+      "status": "CANCELLED",
+      "bookingPatient": {
+        "name": "Élodie",
+        "surname": "Brûlé",
+        "patientId": "P004",
+        "birthDate": "2001-07-30T00:00:00.000Z"
+      },
+      "bookingSection": {
+        "date": "2025-01-10T16:00:00.000Z",
+        "doctorId": "DOC_004",
+        "contractId": "CONTRACT_003",
+        "opStandardId": "OPS_004",
+        "duration": 45
+      },
+      "preOpSection": {
+        "materials": [],
+        "medications": []
+      },
+      "surgerySection": {
+        "approach": "Not_Started",
+        "estimatedBloodLoss": 0
+      },
+      "anesthesiaSection": {
+        "anesthesiaTypes": [],
+        "medications": []
+      },
+      "timestamps": {
+        "createdAt": "2024-12-20T17:00:00.000Z"
+      }
+    }
+  ]
+}

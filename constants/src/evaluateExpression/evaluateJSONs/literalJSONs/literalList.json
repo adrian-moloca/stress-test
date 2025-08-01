@@ -1,0 +1,79 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalList",
+      "value": [
+        10,
+        15
+      ]
+    },
+    "expected": [
+      10,
+      15
+    ]
+  },
+  {
+    "data": {
+      "expressionKind": "literalList",
+      "value": [
+        "Prova di prova",
+        "Prova di prova 2"
+      ]
+    },
+    "expected": [
+      "Prova di prova",
+      "Prova di prova 2"
+    ]
+  },
+  {
+    "data": {
+      "expressionKind": "literalList",
+      "value": [
+        true,
+        false
+      ]
+    },
+    "expected": [
+      true,
+      false
+    ]
+  },
+  {
+    "data": {
+      "expressionKind": "literalList",
+      "value": [
+        "Prova di prova",
+        true
+      ]
+    },
+    "expected": [
+      "Prova di prova",
+      true
+    ]
+  },
+  {
+    "data": {
+      "expressionKind": "literalList",
+      "value": [
+        {
+          "expressionKind": "literalString",
+          "value": "Prova di prova"
+        },
+        {
+          "expressionKind": "literalString",
+          "value": true
+        }
+      ]
+    },
+    "expected": [
+      {
+        "expressionKind": "literalString",
+        "value": "Prova di prova"
+      },
+      {
+        "expressionKind": "literalString",
+        "value": true
+      }
+    ]
+  }
+]

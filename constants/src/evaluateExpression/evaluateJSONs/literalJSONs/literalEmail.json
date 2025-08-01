@@ -1,0 +1,44 @@
+[
+  {
+    "data": {
+      "expressionKind": "literalEmail",
+      "value": "test@test.com"
+    },
+    "expected": "test@test.com"
+  },
+  {
+    "data": {
+      "expressionKind": "literalEmail",
+      "value": "sadasdas@dasdsa.cds"
+    },
+    "expected": "sadasdas@dasdsa.cds"
+  },
+  {
+    "error": "Invalid email",
+    "data": {
+      "expressionKind": "literalEmail",
+      "value": "test@test"
+    }
+  },
+  {
+    "error": "Invalid email",
+    "data": {
+      "expressionKind": "literalEmail",
+      "value": "test.com"
+    }
+  },
+  {
+    "error": "Invalid email",
+    "data": {
+      "expressionKind": "literalEmail",
+      "value": "test@.com"
+    }
+  },
+  {
+    "error": "Invalid email",
+    "data": {
+      "expressionKind": "literalEmail",
+      "value": "test@com"
+    }
+  }
+]

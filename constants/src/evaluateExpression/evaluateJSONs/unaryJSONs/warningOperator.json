@@ -1,0 +1,39 @@
+[
+  {
+    "data": {
+      "expressionKind": "warningOperator",
+      "message": {
+        "en": "enTest",
+        "de": "deTest"
+      },
+      "value": {
+        "expressionKind": "literalString",
+        "value": "prova"
+      }
+    },
+    "expected": "prova",
+    "selectedLocale": "de"
+  },
+  {
+    "data": {
+      "expressionKind": "warningOperator",
+      "message": {
+        "en": "enTest",
+        "de": "deTest"
+      }
+    },
+    "error": "missingValue",
+    "selectedLocale": "de"
+  },
+  {
+    "data": {
+      "expressionKind": "warningOperator",
+      "value": {
+        "expressionKind": "literalString",
+        "value": "prova"
+      }
+    },
+    "error": "missingMessage",
+    "selectedLocale": "de"
+  }
+]

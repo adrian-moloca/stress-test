@@ -1,0 +1,55 @@
+[
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "objectValues",
+      "parameters": {
+        "object": {
+          "expressionKind": "objectOfExpressions",
+          "value": {
+            "first": {
+              "expressionKind": "literalNumber",
+              "value": 4
+            },
+            "second": {
+              "expressionKind": "literalString",
+              "value": "World"
+            },
+            "third": {
+              "expressionKind": "literalBoolean",
+              "value": true
+            }
+          }
+        }
+      }
+    },
+    "expected": [4, "World", true]
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "objectValues",
+      "parameters": {
+        "object": {
+          "expressionKind": "literalList",
+          "value": [4, "World", true]
+        }
+      }
+    },
+    "expected": [4, "World", true]
+  },
+  {
+    "data": {
+      "expressionKind": "functionInvocation",
+      "function": "objectValues",
+      "parameters": {
+        "object": {
+          "expressionKind": "literalString",
+          "value": "Hello"
+        }
+      }
+    },
+    "expected": null,
+    "error": true
+  }
+]

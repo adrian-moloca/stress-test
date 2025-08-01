@@ -1,0 +1,23 @@
+[
+  {
+    "data": {
+      "expressionKind": "errorOperator"
+    },
+    "error": "errorOperator"
+  },
+  {
+    "data": {
+      "expressionKind": "literalListOfExpressions",
+      "value": [
+        {
+          "expressionKind": "errorOperator"
+        },
+        {
+          "expressionKind": "literalNumber",
+          "value": 15
+        }
+      ]
+    },
+    "error": "errorOperator"
+  }
+]
