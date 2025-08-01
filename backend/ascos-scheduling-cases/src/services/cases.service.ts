@@ -348,6 +348,35 @@ export class CasesService {
         }
       )
 
+      await auditTrailCreate({
+        logClient: this.logClient,
+        userId: user.id,
+        entityType: EntityType.CASE,
+        newObj: newCaseWithAdditionalInfo.toJSON(),
+      })
+
+      const usersToNotify = await getUsersByCapability(
+        this.userClient,
+        {
+          capability: Capabilities.P_COST_ESTIMATE_CREATE,
+          ownerId: newCaseWithAdditionalInfo.bookingSection.doctorId
+        }
+      )
+
+      await createNotifications(
+        this.notificationsClient,
+        {
+          usersIds: usersToNotify.map(user => user.id).filter(id => id !== user.id),
+          type: NotificationType.NEW_BOOKING_REQUEST,
+          title: 'notifications_newBookingRequest_title',
+          body: 'notifications_newBookingRequest_body',
+          action: {
+            type: NotificationActionType.INTERNAL_LINK,
+            url: `/cases/${newCaseWithAdditionalInfo._id}`,
+          },
+        }
+      )
+
       return newCaseWithAdditionalInfo
     } catch (e) {
       await this.loggingService.throwErrorAndLog(e)
