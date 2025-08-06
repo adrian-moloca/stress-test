@@ -1,0 +1,88 @@
+[
+  {
+    "caseNumber": "STRESS_000001",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Trycia",
+      "surname": "Langworth",
+      "patientId": "P062397",
+      "birthDate": "1997-09-17T23:02:14.397Z",
+      "gender": "FEMALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "127 E Grand Avenue",
+        "houseNumber": "25274",
+        "postalCode": "61646-9938",
+        "city": "Palm Coast",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2026-04-23T12:14:13.133Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_a3JdoQd7okkRPGtGM",
+      "opStandardId": "op_JB2bQKeGiuCbqKENZ",
+      "duration": 168,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "AJQ9DLCA",
+          "name": "Surgical Gloves",
+          "quantity": 3,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "MYNAO0Q3",
+          "name": "Scalpel Blade",
+          "quantity": 6,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "ITVNVIN3",
+          "name": "Gauze Pad",
+          "quantity": 2,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 377,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "39mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-08-01T13:52:24.921Z"
+    }
+  }
+]

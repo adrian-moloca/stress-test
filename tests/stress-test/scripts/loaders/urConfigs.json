@@ -1,0 +1,803 @@
+{
+  "dynamicDataConfigs": {
+    "cases": {
+      "pcMaterials": {
+        "checkValidCase": {
+          "expressionKind": "includesOperator",
+          "left": {
+            "expressionKind": "literalList",
+            "value": [
+              "INFORMATION_INCOMPLETE",
+              "DISCHARGED"
+            ]
+          },
+          "right": {
+            "expressionKind": "selfOperator",
+            "paths": [
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    "anagraphics": [
+      {
+        "anagraphicType": "insurances",
+        "subTypes": [
+          "publicInsurances",
+          "privateInsurances",
+          "BGInsurances"
+        ],
+        "collectionNames": {
+          "publicInsurances": "publicInsurances",
+          "privateInsurances": "privateInsurances",
+          "BGInsurances": "BGInsurances"
+        },
+        "fields": {
+          "publicInsurances": [
+            {
+              "type": "string",
+              "name": "nummer",
+              "required": true,
+              "isKey": true
+            },
+            {
+              "type": "string",
+              "name": "suchwort"
+            },
+            {
+              "type": "string",
+              "name": "kassensuchname"
+            },
+            {
+              "type": "string",
+              "name": "langtext",
+              "isName": true
+            },
+            {
+              "type": "number",
+              "name": "abrechnungsNummer"
+            },
+            {
+              "type": "number",
+              "name": "go"
+            },
+            {
+              "type": "number",
+              "name": "kostenträgeruntergruppe"
+            },
+            {
+              "type": "number",
+              "name": "kostenträgergruppe"
+            },
+            {
+              "type": "string",
+              "name": "kassengruppe"
+            },
+            {
+              "type": "number",
+              "name": "abrechnungsart"
+            },
+            {
+              "type": "number",
+              "name": "aufnehmenderKostentraeger"
+            },
+            {
+              "type": "number",
+              "name": "erstesAbrechnungsQuartal"
+            },
+            {
+              "type": "number",
+              "name": "letztesAbrechnungsQuartal"
+            },
+            {
+              "type": "number",
+              "name": "adressNummer"
+            },
+            {
+              "type": "number",
+              "name": "vertragsart"
+            },
+            {
+              "type": "number",
+              "name": "formularNummer"
+            },
+            {
+              "type": "number",
+              "name": "mahnFormularNummer"
+            },
+            {
+              "type": "number",
+              "name": "faktorNummer"
+            },
+            {
+              "type": "number",
+              "name": "kasseGeschützt"
+            },
+            {
+              "type": "date",
+              "name": "dateAdded",
+              "readonly": true,
+              "noCSV": true
+            },
+            {
+              "type": "date",
+              "name": "dateModified",
+              "readonly": true,
+              "noCSV": true
+            }
+          ],
+          "privateInsurances": [
+            {
+              "type": "string",
+              "name": "nummer",
+              "required": true,
+              "isKey": true
+            },
+            {
+              "type": "string",
+              "name": "suchwort"
+            },
+            {
+              "type": "number",
+              "name": "abrechnungsNummer"
+            },
+            {
+              "type": "number",
+              "name": "regulierungsNummer"
+            },
+            {
+              "type": "string",
+              "name": "langtext",
+              "isName": true
+            },
+            {
+              "type": "number",
+              "name": "go"
+            },
+            {
+              "type": "string",
+              "name": "kassengruppe"
+            },
+            {
+              "type": "number",
+              "name": "faktorNummer"
+            },
+            {
+              "type": "number",
+              "name": "mahnFormularNummer"
+            },
+            {
+              "type": "number",
+              "name": "formularNummer"
+            },
+            {
+              "type": "number",
+              "name": "adressNummer"
+            },
+            {
+              "type": "number",
+              "name": "kasseGeschützt"
+            },
+            {
+              "type": "number",
+              "name": "vertragsart"
+            },
+            {
+              "type": "number",
+              "name": "mandantAnlage"
+            },
+            {
+              "type": "number",
+              "name": "userAnlage"
+            },
+            {
+              "type": "date",
+              "name": "datumAnlage"
+            },
+            {
+              "type": "number",
+              "name": "mandantGeändert"
+            },
+            {
+              "type": "number",
+              "name": "userGeändert"
+            },
+            {
+              "type": "date",
+              "name": "datumÄnderung"
+            },
+            {
+              "type": "date",
+              "name": "dateAdded",
+              "readonly": true,
+              "noCSV": true
+            },
+            {
+              "type": "date",
+              "name": "dateModified",
+              "readonly": true,
+              "noCSV": true
+            }
+          ],
+          "BGInsurances": [
+            {
+              "type": "string",
+              "name": "nummer",
+              "required": true,
+              "isKey": true
+            },
+            {
+              "type": "string",
+              "name": "suchwort"
+            },
+            {
+              "type": "number",
+              "name": "abrechnungsNummer"
+            },
+            {
+              "type": "number",
+              "name": "regulierungsNummer"
+            },
+            {
+              "type": "string",
+              "name": "langtext",
+              "isName": true
+            },
+            {
+              "type": "number",
+              "name": "go"
+            },
+            {
+              "type": "string",
+              "name": "kassengruppe"
+            },
+            {
+              "type": "number",
+              "name": "faktorNummer"
+            },
+            {
+              "type": "number",
+              "name": "mahnFormularNummer"
+            },
+            {
+              "type": "number",
+              "name": "formularNummer"
+            },
+            {
+              "type": "number",
+              "name": "adressNummer"
+            },
+            {
+              "type": "number",
+              "name": "kasseGeschützt"
+            },
+            {
+              "type": "number",
+              "name": "vertragsart"
+            },
+            {
+              "type": "number",
+              "name": "mandantAnlage"
+            },
+            {
+              "type": "number",
+              "name": "userAnlage"
+            },
+            {
+              "type": "date",
+              "name": "datumAnlage"
+            },
+            {
+              "type": "number",
+              "name": "mandantGeändert"
+            },
+            {
+              "type": "number",
+              "name": "userGeändert"
+            },
+            {
+              "type": "date",
+              "name": "datumÄnderung"
+            },
+            {
+              "type": "string",
+              "name": "debtorNumber",
+              "specialField": "bgDebtorNumber",
+              "noCSV": true,
+              "disabled": true
+            },
+            {
+              "type": "address",
+              "name": "address",
+              "noCSV": true,
+              "noExport": true
+            },
+            {
+              "type": "date",
+              "name": "dateAdded",
+              "readonly": true,
+              "noCSV": true
+            },
+            {
+              "type": "date",
+              "name": "dateModified",
+              "readonly": true,
+              "noCSV": true
+            }
+          ]
+        },
+        "permissionsRequests": {
+          "deleteVersion": {
+            "capability": "P:INSURANCES:DELETE",
+            "expressionKind": "hasCapability"
+          },
+          "edit": {
+            "capability": "P:INSURANCES:EDIT",
+            "expressionKind": "hasCapability"
+          },
+          "export": {
+            "capability": "P:INSURANCES:EXPORT",
+            "expressionKind": "hasCapability"
+          },
+          "upload": {
+            "capability": "P:INSURANCES:UPLOAD",
+            "expressionKind": "hasCapability"
+          },
+          "view": {
+            "capability": "P:INSURANCES:VIEW",
+            "expressionKind": "hasCapability"
+          },
+          "viewNames": {
+            "capability": "P:INSURANCES_NAMES:VIEW",
+            "expressionKind": "hasCapability"
+          }
+        },
+        "typeLabels": {
+          "de": "Deutsch:Insurances",
+          "en": "Insurances"
+        },
+        "subTypeLabels": {
+          "privateInsurances": {
+            "de": "Private Krankenversicherungen",
+            "en": "Private insurances"
+          },
+          "publicInsurances": {
+            "de": "Gesetzliche Krankenversicherungen",
+            "en": "Public insurances"
+          },
+          "BGInsurances": {
+            "de": "Berufsgenossenschaften",
+            "en": "BG insurances"
+          }
+        },
+        "uploadCSVEnabled": true,
+        "versioningEnabled": true
+      }
+    ],
+    "capabilities": [
+      {
+        "domain": "INSURANCES",
+        "labels": {
+          "de": "Deutsch:View insurances",
+          "en": "View insurances"
+        },
+        "value": "P:INSURANCES:VIEW"
+      },
+      {
+        "domain": "INSURANCES",
+        "labels": {
+          "de": "Deutsch:View insurances names",
+          "en": "View insurances names"
+        },
+        "value": "P:INSURANCES:VIEW_NAMES"
+      },
+      {
+        "domain": "INSURANCES",
+        "labels": {
+          "de": "Deutsch:Edit insurances",
+          "en": "Edit insurances"
+        },
+        "value": "P:INSURANCES:EDIT"
+      },
+      {
+        "domain": "INSURANCES",
+        "labels": {
+          "de": "Deutsch:Delete insurances",
+          "en": "Delete insurances"
+        },
+        "value": "P:INSURANCES:DELETE"
+      },
+      {
+        "domain": "INSURANCES",
+        "labels": {
+          "de": "Deutsch:Export insurances",
+          "en": "Export insurances"
+        },
+        "value": "P:INSURANCES:EXPORT"
+      },
+      {
+        "domain": "INSURANCES",
+        "labels": {
+          "de": "Deutsch:Upload insurances",
+          "en": "Upload insurances"
+        },
+        "value": "P:INSURANCES:UPLOAD"
+      }
+    ]
+  },
+  "billingConfigs": {
+    "domains": [
+      {
+        "domainId": "testDomain",
+        "domainName": {
+          "en": "test domain"
+        },
+        "domainDescription": {
+          "en": "test domain description"
+        },
+        "trigger": {
+          "name": {
+            "en": "Case trigger"
+          },
+          "eventType": "cases-created",
+          "condition": {
+            "expressionKind": "literalBoolean",
+            "value": true,
+            "typeHint": {
+              "kind": "boolean"
+            }
+          },
+          "emitExpression": {
+            "expressionKind": "objectOfExpressions",
+            "value": {
+              "caseNumber": {
+                "expressionKind": "dotOperator",
+                "paths": [
+                  "caseNumber"
+                ],
+                "source": {
+                  "expressionKind": "symbolOperator",
+                  "name": "currentValues"
+                }
+              }
+            },
+            "typeHint": {
+              "kind": "object",
+              "object": {
+                "caseNumber": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "readable": {
+                    "expressionKind": "literalBoolean",
+                    "value": true,
+                    "typeHint": {
+                      "kind": "boolean"
+                    }
+                  },
+                  "writable": {
+                    "expressionKind": "literalBoolean",
+                    "value": true,
+                    "typeHint": {
+                      "kind": "boolean"
+                    }
+                  },
+                  "mergePolicies": {
+                    "vertical": "PARENT",
+                    "horizontal": "OVERWRITE"
+                  }
+                },
+                "caseCategory": {
+                  "type": {
+                    "kind": "string"
+                  },
+                  "readable": {
+                    "expressionKind": "literalBoolean",
+                    "value": true,
+                    "typeHint": {
+                      "kind": "boolean"
+                    }
+                  },
+                  "writable": {
+                    "expressionKind": "literalBoolean",
+                    "value": true,
+                    "typeHint": {
+                      "kind": "boolean"
+                    }
+                  },
+                  "mergePolicies": {
+                    "vertical": "PARENT",
+                    "horizontal": "OVERWRITE"
+                  }
+                }
+              }
+            }
+          },
+          "contextKey": {
+            "expressionKind": "functionInvocation",
+            "function": "concat",
+            "parameters": {
+              "stringsToConcat": {
+                "expressionKind": "literalListOfExpressions",
+                "value": [
+                  {
+                    "expressionKind": "literalString",
+                    "value": "proxyBilling-"
+                  },
+                  {
+                    "expressionKind": "symbolOperator",
+                    "name": "sourceDocId"
+                  }
+                ]
+              }
+            },
+            "typeHint": {
+              "kind": "string"
+            }
+          }
+        },
+        "proxyFields": [
+          {
+            "id": "caseNumber",
+            "name": {
+              "en": "case number"
+            },
+            "definition": {
+              "type": {
+                "kind": "string"
+              },
+              "readable": {
+                "expressionKind": "literalBoolean",
+                "value": true,
+                "typeHint": {
+                  "kind": "boolean"
+                }
+              },
+              "writable": {
+                "expressionKind": "literalBoolean",
+                "value": false,
+                "typeHint": {
+                  "kind": "boolean"
+                }
+              },
+              "automaticValue": {
+                "expressionKind": "selfOperator",
+                "paths": [
+                  "context",
+                  "caseNumber"
+                ]
+              },
+              "mergePolicies": {
+                "horizontal": "OVERWRITE",
+                "vertical": "CHILD"
+              }
+            },
+            "version": "1"
+          },
+          {
+            "id": "patientName",
+            "name": {
+              "en": "patient name"
+            },
+            "definition": {
+              "type": {
+                "kind": "string"
+              },
+              "readable": {
+                "expressionKind": "literalBoolean",
+                "value": true,
+                "typeHint": {
+                  "kind": "boolean"
+                }
+              },
+              "writable": {
+                "expressionKind": "literalBoolean",
+                "value": true,
+                "typeHint": {
+                  "kind": "boolean"
+                }
+              },
+              "automaticValue": {
+                "expressionKind": "dotOperator",
+                "paths": [
+                  0,
+                  "bookingPatient",
+                  "name"
+                ],
+                "source": {
+                  "collection": "cases",
+                  "expressionKind": "query",
+                  "where": {
+                    "args": [
+                      {
+                        "arg": {
+                          "expressionKind": "selfOperator",
+                          "paths": [
+                            "context",
+                            "caseNumber"
+                          ]
+                        },
+                        "expressionKind": "queryWhere",
+                        "operator": "equalsOperator",
+                        "path": "caseNumber"
+                      }
+                    ],
+                    "expressionKind": "queryTie",
+                    "tieOperator": "AND"
+                  },
+                  "yields": {
+                    "bookingPatient.name": {
+                      "expressionKind": "literalBoolean",
+                      "value": true,
+                      "typeHint": {
+                        "kind": "boolean"
+                      }
+                    }
+                  }
+                }
+              },
+              "mergePolicies": {
+                "horizontal": "OVERWRITE",
+                "vertical": "CHILD"
+              }
+            },
+            "version": "1"
+          },
+          {
+            "id": "patientNickName",
+            "name": {
+              "en": "patient nick"
+            },
+            "definition": {
+              "type": {
+                "kind": "string"
+              },
+              "readable": {
+                "expressionKind": "literalBoolean",
+                "value": true,
+                "typeHint": {
+                  "kind": "boolean"
+                }
+              },
+              "writable": {
+                "expressionKind": "literalBoolean",
+                "value": true,
+                "typeHint": {
+                  "kind": "boolean"
+                }
+              },
+              "automaticValue": {
+                "expressionKind": "functionInvocation",
+                "function": "concat",
+                "parameters": {
+                  "stringsToConcat": {
+                    "expressionKind": "literalListOfExpressions",
+                    "value": [
+                      {
+                        "expressionKind": "selfOperator",
+                        "paths": [
+                          "dynamicFields",
+                          "patientName",
+                          "fieldValue"
+                        ]
+                      },
+                      {
+                        "expressionKind": "literalString",
+                        "value": "rocks"
+                      }
+                    ]
+                  }
+                }
+              },
+              "mergePolicies": {
+                "horizontal": "OVERWRITE",
+                "vertical": "CHILD"
+              }
+            },
+            "version": "1"
+          },
+          {
+            "id": "patientNicTitle",
+            "name": {
+              "en": "patient nick title"
+            },
+            "definition": {
+              "type": {
+                "kind": "string"
+              },
+              "readable": {
+                "expressionKind": "literalBoolean",
+                "value": true,
+                "typeHint": {
+                  "kind": "boolean"
+                }
+              },
+              "writable": {
+                "expressionKind": "literalBoolean",
+                "value": true,
+                "typeHint": {
+                  "kind": "boolean"
+                }
+              },
+              "automaticValue": {
+                "expressionKind": "functionInvocation",
+                "function": "concat",
+                "parameters": {
+                  "stringsToConcat": {
+                    "expressionKind": "literalListOfExpressions",
+                    "value": [
+                      {
+                        "expressionKind": "selfOperator",
+                        "paths": [
+                          "dynamicFields",
+                          "patientName",
+                          "fieldValue"
+                        ]
+                      },
+                      {
+                        "expressionKind": "literalString",
+                        "value": " - aggiornato perchè non è TEST"
+                      }
+                    ]
+                  }
+                }
+              },
+              "mergePolicies": {
+                "horizontal": "OVERWRITE",
+                "vertical": "CHILD"
+              },
+              "condition": {
+                "expressionKind": "notOperator",
+                "args": {
+                  "expressionKind": "equalsOperator",
+                  "left": {
+                    "expressionKind": "selfOperator",
+                    "paths": [
+                      "dynamicFields",
+                      "patientName",
+                      "fieldValue"
+                    ]
+                  },
+                  "right": {
+                    "expressionKind": "literalString",
+                    "value": "TEST"
+                  }
+                },
+                "typeHint": {
+                  "kind": "boolean"
+                }
+              }
+            },
+            "version": "2"
+          }
+        ],
+        "documentTypes": [],
+        "proxyDetails": [],
+        "proxyTable": [],
+        "canAccessProxies": {
+          "expressionKind": "literalBoolean",
+          "value": true,
+          "typeHint": {
+            "kind": "boolean"
+          }
+        },
+        "canAccessProxyDetails": {
+          "expressionKind": "literalBoolean",
+          "value": true,
+          "typeHint": {
+            "kind": "boolean"
+          }
+        },
+        "canEditProxy": {
+          "expressionKind": "literalBoolean",
+          "value": true,
+          "typeHint": {
+            "kind": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  "version": "42"
+}

@@ -1,0 +1,732 @@
+{
+  "testId": "bulk-case-creation-local-2025-08-01T12-20-38-161Z-v1.0",
+  "scenario": "bulk-case-creation",
+  "startTime": 1754050838169,
+  "endTime": 1754050877240,
+  "totalCasesAttempted": 10,
+  "casesCreated": 10,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {
+    "duration": 1413,
+    "metricsCollected": 0,
+    "peakMemoryUsage": "0MB",
+    "avgMemoryUsage": "0MB",
+    "currentMemory": "58MB",
+    "overallHealth": "STABLE",
+    "crashDetected": false,
+    "timeline": []
+  },
+  "performanceMetrics": {
+    "totalCases": 10,
+    "successfulCases": 10,
+    "failedCases": 0,
+    "successRate": 100,
+    "totalDuration": 967,
+    "responseTimes": {
+      "min": 706,
+      "max": 857,
+      "avg": 769.3,
+      "p95": 857,
+      "p99": 857
+    },
+    "throughput": {
+      "casesPerSecond": 10.341261633919338,
+      "peakConcurrency": 50
+    },
+    "errors": [],
+    "realReferenceData": {
+      "contractIds": 8,
+      "doctorIds": 4,
+      "opStandardIds": 10
+    }
+  },
+  "validationResults": {
+    "timestamp": "2025-08-01T12:21:09.614Z",
+    "comprehensive": {
+      "summary": {
+        "overallStatus": "❌ POOR",
+        "eventFlowSummary": {
+          "eventsImported": "0/10",
+          "eventsProcessed": "0/0",
+          "cronJobsHealthy": true
+        },
+        "triggerSummary": {
+          "triggersEvaluated": "0/10",
+          "conditionsPassed": "0/0",
+          "contextKeysGenerated": 0
+        },
+        "proxySummary": {
+          "proxiesCreated": "0/10",
+          "contextValid": "0/0",
+          "dynamicFieldsInitialized": "0/0",
+          "successRate": "0.00"
+        },
+        "dependencySummary": {
+          "nodesCreated": 20,
+          "nodesEvaluated": "10/20",
+          "fieldsUpdated": 0,
+          "evaluationErrors": 0
+        },
+        "endToEndSummary": {
+          "completeFlows": "0/10",
+          "avgCompletionTime": "0.00ms",
+          "bottlenecks": 0
+        },
+        "performancePassed": false,
+        "recommendations": [
+          "🔍 Investigate proxy creation failures"
+        ]
+      },
+      "details": {
+        "eventFlow": {
+          "eventsImported": 0,
+          "eventsProcessed": 0,
+          "eventProcessingTime": {},
+          "cronJobsStatus": {
+            "EventsProcesser": {
+              "running": true,
+              "lastRun": "2025-08-01T12:21:10.814Z"
+            },
+            "DependenciesEvaluator": {
+              "running": true,
+              "lastRun": "2025-08-01T12:21:10.814Z"
+            },
+            "FieldOperationsAnalyzer": {
+              "running": true,
+              "lastRun": "2025-08-01T12:21:10.814Z"
+            },
+            "EventsSender": {
+              "running": true,
+              "lastRun": "2025-08-01T12:21:10.814Z"
+            }
+          },
+          "queueMetrics": {
+            "URTriggerEvents": {
+              "waiting": 0,
+              "active": 1,
+              "completed": 56,
+              "failed": 1,
+              "delayed": 0
+            },
+            "LocalEventsURQueue": {
+              "waiting": 5,
+              "active": 4,
+              "completed": 74,
+              "failed": 0,
+              "delayed": 0
+            },
+            "GraphFieldsQueue": {
+              "waiting": 2,
+              "active": 0,
+              "completed": 84,
+              "failed": 1,
+              "delayed": 0
+            },
+            "DepenenciesGraphQueue": {
+              "waiting": 4,
+              "active": 1,
+              "completed": 83,
+              "failed": 1,
+              "delayed": 0
+            }
+          },
+          "failures": [
+            {
+              "caseNumber": "STRESS_000001",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000002",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000003",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000004",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000005",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000006",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000007",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000008",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000009",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            },
+            {
+              "caseNumber": "STRESS_000010",
+              "stage": "import",
+              "reason": "Event not found in ImportedEvents"
+            }
+          ]
+        },
+        "proxy": {
+          "checked": 10,
+          "found": 0,
+          "contextValid": 0,
+          "dynamicFieldsInitialized": 0,
+          "details": [
+            {
+              "caseNumber": "STRESS_000001",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T12:21:11.858Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000001\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+            },
+            {
+              "caseNumber": "STRESS_000002",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T12:21:11.987Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000002\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+            },
+            {
+              "caseNumber": "STRESS_000003",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T12:21:12.157Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000003\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+            },
+            {
+              "caseNumber": "STRESS_000004",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T12:21:12.230Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000004\",\"message\":{\"message\":\"No dynamicData config matches version latest\"}}"
+            },
+            {
+              "caseNumber": "STRESS_000005",
+              "error": "UR Service error: 500 Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T12:21:13.283Z\",\"path\":\"/api/ur/proxies/schedulingCases/STRESS_000005\",\"message\":{\"message\":\"connect ECONNREFUSED 127.0.0.1:9090\"}}"
+            },
+            {
+              "caseNumber": "STRESS_000006",
+              "error": "fetch failed"
+            },
+            {
+              "caseNumber": "STRESS_000007",
+              "error": "UR Service error: 401 Unauthorized - {\"message\":\"connect ECONNREFUSED 127.0.0.1:9010\",\"error\":\"Unauthorized\",\"statusCode\":401}"
+            },
+            {
+              "caseNumber": "STRESS_000008",
+              "error": "fetch failed"
+            },
+            {
+              "caseNumber": "STRESS_000009",
+              "error": "UR Service error: 401 Unauthorized - {\"message\":\"connect ECONNREFUSED 127.0.0.1:9010\",\"error\":\"Unauthorized\",\"statusCode\":401}"
+            },
+            {
+              "caseNumber": "STRESS_000010",
+              "error": "fetch failed"
+            }
+          ],
+          "fieldAnalysis": {},
+          "contextAnalysis": {},
+          "uniqueConstraintViolations": 0,
+          "successRate": 0,
+          "contextValidityRate": null
+        },
+        "fragment": {
+          "proxiesWithFragments": 0,
+          "fragmentTypes": {},
+          "fragmentValidation": [],
+          "fragmentIntegrity": {
+            "complete": 0,
+            "partial": 0,
+            "missing": 0
+          }
+        },
+        "dependency": {
+          "nodesCreated": 20,
+          "nodesEvaluated": 10,
+          "fieldsUpdated": 0,
+          "nodesByStatus": {
+            "EVALUATED": 10,
+            "DIRTY": 10
+          },
+          "nodesByTarget": {
+            "PROXY": 20
+          },
+          "evaluationMetrics": {
+            "avgEvaluationTime": 250,
+            "failedEvaluations": 0,
+            "expressionErrors": 0,
+            "conditionErrors": 0
+          },
+          "fieldOperations": {
+            "created": 20,
+            "updated": 0,
+            "deleted": 0,
+            "blocked": 0
+          }
+        },
+        "trigger": {
+          "triggersEvaluated": 0,
+          "conditionsPassed": 0,
+          "contextKeysGenerated": 0,
+          "emitExpressionResults": [],
+          "triggerFailures": [],
+          "domainConfiguration": {
+            "exists": true,
+            "domainId": "schedulingCases",
+            "trigger": {
+              "configured": true,
+              "eventType": "SCHEDULING_CASE_CREATED",
+              "hasCondition": true,
+              "hasEmitExpression": true,
+              "hasContextKey": true
+            },
+            "proxyFields": {
+              "count": 4,
+              "fields": [
+                "caseNumber",
+                "patientName",
+                "patientNickName",
+                "patientNickTitle"
+              ]
+            },
+            "permissions": {
+              "canAccessProxies": true,
+              "canAccessProxyDetails": true,
+              "canEditProxy": true
+            }
+          }
+        },
+        "expression": {
+          "expressionsEvaluated": 0,
+          "expressionTypes": {},
+          "evaluationErrors": [
+            {
+              "expression": "contextKey",
+              "error": "fetch failed",
+              "caseNumber": "STRESS_000001"
+            },
+            {
+              "expression": "patientName",
+              "error": "fetch failed",
+              "caseNumber": "STRESS_000001"
+            },
+            {
+              "expression": "contextKey",
+              "error": "fetch failed",
+              "caseNumber": "STRESS_000002"
+            },
+            {
+              "expression": "patientName",
+              "error": "fetch failed",
+              "caseNumber": "STRESS_000002"
+            },
+            {
+              "expression": "contextKey",
+              "error": "fetch failed",
+              "caseNumber": "STRESS_000003"
+            },
+            {
+              "expression": "patientName",
+              "error": "fetch failed",
+              "caseNumber": "STRESS_000003"
+            },
+            {
+              "expression": "contextKey",
+              "error": "fetch failed",
+              "caseNumber": "STRESS_000004"
+            },
+            {
+              "expression": "patientName",
+              "error": "fetch failed",
+              "caseNumber": "STRESS_000004"
+            },
+            {
+              "expression": "contextKey",
+              "error": "fetch failed",
+              "caseNumber": "STRESS_000005"
+            },
+            {
+              "expression": "patientName",
+              "error": "fetch failed",
+              "caseNumber": "STRESS_000005"
+            }
+          ],
+          "performanceMetrics": {
+            "avgEvaluationTime": 0,
+            "slowestExpression": null,
+            "fastestExpression": null
+          },
+          "namedExpressions": {
+            "used": 5,
+            "unique": {}
+          }
+        }
+      }
+    },
+    "endToEndValidation": {
+      "completeFlows": 0,
+      "partialFlows": 0,
+      "failedFlows": 10,
+      "flowBreakdown": [
+        {
+          "caseNumber": "STRESS_000001",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754050877003,
+          "error": "fetch failed"
+        },
+        {
+          "caseNumber": "STRESS_000002",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754050877012,
+          "error": "fetch failed"
+        },
+        {
+          "caseNumber": "STRESS_000003",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754050877021,
+          "error": "fetch failed"
+        },
+        {
+          "caseNumber": "STRESS_000004",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754050877033,
+          "error": "fetch failed"
+        },
+        {
+          "caseNumber": "STRESS_000005",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754050877042,
+          "error": "fetch failed"
+        },
+        {
+          "caseNumber": "STRESS_000006",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754050877052,
+          "error": "fetch failed"
+        },
+        {
+          "caseNumber": "STRESS_000007",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754050877060,
+          "error": "fetch failed"
+        },
+        {
+          "caseNumber": "STRESS_000008",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754050877070,
+          "error": "fetch failed"
+        },
+        {
+          "caseNumber": "STRESS_000009",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754050877081,
+          "error": "fetch failed"
+        },
+        {
+          "caseNumber": "STRESS_000010",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": false,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": false,
+            "fieldsEvaluated": false,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0
+          },
+          "startTime": 1754050877089,
+          "error": "fetch failed"
+        }
+      ],
+      "avgCompletionTime": 0,
+      "bottlenecks": []
+    },
+    "dependencyGraphAnalysis": {
+      "totalNodes": 100,
+      "nodeDistribution": {
+        "DIRTY": 20,
+        "CLEAN": 60,
+        "EVALUATED": 15,
+        "ERROR_CONDITION": 3,
+        "ERROR_EXPRESSION": 2
+      },
+      "evaluationQueue": {
+        "pending": 5,
+        "processing": 2,
+        "completed": 94
+      },
+      "graphComplexity": {
+        "avgDependencies": 2.5,
+        "maxDepth": 5,
+        "circularDependencies": 0
+      },
+      "performanceMetrics": {
+        "avgProcessingTime": 300,
+        "queueBacklog": 10,
+        "throughput": 50
+      }
+    },
+    "performanceValidation": {
+      "passed": false,
+      "details": {
+        "responseTime": {
+          "p95": 857,
+          "target": 200,
+          "passed": false
+        },
+        "throughput": {
+          "actual": 10.341261633919338,
+          "target": 16.67,
+          "passed": false
+        },
+        "successRate": {
+          "actual": 100,
+          "target": 95,
+          "passed": true
+        }
+      },
+      "recommendations": [
+        "Optimize API response times - P95 exceeds 200ms target",
+        "Increase system throughput - below 1000 cases/minute target"
+      ]
+    },
+    "validationDuration": 7488,
+    "criteriaComparison": {
+      "proxyCreationRate": {
+        "actual": "0/0",
+        "target": 0.99,
+        "passed": false
+      },
+      "fragmentCreationRate": {
+        "actual": "0/0",
+        "target": 0.98,
+        "passed": false
+      },
+      "dependencyCompletionRate": {
+        "actual": "0/0",
+        "target": 0.97,
+        "passed": false
+      }
+    }
+  },
+  "scenarioSpecificResults": {},
+  "scenarioType": "enhanced-bulk-case-creation",
+  "casesGenerated": 10,
+  "creationResults": [
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000001",
+      "success": true,
+      "responseTime": 761,
+      "caseId": "688cb1179f006883e4723779"
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000002",
+      "success": true,
+      "responseTime": 857,
+      "caseId": "688cb1179f006883e47237e7"
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000003",
+      "success": true,
+      "responseTime": 754,
+      "caseId": "688cb1179f006883e4723787"
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000004",
+      "success": true,
+      "responseTime": 764,
+      "caseId": "688cb1179f006883e472377f"
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000005",
+      "success": true,
+      "responseTime": 762,
+      "caseId": "688cb1179f006883e4723792"
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000006",
+      "success": true,
+      "responseTime": 767,
+      "caseId": "688cb1179f006883e4723788"
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000007",
+      "success": true,
+      "responseTime": 706,
+      "caseId": "688cb1179f006883e472377a"
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000008",
+      "success": true,
+      "responseTime": 763,
+      "caseId": "688cb1179f006883e4723789"
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000009",
+      "success": true,
+      "responseTime": 778,
+      "caseId": "688cb1179f006883e47237a7"
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000010",
+      "success": true,
+      "responseTime": 781,
+      "caseId": "688cb1179f006883e47237c9"
+    }
+  ],
+  "baselineComparison": {
+    "caseCreation": {
+      "responseTime": {
+        "p95": {
+          "actual": 857,
+          "target": 200,
+          "passed": false
+        },
+        "avg": {
+          "actual": 769.3,
+          "target": 120,
+          "passed": false
+        }
+      },
+      "throughput": {
+        "actual": 10.341261633919338,
+        "target": 16.67,
+        "passed": false
+      },
+      "errorRate": {
+        "actual": 0,
+        "target": 0.01,
+        "passed": true
+      }
+    },
+    "overallPassed": false
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T12-20-38-161Z-v1.0/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T12-20-38-161Z-v1.0/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T12-20-38-161Z-v1.0/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T12-20-38-161Z-v1.0/reports/system-limits.html",
+    "baselineComparisonReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T12-20-38-161Z-v1.0/reports/baseline-comparison.html",
+    "parallelExecutionReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T12-20-38-161Z-v1.0/reports/parallel-execution.html",
+    "ultimateValidationReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T12-20-38-161Z-v1.0/reports/ultimate-validation.html"
+  },
+  "totalDuration": 39071
+}

@@ -1,0 +1,127 @@
+{
+  "timestamp": "2025-08-01T18:59:41.645Z",
+  "collections": {
+    "importedEvents": {
+      "total": 10873,
+      "unprocessed": 552,
+      "bySource": {
+        "cases-created": 4092,
+        "proxy-created": 3992,
+        "cases-updated": 2789
+      },
+      "processingRate": "316/min",
+      "backlog": 552
+    },
+    "proxies": {
+      "total": 3992,
+      "byDomain": {
+        "schedulingCases": 3992
+      },
+      "recentlyCreated": 1000,
+      "withFragments": 0,
+      "avgFieldsPerProxy": 4
+    },
+    "dependencyNodes": {
+      "total": 0,
+      "byStatus": {},
+      "targetTypes": [],
+      "recentlyUpdated": 0,
+      "updateRate": "0/min"
+    }
+  },
+  "processing": {
+    "avgProcessingTime": 0,
+    "maxProcessingTime": 0,
+    "queueDepth": 552
+  },
+  "performance": {
+    "indexes": {
+      "importedevents": {
+        "indexCount": 3,
+        "indexes": [
+          {
+            "name": "_id_",
+            "keys": [
+              "_id"
+            ]
+          },
+          {
+            "name": "processed_createdAt",
+            "keys": [
+              "processed",
+              "createdAt"
+            ]
+          },
+          {
+            "name": "source_processed",
+            "keys": [
+              "source",
+              "processed"
+            ]
+          }
+        ]
+      },
+      "proxies": {
+        "indexCount": 4,
+        "indexes": [
+          {
+            "name": "_id_",
+            "keys": [
+              "_id"
+            ]
+          },
+          {
+            "name": "contextKey_1_domainId_1_tenantId_1",
+            "keys": [
+              "contextKey",
+              "domainId",
+              "tenantId"
+            ]
+          },
+          {
+            "name": "domainId_contextKey",
+            "keys": [
+              "domainId",
+              "contextKey"
+            ]
+          },
+          {
+            "name": "tenantId_createdAt",
+            "keys": [
+              "tenantId",
+              "createdAt"
+            ]
+          }
+        ]
+      },
+      "dependencygraphnodes": {
+        "indexCount": 3,
+        "indexes": [
+          {
+            "name": "_id_",
+            "keys": [
+              "_id"
+            ]
+          },
+          {
+            "name": "status_entity",
+            "keys": [
+              "status",
+              "entity"
+            ]
+          },
+          {
+            "name": "target",
+            "keys": [
+              "target"
+            ]
+          }
+        ]
+      }
+    },
+    "recommendations": [
+      "High event backlog - consider increasing cron frequency",
+      "Missing index on importedevents.processed"
+    ]
+  }
+}

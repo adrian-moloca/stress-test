@@ -1,0 +1,195 @@
+{
+  "testId": "bulk-case-creation-local-2025-08-06T11-08-41-857Z-v1.0",
+  "scenario": "bulk-case-creation",
+  "startTime": 1754478521877,
+  "endTime": 1754478570062,
+  "totalCasesAttempted": 10,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {
+    "duration": 18124,
+    "metricsCollected": 3,
+    "peakMemoryUsage": "57MB",
+    "avgMemoryUsage": "57MB",
+    "currentMemory": "57MB",
+    "overallHealth": "STABLE",
+    "crashDetected": false,
+    "timeline": [
+      {
+        "timestamp": 1754478526885,
+        "memoryUsage": {
+          "heapUsed": 56,
+          "heapTotal": 81,
+          "external": 2,
+          "rss": 140
+        },
+        "cpuUsage": {
+          "user": 5163165,
+          "system": 783425
+        },
+        "activeRequests": 0,
+        "queueLength": 0
+      },
+      {
+        "timestamp": 1754478531885,
+        "memoryUsage": {
+          "heapUsed": 57,
+          "heapTotal": 81,
+          "external": 2,
+          "rss": 140
+        },
+        "cpuUsage": {
+          "user": 5184028,
+          "system": 785397
+        },
+        "activeRequests": 0,
+        "queueLength": 0
+      },
+      {
+        "timestamp": 1754478536884,
+        "memoryUsage": {
+          "heapUsed": 57,
+          "heapTotal": 81,
+          "external": 2,
+          "rss": 140
+        },
+        "cpuUsage": {
+          "user": 5203790,
+          "system": 785440
+        },
+        "activeRequests": 0,
+        "queueLength": 0
+      }
+    ]
+  },
+  "performanceMetrics": {
+    "totalCases": 10,
+    "successfulCases": 0,
+    "failedCases": 10,
+    "successRate": 0,
+    "totalDuration": 17298,
+    "responseTimes": {
+      "min": null,
+      "max": null,
+      "avg": null,
+      "p95": 0,
+      "p99": 0
+    },
+    "throughput": {
+      "casesPerSecond": 0,
+      "peakConcurrency": 10
+    },
+    "errors": [],
+    "realReferenceData": {
+      "contractIds": 8,
+      "doctorIds": 4,
+      "opStandardIds": 10
+    }
+  },
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "scenarioSpecificResults": {},
+  "scenarioType": "enhanced-bulk-case-creation",
+  "casesGenerated": 10,
+  "creationResults": [
+    {
+      "index": 1,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-06T11:08:46.830Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 4138
+    },
+    {
+      "index": 2,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-06T11:08:47.035Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 4334
+    },
+    {
+      "index": 3,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-06T11:08:47.026Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 4323
+    },
+    {
+      "index": 4,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-06T11:08:50.825Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 3792
+    },
+    {
+      "index": 5,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-06T11:08:50.868Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 3836
+    },
+    {
+      "index": 6,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-06T11:08:55.908Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 4037
+    },
+    {
+      "index": 7,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-06T11:08:55.994Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 4131
+    },
+    {
+      "index": 8,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-06T11:08:55.944Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 4072
+    },
+    {
+      "index": 9,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-06T11:08:59.941Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 3938
+    },
+    {
+      "index": 10,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-06T11:08:59.991Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 3977
+    }
+  ],
+  "baselineComparison": {
+    "caseCreation": {
+      "responseTime": {
+        "p95": {
+          "actual": 0,
+          "target": 200,
+          "passed": true
+        },
+        "avg": {
+          "actual": 0,
+          "target": 120,
+          "passed": true
+        }
+      },
+      "throughput": {
+        "actual": 0,
+        "target": 16.67,
+        "passed": false
+      },
+      "errorRate": {
+        "actual": 1,
+        "target": 0.01,
+        "passed": false
+      }
+    },
+    "overallPassed": false
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-06T11-08-41-857Z-v1.0/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-06T11-08-41-857Z-v1.0/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-06T11-08-41-857Z-v1.0/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-06T11-08-41-857Z-v1.0/reports/system-limits.html",
+    "baselineComparisonReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-06T11-08-41-857Z-v1.0/reports/baseline-comparison.html",
+    "parallelExecutionReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-06T11-08-41-857Z-v1.0/reports/parallel-execution.html",
+    "ultimateValidationReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-06T11-08-41-857Z-v1.0/reports/ultimate-validation.html"
+  },
+  "totalDuration": 48185
+}

@@ -1,63 +1,71 @@
-const os = require('os');
-
-const chunkArray = (arr, size) => {
-  return arr.reduce(
-    (acc, _, i) => (i % size ? acc : [...acc, arr.slice(i, i + size)]),
-    []
-  );
-};
-
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-
 class ParallelRunner {
-  constructor({ maxConcurrency = os.cpus().length, retries = 1, delayBetweenBatches = 0 }) {
-    this.maxConcurrency = maxConcurrency;
-    this.retries = retries;
-    this.delayBetweenBatches = delayBetweenBatches;
+  constructor(options = {}) {
+    this.maxParallel = options.maxParallel || 
+      (process.env.MAX_PARALLEL_CASES ? parseInt(process.env.MAX_PARALLEL_CASES) : 3);
+    
+    this.maxParallel = Math.max(2, Math.min(5, this.maxParallel));
+    
+    this.batchSize = options.batchSize || 5;
+    this.delayBetweenBatches = options.delayBetweenBatches || 1000;
+    this.retryAttempts = options.retryAttempts || 3;
   }
 
-  async run(tasks, handler) {
-    const chunks = chunkArray(tasks, this.maxConcurrency);
-    const allResults = [];
-
-    for (let i = 0; i < chunks.length; i++) {
-      const batch = chunks[i];
-      console.info(`🚀 Running batch ${i + 1}/${chunks.length} (${batch.length} items)`);
-
-      const results = await Promise.allSettled(
-        batch.map((item, idx) => this._withRetries(() => handler(item, idx)))
-      );
-
-      allResults.push(...results);
-
-      if (this.delayBetweenBatches > 0) {
-        await sleep(this.delayBetweenBatches);
+  async run(items, processor) {
+    console.log(`🔄 Processing ${items.length} items with max ${this.maxParallel} parallel operations`);
+    
+    const results = [];
+    const errors = [];
+    
+    for (let i = 0; i < items.length; i += this.batchSize) {
+      const batch = items.slice(i, i + this.batchSize);
+      const batchPromises = [];
+      
+      for (let j = 0; j < batch.length; j += this.maxParallel) {
+        const parallelItems = batch.slice(j, j + this.maxParallel);
+        const parallelPromises = parallelItems.map((item, index) => 
+          this.processWithRetry(item, processor, i + j + index)
+        );
+        
+        const parallelResults = await Promise.allSettled(parallelPromises);
+        batchPromises.push(...parallelResults);
       }
-    }
-
-    return {
-      results: allResults.map((r) => r.status === 'fulfilled' ? r.value : null),
-      errors: allResults
-        .filter((r) => r.status === 'rejected')
-        .map((r) => r.reason?.message || r.reason || 'Unknown error'),
-    };
-  }
-
-  async _withRetries(fn) {
-    let attempts = 0;
-    let lastErr;
-    while (attempts <= this.retries) {
-      try {
-        return await fn();
-      } catch (err) {
-        lastErr = err;
-        attempts++;
-        if (attempts <= this.retries) {
-          console.error(`Retry attempt ${attempts} failed: ${err.message}`);
+      
+      // Collect results
+      for (const result of batchPromises) {
+        if (result.status === 'fulfilled') {
+          results.push(result.value);
+        } else {
+          errors.push(result.reason);
         }
       }
+      
+      // Delay between batches
+      if (i + this.batchSize < items.length) {
+        await this.delay(this.delayBetweenBatches);
+      }
+      
+      const processed = Math.min(i + this.batchSize, items.length);
+      console.log(`   📊 Progress: ${processed}/${items.length} (${(processed/items.length*100).toFixed(1)}%)`);
     }
-    throw lastErr;
+    
+    return { results, errors };
+  }
+
+  async processWithRetry(item, processor, index) {
+    for (let attempt = 1; attempt <= this.retryAttempts; attempt++) {
+      try {
+        return await processor(item, index);
+      } catch (error) {
+        if (attempt === this.retryAttempts) {
+          throw error;
+        }
+        await this.delay(1000 * attempt);
+      }
+    }
+  }
+
+  delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
   }
 }
 

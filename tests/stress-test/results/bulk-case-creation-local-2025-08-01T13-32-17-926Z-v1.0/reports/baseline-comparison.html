@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baseline Comparison Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 300px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
+        .pass { color: green; font-weight: bold; }
+        .fail { color: red; font-weight: bold; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; font-weight: bold; }
+        .summary { background: #e8f5e9; padding: 15px; border-radius: 5px; margin: 20px 0; }
+        .summary.fail { background: #ffebee; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Baseline Comparison Report</h1>
+        <div class="summary fail">
+            <h2>Overall Status: <span class="fail">
+                ❌ FAILED
+            </span></h2>
+        </div>
+        
+        <h3>📊 Case Creation Metrics</h3>
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Actual</th>
+                <th>Target</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Response Time (P95)</td>
+                <td>1428.00ms</td>
+                <td>&lt; 200ms</td>
+                <td class="fail">
+                    ❌ FAIL
+                </td>
+            </tr>
+            <tr>
+                <td>Average Response Time</td>
+                <td>987.30ms</td>
+                <td>&lt; 120ms</td>
+                <td class="fail">
+                    ❌ FAIL
+                </td>
+            </tr>
+            <tr>
+                <td>Throughput</td>
+                <td>16.52 cases/s</td>
+                <td>&gt; 16.67 cases/s</td>
+                <td class="fail">
+                    ❌ FAIL
+                </td>
+            </tr>
+            <tr>
+                <td>Error Rate</td>
+                <td>0.00%</td>
+                <td>&lt; 1.00%</td>
+                <td class="pass">
+                    ✅ PASS
+                </td>
+            </tr>
+        </table>
+        
+        <p style="text-align: center; color: #666; margin-top: 40px;">
+            Generated: 8/1/2025, 4:42:50 PM
+        </p>
+    </div>
+</body>
+</html>

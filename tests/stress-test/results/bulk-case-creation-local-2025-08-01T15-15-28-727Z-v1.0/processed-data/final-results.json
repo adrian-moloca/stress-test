@@ -1,0 +1,1815 @@
+{
+  "testId": "bulk-case-creation-local-2025-08-01T15-15-28-727Z-v1.0",
+  "scenario": "bulk-case-creation",
+  "startTime": 1754061328737,
+  "endTime": 1754061448201,
+  "totalCasesAttempted": 100,
+  "casesCreated": 100,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {
+    "duration": 18103,
+    "metricsCollected": 3,
+    "peakMemoryUsage": "59MB",
+    "avgMemoryUsage": "56MB",
+    "currentMemory": "46MB",
+    "overallHealth": "STABLE",
+    "crashDetected": false,
+    "timeline": [
+      {
+        "timestamp": 1754061333738,
+        "memoryUsage": {
+          "heapUsed": 53,
+          "heapTotal": 84,
+          "external": 3,
+          "rss": 143
+        },
+        "cpuUsage": {
+          "user": 2054747,
+          "system": 256967
+        },
+        "activeRequests": 0,
+        "queueLength": 0
+      },
+      {
+        "timestamp": 1754061338738,
+        "memoryUsage": {
+          "heapUsed": 56,
+          "heapTotal": 85,
+          "external": 4,
+          "rss": 144
+        },
+        "cpuUsage": {
+          "user": 2128693,
+          "system": 261716
+        },
+        "activeRequests": 0,
+        "queueLength": 0
+      },
+      {
+        "timestamp": 1754061343739,
+        "memoryUsage": {
+          "heapUsed": 59,
+          "heapTotal": 85,
+          "external": 5,
+          "rss": 145
+        },
+        "cpuUsage": {
+          "user": 2195810,
+          "system": 264856
+        },
+        "activeRequests": 0,
+        "queueLength": 0
+      }
+    ]
+  },
+  "performanceMetrics": {
+    "totalCases": 100,
+    "successfulCases": 100,
+    "failedCases": 0,
+    "successRate": 100,
+    "totalDuration": 17851,
+    "responseTimes": {
+      "min": 245,
+      "max": 1111,
+      "avg": 511.67,
+      "p95": 866,
+      "p99": 934
+    },
+    "throughput": {
+      "casesPerSecond": 5.601927062909641,
+      "peakConcurrency": 10
+    },
+    "errors": [],
+    "realReferenceData": {
+      "contractIds": 8,
+      "doctorIds": 4,
+      "opStandardIds": 10
+    }
+  },
+  "validationResults": {
+    "timestamp": "2025-08-01T15:16:46.914Z",
+    "comprehensive": {
+      "summary": {
+        "overallStatus": "❌ POOR",
+        "eventFlowSummary": {
+          "eventsImported": "100/100",
+          "eventsProcessed": "0/100",
+          "cronJobsHealthy": true
+        },
+        "triggerSummary": {
+          "triggersEvaluated": "0/100",
+          "conditionsPassed": "0/0",
+          "contextKeysGenerated": 0
+        },
+        "proxySummary": {
+          "proxiesCreated": "0/100",
+          "contextValid": "0/0",
+          "dynamicFieldsInitialized": "0/0",
+          "successRate": "0.00"
+        },
+        "dependencySummary": {
+          "nodesCreated": 200,
+          "nodesEvaluated": "100/200",
+          "fieldsUpdated": 0,
+          "evaluationErrors": 0
+        },
+        "endToEndSummary": {
+          "completeFlows": "0/10",
+          "avgCompletionTime": "0.00ms",
+          "bottlenecks": 0
+        },
+        "performancePassed": false,
+        "recommendations": [
+          "🔍 Investigate proxy creation failures"
+        ]
+      },
+      "details": {
+        "eventFlow": {
+          "eventsImported": 100,
+          "eventsProcessed": 0,
+          "eventProcessingTime": {},
+          "cronJobsStatus": {
+            "EventsProcesser": {
+              "running": true,
+              "lastRun": "2025-08-01T15:16:59.241Z"
+            },
+            "DependenciesEvaluator": {
+              "running": true,
+              "lastRun": "2025-08-01T15:16:59.241Z"
+            },
+            "FieldOperationsAnalyzer": {
+              "running": true,
+              "lastRun": "2025-08-01T15:16:59.241Z"
+            },
+            "EventsSender": {
+              "running": true,
+              "lastRun": "2025-08-01T15:16:59.241Z"
+            }
+          },
+          "queueMetrics": {
+            "URTriggerEvents": {
+              "waiting": 1,
+              "active": 4,
+              "completed": 87,
+              "failed": 1,
+              "delayed": 0
+            },
+            "LocalEventsURQueue": {
+              "waiting": 0,
+              "active": 2,
+              "completed": 96,
+              "failed": 1,
+              "delayed": 0
+            },
+            "GraphFieldsQueue": {
+              "waiting": 8,
+              "active": 4,
+              "completed": 40,
+              "failed": 1,
+              "delayed": 0
+            },
+            "DepenenciesGraphQueue": {
+              "waiting": 3,
+              "active": 2,
+              "completed": 24,
+              "failed": 0,
+              "delayed": 0
+            }
+          },
+          "failures": [
+            {
+              "caseNumber": "2821 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2822 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2823 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2828 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2824 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2826 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2829 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2825 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2827 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2830 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2831 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2832 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2833 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2835 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2840 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2838 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2839 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2834 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2837 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2836 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2841 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2842 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2843 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2844 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2846 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2847 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2849 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2848 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2850 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2845 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2851 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2852 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2854 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2857 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2860 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2859 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2858 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2855 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2853 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2856 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2861 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2862 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2870 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2866 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2863 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2869 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2864 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2868 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2867 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2865 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2871 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2873 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2875 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2872 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2874 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2878 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2876 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2879 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2880 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2877 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2881 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2886 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2882 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2883 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2889 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2885 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2887 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2888 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2890 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2884 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2891 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2892 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2894 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2893 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2896 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2897 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2895 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2900 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2898 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2899 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2901 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2903 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2902 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2904 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2905 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2906 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2909 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2910 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2907 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2908 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2911 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2913 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2912 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2914 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2915 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2917 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2919 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2916 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2918 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "2920 ",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            }
+          ]
+        },
+        "proxy": {
+          "checked": 100,
+          "found": 0,
+          "contextValid": 0,
+          "dynamicFieldsInitialized": 0,
+          "details": [],
+          "fieldAnalysis": {},
+          "contextAnalysis": {},
+          "uniqueConstraintViolations": 0,
+          "successRate": 0,
+          "contextValidityRate": null
+        },
+        "fragment": {
+          "proxiesWithFragments": 0,
+          "fragmentTypes": {},
+          "fragmentValidation": [],
+          "fragmentIntegrity": {
+            "complete": 0,
+            "partial": 0,
+            "missing": 0
+          }
+        },
+        "dependency": {
+          "nodesCreated": 200,
+          "nodesEvaluated": 100,
+          "fieldsUpdated": 0,
+          "nodesByStatus": {
+            "EVALUATED": 100,
+            "DIRTY": 100
+          },
+          "nodesByTarget": {
+            "PROXY": 200
+          },
+          "evaluationMetrics": {
+            "avgEvaluationTime": 250,
+            "failedEvaluations": 0,
+            "expressionErrors": 0,
+            "conditionErrors": 0
+          },
+          "fieldOperations": {
+            "created": 200,
+            "updated": 0,
+            "deleted": 0,
+            "blocked": 0
+          }
+        },
+        "trigger": {
+          "triggersEvaluated": 0,
+          "conditionsPassed": 0,
+          "contextKeysGenerated": 0,
+          "emitExpressionResults": [],
+          "triggerFailures": [],
+          "domainConfiguration": {
+            "exists": true,
+            "domainId": "schedulingCases",
+            "trigger": {
+              "configured": true,
+              "eventType": "SCHEDULING_CASE_CREATED",
+              "hasCondition": true,
+              "hasEmitExpression": true,
+              "hasContextKey": true
+            },
+            "proxyFields": {
+              "count": 4,
+              "fields": [
+                "caseNumber",
+                "patientName",
+                "patientNickName",
+                "patientNickTitle"
+              ]
+            },
+            "permissions": {
+              "canAccessProxies": true,
+              "canAccessProxyDetails": true,
+              "canEditProxy": true
+            }
+          }
+        },
+        "expression": {
+          "expressionsEvaluated": 10,
+          "expressionTypes": {
+            "functionInvocation": 5,
+            "dotOperator": 5
+          },
+          "evaluationErrors": [],
+          "performanceMetrics": {
+            "avgEvaluationTime": 0,
+            "slowestExpression": {
+              "name": "contextKey",
+              "time": 112
+            },
+            "fastestExpression": {
+              "name": "patientName",
+              "time": 59
+            }
+          },
+          "namedExpressions": {
+            "used": 5,
+            "unique": {}
+          }
+        }
+      }
+    },
+    "endToEndValidation": {
+      "completeFlows": 0,
+      "partialFlows": 10,
+      "failedFlows": 0,
+      "flowBreakdown": [
+        {
+          "caseNumber": "2821 ",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754061445460,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "2822 ",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754061445704,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "2823 ",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754061445983,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "2828 ",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754061446262,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "2824 ",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754061446533,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "2826 ",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754061446821,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "2829 ",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754061447092,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "2825 ",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754061447371,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "2827 ",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754061447647,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "2830 ",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754061447915,
+          "totalTime": 1000,
+          "completedStages": 4
+        }
+      ],
+      "avgCompletionTime": 0,
+      "bottlenecks": []
+    },
+    "dependencyGraphAnalysis": {
+      "totalNodes": 100,
+      "nodeDistribution": {
+        "DIRTY": 20,
+        "CLEAN": 60,
+        "EVALUATED": 15,
+        "ERROR_CONDITION": 3,
+        "ERROR_EXPRESSION": 2
+      },
+      "evaluationQueue": {
+        "pending": 0,
+        "processing": 0,
+        "completed": 74
+      },
+      "graphComplexity": {
+        "avgDependencies": 2.5,
+        "maxDepth": 5,
+        "circularDependencies": 0
+      },
+      "performanceMetrics": {
+        "avgProcessingTime": 300,
+        "queueBacklog": 10,
+        "throughput": 50
+      }
+    },
+    "performanceValidation": {
+      "passed": false,
+      "details": {
+        "responseTime": {
+          "p95": 866,
+          "target": 200,
+          "passed": false
+        },
+        "throughput": {
+          "actual": 5.601927062909641,
+          "target": 16.67,
+          "passed": false
+        },
+        "successRate": {
+          "actual": 100,
+          "target": 95,
+          "passed": true
+        }
+      },
+      "recommendations": [
+        "Optimize API response times - P95 exceeds 200ms target",
+        "Increase system throughput - below 1000 cases/minute target"
+      ]
+    },
+    "validationDuration": 41241,
+    "criteriaComparison": {
+      "proxyCreationRate": {
+        "actual": "0/0",
+        "target": 0.99,
+        "passed": false
+      },
+      "fragmentCreationRate": {
+        "actual": "0/0",
+        "target": 0.98,
+        "passed": false
+      },
+      "dependencyCompletionRate": {
+        "actual": "0/0",
+        "target": 0.97,
+        "passed": false
+      }
+    }
+  },
+  "scenarioSpecificResults": {},
+  "scenarioType": "enhanced-bulk-case-creation",
+  "casesGenerated": 100,
+  "creationResults": [
+    {
+      "index": 1,
+      "caseNumber": "2821 ",
+      "success": true,
+      "responseTime": 375,
+      "caseId": "688cda1165115654d4cb2751"
+    },
+    {
+      "index": 2,
+      "caseNumber": "2822 ",
+      "success": true,
+      "responseTime": 435,
+      "caseId": "688cda1165115654d4cb2764"
+    },
+    {
+      "index": 3,
+      "caseNumber": "2823 ",
+      "success": true,
+      "responseTime": 412,
+      "caseId": "688cda1165115654d4cb2757"
+    },
+    {
+      "index": 4,
+      "caseNumber": "2828 ",
+      "success": true,
+      "responseTime": 609,
+      "caseId": "688cda1165115654d4cb27a2"
+    },
+    {
+      "index": 5,
+      "caseNumber": "2824 ",
+      "success": true,
+      "responseTime": 559,
+      "caseId": "688cda1165115654d4cb278e"
+    },
+    {
+      "index": 6,
+      "caseNumber": "2826 ",
+      "success": true,
+      "responseTime": 462,
+      "caseId": "688cda1165115654d4cb2772"
+    },
+    {
+      "index": 7,
+      "caseNumber": "2829 ",
+      "success": true,
+      "responseTime": 626,
+      "caseId": "688cda1165115654d4cb27b3"
+    },
+    {
+      "index": 8,
+      "caseNumber": "2825 ",
+      "success": true,
+      "responseTime": 507,
+      "caseId": "688cda1165115654d4cb277b"
+    },
+    {
+      "index": 9,
+      "caseNumber": "2827 ",
+      "success": true,
+      "responseTime": 593,
+      "caseId": "688cda1165115654d4cb2797"
+    },
+    {
+      "index": 10,
+      "caseNumber": "2830 ",
+      "success": true,
+      "responseTime": 676,
+      "caseId": "688cda1165115654d4cb27c2"
+    },
+    {
+      "index": 1,
+      "caseNumber": "2831 ",
+      "success": true,
+      "responseTime": 327,
+      "caseId": "688cda1265115654d4cb27e8"
+    },
+    {
+      "index": 2,
+      "caseNumber": "2832 ",
+      "success": true,
+      "responseTime": 400,
+      "caseId": "688cda1265115654d4cb27ef"
+    },
+    {
+      "index": 3,
+      "caseNumber": "2833 ",
+      "success": true,
+      "responseTime": 417,
+      "caseId": "688cda1265115654d4cb27f9"
+    },
+    {
+      "index": 4,
+      "caseNumber": "2835 ",
+      "success": true,
+      "responseTime": 440,
+      "caseId": "688cda1365115654d4cb280b"
+    },
+    {
+      "index": 5,
+      "caseNumber": "2840 ",
+      "success": true,
+      "responseTime": 678,
+      "caseId": "688cda1365115654d4cb2859"
+    },
+    {
+      "index": 6,
+      "caseNumber": "2838 ",
+      "success": true,
+      "responseTime": 481,
+      "caseId": "688cda1365115654d4cb283d"
+    },
+    {
+      "index": 7,
+      "caseNumber": "2839 ",
+      "success": true,
+      "responseTime": 512,
+      "caseId": "688cda1365115654d4cb284c"
+    },
+    {
+      "index": 8,
+      "caseNumber": "2834 ",
+      "success": true,
+      "responseTime": 420,
+      "caseId": "688cda1365115654d4cb2805"
+    },
+    {
+      "index": 9,
+      "caseNumber": "2837 ",
+      "success": true,
+      "responseTime": 469,
+      "caseId": "688cda1365115654d4cb282a"
+    },
+    {
+      "index": 10,
+      "caseNumber": "2836 ",
+      "success": true,
+      "responseTime": 455,
+      "caseId": "688cda1365115654d4cb2815"
+    },
+    {
+      "index": 1,
+      "caseNumber": "2841 ",
+      "success": true,
+      "responseTime": 282,
+      "caseId": "688cda1465115654d4cb286b"
+    },
+    {
+      "index": 2,
+      "caseNumber": "2842 ",
+      "success": true,
+      "responseTime": 293,
+      "caseId": "688cda1465115654d4cb2872"
+    },
+    {
+      "index": 3,
+      "caseNumber": "2843 ",
+      "success": true,
+      "responseTime": 330,
+      "caseId": "688cda1465115654d4cb2890"
+    },
+    {
+      "index": 4,
+      "caseNumber": "2844 ",
+      "success": true,
+      "responseTime": 304,
+      "caseId": "688cda1465115654d4cb287a"
+    },
+    {
+      "index": 5,
+      "caseNumber": "2846 ",
+      "success": true,
+      "responseTime": 397,
+      "caseId": "688cda1465115654d4cb28a8"
+    },
+    {
+      "index": 6,
+      "caseNumber": "2847 ",
+      "success": true,
+      "responseTime": 399,
+      "caseId": "688cda1465115654d4cb28ab"
+    },
+    {
+      "index": 7,
+      "caseNumber": "2849 ",
+      "success": true,
+      "responseTime": 586,
+      "caseId": "688cda1465115654d4cb28ce"
+    },
+    {
+      "index": 8,
+      "caseNumber": "2848 ",
+      "success": true,
+      "responseTime": 500,
+      "caseId": "688cda1465115654d4cb28c1"
+    },
+    {
+      "index": 9,
+      "caseNumber": "2850 ",
+      "success": true,
+      "responseTime": 898,
+      "caseId": "688cda1565115654d4cb28db"
+    },
+    {
+      "index": 10,
+      "caseNumber": "2845 ",
+      "success": true,
+      "responseTime": 345,
+      "caseId": "688cda1465115654d4cb2899"
+    },
+    {
+      "index": 1,
+      "caseNumber": "2851 ",
+      "success": true,
+      "responseTime": 245,
+      "caseId": "688cda1665115654d4cb28eb"
+    },
+    {
+      "index": 2,
+      "caseNumber": "2852 ",
+      "success": true,
+      "responseTime": 263,
+      "caseId": "688cda1665115654d4cb28f1"
+    },
+    {
+      "index": 3,
+      "caseNumber": "2854 ",
+      "success": true,
+      "responseTime": 303,
+      "caseId": "688cda1665115654d4cb290c"
+    },
+    {
+      "index": 4,
+      "caseNumber": "2857 ",
+      "success": true,
+      "responseTime": 404,
+      "caseId": "688cda1665115654d4cb2937"
+    },
+    {
+      "index": 5,
+      "caseNumber": "2860 ",
+      "success": true,
+      "responseTime": 559,
+      "caseId": "688cda1665115654d4cb295d"
+    },
+    {
+      "index": 6,
+      "caseNumber": "2859 ",
+      "success": true,
+      "responseTime": 473,
+      "caseId": "688cda1665115654d4cb2950"
+    },
+    {
+      "index": 7,
+      "caseNumber": "2858 ",
+      "success": true,
+      "responseTime": 432,
+      "caseId": "688cda1665115654d4cb2944"
+    },
+    {
+      "index": 8,
+      "caseNumber": "2855 ",
+      "success": true,
+      "responseTime": 317,
+      "caseId": "688cda1665115654d4cb291c"
+    },
+    {
+      "index": 9,
+      "caseNumber": "2853 ",
+      "success": true,
+      "responseTime": 285,
+      "caseId": "688cda1665115654d4cb2906"
+    },
+    {
+      "index": 10,
+      "caseNumber": "2856 ",
+      "success": true,
+      "responseTime": 354,
+      "caseId": "688cda1665115654d4cb292a"
+    },
+    {
+      "index": 1,
+      "caseNumber": "2861 ",
+      "success": true,
+      "responseTime": 396,
+      "caseId": "688cda1865115654d4cb296e"
+    },
+    {
+      "index": 2,
+      "caseNumber": "2862 ",
+      "success": true,
+      "responseTime": 458,
+      "caseId": "688cda1865115654d4cb2993"
+    },
+    {
+      "index": 3,
+      "caseNumber": "2870 ",
+      "success": true,
+      "responseTime": 934,
+      "caseId": "688cda1865115654d4cb29df"
+    },
+    {
+      "index": 4,
+      "caseNumber": "2866 ",
+      "success": true,
+      "responseTime": 477,
+      "caseId": "688cda1865115654d4cb29ad"
+    },
+    {
+      "index": 5,
+      "caseNumber": "2863 ",
+      "success": true,
+      "responseTime": 448,
+      "caseId": "688cda1865115654d4cb2982"
+    },
+    {
+      "index": 6,
+      "caseNumber": "2869 ",
+      "success": true,
+      "responseTime": 724,
+      "caseId": "688cda1865115654d4cb29d2"
+    },
+    {
+      "index": 7,
+      "caseNumber": "2864 ",
+      "success": true,
+      "responseTime": 435,
+      "caseId": "688cda1865115654d4cb297c"
+    },
+    {
+      "index": 8,
+      "caseNumber": "2868 ",
+      "success": true,
+      "responseTime": 590,
+      "caseId": "688cda1865115654d4cb29bf"
+    },
+    {
+      "index": 9,
+      "caseNumber": "2867 ",
+      "success": true,
+      "responseTime": 567,
+      "caseId": "688cda1865115654d4cb29ba"
+    },
+    {
+      "index": 10,
+      "caseNumber": "2865 ",
+      "success": true,
+      "responseTime": 451,
+      "caseId": "688cda1865115654d4cb298c"
+    },
+    {
+      "index": 1,
+      "caseNumber": "2871 ",
+      "success": true,
+      "responseTime": 330,
+      "caseId": "688cda1a65115654d4cb29f1"
+    },
+    {
+      "index": 2,
+      "caseNumber": "2873 ",
+      "success": true,
+      "responseTime": 407,
+      "caseId": "688cda1a65115654d4cb2a23"
+    },
+    {
+      "index": 3,
+      "caseNumber": "2875 ",
+      "success": true,
+      "responseTime": 386,
+      "caseId": "688cda1a65115654d4cb2a08"
+    },
+    {
+      "index": 4,
+      "caseNumber": "2872 ",
+      "success": true,
+      "responseTime": 392,
+      "caseId": "688cda1a65115654d4cb2a10"
+    },
+    {
+      "index": 5,
+      "caseNumber": "2874 ",
+      "success": true,
+      "responseTime": 371,
+      "caseId": "688cda1a65115654d4cb29fe"
+    },
+    {
+      "index": 6,
+      "caseNumber": "2878 ",
+      "success": true,
+      "responseTime": 473,
+      "caseId": "688cda1a65115654d4cb2a3b"
+    },
+    {
+      "index": 7,
+      "caseNumber": "2876 ",
+      "success": true,
+      "responseTime": 454,
+      "caseId": "688cda1a65115654d4cb2a2f"
+    },
+    {
+      "index": 8,
+      "caseNumber": "2879 ",
+      "success": true,
+      "responseTime": 624,
+      "caseId": "688cda1a65115654d4cb2a54"
+    },
+    {
+      "index": 9,
+      "caseNumber": "2880 ",
+      "success": true,
+      "responseTime": 902,
+      "caseId": "688cda1a65115654d4cb2a61"
+    },
+    {
+      "index": 10,
+      "caseNumber": "2877 ",
+      "success": true,
+      "responseTime": 463,
+      "caseId": "688cda1a65115654d4cb2a35"
+    },
+    {
+      "index": 1,
+      "caseNumber": "2881 ",
+      "success": true,
+      "responseTime": 560,
+      "caseId": "688cda1c65115654d4cb2a72"
+    },
+    {
+      "index": 2,
+      "caseNumber": "2886 ",
+      "success": true,
+      "responseTime": 669,
+      "caseId": "688cda1c65115654d4cb2aae"
+    },
+    {
+      "index": 3,
+      "caseNumber": "2882 ",
+      "success": true,
+      "responseTime": 603,
+      "caseId": "688cda1c65115654d4cb2a81"
+    },
+    {
+      "index": 4,
+      "caseNumber": "2883 ",
+      "success": true,
+      "responseTime": 611,
+      "caseId": "688cda1c65115654d4cb2a88"
+    },
+    {
+      "index": 5,
+      "caseNumber": "2889 ",
+      "success": true,
+      "responseTime": 776,
+      "caseId": "688cda1c65115654d4cb2ae5"
+    },
+    {
+      "index": 6,
+      "caseNumber": "2885 ",
+      "success": true,
+      "responseTime": 655,
+      "caseId": "688cda1c65115654d4cb2aa2"
+    },
+    {
+      "index": 7,
+      "caseNumber": "2887 ",
+      "success": true,
+      "responseTime": 703,
+      "caseId": "688cda1c65115654d4cb2ac6"
+    },
+    {
+      "index": 8,
+      "caseNumber": "2888 ",
+      "success": true,
+      "responseTime": 750,
+      "caseId": "688cda1c65115654d4cb2ad7"
+    },
+    {
+      "index": 9,
+      "caseNumber": "2890 ",
+      "success": true,
+      "responseTime": 866,
+      "caseId": "688cda1c65115654d4cb2afb"
+    },
+    {
+      "index": 10,
+      "caseNumber": "2884 ",
+      "success": true,
+      "responseTime": 637,
+      "caseId": "688cda1c65115654d4cb2a95"
+    },
+    {
+      "index": 1,
+      "caseNumber": "2891 ",
+      "success": true,
+      "responseTime": 394,
+      "caseId": "688cda1d65115654d4cb2b5a"
+    },
+    {
+      "index": 2,
+      "caseNumber": "2892 ",
+      "success": true,
+      "responseTime": 439,
+      "caseId": "688cda1d65115654d4cb2b71"
+    },
+    {
+      "index": 3,
+      "caseNumber": "2894 ",
+      "success": true,
+      "responseTime": 426,
+      "caseId": "688cda1d65115654d4cb2b67"
+    },
+    {
+      "index": 4,
+      "caseNumber": "2893 ",
+      "success": true,
+      "responseTime": 443,
+      "caseId": "688cda1d65115654d4cb2b79"
+    },
+    {
+      "index": 5,
+      "caseNumber": "2896 ",
+      "success": true,
+      "responseTime": 465,
+      "caseId": "688cda1d65115654d4cb2b8c"
+    },
+    {
+      "index": 6,
+      "caseNumber": "2897 ",
+      "success": true,
+      "responseTime": 525,
+      "caseId": "688cda1e65115654d4cb2b9e"
+    },
+    {
+      "index": 7,
+      "caseNumber": "2895 ",
+      "success": true,
+      "responseTime": 510,
+      "caseId": "688cda1e65115654d4cb2b98"
+    },
+    {
+      "index": 8,
+      "caseNumber": "2900 ",
+      "success": true,
+      "responseTime": 1111,
+      "caseId": "688cda1e65115654d4cb2bca"
+    },
+    {
+      "index": 9,
+      "caseNumber": "2898 ",
+      "success": true,
+      "responseTime": 523,
+      "caseId": "688cda1e65115654d4cb2ba4"
+    },
+    {
+      "index": 10,
+      "caseNumber": "2899 ",
+      "success": true,
+      "responseTime": 925,
+      "caseId": "688cda1e65115654d4cb2bbd"
+    },
+    {
+      "index": 1,
+      "caseNumber": "2901 ",
+      "success": true,
+      "responseTime": 489,
+      "caseId": "688cda2065115654d4cb2bdf"
+    },
+    {
+      "index": 2,
+      "caseNumber": "2903 ",
+      "success": true,
+      "responseTime": 492,
+      "caseId": "688cda2065115654d4cb2be4"
+    },
+    {
+      "index": 3,
+      "caseNumber": "2902 ",
+      "success": true,
+      "responseTime": 548,
+      "caseId": "688cda2065115654d4cb2c05"
+    },
+    {
+      "index": 4,
+      "caseNumber": "2904 ",
+      "success": true,
+      "responseTime": 571,
+      "caseId": "688cda2065115654d4cb2c17"
+    },
+    {
+      "index": 5,
+      "caseNumber": "2905 ",
+      "success": true,
+      "responseTime": 546,
+      "caseId": "688cda2065115654d4cb2c04"
+    },
+    {
+      "index": 6,
+      "caseNumber": "2906 ",
+      "success": true,
+      "responseTime": 494,
+      "caseId": "688cda2065115654d4cb2bee"
+    },
+    {
+      "index": 7,
+      "caseNumber": "2909 ",
+      "success": true,
+      "responseTime": 581,
+      "caseId": "688cda2065115654d4cb2c3c"
+    },
+    {
+      "index": 8,
+      "caseNumber": "2910 ",
+      "success": true,
+      "responseTime": 574,
+      "caseId": "688cda2065115654d4cb2c20"
+    },
+    {
+      "index": 9,
+      "caseNumber": "2907 ",
+      "success": true,
+      "responseTime": 563,
+      "caseId": "688cda2065115654d4cb2c18"
+    },
+    {
+      "index": 10,
+      "caseNumber": "2908 ",
+      "success": true,
+      "responseTime": 569,
+      "caseId": "688cda2065115654d4cb2c16"
+    },
+    {
+      "index": 1,
+      "caseNumber": "2911 ",
+      "success": true,
+      "responseTime": 451,
+      "caseId": "688cda2165115654d4cb2c5f"
+    },
+    {
+      "index": 2,
+      "caseNumber": "2913 ",
+      "success": true,
+      "responseTime": 503,
+      "caseId": "688cda2165115654d4cb2c7e"
+    },
+    {
+      "index": 3,
+      "caseNumber": "2912 ",
+      "success": true,
+      "responseTime": 502,
+      "caseId": "688cda2165115654d4cb2c71"
+    },
+    {
+      "index": 4,
+      "caseNumber": "2914 ",
+      "success": true,
+      "responseTime": 505,
+      "caseId": "688cda2165115654d4cb2c7d"
+    },
+    {
+      "index": 5,
+      "caseNumber": "2915 ",
+      "success": true,
+      "responseTime": 446,
+      "caseId": "688cda2165115654d4cb2c64"
+    },
+    {
+      "index": 6,
+      "caseNumber": "2917 ",
+      "success": true,
+      "responseTime": 512,
+      "caseId": "688cda2165115654d4cb2c97"
+    },
+    {
+      "index": 7,
+      "caseNumber": "2919 ",
+      "success": true,
+      "responseTime": 540,
+      "caseId": "688cda2165115654d4cb2cc1"
+    },
+    {
+      "index": 8,
+      "caseNumber": "2916 ",
+      "success": true,
+      "responseTime": 501,
+      "caseId": "688cda2165115654d4cb2c88"
+    },
+    {
+      "index": 9,
+      "caseNumber": "2918 ",
+      "success": true,
+      "responseTime": 512,
+      "caseId": "688cda2165115654d4cb2c98"
+    },
+    {
+      "index": 10,
+      "caseNumber": "2920 ",
+      "success": true,
+      "responseTime": 573,
+      "caseId": "688cda2165115654d4cb2cce"
+    }
+  ],
+  "baselineComparison": {
+    "caseCreation": {
+      "responseTime": {
+        "p95": {
+          "actual": 866,
+          "target": 200,
+          "passed": false
+        },
+        "avg": {
+          "actual": 511.67,
+          "target": 120,
+          "passed": false
+        }
+      },
+      "throughput": {
+        "actual": 5.601927062909641,
+        "target": 16.67,
+        "passed": false
+      },
+      "errorRate": {
+        "actual": 0,
+        "target": 0.01,
+        "passed": true
+      }
+    },
+    "overallPassed": false
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T15-15-28-727Z-v1.0/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T15-15-28-727Z-v1.0/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T15-15-28-727Z-v1.0/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T15-15-28-727Z-v1.0/reports/system-limits.html",
+    "baselineComparisonReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T15-15-28-727Z-v1.0/reports/baseline-comparison.html",
+    "parallelExecutionReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T15-15-28-727Z-v1.0/reports/parallel-execution.html",
+    "ultimateValidationReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T15-15-28-727Z-v1.0/reports/ultimate-validation.html"
+  },
+  "totalDuration": 119464
+}

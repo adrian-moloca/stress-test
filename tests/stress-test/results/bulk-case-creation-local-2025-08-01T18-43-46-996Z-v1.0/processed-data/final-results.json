@@ -1,0 +1,164 @@
+{
+  "testId": "bulk-case-creation-local-2025-08-01T18-43-46-996Z-v1.0",
+  "scenario": "bulk-case-creation",
+  "startTime": 1754073827057,
+  "endTime": 1754073834046,
+  "totalCasesAttempted": 10,
+  "casesCreated": 0,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {
+    "duration": 6766,
+    "metricsCollected": 1,
+    "peakMemoryUsage": "57MB",
+    "avgMemoryUsage": "57MB",
+    "currentMemory": "57MB",
+    "overallHealth": "STABLE",
+    "crashDetected": false,
+    "timeline": [
+      {
+        "timestamp": 1754073832063,
+        "memoryUsage": {
+          "heapUsed": 57,
+          "heapTotal": 81,
+          "external": 2,
+          "rss": 141
+        },
+        "cpuUsage": {
+          "user": 2835353,
+          "system": 464763
+        },
+        "activeRequests": 0,
+        "queueLength": 0
+      }
+    ]
+  },
+  "performanceMetrics": {
+    "totalCases": 10,
+    "successfulCases": 0,
+    "failedCases": 10,
+    "successRate": 0,
+    "totalDuration": 6458,
+    "responseTimes": {
+      "min": null,
+      "max": null,
+      "avg": null,
+      "p95": 0,
+      "p99": 0
+    },
+    "throughput": {
+      "casesPerSecond": 0,
+      "peakConcurrency": 10
+    },
+    "errors": [],
+    "realReferenceData": {
+      "contractIds": 8,
+      "doctorIds": 4,
+      "opStandardIds": 10
+    }
+  },
+  "validationResults": {
+    "message": "No cases created to validate"
+  },
+  "scenarioSpecificResults": {},
+  "scenarioType": "enhanced-bulk-case-creation",
+  "casesGenerated": 10,
+  "creationResults": [
+    {
+      "index": 1,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T18:43:52.350Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 4985
+    },
+    {
+      "index": 2,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T18:43:52.360Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 4994
+    },
+    {
+      "index": 3,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T18:43:52.213Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 4848
+    },
+    {
+      "index": 4,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T18:43:52.675Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 5318
+    },
+    {
+      "index": 5,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T18:43:52.818Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 5448
+    },
+    {
+      "index": 6,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T18:43:52.802Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 5431
+    },
+    {
+      "index": 7,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T18:43:52.243Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 4871
+    },
+    {
+      "index": 8,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T18:43:52.442Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 5068
+    },
+    {
+      "index": 9,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T18:43:52.413Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 5038
+    },
+    {
+      "index": 10,
+      "success": false,
+      "error": "HTTP 500: Internal Server Error - {\"statusCode\":500,\"timestamp\":\"2025-08-01T18:43:52.773Z\",\"path\":\"/api/schedulingcases/cases\",\"message\":{\"message\":\"Internal server error\"}}",
+      "responseTime": 5401
+    }
+  ],
+  "baselineComparison": {
+    "caseCreation": {
+      "responseTime": {
+        "p95": {
+          "actual": 0,
+          "target": 200,
+          "passed": true
+        },
+        "avg": {
+          "actual": 0,
+          "target": 120,
+          "passed": true
+        }
+      },
+      "throughput": {
+        "actual": 0,
+        "target": 16.67,
+        "passed": false
+      },
+      "errorRate": {
+        "actual": 1,
+        "target": 0.01,
+        "passed": false
+      }
+    },
+    "overallPassed": false
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T18-43-46-996Z-v1.0/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T18-43-46-996Z-v1.0/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T18-43-46-996Z-v1.0/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T18-43-46-996Z-v1.0/reports/system-limits.html",
+    "baselineComparisonReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T18-43-46-996Z-v1.0/reports/baseline-comparison.html",
+    "parallelExecutionReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T18-43-46-996Z-v1.0/reports/parallel-execution.html"
+  },
+  "totalDuration": 6989
+}

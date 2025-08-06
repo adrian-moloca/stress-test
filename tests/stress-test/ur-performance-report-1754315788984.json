@@ -1,0 +1,60 @@
+{
+  "timestamp": "2025-08-04T13:56:28.772Z",
+  "summary": {
+    "eventProcessingRate": "100.0%",
+    "proxyCompletionRate": "29.0%",
+    "nodeEvaluationRate": "100.0%",
+    "fieldOperationRate": "57.1%",
+    "systemHealthScore": 65
+  },
+  "metrics": {
+    "events": {
+      "total": 34871,
+      "processed": 34871,
+      "queued": 0,
+      "processingTimeline": [
+        {
+          "_id": null,
+          "count": 4092,
+          "avgProcessingTime": null,
+          "maxProcessingTime": null
+        }
+      ]
+    },
+    "proxies": {
+      "total": 14091,
+      "withFields": 4091,
+      "completionRate": "29.0%",
+      "byDomain": [
+        {
+          "_id": "schedulingCases",
+          "count": 14091
+        }
+      ]
+    },
+    "nodes": {
+      "total": 300,
+      "evaluated": 300,
+      "dirty": 0,
+      "byField": [
+        {
+          "_id": "status",
+          "count": 100
+        },
+        {
+          "_id": "createdAt",
+          "count": 100
+        },
+        {
+          "_id": "caseNumber",
+          "count": 100
+        }
+      ]
+    }
+  },
+  "performance": {},
+  "recommendations": [
+    "Low dependency node count - verify field operations are processing correctly",
+    "System health below optimal - review and address above recommendations"
+  ]
+}

@@ -1,4 +1,3 @@
-// scripts/core/scenario-factory.js
 const BulkCaseCreationScenario = require("../scenarios/bulk-case-creation");
 const SystemLimitsTestScenario = require("../scenarios/system-limits-test");
 const CrossSectionUpdateTestScenario = require("../scenarios/cross-section-update-test");

@@ -1,0 +1,392 @@
+{
+  "testId": "bulk-case-creation-local-2025-08-01T13-52-24-733Z-v1.0",
+  "scenario": "bulk-case-creation",
+  "startTime": 1754056344744,
+  "endTime": 1754056376964,
+  "totalCasesAttempted": 1,
+  "casesCreated": 1,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {
+    "duration": 1426,
+    "metricsCollected": 0,
+    "peakMemoryUsage": "0MB",
+    "avgMemoryUsage": "0MB",
+    "currentMemory": "56MB",
+    "overallHealth": "STABLE",
+    "crashDetected": false,
+    "timeline": []
+  },
+  "performanceMetrics": {
+    "totalCases": 1,
+    "successfulCases": 1,
+    "failedCases": 0,
+    "successRate": 100,
+    "totalDuration": 1244,
+    "responseTimes": {
+      "min": 240,
+      "max": 240,
+      "avg": 240,
+      "p95": 240,
+      "p99": 240
+    },
+    "throughput": {
+      "casesPerSecond": 0.8038585209003215,
+      "peakConcurrency": 10
+    },
+    "errors": [],
+    "realReferenceData": {
+      "contractIds": 8,
+      "doctorIds": 4,
+      "opStandardIds": 10
+    }
+  },
+  "validationResults": {
+    "timestamp": "2025-08-01T13:52:56.200Z",
+    "comprehensive": {
+      "summary": {
+        "overallStatus": "❌ POOR",
+        "eventFlowSummary": {
+          "eventsImported": "1/1",
+          "eventsProcessed": "0/1",
+          "cronJobsHealthy": true
+        },
+        "triggerSummary": {
+          "triggersEvaluated": "0/1",
+          "conditionsPassed": "0/0",
+          "contextKeysGenerated": 0
+        },
+        "proxySummary": {
+          "proxiesCreated": "0/1",
+          "contextValid": "0/0",
+          "dynamicFieldsInitialized": "0/0",
+          "successRate": "0.00"
+        },
+        "dependencySummary": {
+          "nodesCreated": 2,
+          "nodesEvaluated": "1/2",
+          "fieldsUpdated": 0,
+          "evaluationErrors": 0
+        },
+        "endToEndSummary": {
+          "completeFlows": "0/1",
+          "avgCompletionTime": "0.00ms",
+          "bottlenecks": 0
+        },
+        "performancePassed": false,
+        "recommendations": [
+          "🔍 Investigate proxy creation failures"
+        ]
+      },
+      "details": {
+        "eventFlow": {
+          "eventsImported": 1,
+          "eventsProcessed": 0,
+          "eventProcessingTime": {},
+          "cronJobsStatus": {
+            "EventsProcesser": {
+              "running": true,
+              "lastRun": "2025-08-01T13:52:56.323Z"
+            },
+            "DependenciesEvaluator": {
+              "running": true,
+              "lastRun": "2025-08-01T13:52:56.323Z"
+            },
+            "FieldOperationsAnalyzer": {
+              "running": true,
+              "lastRun": "2025-08-01T13:52:56.323Z"
+            },
+            "EventsSender": {
+              "running": true,
+              "lastRun": "2025-08-01T13:52:56.323Z"
+            }
+          },
+          "queueMetrics": {
+            "URTriggerEvents": {
+              "waiting": 8,
+              "active": 2,
+              "completed": 90,
+              "failed": 1,
+              "delayed": 0
+            },
+            "LocalEventsURQueue": {
+              "waiting": 2,
+              "active": 2,
+              "completed": 28,
+              "failed": 1,
+              "delayed": 0
+            },
+            "GraphFieldsQueue": {
+              "waiting": 8,
+              "active": 0,
+              "completed": 53,
+              "failed": 0,
+              "delayed": 0
+            },
+            "DepenenciesGraphQueue": {
+              "waiting": 8,
+              "active": 2,
+              "completed": 68,
+              "failed": 1,
+              "delayed": 0
+            }
+          },
+          "failures": [
+            {
+              "caseNumber": "STRESS_000001",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            }
+          ]
+        },
+        "proxy": {
+          "checked": 1,
+          "found": 0,
+          "contextValid": 0,
+          "dynamicFieldsInitialized": 0,
+          "details": [],
+          "fieldAnalysis": {},
+          "contextAnalysis": {},
+          "uniqueConstraintViolations": 0,
+          "successRate": 0,
+          "contextValidityRate": null
+        },
+        "fragment": {
+          "proxiesWithFragments": 0,
+          "fragmentTypes": {},
+          "fragmentValidation": [],
+          "fragmentIntegrity": {
+            "complete": 0,
+            "partial": 0,
+            "missing": 0
+          }
+        },
+        "dependency": {
+          "nodesCreated": 2,
+          "nodesEvaluated": 1,
+          "fieldsUpdated": 0,
+          "nodesByStatus": {
+            "EVALUATED": 1,
+            "DIRTY": 1
+          },
+          "nodesByTarget": {
+            "PROXY": 2
+          },
+          "evaluationMetrics": {
+            "avgEvaluationTime": 250,
+            "failedEvaluations": 0,
+            "expressionErrors": 0,
+            "conditionErrors": 0
+          },
+          "fieldOperations": {
+            "created": 2,
+            "updated": 0,
+            "deleted": 0,
+            "blocked": 0
+          }
+        },
+        "trigger": {
+          "triggersEvaluated": 0,
+          "conditionsPassed": 0,
+          "contextKeysGenerated": 0,
+          "emitExpressionResults": [],
+          "triggerFailures": [],
+          "domainConfiguration": {
+            "exists": true,
+            "domainId": "schedulingCases",
+            "trigger": {
+              "configured": true,
+              "eventType": "SCHEDULING_CASE_CREATED",
+              "hasCondition": true,
+              "hasEmitExpression": true,
+              "hasContextKey": true
+            },
+            "proxyFields": {
+              "count": 4,
+              "fields": [
+                "caseNumber",
+                "patientName",
+                "patientNickName",
+                "patientNickTitle"
+              ]
+            },
+            "permissions": {
+              "canAccessProxies": true,
+              "canAccessProxyDetails": true,
+              "canEditProxy": true
+            }
+          }
+        },
+        "expression": {
+          "expressionsEvaluated": 2,
+          "expressionTypes": {
+            "functionInvocation": 1,
+            "dotOperator": 1
+          },
+          "evaluationErrors": [],
+          "performanceMetrics": {
+            "avgEvaluationTime": 0,
+            "slowestExpression": {
+              "name": "contextKey",
+              "time": 37
+            },
+            "fastestExpression": {
+              "name": "patientName",
+              "time": 25
+            }
+          },
+          "namedExpressions": {
+            "used": 5,
+            "unique": {}
+          }
+        }
+      }
+    },
+    "endToEndValidation": {
+      "completeFlows": 0,
+      "partialFlows": 1,
+      "failedFlows": 0,
+      "flowBreakdown": [
+        {
+          "caseNumber": "STRESS_000001",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754056376513,
+          "totalTime": 1000,
+          "completedStages": 4
+        }
+      ],
+      "avgCompletionTime": 0,
+      "bottlenecks": []
+    },
+    "dependencyGraphAnalysis": {
+      "totalNodes": 100,
+      "nodeDistribution": {
+        "DIRTY": 20,
+        "CLEAN": 60,
+        "EVALUATED": 15,
+        "ERROR_CONDITION": 3,
+        "ERROR_EXPRESSION": 2
+      },
+      "evaluationQueue": {
+        "pending": 1,
+        "processing": 2,
+        "completed": 91
+      },
+      "graphComplexity": {
+        "avgDependencies": 2.5,
+        "maxDepth": 5,
+        "circularDependencies": 0
+      },
+      "performanceMetrics": {
+        "avgProcessingTime": 300,
+        "queueBacklog": 10,
+        "throughput": 50
+      }
+    },
+    "performanceValidation": {
+      "passed": false,
+      "details": {
+        "responseTime": {
+          "p95": 240,
+          "target": 200,
+          "passed": false
+        },
+        "throughput": {
+          "actual": 0.8038585209003215,
+          "target": 16.67,
+          "passed": false
+        },
+        "successRate": {
+          "actual": 100,
+          "target": 95,
+          "passed": true
+        }
+      },
+      "recommendations": [
+        "Optimize API response times - P95 exceeds 200ms target",
+        "Increase system throughput - below 1000 cases/minute target"
+      ]
+    },
+    "validationDuration": 562,
+    "criteriaComparison": {
+      "proxyCreationRate": {
+        "actual": "0/0",
+        "target": 0.99,
+        "passed": false
+      },
+      "fragmentCreationRate": {
+        "actual": "0/0",
+        "target": 0.98,
+        "passed": false
+      },
+      "dependencyCompletionRate": {
+        "actual": "0/0",
+        "target": 0.97,
+        "passed": false
+      }
+    }
+  },
+  "scenarioSpecificResults": {},
+  "scenarioType": "enhanced-bulk-case-creation",
+  "casesGenerated": 1,
+  "creationResults": [
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000001",
+      "success": true,
+      "responseTime": 240,
+      "caseId": "688cc6992d5c49ff5ca840c9"
+    }
+  ],
+  "baselineComparison": {
+    "caseCreation": {
+      "responseTime": {
+        "p95": {
+          "actual": 240,
+          "target": 200,
+          "passed": false
+        },
+        "avg": {
+          "actual": 240,
+          "target": 120,
+          "passed": false
+        }
+      },
+      "throughput": {
+        "actual": 0.8038585209003215,
+        "target": 16.67,
+        "passed": false
+      },
+      "errorRate": {
+        "actual": 0,
+        "target": 0.01,
+        "passed": true
+      }
+    },
+    "overallPassed": false
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T13-52-24-733Z-v1.0/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T13-52-24-733Z-v1.0/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T13-52-24-733Z-v1.0/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T13-52-24-733Z-v1.0/reports/system-limits.html",
+    "baselineComparisonReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T13-52-24-733Z-v1.0/reports/baseline-comparison.html",
+    "parallelExecutionReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T13-52-24-733Z-v1.0/reports/parallel-execution.html",
+    "ultimateValidationReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T13-52-24-733Z-v1.0/reports/ultimate-validation.html"
+  },
+  "totalDuration": 32220
+}

@@ -1,0 +1,966 @@
+{
+  "timestamp": "2025-08-01T15:16:46.914Z",
+  "comprehensive": {
+    "summary": {
+      "overallStatus": "❌ POOR",
+      "eventFlowSummary": {
+        "eventsImported": "100/100",
+        "eventsProcessed": "0/100",
+        "cronJobsHealthy": true
+      },
+      "triggerSummary": {
+        "triggersEvaluated": "0/100",
+        "conditionsPassed": "0/0",
+        "contextKeysGenerated": 0
+      },
+      "proxySummary": {
+        "proxiesCreated": "0/100",
+        "contextValid": "0/0",
+        "dynamicFieldsInitialized": "0/0",
+        "successRate": "0.00"
+      },
+      "dependencySummary": {
+        "nodesCreated": 200,
+        "nodesEvaluated": "100/200",
+        "fieldsUpdated": 0,
+        "evaluationErrors": 0
+      },
+      "endToEndSummary": {
+        "completeFlows": "0/10",
+        "avgCompletionTime": "0.00ms",
+        "bottlenecks": 0
+      },
+      "performancePassed": false,
+      "recommendations": [
+        "🔍 Investigate proxy creation failures"
+      ]
+    },
+    "details": {
+      "eventFlow": {
+        "eventsImported": 100,
+        "eventsProcessed": 0,
+        "eventProcessingTime": {},
+        "cronJobsStatus": {
+          "EventsProcesser": {
+            "running": true,
+            "lastRun": "2025-08-01T15:16:59.241Z"
+          },
+          "DependenciesEvaluator": {
+            "running": true,
+            "lastRun": "2025-08-01T15:16:59.241Z"
+          },
+          "FieldOperationsAnalyzer": {
+            "running": true,
+            "lastRun": "2025-08-01T15:16:59.241Z"
+          },
+          "EventsSender": {
+            "running": true,
+            "lastRun": "2025-08-01T15:16:59.241Z"
+          }
+        },
+        "queueMetrics": {
+          "URTriggerEvents": {
+            "waiting": 1,
+            "active": 4,
+            "completed": 87,
+            "failed": 1,
+            "delayed": 0
+          },
+          "LocalEventsURQueue": {
+            "waiting": 0,
+            "active": 2,
+            "completed": 96,
+            "failed": 1,
+            "delayed": 0
+          },
+          "GraphFieldsQueue": {
+            "waiting": 8,
+            "active": 4,
+            "completed": 40,
+            "failed": 1,
+            "delayed": 0
+          },
+          "DepenenciesGraphQueue": {
+            "waiting": 3,
+            "active": 2,
+            "completed": 24,
+            "failed": 0,
+            "delayed": 0
+          }
+        },
+        "failures": [
+          {
+            "caseNumber": "2821 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2822 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2823 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2828 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2824 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2826 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2829 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2825 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2827 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2830 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2831 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2832 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2833 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2835 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2840 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2838 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2839 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2834 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2837 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2836 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2841 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2842 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2843 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2844 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2846 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2847 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2849 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2848 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2850 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2845 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2851 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2852 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2854 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2857 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2860 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2859 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2858 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2855 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2853 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2856 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2861 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2862 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2870 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2866 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2863 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2869 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2864 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2868 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2867 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2865 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2871 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2873 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2875 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2872 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2874 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2878 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2876 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2879 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2880 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2877 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2881 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2886 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2882 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2883 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2889 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2885 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2887 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2888 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2890 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2884 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2891 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2892 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2894 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2893 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2896 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2897 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2895 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2900 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2898 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2899 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2901 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2903 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2902 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2904 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2905 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2906 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2909 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2910 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2907 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2908 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2911 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2913 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2912 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2914 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2915 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2917 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2919 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2916 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2918 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          },
+          {
+            "caseNumber": "2920 ",
+            "stage": "processing",
+            "reason": "Event imported but not processed"
+          }
+        ]
+      },
+      "proxy": {
+        "checked": 100,
+        "found": 0,
+        "contextValid": 0,
+        "dynamicFieldsInitialized": 0,
+        "details": [],
+        "fieldAnalysis": {},
+        "contextAnalysis": {},
+        "uniqueConstraintViolations": 0,
+        "successRate": 0,
+        "contextValidityRate": null
+      },
+      "fragment": {
+        "proxiesWithFragments": 0,
+        "fragmentTypes": {},
+        "fragmentValidation": [],
+        "fragmentIntegrity": {
+          "complete": 0,
+          "partial": 0,
+          "missing": 0
+        }
+      },
+      "dependency": {
+        "nodesCreated": 200,
+        "nodesEvaluated": 100,
+        "fieldsUpdated": 0,
+        "nodesByStatus": {
+          "EVALUATED": 100,
+          "DIRTY": 100
+        },
+        "nodesByTarget": {
+          "PROXY": 200
+        },
+        "evaluationMetrics": {
+          "avgEvaluationTime": 250,
+          "failedEvaluations": 0,
+          "expressionErrors": 0,
+          "conditionErrors": 0
+        },
+        "fieldOperations": {
+          "created": 200,
+          "updated": 0,
+          "deleted": 0,
+          "blocked": 0
+        }
+      },
+      "trigger": {
+        "triggersEvaluated": 0,
+        "conditionsPassed": 0,
+        "contextKeysGenerated": 0,
+        "emitExpressionResults": [],
+        "triggerFailures": [],
+        "domainConfiguration": {
+          "exists": true,
+          "domainId": "schedulingCases",
+          "trigger": {
+            "configured": true,
+            "eventType": "SCHEDULING_CASE_CREATED",
+            "hasCondition": true,
+            "hasEmitExpression": true,
+            "hasContextKey": true
+          },
+          "proxyFields": {
+            "count": 4,
+            "fields": [
+              "caseNumber",
+              "patientName",
+              "patientNickName",
+              "patientNickTitle"
+            ]
+          },
+          "permissions": {
+            "canAccessProxies": true,
+            "canAccessProxyDetails": true,
+            "canEditProxy": true
+          }
+        }
+      },
+      "expression": {
+        "expressionsEvaluated": 10,
+        "expressionTypes": {
+          "functionInvocation": 5,
+          "dotOperator": 5
+        },
+        "evaluationErrors": [],
+        "performanceMetrics": {
+          "avgEvaluationTime": 0,
+          "slowestExpression": {
+            "name": "contextKey",
+            "time": 112
+          },
+          "fastestExpression": {
+            "name": "patientName",
+            "time": 59
+          }
+        },
+        "namedExpressions": {
+          "used": 5,
+          "unique": {}
+        }
+      }
+    }
+  },
+  "endToEndValidation": {
+    "completeFlows": 0,
+    "partialFlows": 10,
+    "failedFlows": 0,
+    "flowBreakdown": [
+      {
+        "caseNumber": "2821 ",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": true,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": true,
+          "fieldsEvaluated": true,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0,
+          "eventImport": 100,
+          "nodeCreation": 400,
+          "fieldEvaluation": 500
+        },
+        "startTime": 1754061445460,
+        "totalTime": 1000,
+        "completedStages": 4
+      },
+      {
+        "caseNumber": "2822 ",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": true,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": true,
+          "fieldsEvaluated": true,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0,
+          "eventImport": 100,
+          "nodeCreation": 400,
+          "fieldEvaluation": 500
+        },
+        "startTime": 1754061445704,
+        "totalTime": 1000,
+        "completedStages": 4
+      },
+      {
+        "caseNumber": "2823 ",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": true,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": true,
+          "fieldsEvaluated": true,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0,
+          "eventImport": 100,
+          "nodeCreation": 400,
+          "fieldEvaluation": 500
+        },
+        "startTime": 1754061445983,
+        "totalTime": 1000,
+        "completedStages": 4
+      },
+      {
+        "caseNumber": "2828 ",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": true,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": true,
+          "fieldsEvaluated": true,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0,
+          "eventImport": 100,
+          "nodeCreation": 400,
+          "fieldEvaluation": 500
+        },
+        "startTime": 1754061446262,
+        "totalTime": 1000,
+        "completedStages": 4
+      },
+      {
+        "caseNumber": "2824 ",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": true,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": true,
+          "fieldsEvaluated": true,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0,
+          "eventImport": 100,
+          "nodeCreation": 400,
+          "fieldEvaluation": 500
+        },
+        "startTime": 1754061446533,
+        "totalTime": 1000,
+        "completedStages": 4
+      },
+      {
+        "caseNumber": "2826 ",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": true,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": true,
+          "fieldsEvaluated": true,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0,
+          "eventImport": 100,
+          "nodeCreation": 400,
+          "fieldEvaluation": 500
+        },
+        "startTime": 1754061446821,
+        "totalTime": 1000,
+        "completedStages": 4
+      },
+      {
+        "caseNumber": "2829 ",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": true,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": true,
+          "fieldsEvaluated": true,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0,
+          "eventImport": 100,
+          "nodeCreation": 400,
+          "fieldEvaluation": 500
+        },
+        "startTime": 1754061447092,
+        "totalTime": 1000,
+        "completedStages": 4
+      },
+      {
+        "caseNumber": "2825 ",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": true,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": true,
+          "fieldsEvaluated": true,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0,
+          "eventImport": 100,
+          "nodeCreation": 400,
+          "fieldEvaluation": 500
+        },
+        "startTime": 1754061447371,
+        "totalTime": 1000,
+        "completedStages": 4
+      },
+      {
+        "caseNumber": "2827 ",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": true,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": true,
+          "fieldsEvaluated": true,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0,
+          "eventImport": 100,
+          "nodeCreation": 400,
+          "fieldEvaluation": 500
+        },
+        "startTime": 1754061447647,
+        "totalTime": 1000,
+        "completedStages": 4
+      },
+      {
+        "caseNumber": "2830 ",
+        "stages": {
+          "caseCreated": true,
+          "eventImported": true,
+          "triggerEvaluated": false,
+          "proxyCreated": false,
+          "nodesCreated": true,
+          "fieldsEvaluated": true,
+          "dataComplete": false
+        },
+        "timings": {
+          "caseCreation": 0,
+          "eventImport": 100,
+          "nodeCreation": 400,
+          "fieldEvaluation": 500
+        },
+        "startTime": 1754061447915,
+        "totalTime": 1000,
+        "completedStages": 4
+      }
+    ],
+    "avgCompletionTime": 0,
+    "bottlenecks": []
+  },
+  "dependencyGraphAnalysis": {
+    "totalNodes": 100,
+    "nodeDistribution": {
+      "DIRTY": 20,
+      "CLEAN": 60,
+      "EVALUATED": 15,
+      "ERROR_CONDITION": 3,
+      "ERROR_EXPRESSION": 2
+    },
+    "evaluationQueue": {
+      "pending": 0,
+      "processing": 0,
+      "completed": 74
+    },
+    "graphComplexity": {
+      "avgDependencies": 2.5,
+      "maxDepth": 5,
+      "circularDependencies": 0
+    },
+    "performanceMetrics": {
+      "avgProcessingTime": 300,
+      "queueBacklog": 10,
+      "throughput": 50
+    }
+  },
+  "performanceValidation": {
+    "passed": false,
+    "details": {
+      "responseTime": {
+        "p95": 866,
+        "target": 200,
+        "passed": false
+      },
+      "throughput": {
+        "actual": 5.601927062909641,
+        "target": 16.67,
+        "passed": false
+      },
+      "successRate": {
+        "actual": 100,
+        "target": 95,
+        "passed": true
+      }
+    },
+    "recommendations": [
+      "Optimize API response times - P95 exceeds 200ms target",
+      "Increase system throughput - below 1000 cases/minute target"
+    ]
+  },
+  "validationDuration": 41241
+}

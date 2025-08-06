@@ -1,0 +1,96 @@
+[
+  {
+    "caseNumber": "STRESS_000001",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Raina",
+      "surname": "Emmerich",
+      "patientId": "P757577",
+      "birthDate": "1973-11-25T16:23:53.688Z",
+      "gender": "FEMALE",
+      "genderBirth": "FEMALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "36308 Luther Junction",
+        "houseNumber": "489",
+        "postalCode": "45025-9790",
+        "city": "Volkmanland",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2026-07-06T06:05:56.499Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_ET4YiYxEHeuAWaDai",
+      "duration": 211,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "Z1XMCGJV",
+          "name": "Surgical Gloves",
+          "quantity": 7,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "ERAHQCEL",
+          "name": "Surgical Suture",
+          "quantity": 3,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "COOME2PU",
+          "name": "Surgical Drape",
+          "quantity": 4,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "code": "OHG6TNE7",
+          "name": "Rocuronium",
+          "dosage": "10mg",
+          "quantity": 3
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 291,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "30mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-08-01T13:57:06.331Z"
+    }
+  }
+]

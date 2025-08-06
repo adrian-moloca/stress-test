@@ -105,11 +105,25 @@ export class DependenciesGraphService {
 
   emitNode = async (node: tDependencyGraphNode) => {
     try {
-      const newNode = await this.dependenciesGraphModel.create(node)
+      const nodeWithPolicy = {
+        ...node,
+        policy: node.policy || {
+          horizontal: 'OVERWRITE',
+          vertical: 'PARENT'
+        }
+      }
 
-      this.loggingService.logInfo(`Created new node with target ${node.target} and id ${newNode.id} in the dependecies graph`, false)
+      const newNode = await this.dependenciesGraphModel.findOneAndUpdate(
+        { target: node.target, tenantId: node.tenantId },
+        { $set: nodeWithPolicy },
+        {
+          new: true,
+          upsert: true,
+          setDefaultsOnInsert: true
+        }
+      )
 
-      this.loggingService.logInfo(`Emitted new node with target ${node.target} in the dependencies queue`, false)
+      this.loggingService.logInfo(`Created/Updated node with target ${node.target} and id ${newNode.id} in the dependencies graph`, false)
     } catch (e) {
       return await this.loggingService.throwErrorAndLog(e)
     }

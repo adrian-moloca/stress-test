@@ -1,15 +1,13 @@
-// scripts/get-real-token.js
 const fetch = require('node-fetch');
 
 async function getRealToken() {
   try {
-    // Login with real credentials
     const loginResponse = await fetch('http://localhost:8010/api/auth/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         email: 'luca@ambuflow.com',
-        password: '0mhk6k^csJ4y6G' // Use the actual password
+        password: '0mhk6k^csJ4y6G'
       })
     });
     
@@ -22,7 +20,6 @@ async function getRealToken() {
     console.log('Token with tenant:', tokenWithTenant);
     console.log('\nRegular token:', token);
     
-    // Test the token
     const testResponse = await fetch('http://localhost:8060/api/schedulingcases/cases', {
       method: 'GET',
       headers: {

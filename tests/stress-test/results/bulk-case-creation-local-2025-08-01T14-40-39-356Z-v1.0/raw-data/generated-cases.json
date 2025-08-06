@@ -1,0 +1,103 @@
+[
+  {
+    "caseNumber": "STRESS_000001",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Elyssa",
+      "surname": "Goodwin",
+      "patientId": "P229496",
+      "birthDate": "1975-09-12T02:43:43.774Z",
+      "gender": "MALE",
+      "genderBirth": "FEMALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "73015 Crona Garden",
+        "houseNumber": "124",
+        "postalCode": "04269-5601",
+        "city": "Toledo",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2025-11-16T07:23:07.284Z",
+      "doctorId": "user_iEiaY2pk7dtDu3pza",
+      "contractId": "contract_7dGTBRBRnvwta7tdo",
+      "opStandardId": "op_JB2bQKeGiuCbqKENZ",
+      "duration": 149,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "GDKPOIHU",
+          "name": "Surgical Gloves",
+          "quantity": 9,
+          "unitCost": 8
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "0G9TWAXT",
+          "name": "Surgical Drape",
+          "quantity": 3,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "PYQ3RW1F",
+          "name": "Surgical Drape",
+          "quantity": 3,
+          "unitCost": 25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "SKESGKWN",
+          "name": "Propofol",
+          "dosage": "5mg",
+          "quantity": 1
+        },
+        {
+          "medicationId": "MED_005",
+          "code": "IKX4V9JQ",
+          "name": "Rocuronium",
+          "dosage": "46mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 456,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "48mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-08-01T14:40:39.608Z"
+    }
+  }
+]

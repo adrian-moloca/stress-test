@@ -21,7 +21,20 @@
     "continuous": "node scripts/continuous-runner.js",
     "clean": "rm -rf results/*",
     "setup": "npm install && npm run setup:k6",
-    "setup:k6": "brew install k6 || apt-get install k6 || choco install k6"
+    "setup:k6": "brew install k6 || apt-get install k6 || choco install k6",
+    "clean:queues": "node scripts/utils/queue-cleaner.js",
+    "clean:db": "node scripts/utils/complete-db-cleaner.js",
+    "clean:indexes": "node scripts/utils/fix-indexes.js",
+    "clean:all": "node scripts/clean-everything.js",
+    "clean:force": "node scripts/clean-everything.js --force",
+    "clean:reset": "node scripts/clean-everything.js --force --reset-indexes",
+    "stress:clean": "npm run clean:reset && node scripts/run-stress-test.js",
+    "preflight": "node scripts/preflight-check.js",
+    "start:services": "bash scripts/start-all-services.sh",
+    "stress:preflight": "npm run preflight",
+    "stress:quick": "node scripts/stress-test-quick-start.js",
+    "stress:safe": "npm run preflight && node scripts/run-stress-test.js",
+    "fix:ur-port": "cd ../../backend/universal-reporting && UR_PORT=9160 npm run dev"
   },
   "dependencies": {
     "@faker-js/faker": "^8.0.0",
@@ -34,6 +47,7 @@
     "dayjs": "^1.11.13",
     "dotenv": "^16.4.5",
     "mkdirp": "^3.0.1",
+    "mongodb": "^6.18.0",
     "uuid": "^9.0.0",
     "winston": "^3.11.0"
   },

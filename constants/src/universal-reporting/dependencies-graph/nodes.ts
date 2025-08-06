@@ -82,12 +82,17 @@ async function updateNodeTarget (
     !dirtyReasonEqualsToTarget) &&
     (dirtyReasonMatchExpressionDeps || parentChanged))
 
+  const mergePolicy = node.policy || {
+    horizontal: 'OVERWRITE',
+    vertical: 'PARENT'
+  }
+
   const targetValue = nodeNeedsUpdating ? evaluatedExpression?.value : null
   return await updateTargetValue(
     node.target,
     targetValue,
     entity,
-    node.policy,
+    mergePolicy,
     nodeNeedsUpdating
   )
 }
@@ -216,6 +221,7 @@ export async function processNode (node: tDependencyGraphNode,
     fixedDeps,
     expressionDeps,
   )
+
   const updates: tParentChildUpdates = { parent: parentUpdate }
 
   const { updates: subNodesUpdates, deps: subNodesDeps } = await handleSubNodes(

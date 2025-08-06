@@ -1,0 +1,832 @@
+[
+  {
+    "caseNumber": "STRESS_000001",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Melody",
+      "surname": "Hackett",
+      "patientId": "P982142",
+      "birthDate": "1998-06-23T13:28:06.102Z",
+      "gender": "MALE",
+      "genderBirth": "FEMALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "862 Corkery Stravenue",
+        "houseNumber": "27859",
+        "postalCode": "24609-9682",
+        "city": "Mariahville",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2025-10-20T12:48:59.948Z",
+      "doctorId": "user_iEiaY2pk7dtDu3pza",
+      "contractId": "contract_ZChfoaktz7RzHKiEa",
+      "opStandardId": "op_JB2bQKeGiuCbqKENZ",
+      "duration": 105,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "FOS3E4TM",
+          "name": "Scalpel Blade",
+          "quantity": 2,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_005",
+          "code": "0OXBUHIM",
+          "name": "Surgical Drape",
+          "quantity": 9,
+          "unitCost": 25
+        },
+        {
+          "materialId": "MAT_001",
+          "code": "5ZCAEJTV",
+          "name": "Surgical Suture",
+          "quantity": 2,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 97,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "24mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-08-01T13:46:03.544Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000002",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Stone",
+      "surname": "Abernathy",
+      "patientId": "P164328",
+      "birthDate": "1944-07-05T00:45:34.907Z",
+      "gender": "FEMALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "8177 Streich Green",
+        "houseNumber": "938",
+        "postalCode": "76950-3694",
+        "city": "East Stephanyberg",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2026-03-09T01:41:48.691Z",
+      "doctorId": "user_iEiaY2pk7dtDu3pza",
+      "contractId": "contract_7dGTBRBRnvwta7tdo",
+      "opStandardId": "op_miua7tR4TjnN7hfSj",
+      "duration": 181,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "QLSG020I",
+          "name": "Surgical Gloves",
+          "quantity": 8,
+          "unitCost": 8
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 154,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "name": "Midazolam",
+          "dosage": "39mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-08-01T13:46:03.545Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000003",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Aiden",
+      "surname": "Kertzmann",
+      "patientId": "P433049",
+      "birthDate": "1939-11-04T15:22:41.332Z",
+      "gender": "FEMALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "78628 Ona Manor",
+        "houseNumber": "695",
+        "postalCode": "55691",
+        "city": "Theresiastad",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2026-07-23T23:22:31.505Z",
+      "doctorId": "user_iEiaY2pk7dtDu3pza",
+      "contractId": "contract_zRFKbJAEYx8p6mgsr",
+      "opStandardId": "op_2pbkjnGytRFTaqYtv",
+      "duration": 78,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "O3XOHDUI",
+          "name": "Gauze Pad",
+          "quantity": 4,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 304,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "13mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-08-01T13:46:03.546Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000004",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Kelley",
+      "surname": "Klein",
+      "patientId": "P565005",
+      "birthDate": "1986-10-23T13:49:44.874Z",
+      "gender": "MALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "2112 Delfina Lake",
+        "houseNumber": "5723",
+        "postalCode": "76660",
+        "city": "Emmaleeland",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2026-07-03T00:37:27.937Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_ZChfoaktz7RzHKiEa",
+      "opStandardId": "op_miua7tR4TjnN7hfSj",
+      "duration": 128,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "UYZTQS0K",
+          "name": "Surgical Gloves",
+          "quantity": 1,
+          "unitCost": 8
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "RWLDNE4D",
+          "name": "Propofol",
+          "dosage": "11mg",
+          "quantity": 2
+        },
+        {
+          "medicationId": "MED_004",
+          "code": "4MEAXEGP",
+          "name": "Sevoflurane",
+          "dosage": "54mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 264,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "43mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-08-01T13:46:03.546Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000005",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Loyce",
+      "surname": "Franey",
+      "patientId": "P895305",
+      "birthDate": "1961-03-17T19:53:15.594Z",
+      "gender": "FEMALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "319 Albany Road",
+        "houseNumber": "887",
+        "postalCode": "38433",
+        "city": "Aaliyahfield",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2026-03-14T21:44:44.818Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_3kFLxHWqJsGvRR9WY",
+      "opStandardId": "op_ET4YiYxEHeuAWaDai",
+      "duration": 135,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_003",
+          "code": "E9OAXSJR",
+          "name": "Surgical Gloves",
+          "quantity": 6,
+          "unitCost": 8
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_003",
+          "code": "FOYD96NK",
+          "name": "Midazolam",
+          "dosage": "15mg",
+          "quantity": 5
+        },
+        {
+          "medicationId": "MED_001",
+          "code": "UUZ7UBVS",
+          "name": "Propofol",
+          "dosage": "98mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Laparoscopic",
+      "estimatedBloodLoss": 389,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Regional_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "16mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-08-01T13:46:03.547Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000006",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Tyrique",
+      "surname": "Daugherty",
+      "patientId": "P452428",
+      "birthDate": "1939-08-04T00:44:14.617Z",
+      "gender": "MALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "42849 Alvah Groves",
+        "houseNumber": "2025",
+        "postalCode": "86098-6838",
+        "city": "Madisynborough",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2026-05-14T08:39:52.780Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_fBcmjb7KxyZcbXHdS",
+      "opStandardId": "op_JB2bQKeGiuCbqKENZ",
+      "duration": 48,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "JDN9D1VD",
+          "name": "Surgical Suture",
+          "quantity": 1,
+          "unitCost": 15.5
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "code": "K8M1LT0F",
+          "name": "Propofol",
+          "dosage": "70mg",
+          "quantity": 4
+        },
+        {
+          "medicationId": "MED_004",
+          "code": "ZC4DXEX1",
+          "name": "Sevoflurane",
+          "dosage": "32mg",
+          "quantity": 2
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 394,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "38mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-08-01T13:46:03.547Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000007",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Audrey",
+      "surname": "Nitzsche",
+      "patientId": "P420902",
+      "birthDate": "1979-07-25T14:11:40.831Z",
+      "gender": "MALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "3176 Cummings Ramp",
+        "houseNumber": "286",
+        "postalCode": "24933-4165",
+        "city": "Hialeah",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2025-08-11T15:45:28.849Z",
+      "doctorId": "user_m8jwbhyayXsWHYejt",
+      "contractId": "contract_a3JdoQd7okkRPGtGM",
+      "opStandardId": "op_NWHDm6pHP7q88NKpE",
+      "duration": 206,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_002",
+          "code": "FUCCPAO7",
+          "name": "Gauze Pad",
+          "quantity": 9,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "code": "2JPMQZQA",
+          "name": "Fentanyl",
+          "dosage": "86mg",
+          "quantity": 4
+        },
+        {
+          "medicationId": "MED_005",
+          "code": "4UO1DCIB",
+          "name": "Rocuronium",
+          "dosage": "41mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Open",
+      "estimatedBloodLoss": 267,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_002",
+          "name": "Fentanyl",
+          "dosage": "35mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-08-01T13:46:03.547Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000008",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Asa",
+      "surname": "Fahey",
+      "patientId": "P098483",
+      "birthDate": "1970-05-28T17:24:14.042Z",
+      "gender": "MALE",
+      "genderBirth": "FEMALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "6238 Halvorson Street",
+        "houseNumber": "75045",
+        "postalCode": "25095-1274",
+        "city": "Isaiahbury",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2025-11-16T09:03:08.354Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_ZChfoaktz7RzHKiEa",
+      "opStandardId": "op_JB2bQKeGiuCbqKENZ",
+      "duration": 106,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_004",
+          "code": "0X45VE3E",
+          "name": "Scalpel Blade",
+          "quantity": 10,
+          "unitCost": 12
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "BUPFWMSZ",
+          "name": "Gauze Pad",
+          "quantity": 6,
+          "unitCost": 2.25
+        },
+        {
+          "materialId": "MAT_004",
+          "code": "B9NX0SSI",
+          "name": "Scalpel Blade",
+          "quantity": 5,
+          "unitCost": 12
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 53,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_005",
+          "name": "Rocuronium",
+          "dosage": "43mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-08-01T13:46:03.547Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000009",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Kayden",
+      "surname": "Reynolds",
+      "patientId": "P700252",
+      "birthDate": "1999-07-09T00:24:23.278Z",
+      "gender": "FEMALE",
+      "genderBirth": "MALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "160 Beer Fort",
+        "houseNumber": "4786",
+        "postalCode": "18810-5671",
+        "city": "Evalynboro",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2025-10-15T07:37:06.852Z",
+      "doctorId": "user_iEiaY2pk7dtDu3pza",
+      "contractId": "contract_zRFKbJAEYx8p6mgsr",
+      "opStandardId": "op_ZmchAa7M8Gzagkyf2",
+      "duration": 73,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_005",
+          "code": "ZXKVD10W",
+          "name": "Surgical Drape",
+          "quantity": 8,
+          "unitCost": 25
+        }
+      ],
+      "medications": [],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 215,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "General_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_001",
+          "name": "Propofol",
+          "dosage": "21mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-08-01T13:46:03.548Z"
+    }
+  },
+  {
+    "caseNumber": "STRESS_000010",
+    "status": "PENDING",
+    "bookingPatient": {
+      "name": "Alejandrin",
+      "surname": "Toy",
+      "patientId": "P714441",
+      "birthDate": "1982-12-20T01:39:34.761Z",
+      "gender": "MALE",
+      "genderBirth": "FEMALE",
+      "germanInsuranceStatus": "NONE",
+      "address": {
+        "street": "67885 Keebler Ranch",
+        "houseNumber": "630",
+        "postalCode": "00343-3814",
+        "city": "Luellastead",
+        "country": "Germany"
+      }
+    },
+    "bookingSection": {
+      "date": "2026-01-07T22:09:04.856Z",
+      "doctorId": "user_6EnqFa5TaWCtuy4wD",
+      "contractId": "contract_DSg8orNxSST5FKjpz",
+      "opStandardId": "op_NWHDm6pHP7q88NKpE",
+      "duration": 54,
+      "name": "",
+      "roomType": null,
+      "calendarNotes": "",
+      "calendarPreOpNotes": "",
+      "calendarPostOpNotes": ""
+    },
+    "preOpSection": {
+      "materials": [
+        {
+          "materialId": "MAT_001",
+          "code": "XGDLLGZ0",
+          "name": "Surgical Suture",
+          "quantity": 4,
+          "unitCost": 15.5
+        },
+        {
+          "materialId": "MAT_002",
+          "code": "RCBHWJSE",
+          "name": "Gauze Pad",
+          "quantity": 4,
+          "unitCost": 2.25
+        }
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "code": "OBHRWOER",
+          "name": "Sevoflurane",
+          "dosage": "62mg",
+          "quantity": 4
+        },
+        {
+          "medicationId": "MED_005",
+          "code": "OZMYZPGM",
+          "name": "Rocuronium",
+          "dosage": "74mg",
+          "quantity": 5
+        }
+      ],
+      "documents": []
+    },
+    "surgerySection": {
+      "approach": "Robotic",
+      "estimatedBloodLoss": 269,
+      "positions": [
+        "SUPINE_POSITION"
+      ],
+      "documents": []
+    },
+    "anesthesiaSection": {
+      "anesthesiaTypes": [
+        "Local_Anesthesia"
+      ],
+      "medications": [
+        {
+          "medicationId": "MED_004",
+          "name": "Sevoflurane",
+          "dosage": "19mg"
+        }
+      ],
+      "documents": []
+    },
+    "billingSection": {
+      "billingContact": "DOCTOR"
+    },
+    "timestamps": {
+      "createdAt": "2025-08-01T13:46:03.548Z"
+    }
+  }
+]

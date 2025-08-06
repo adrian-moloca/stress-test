@@ -1,0 +1,376 @@
+{
+  "phases": [
+    {
+      "phase": "baseline",
+      "timestamp": "2025-08-01T18:57:26.229Z",
+      "importedEvents": {
+        "total": 8873,
+        "unprocessed": 0
+      },
+      "proxies": {
+        "total": 2992,
+        "byDomain": [
+          {
+            "_id": "schedulingCases",
+            "count": 2992
+          }
+        ]
+      },
+      "dependencyNodes": {
+        "total": 0,
+        "byStatus": []
+      }
+    },
+    {
+      "phase": "post-creation",
+      "timestamp": "2025-08-01T18:57:26.571Z",
+      "importedEvents": {
+        "total": 9873,
+        "unprocessed": 1000
+      },
+      "proxies": {
+        "total": 2992,
+        "byDomain": [
+          {
+            "_id": "schedulingCases",
+            "count": 2992
+          }
+        ]
+      },
+      "dependencyNodes": {
+        "total": 0,
+        "byStatus": []
+      }
+    },
+    {
+      "phase": "initial-processing",
+      "timestamp": "2025-08-01T18:57:56.899Z",
+      "importedEvents": {
+        "total": 10062,
+        "unprocessed": 936
+      },
+      "proxies": {
+        "total": 3246,
+        "byDomain": [
+          {
+            "_id": "schedulingCases",
+            "count": 3246
+          }
+        ]
+      },
+      "dependencyNodes": {
+        "total": 0,
+        "byStatus": []
+      }
+    },
+    {
+      "phase": "extended-processing",
+      "timestamp": "2025-08-01T18:58:57.442Z",
+      "importedEvents": {
+        "total": 10651,
+        "unprocessed": 932
+      },
+      "proxies": {
+        "total": 3839,
+        "byDomain": [
+          {
+            "_id": "schedulingCases",
+            "count": 3839
+          }
+        ]
+      },
+      "dependencyNodes": {
+        "total": 0,
+        "byStatus": []
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "timestamp": "2025-08-01T18:57:26.318Z",
+      "phase": "creation",
+      "batchNumber": 1,
+      "casesInBatch": 50,
+      "duration": 21,
+      "throughput": "2380.95"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.325Z",
+      "phase": "creation",
+      "batchNumber": 2,
+      "casesInBatch": 50,
+      "duration": 7,
+      "throughput": "7142.86"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.331Z",
+      "phase": "creation",
+      "batchNumber": 3,
+      "casesInBatch": 50,
+      "duration": 6,
+      "throughput": "8333.33"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.339Z",
+      "phase": "creation",
+      "batchNumber": 4,
+      "casesInBatch": 50,
+      "duration": 7,
+      "throughput": "7142.86"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.346Z",
+      "phase": "creation",
+      "batchNumber": 5,
+      "casesInBatch": 50,
+      "duration": 7,
+      "throughput": "7142.86"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.356Z",
+      "phase": "creation",
+      "batchNumber": 6,
+      "casesInBatch": 50,
+      "duration": 10,
+      "throughput": "5000.00"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.363Z",
+      "phase": "creation",
+      "batchNumber": 7,
+      "casesInBatch": 50,
+      "duration": 7,
+      "throughput": "7142.86"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.368Z",
+      "phase": "creation",
+      "batchNumber": 8,
+      "casesInBatch": 50,
+      "duration": 5,
+      "throughput": "10000.00"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.377Z",
+      "phase": "creation",
+      "batchNumber": 9,
+      "casesInBatch": 50,
+      "duration": 9,
+      "throughput": "5555.56"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.384Z",
+      "phase": "creation",
+      "batchNumber": 10,
+      "casesInBatch": 50,
+      "duration": 7,
+      "throughput": "7142.86"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.394Z",
+      "phase": "creation",
+      "batchNumber": 11,
+      "casesInBatch": 50,
+      "duration": 8,
+      "throughput": "6250.00"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.397Z",
+      "phase": "creation",
+      "batchNumber": 12,
+      "casesInBatch": 50,
+      "duration": 3,
+      "throughput": "16666.67"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.405Z",
+      "phase": "creation",
+      "batchNumber": 13,
+      "casesInBatch": 50,
+      "duration": 8,
+      "throughput": "6250.00"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.412Z",
+      "phase": "creation",
+      "batchNumber": 14,
+      "casesInBatch": 50,
+      "duration": 7,
+      "throughput": "7142.86"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.417Z",
+      "phase": "creation",
+      "batchNumber": 15,
+      "casesInBatch": 50,
+      "duration": 5,
+      "throughput": "10000.00"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.422Z",
+      "phase": "creation",
+      "batchNumber": 16,
+      "casesInBatch": 50,
+      "duration": 5,
+      "throughput": "10000.00"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.427Z",
+      "phase": "creation",
+      "batchNumber": 17,
+      "casesInBatch": 50,
+      "duration": 5,
+      "throughput": "10000.00"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.431Z",
+      "phase": "creation",
+      "batchNumber": 18,
+      "casesInBatch": 50,
+      "duration": 4,
+      "throughput": "12500.00"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.439Z",
+      "phase": "creation",
+      "batchNumber": 19,
+      "casesInBatch": 50,
+      "duration": 8,
+      "throughput": "6250.00"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:26.446Z",
+      "phase": "creation",
+      "batchNumber": 20,
+      "casesInBatch": 50,
+      "duration": 7,
+      "throughput": "7142.86"
+    },
+    {
+      "timestamp": "2025-08-01T18:57:31.632Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 989,
+      "recentProxies": 12,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:57:36.726Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 932,
+      "recentProxies": 69,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:57:41.778Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 962,
+      "recentProxies": 109,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:57:46.806Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 948,
+      "recentProxies": 152,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:57:51.848Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 983,
+      "recentProxies": 199,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:57:56.886Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 936,
+      "recentProxies": 254,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:58:01.967Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 986,
+      "recentProxies": 303,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:58:07.002Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 938,
+      "recentProxies": 352,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:58:12.048Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 986,
+      "recentProxies": 399,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:58:17.075Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 932,
+      "recentProxies": 454,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:58:22.102Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 977,
+      "recentProxies": 504,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:58:27.199Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 927,
+      "recentProxies": 554,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:58:32.239Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 978,
+      "recentProxies": 586,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:58:37.276Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 926,
+      "recentProxies": 584,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:58:42.324Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 982,
+      "recentProxies": 588,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:58:47.360Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 935,
+      "recentProxies": 591,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:58:52.403Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 987,
+      "recentProxies": 588,
+      "dirtyNodes": 0
+    },
+    {
+      "timestamp": "2025-08-01T18:58:57.437Z",
+      "phase": "monitoring",
+      "unprocessedEvents": 932,
+      "recentProxies": 585,
+      "dirtyNodes": 0
+    }
+  ]
+}

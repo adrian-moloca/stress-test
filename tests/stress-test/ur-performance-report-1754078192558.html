@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UR Performance Report - 8/1/2025, 10:56:32 PM</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1, h2 { color: #333; }
+        .metric-card { background: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .metric-value { font-size: 24px; font-weight: bold; color: #28a745; }
+        .health-score { font-size: 48px; text-align: center; padding: 20px; }
+        .good { color: #28a745; }
+        .warning { color: #ffc107; }
+        .critical { color: #dc3545; }
+        .recommendation { background: #e7f3ff; padding: 10px; margin: 5px 0; border-left: 4px solid #2196F3; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #f8f9fa; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Universal Reporting Performance Report</h1>
+        <p>Generated: Fri Aug 01 2025 22:56:32 GMT+0300 (Eastern European Summer Time)</p>
+        
+        <div class="health-score good">
+            System Health: 100%
+        </div>
+        
+        <h2>Key Metrics</h2>
+        <div class="metric-card">
+            <div>Event Processing Rate</div>
+            <div class="metric-value">98.8%</div>
+        </div>
+        <div class="metric-card">
+            <div>Proxy Completion Rate</div>
+            <div class="metric-value">100.0%</div>
+        </div>
+        
+        <h2>Performance Metrics</h2>
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Total Events</td>
+                <td>14871</td>
+            </tr>
+            <tr>
+                <td>Processed Events</td>
+                <td>14696</td>
+            </tr>
+            <tr>
+                <td>Queue Backlog</td>
+                <td>175</td>
+            </tr>
+            <tr>
+                <td>Total Proxies</td>
+                <td>4091</td>
+            </tr>
+            <tr>
+                <td>Dependency Nodes</td>
+                <td>300</td>
+            </tr>
+        </table>
+        
+        <h2>Recommendations</h2>
+        <div class="recommendation">Low dependency node count - verify field operations are processing correctly</div><div class="recommendation">System is healthy! Consider load testing with higher volumes</div>
+    </div>
+</body>
+</html>
+  

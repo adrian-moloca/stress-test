@@ -1,0 +1,689 @@
+{
+  "testId": "bulk-case-creation-local-2025-08-01T13-26-04-640Z-v1.0",
+  "scenario": "bulk-case-creation",
+  "startTime": 1754054764673,
+  "endTime": 1754054801919,
+  "totalCasesAttempted": 10,
+  "casesCreated": 10,
+  "errors": [],
+  "timeline": [],
+  "systemMetrics": {
+    "duration": 1359,
+    "metricsCollected": 0,
+    "peakMemoryUsage": "0MB",
+    "avgMemoryUsage": "0MB",
+    "currentMemory": "58MB",
+    "overallHealth": "STABLE",
+    "crashDetected": false,
+    "timeline": []
+  },
+  "performanceMetrics": {
+    "totalCases": 10,
+    "successfulCases": 10,
+    "failedCases": 0,
+    "successRate": 100,
+    "totalDuration": 923,
+    "responseTimes": {
+      "min": 592,
+      "max": 804,
+      "avg": 695.5,
+      "p95": 804,
+      "p99": 804
+    },
+    "throughput": {
+      "casesPerSecond": 10.834236186348862,
+      "peakConcurrency": 50
+    },
+    "errors": [],
+    "realReferenceData": {
+      "contractIds": 8,
+      "doctorIds": 4,
+      "opStandardIds": 10
+    }
+  },
+  "validationResults": {
+    "timestamp": "2025-08-01T13:26:36.082Z",
+    "comprehensive": {
+      "summary": {
+        "overallStatus": "❌ POOR",
+        "eventFlowSummary": {
+          "eventsImported": "10/10",
+          "eventsProcessed": "0/10",
+          "cronJobsHealthy": true
+        },
+        "triggerSummary": {
+          "triggersEvaluated": "0/10",
+          "conditionsPassed": "0/0",
+          "contextKeysGenerated": 0
+        },
+        "proxySummary": {
+          "proxiesCreated": "0/10",
+          "contextValid": "0/0",
+          "dynamicFieldsInitialized": "0/0",
+          "successRate": "0.00"
+        },
+        "dependencySummary": {
+          "nodesCreated": 20,
+          "nodesEvaluated": "10/20",
+          "fieldsUpdated": 0,
+          "evaluationErrors": 0
+        },
+        "endToEndSummary": {
+          "completeFlows": "0/10",
+          "avgCompletionTime": "0.00ms",
+          "bottlenecks": 0
+        },
+        "performancePassed": false,
+        "recommendations": [
+          "🔍 Investigate proxy creation failures"
+        ]
+      },
+      "details": {
+        "eventFlow": {
+          "eventsImported": 10,
+          "eventsProcessed": 0,
+          "eventProcessingTime": {},
+          "cronJobsStatus": {
+            "EventsProcesser": {
+              "running": true,
+              "lastRun": "2025-08-01T13:26:37.540Z"
+            },
+            "DependenciesEvaluator": {
+              "running": true,
+              "lastRun": "2025-08-01T13:26:37.540Z"
+            },
+            "FieldOperationsAnalyzer": {
+              "running": true,
+              "lastRun": "2025-08-01T13:26:37.540Z"
+            },
+            "EventsSender": {
+              "running": true,
+              "lastRun": "2025-08-01T13:26:37.540Z"
+            }
+          },
+          "queueMetrics": {
+            "URTriggerEvents": {
+              "waiting": 3,
+              "active": 1,
+              "completed": 87,
+              "failed": 0,
+              "delayed": 0
+            },
+            "LocalEventsURQueue": {
+              "waiting": 7,
+              "active": 0,
+              "completed": 11,
+              "failed": 1,
+              "delayed": 0
+            },
+            "GraphFieldsQueue": {
+              "waiting": 4,
+              "active": 3,
+              "completed": 34,
+              "failed": 1,
+              "delayed": 0
+            },
+            "DepenenciesGraphQueue": {
+              "waiting": 0,
+              "active": 4,
+              "completed": 97,
+              "failed": 0,
+              "delayed": 0
+            }
+          },
+          "failures": [
+            {
+              "caseNumber": "STRESS_000001",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "STRESS_000002",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "STRESS_000003",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "STRESS_000004",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "STRESS_000005",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "STRESS_000006",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "STRESS_000007",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "STRESS_000008",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "STRESS_000009",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            },
+            {
+              "caseNumber": "STRESS_000010",
+              "stage": "processing",
+              "reason": "Event imported but not processed"
+            }
+          ]
+        },
+        "proxy": {
+          "checked": 10,
+          "found": 0,
+          "contextValid": 0,
+          "dynamicFieldsInitialized": 0,
+          "details": [],
+          "fieldAnalysis": {},
+          "contextAnalysis": {},
+          "uniqueConstraintViolations": 0,
+          "successRate": 0,
+          "contextValidityRate": null
+        },
+        "fragment": {
+          "proxiesWithFragments": 0,
+          "fragmentTypes": {},
+          "fragmentValidation": [],
+          "fragmentIntegrity": {
+            "complete": 0,
+            "partial": 0,
+            "missing": 0
+          }
+        },
+        "dependency": {
+          "nodesCreated": 20,
+          "nodesEvaluated": 10,
+          "fieldsUpdated": 0,
+          "nodesByStatus": {
+            "EVALUATED": 10,
+            "DIRTY": 10
+          },
+          "nodesByTarget": {
+            "PROXY": 20
+          },
+          "evaluationMetrics": {
+            "avgEvaluationTime": 250,
+            "failedEvaluations": 0,
+            "expressionErrors": 0,
+            "conditionErrors": 0
+          },
+          "fieldOperations": {
+            "created": 20,
+            "updated": 0,
+            "deleted": 0,
+            "blocked": 0
+          }
+        },
+        "trigger": {
+          "triggersEvaluated": 0,
+          "conditionsPassed": 0,
+          "contextKeysGenerated": 0,
+          "emitExpressionResults": [],
+          "triggerFailures": [],
+          "domainConfiguration": {
+            "exists": true,
+            "domainId": "schedulingCases",
+            "trigger": {
+              "configured": true,
+              "eventType": "SCHEDULING_CASE_CREATED",
+              "hasCondition": true,
+              "hasEmitExpression": true,
+              "hasContextKey": true
+            },
+            "proxyFields": {
+              "count": 4,
+              "fields": [
+                "caseNumber",
+                "patientName",
+                "patientNickName",
+                "patientNickTitle"
+              ]
+            },
+            "permissions": {
+              "canAccessProxies": true,
+              "canAccessProxyDetails": true,
+              "canEditProxy": true
+            }
+          }
+        },
+        "expression": {
+          "expressionsEvaluated": 10,
+          "expressionTypes": {
+            "functionInvocation": 5,
+            "dotOperator": 5
+          },
+          "evaluationErrors": [],
+          "performanceMetrics": {
+            "avgEvaluationTime": 0,
+            "slowestExpression": {
+              "name": "contextKey",
+              "time": 53
+            },
+            "fastestExpression": {
+              "name": "patientName",
+              "time": 23
+            }
+          },
+          "namedExpressions": {
+            "used": 5,
+            "unique": {}
+          }
+        }
+      }
+    },
+    "endToEndValidation": {
+      "completeFlows": 0,
+      "partialFlows": 10,
+      "failedFlows": 0,
+      "flowBreakdown": [
+        {
+          "caseNumber": "STRESS_000001",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754054800545,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "STRESS_000002",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754054800680,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "STRESS_000003",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754054800912,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "STRESS_000004",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754054801148,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "STRESS_000005",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754054801241,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "STRESS_000006",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754054801331,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "STRESS_000007",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754054801416,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "STRESS_000008",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754054801515,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "STRESS_000009",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754054801628,
+          "totalTime": 1000,
+          "completedStages": 4
+        },
+        {
+          "caseNumber": "STRESS_000010",
+          "stages": {
+            "caseCreated": true,
+            "eventImported": true,
+            "triggerEvaluated": false,
+            "proxyCreated": false,
+            "nodesCreated": true,
+            "fieldsEvaluated": true,
+            "dataComplete": false
+          },
+          "timings": {
+            "caseCreation": 0,
+            "eventImport": 100,
+            "nodeCreation": 400,
+            "fieldEvaluation": 500
+          },
+          "startTime": 1754054801751,
+          "totalTime": 1000,
+          "completedStages": 4
+        }
+      ],
+      "avgCompletionTime": 0,
+      "bottlenecks": []
+    },
+    "dependencyGraphAnalysis": {
+      "totalNodes": 100,
+      "nodeDistribution": {
+        "DIRTY": 20,
+        "CLEAN": 60,
+        "EVALUATED": 15,
+        "ERROR_CONDITION": 3,
+        "ERROR_EXPRESSION": 2
+      },
+      "evaluationQueue": {
+        "pending": 1,
+        "processing": 0,
+        "completed": 22
+      },
+      "graphComplexity": {
+        "avgDependencies": 2.5,
+        "maxDepth": 5,
+        "circularDependencies": 0
+      },
+      "performanceMetrics": {
+        "avgProcessingTime": 300,
+        "queueBacklog": 10,
+        "throughput": 50
+      }
+    },
+    "performanceValidation": {
+      "passed": false,
+      "details": {
+        "responseTime": {
+          "p95": 804,
+          "target": 200,
+          "passed": false
+        },
+        "throughput": {
+          "actual": 10.834236186348862,
+          "target": 16.67,
+          "passed": false
+        },
+        "successRate": {
+          "actual": 100,
+          "target": 95,
+          "passed": true
+        }
+      },
+      "recommendations": [
+        "Optimize API response times - P95 exceeds 200ms target",
+        "Increase system throughput - below 1000 cases/minute target"
+      ]
+    },
+    "validationDuration": 5777,
+    "criteriaComparison": {
+      "proxyCreationRate": {
+        "actual": "0/0",
+        "target": 0.99,
+        "passed": false
+      },
+      "fragmentCreationRate": {
+        "actual": "0/0",
+        "target": 0.98,
+        "passed": false
+      },
+      "dependencyCompletionRate": {
+        "actual": "0/0",
+        "target": 0.97,
+        "passed": false
+      }
+    }
+  },
+  "scenarioSpecificResults": {},
+  "scenarioType": "enhanced-bulk-case-creation",
+  "casesGenerated": 10,
+  "creationResults": [
+    {
+      "index": 1,
+      "caseNumber": "STRESS_000001",
+      "success": true,
+      "responseTime": 598,
+      "caseId": "688cc06d2d5c49ff5ca7c9cb"
+    },
+    {
+      "index": 2,
+      "caseNumber": "STRESS_000002",
+      "success": true,
+      "responseTime": 781,
+      "caseId": "688cc06d2d5c49ff5ca7ca2f"
+    },
+    {
+      "index": 3,
+      "caseNumber": "STRESS_000003",
+      "success": true,
+      "responseTime": 691,
+      "caseId": "688cc06d2d5c49ff5ca7c9d9"
+    },
+    {
+      "index": 4,
+      "caseNumber": "STRESS_000004",
+      "success": true,
+      "responseTime": 683,
+      "caseId": "688cc06d2d5c49ff5ca7c9d8"
+    },
+    {
+      "index": 5,
+      "caseNumber": "STRESS_000005",
+      "success": true,
+      "responseTime": 681,
+      "caseId": "688cc06d2d5c49ff5ca7c9ee"
+    },
+    {
+      "index": 6,
+      "caseNumber": "STRESS_000006",
+      "success": true,
+      "responseTime": 804,
+      "caseId": "688cc06d2d5c49ff5ca7ca3b"
+    },
+    {
+      "index": 7,
+      "caseNumber": "STRESS_000007",
+      "success": true,
+      "responseTime": 592,
+      "caseId": "688cc06d2d5c49ff5ca7c9ce"
+    },
+    {
+      "index": 8,
+      "caseNumber": "STRESS_000008",
+      "success": true,
+      "responseTime": 733,
+      "caseId": "688cc06d2d5c49ff5ca7ca20"
+    },
+    {
+      "index": 9,
+      "caseNumber": "STRESS_000009",
+      "success": true,
+      "responseTime": 698,
+      "caseId": "688cc06d2d5c49ff5ca7c9f3"
+    },
+    {
+      "index": 10,
+      "caseNumber": "STRESS_000010",
+      "success": true,
+      "responseTime": 694,
+      "caseId": "688cc06d2d5c49ff5ca7c9da"
+    }
+  ],
+  "baselineComparison": {
+    "caseCreation": {
+      "responseTime": {
+        "p95": {
+          "actual": 804,
+          "target": 200,
+          "passed": false
+        },
+        "avg": {
+          "actual": 695.5,
+          "target": 120,
+          "passed": false
+        }
+      },
+      "throughput": {
+        "actual": 10.834236186348862,
+        "target": 16.67,
+        "passed": false
+      },
+      "errorRate": {
+        "actual": 0,
+        "target": 0.01,
+        "passed": true
+      }
+    },
+    "overallPassed": false
+  },
+  "reportPaths": {
+    "executiveReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T13-26-04-640Z-v1.0/reports/executive-summary.html",
+    "detailedReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T13-26-04-640Z-v1.0/reports/detailed-report.html",
+    "performanceReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T13-26-04-640Z-v1.0/reports/performance-analysis.html",
+    "systemLimitsReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T13-26-04-640Z-v1.0/reports/system-limits.html",
+    "baselineComparisonReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T13-26-04-640Z-v1.0/reports/baseline-comparison.html",
+    "parallelExecutionReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T13-26-04-640Z-v1.0/reports/parallel-execution.html",
+    "ultimateValidationReport": "/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/results/bulk-case-creation-local-2025-08-01T13-26-04-640Z-v1.0/reports/ultimate-validation.html"
+  },
+  "totalDuration": 37246
+}
