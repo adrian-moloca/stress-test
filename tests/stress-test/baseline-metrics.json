@@ -1,0 +1,132 @@
+{
+  "version": "1.0.0",
+  "description": "Baseline performance metrics for Universal Reporting stress tests",
+  "performance": {
+    "responseTime": {
+      "direction": "lower",
+      "unit": "ms",
+      "excellent": 50,
+      "good": 200,
+      "acceptable": 500,
+      "poor": 1000,
+      "critical": 2000,
+      "target": 100
+    },
+    "throughput": {
+      "direction": "higher",
+      "unit": "cases/second",
+      "excellent": 50,
+      "good": 20,
+      "acceptable": 10,
+      "poor": 5,
+      "critical": 2,
+      "target": 30
+    },
+    "successRate": {
+      "direction": "higher",
+      "unit": "percentage",
+      "excellent": 99.9,
+      "good": 99,
+      "acceptable": 95,
+      "poor": 90,
+      "critical": 80,
+      "target": 99.5
+    },
+    "eventProcessingTime": {
+      "direction": "lower",
+      "unit": "ms",
+      "excellent": 100,
+      "good": 500,
+      "acceptable": 1000,
+      "poor": 5000,
+      "critical": 10000,
+      "target": 200
+    }
+  },
+  "system": {
+    "cpu": {
+      "direction": "lower",
+      "unit": "percentage",
+      "excellent": 30,
+      "good": 50,
+      "acceptable": 70,
+      "poor": 85,
+      "critical": 95,
+      "target": 40
+    },
+    "memory": {
+      "direction": "lower",
+      "unit": "percentage",
+      "excellent": 30,
+      "good": 50,
+      "acceptable": 70,
+      "poor": 85,
+      "critical": 95,
+      "target": 40
+    },
+    "memoryGrowth": {
+      "direction": "lower",
+      "unit": "MB",
+      "excellent": 100,
+      "good": 500,
+      "acceptable": 1000,
+      "poor": 2000,
+      "critical": 5000,
+      "target": 200
+    }
+  },
+  "database": {
+    "connectionPoolUsage": {
+      "direction": "lower",
+      "unit": "percentage",
+      "excellent": 50,
+      "good": 70,
+      "acceptable": 85,
+      "poor": 95,
+      "critical": 100,
+      "target": 60
+    },
+    "queryTime": {
+      "direction": "lower",
+      "unit": "ms",
+      "excellent": 10,
+      "good": 50,
+      "acceptable": 100,
+      "poor": 500,
+      "critical": 1000,
+      "target": 20
+    }
+  },
+  "validation": {
+    "proxyCreationRate": {
+      "direction": "higher",
+      "unit": "percentage",
+      "excellent": 100,
+      "good": 99,
+      "acceptable": 95,
+      "poor": 90,
+      "critical": 80,
+      "target": 99.5
+    },
+    "fragmentCreationRate": {
+      "direction": "higher",
+      "unit": "percentage",
+      "excellent": 100,
+      "good": 99,
+      "acceptable": 95,
+      "poor": 90,
+      "critical": 80,
+      "target": 99.5
+    },
+    "dependencyResolutionRate": {
+      "direction": "higher",
+      "unit": "percentage",
+      "excellent": 100,
+      "good": 98,
+      "acceptable": 95,
+      "poor": 90,
+      "critical": 80,
+      "target": 98
+    }
+  }
+}

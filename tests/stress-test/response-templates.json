@@ -1,0 +1,108 @@
+{
+  "version": "1.0.0",
+  "templates": {
+    "excellent": {
+      "summary": "🎉 Excellent Performance!",
+      "messages": [
+        "The Universal Reporting system is performing exceptionally well under stress test conditions.",
+        "All performance metrics are within optimal ranges.",
+        "The system demonstrates excellent scalability and reliability."
+      ],
+      "details": {
+        "performance": "Response times are consistently fast with minimal variance.",
+        "reliability": "Success rates are at or above target levels.",
+        "resources": "System resource utilization is efficient and sustainable."
+      }
+    },
+    "good": {
+      "summary": "✅ Good Performance",
+      "messages": [
+        "The Universal Reporting system is performing well with minor areas for improvement.",
+        "Most metrics are within acceptable ranges.",
+        "The system is stable and reliable under normal load conditions."
+      ],
+      "recommendations": [
+        "Consider optimizing database queries for better response times.",
+        "Monitor system resources during peak loads.",
+        "Review and optimize event processing batch sizes."
+      ]
+    },
+    "acceptable": {
+      "summary": "⚠️ Acceptable Performance with Concerns",
+      "messages": [
+        "The Universal Reporting system is functioning but showing signs of stress.",
+        "Several metrics are approaching warning thresholds.",
+        "Performance optimization is recommended before production deployment."
+      ],
+      "recommendations": [
+        "Implement caching strategies to reduce database load.",
+        "Optimize trigger evaluation logic for better performance.",
+        "Consider horizontal scaling for improved throughput.",
+        "Review and optimize database indexes."
+      ]
+    },
+    "poor": {
+      "summary": "❌ Poor Performance - Action Required",
+      "messages": [
+        "The Universal Reporting system is struggling under load.",
+        "Multiple performance metrics are outside acceptable ranges.",
+        "Immediate optimization is required before production use."
+      ],
+      "recommendations": [
+        "Conduct detailed performance profiling to identify bottlenecks.",
+        "Implement connection pooling and query optimization.",
+        "Consider architectural changes to improve scalability.",
+        "Add monitoring and alerting for critical metrics.",
+        "Review system capacity and consider infrastructure upgrades."
+      ]
+    },
+    "critical": {
+      "summary": "🚨 Critical Performance Issues",
+      "messages": [
+        "The Universal Reporting system is experiencing critical performance issues.",
+        "The system is not suitable for production use in its current state.",
+        "Major architectural or infrastructure changes are required."
+      ],
+      "recommendations": [
+        "Immediately investigate and resolve system bottlenecks.",
+        "Consider complete architectural review and redesign.",
+        "Implement comprehensive caching and optimization strategies.",
+        "Upgrade infrastructure resources significantly.",
+        "Engage performance engineering experts for consultation.",
+        "Implement circuit breakers and fallback mechanisms."
+      ]
+    }
+  },
+  "metricMessages": {
+    "responseTime": {
+      "excellent": "Response times are blazing fast, providing excellent user experience.",
+      "good": "Response times are within acceptable ranges for most operations.",
+      "poor": "Response times are slow and may impact user satisfaction.",
+      "critical": "Response times are critically slow and will severely impact usability."
+    },
+    "throughput": {
+      "excellent": "System throughput exceeds expectations, handling high volumes efficiently.",
+      "good": "System throughput is adequate for expected load levels.",
+      "poor": "System throughput is below requirements and may cause backlogs.",
+      "critical": "System throughput is critically low and cannot handle production loads."
+    },
+    "successRate": {
+      "excellent": "Near-perfect success rates demonstrate excellent system reliability.",
+      "good": "Success rates are high with occasional failures within tolerance.",
+      "poor": "Success rates are concerning with frequent operation failures.",
+      "critical": "Success rates are unacceptably low with widespread failures."
+    },
+    "cpu": {
+      "excellent": "CPU utilization is optimal with plenty of headroom for growth.",
+      "good": "CPU utilization is reasonable with some capacity for increased load.",
+      "poor": "CPU utilization is high and may become a bottleneck.",
+      "critical": "CPU is at or near capacity, causing performance degradation."
+    },
+    "memory": {
+      "excellent": "Memory usage is efficient with no signs of leaks or pressure.",
+      "good": "Memory usage is stable with adequate free memory available.",
+      "poor": "Memory usage is high with potential leak or inefficiency issues.",
+      "critical": "Memory is exhausted or growing uncontrollably, system stability at risk."
+    }
+  }
+}

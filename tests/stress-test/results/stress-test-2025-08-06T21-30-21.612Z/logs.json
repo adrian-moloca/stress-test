@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": "2025-08-06T21:30:21.617Z",
+    "level": "INFO",
+    "message": "Stress test started",
+    "details": {
+      "scenarios": 6
+    }
+  }
+]

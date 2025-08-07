@@ -1,0 +1,375 @@
+{
+  "system": {
+    "initial": {
+      "timestamp": "2025-08-06T21:22:16.751Z",
+      "cpu": {
+        "user": 142423,
+        "system": 15824,
+        "percent": 96
+      },
+      "memory": {
+        "rss": 56569856,
+        "heapTotal": 8196096,
+        "heapUsed": 6214096,
+        "external": 1877728,
+        "heapSizeLimit": 4345298944,
+        "totalAvailable": 33392713728,
+        "free": 7051702272
+      },
+      "system": {
+        "platform": "linux",
+        "cpus": 8,
+        "uptime": 5801.82,
+        "loadAverage": [
+          7.68,
+          7.18,
+          6.1
+        ]
+      }
+    },
+    "final": {
+      "timestamp": "2025-08-06T21:30:21.607Z",
+      "cpu": {
+        "user": 2189146,
+        "system": 2406961,
+        "percent": 56.125
+      },
+      "memory": {
+        "rss": 62078976,
+        "heapTotal": 8982528,
+        "heapUsed": 6835736,
+        "external": 1877752,
+        "heapSizeLimit": 4345298944,
+        "totalAvailable": 33392713728,
+        "free": 6993051648
+      },
+      "system": {
+        "platform": "linux",
+        "cpus": 8,
+        "uptime": 6286.68,
+        "loadAverage": [
+          4.49,
+          5.98,
+          6.07
+        ]
+      }
+    }
+  },
+  "scenarios": [
+    {
+      "config": {
+        "cases": 100,
+        "proxiesPerCase": 2,
+        "parallel": 2
+      },
+      "startTime": "2025-08-06T21:22:16.755Z",
+      "endTime": "2025-08-06T21:27:17.266Z",
+      "performance": {
+        "cases": [],
+        "proxies": [],
+        "fragments": [],
+        "events": []
+      },
+      "success": {
+        "cases": {
+          "created": 0,
+          "failed": 100
+        },
+        "proxies": {
+          "created": 0,
+          "failed": 0
+        },
+        "fragments": {
+          "created": 0,
+          "failed": 0
+        },
+        "events": {
+          "processed": 0,
+          "failed": 0
+        }
+      },
+      "timing": {
+        "total": 300511.673173
+      },
+      "memory": {},
+      "database": {},
+      "errors": [
+        {
+          "type": "SCENARIO_ERROR",
+          "message": "countProxiesCreated method must be implemented",
+          "stack": "Error: countProxiesCreated method must be implemented\n    at ComprehensiveStressTestRunner.countProxiesCreated (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:1048:11)\n    at ComprehensiveStressTestRunner.validateScenarioResults (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:310:29)\n    at ComprehensiveStressTestRunner.runScenario (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:126:37)\n    at async ComprehensiveStressTestRunner.runAllScenarios (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:51:30)\n    at async /home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:1180:7"
+        }
+      ],
+      "rates": {
+        "casesPerSecond": 0,
+        "proxiesPerSecond": 0,
+        "eventsPerSecond": 0
+      }
+    },
+    {
+      "config": {
+        "cases": 500,
+        "proxiesPerCase": 3,
+        "parallel": 3
+      },
+      "startTime": "2025-08-06T21:27:22.271Z",
+      "endTime": "2025-08-06T21:27:52.653Z",
+      "performance": {
+        "cases": [],
+        "proxies": [],
+        "fragments": [],
+        "events": []
+      },
+      "success": {
+        "cases": {
+          "created": 0,
+          "failed": 500
+        },
+        "proxies": {
+          "created": 0,
+          "failed": 0
+        },
+        "fragments": {
+          "created": 0,
+          "failed": 0
+        },
+        "events": {
+          "processed": 0,
+          "failed": 0
+        }
+      },
+      "timing": {
+        "total": 30382.07817000005
+      },
+      "memory": {},
+      "database": {},
+      "errors": [
+        {
+          "type": "SCENARIO_ERROR",
+          "message": "countProxiesCreated method must be implemented",
+          "stack": "Error: countProxiesCreated method must be implemented\n    at ComprehensiveStressTestRunner.countProxiesCreated (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:1048:11)\n    at ComprehensiveStressTestRunner.validateScenarioResults (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:310:29)\n    at ComprehensiveStressTestRunner.runScenario (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:126:37)\n    at async ComprehensiveStressTestRunner.runAllScenarios (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:51:30)\n    at async /home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:1180:7"
+        }
+      ],
+      "rates": {
+        "casesPerSecond": 0,
+        "proxiesPerSecond": 0,
+        "eventsPerSecond": 0
+      }
+    },
+    {
+      "config": {
+        "cases": 1000,
+        "proxiesPerCase": 4,
+        "parallel": 4
+      },
+      "startTime": "2025-08-06T21:27:57.658Z",
+      "endTime": "2025-08-06T21:28:28.188Z",
+      "performance": {
+        "cases": [],
+        "proxies": [],
+        "fragments": [],
+        "events": []
+      },
+      "success": {
+        "cases": {
+          "created": 0,
+          "failed": 1000
+        },
+        "proxies": {
+          "created": 0,
+          "failed": 0
+        },
+        "fragments": {
+          "created": 0,
+          "failed": 0
+        },
+        "events": {
+          "processed": 0,
+          "failed": 0
+        }
+      },
+      "timing": {
+        "total": 30529.965487999958
+      },
+      "memory": {},
+      "database": {},
+      "errors": [
+        {
+          "type": "SCENARIO_ERROR",
+          "message": "countProxiesCreated method must be implemented",
+          "stack": "Error: countProxiesCreated method must be implemented\n    at ComprehensiveStressTestRunner.countProxiesCreated (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:1048:11)\n    at ComprehensiveStressTestRunner.validateScenarioResults (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:310:29)\n    at ComprehensiveStressTestRunner.runScenario (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:126:37)\n    at async ComprehensiveStressTestRunner.runAllScenarios (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:51:30)\n    at async /home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:1180:7"
+        }
+      ],
+      "rates": {
+        "casesPerSecond": 0,
+        "proxiesPerSecond": 0,
+        "eventsPerSecond": 0
+      }
+    },
+    {
+      "config": {
+        "cases": 2000,
+        "proxiesPerCase": 5,
+        "parallel": 5
+      },
+      "startTime": "2025-08-06T21:28:33.194Z",
+      "endTime": "2025-08-06T21:29:03.793Z",
+      "performance": {
+        "cases": [],
+        "proxies": [],
+        "fragments": [],
+        "events": []
+      },
+      "success": {
+        "cases": {
+          "created": 0,
+          "failed": 2000
+        },
+        "proxies": {
+          "created": 0,
+          "failed": 0
+        },
+        "fragments": {
+          "created": 0,
+          "failed": 0
+        },
+        "events": {
+          "processed": 0,
+          "failed": 0
+        }
+      },
+      "timing": {
+        "total": 30599.555518999987
+      },
+      "memory": {},
+      "database": {},
+      "errors": [
+        {
+          "type": "SCENARIO_ERROR",
+          "message": "countProxiesCreated method must be implemented",
+          "stack": "Error: countProxiesCreated method must be implemented\n    at ComprehensiveStressTestRunner.countProxiesCreated (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:1048:11)\n    at ComprehensiveStressTestRunner.validateScenarioResults (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:310:29)\n    at ComprehensiveStressTestRunner.runScenario (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:126:37)\n    at async ComprehensiveStressTestRunner.runAllScenarios (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:51:30)\n    at async /home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:1180:7"
+        }
+      ],
+      "rates": {
+        "casesPerSecond": 0,
+        "proxiesPerSecond": 0,
+        "eventsPerSecond": 0
+      }
+    },
+    {
+      "config": {
+        "cases": 5000,
+        "proxiesPerCase": 7,
+        "parallel": 7
+      },
+      "startTime": "2025-08-06T21:29:08.798Z",
+      "endTime": "2025-08-06T21:29:40.007Z",
+      "performance": {
+        "cases": [],
+        "proxies": [],
+        "fragments": [],
+        "events": []
+      },
+      "success": {
+        "cases": {
+          "created": 0,
+          "failed": 5000
+        },
+        "proxies": {
+          "created": 0,
+          "failed": 0
+        },
+        "fragments": {
+          "created": 0,
+          "failed": 0
+        },
+        "events": {
+          "processed": 0,
+          "failed": 0
+        }
+      },
+      "timing": {
+        "total": 31209.309184000012
+      },
+      "memory": {},
+      "database": {},
+      "errors": [
+        {
+          "type": "SCENARIO_ERROR",
+          "message": "countProxiesCreated method must be implemented",
+          "stack": "Error: countProxiesCreated method must be implemented\n    at ComprehensiveStressTestRunner.countProxiesCreated (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:1048:11)\n    at ComprehensiveStressTestRunner.validateScenarioResults (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:310:29)\n    at ComprehensiveStressTestRunner.runScenario (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:126:37)\n    at async ComprehensiveStressTestRunner.runAllScenarios (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:51:30)\n    at async /home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:1180:7"
+        }
+      ],
+      "rates": {
+        "casesPerSecond": 0,
+        "proxiesPerSecond": 0,
+        "eventsPerSecond": 0
+      }
+    },
+    {
+      "config": {
+        "cases": 10000,
+        "proxiesPerCase": 10,
+        "parallel": 10
+      },
+      "startTime": "2025-08-06T21:29:45.012Z",
+      "endTime": "2025-08-06T21:30:16.602Z",
+      "performance": {
+        "cases": [],
+        "proxies": [],
+        "fragments": [],
+        "events": []
+      },
+      "success": {
+        "cases": {
+          "created": 0,
+          "failed": 10000
+        },
+        "proxies": {
+          "created": 0,
+          "failed": 0
+        },
+        "fragments": {
+          "created": 0,
+          "failed": 0
+        },
+        "events": {
+          "processed": 0,
+          "failed": 0
+        }
+      },
+      "timing": {
+        "total": 31590.30024500005
+      },
+      "memory": {},
+      "database": {},
+      "errors": [
+        {
+          "type": "SCENARIO_ERROR",
+          "message": "countProxiesCreated method must be implemented",
+          "stack": "Error: countProxiesCreated method must be implemented\n    at ComprehensiveStressTestRunner.countProxiesCreated (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:1048:11)\n    at ComprehensiveStressTestRunner.validateScenarioResults (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:310:29)\n    at ComprehensiveStressTestRunner.runScenario (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:126:37)\n    at async ComprehensiveStressTestRunner.runAllScenarios (/home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:51:30)\n    at async /home/adrian/Desktop/SBD-Projects/clients/BytesBlack/new-smambu/smambu/tests/stress-test/scripts/run-comprehensive-stress-test.js:1180:7"
+        }
+      ],
+      "rates": {
+        "casesPerSecond": 0,
+        "proxiesPerSecond": 0,
+        "eventsPerSecond": 0
+      }
+    }
+  ],
+  "aggregated": {
+    "totalCases": 0,
+    "totalProxies": 0,
+    "totalFragments": 0,
+    "totalEvents": 0,
+    "averageResponseTime": 0,
+    "p95ResponseTime": 0,
+    "p99ResponseTime": 0,
+    "successRate": 0,
+    "throughput": {
+      "cases": 0,
+      "proxies": 0,
+      "events": 0
+    }
+  }
+}
